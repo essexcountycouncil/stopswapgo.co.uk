@@ -1,0 +1,1 @@
+Essex Minimal built on Gatsby
