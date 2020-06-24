@@ -11,6 +11,11 @@ export default ({ data }) => {
     	<h2 class="strapline">It's time to rethink your commute</h2>
     	<p>Swap the way you commute for the joys of walking or cycling to work.</p>
   	</div>
+  	<PreviewServices />
+    <div class="mantra">
+    	<h2 class="strapline">It's time to rethink your commute</h2>
+    	<p>Swap the way you commute for the joys of walking or cycling to work.</p>
+  	</div>
     </Layout>
   )
 }
