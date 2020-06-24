@@ -113,7 +113,7 @@
       .group {
         .signup-input {
           input {
-            border: $border-thick $body-text-colour solid;
+            border: $border-thick $brand4 solid;
             &:focus {
               outline-offset: 0;
             }
@@ -121,14 +121,14 @@
         }
         .signup-button {
           button.button.subscribe {
-            background: $black;
+            background: $brand4;
             color: $white;
-            border: $border-thick $black solid;
+            border: $border-thick $brand4 solid;
             @include media(mobile) {
               margin-bottom: 0;
             }
             &:hover {
-              color: $white;
+              color: $body-text-colour;
               background-color: $brand;
               border: $border-thick $brand solid;
             }
