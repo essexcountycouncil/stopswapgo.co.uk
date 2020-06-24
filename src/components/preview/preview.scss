@@ -100,9 +100,8 @@
         margin-bottom: $baseline*0.125;
       }
     }
-    &.main {
-      @include grid-column(1);
-      margin-bottom: 0;
+    &.right {
+      float: right;
     }
   }
   &.news {
