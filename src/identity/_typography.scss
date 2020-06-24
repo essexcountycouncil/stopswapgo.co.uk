@@ -41,7 +41,8 @@ p {
 }
 
 @mixin h1 {
-  font-family: $stack;
+  // font-family: $stack;
+  font-family: Mohave;
   font-size: ms(9);
   font-weight: $bold;
   text-transform: none;
