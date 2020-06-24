@@ -1,18 +1,16 @@
 import React from "react"
-import { graphql } from "gatsby"
 
-const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
+export default () =>
+<>
+	<div class="previews">
+	  <div class="preview">
+	    <h3 class="sub-section-heading">Here is a title</h3>
+	    <p>From retail to restaurants, we have tools to help anyone start selling online. Create a free online store that syncs with your inventory and social media to help you sell right away.</p>
+	  </div>
 
-export const query = graphql`
-  {
-    allContentfulBlogPost {
-      edges {
-        node {
-          title
-        }
-      }
-    }
-  }
-`
-
-export default ComponentName
+	  <div class="preview">
+	    <h3 class="sub-section-heading">Here is a title</h3>
+	    <p>From retail to restaurants, we have tools to help anyone start selling online. Create a free online store that syncs with your inventory and social media to help you sell right away.</p>
+	  </div>	  
+	</div>
+</>

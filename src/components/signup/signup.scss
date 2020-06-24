@@ -1,5 +1,6 @@
 .signup {
-  margin-top: $baseline;
+  margin-top: 0;
+  margin-bottom: $baseline*3;
   @media print {
     display: none;
   }
@@ -63,9 +64,9 @@
         position: relative;
         button.button.subscribe {
           @include more;
-          border: $border-normal $brand solid;
+          border: $border-thick $brand solid;
           &:hover {
-            border: $border-normal $brand-hover-darken solid;
+            border: $border-thick $brand-hover-darken solid;
             color: $white;
             background-color: $brand-hover-darken;
           }                    
@@ -76,7 +77,7 @@
 }
 
 .signup-background {
-  background-color: $brand;
+  background-color: $white;
   .signup {
     @extend %site-width-container;
     @extend %contain-floats;
@@ -89,7 +90,6 @@
     .section-heading {
       @include media(desktop) {
         @include h2;
-        font-weight: $normal;
       }
     }
     .section-heading, p {
@@ -106,14 +106,14 @@
         padding-left: $gutter;
         padding-right: $gutter;
       }
-      color: $white;
+      color: $body-text-colour;
       margin-top: 0;
     }
     .form {
       .group {
         .signup-input {
           input {
-            border: none;
+            border: $border-thick $brand4 solid;
             &:focus {
               outline-offset: 0;
             }
@@ -121,14 +121,16 @@
         }
         .signup-button {
           button.button.subscribe {
+            background: $brand4;
             color: $white;
-            border: $border-normal $white solid;
+            border: $border-thick $brand4 solid;
             @include media(mobile) {
               margin-bottom: 0;
             }
             &:hover {
-              color: $brand;
-              background-color: $white;
+              color: $body-text-colour;
+              background-color: $brand;
+              border: $border-thick $brand solid;
             }
           }
         }

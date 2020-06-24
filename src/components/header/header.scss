@@ -1,6 +1,5 @@
 .header-background {
-  background-color: $brand;
-  border-bottom: $border-thin solid $brand4;
+  background-color: $white;
   height: auto;
   position: relative;
   z-index: 20;
@@ -18,7 +17,7 @@
     .nav {
     @extend %grid-row;
       .logo-wrap {
-        height: $form-height*0.75;
+        // height: $form-height*1.25;
         @include grid-column(1 / 2);
         a.logo-text {
           @media print {
