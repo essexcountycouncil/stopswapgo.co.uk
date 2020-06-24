@@ -1,8 +1,8 @@
 .previews {
   @extend %contain-floats;
   @extend %grid-row;
-  margin-top: $baseline*6;
-  margin-bottom: $baseline*6;
+  margin-top: $baseline*3;
+  margin-bottom: $baseline*3;
   @include media(mobile) {
     margin-top: $baseline*1.5;
     margin-bottom: $baseline;
@@ -99,6 +99,10 @@
         margin-top: $baseline*0.125;
         margin-bottom: $baseline*0.125;
       }
+    }
+    &.main {
+      @include grid-column(1);
+      margin-bottom: 0;
     }
   }
   &.news {

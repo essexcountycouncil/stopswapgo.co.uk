@@ -1,5 +1,6 @@
 .signup {
-  margin-top: $baseline;
+  margin-top: 0;
+  margin-bottom: $baseline*3;
   @media print {
     display: none;
   }

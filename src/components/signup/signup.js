@@ -3,7 +3,7 @@ import React from "react"
 export default () =>
 <section class="signup-background" aria-label="Subscribe to email">
   <div class="signup">
-    <h2 class="section-heading">Keep me updated</h2>
+    <h2 class="strapline">Keep me updated</h2>
     <form asp-controller="Home" asp-action="EmailSubscribe" method="get" class="form">
       <div class="group">
         <div class="signup-input">
