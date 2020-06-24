@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./seax.png"
+import logo from "./logo.png"
 console.log(logo)
 function Header() {
   return (
@@ -7,9 +7,8 @@ function Header() {
       <div class="header">
         <div class="nav">
           <div class="logo-wrap">
-            <a href="/" class="logo-text seax">
-              <img src={logo} width="36" height="30" alt="Essex logo" />
-               Essex.gov.uk
+            <a href="/" class="logo-text">
+              Stop.Swap.Go
             </a>
           </div>
         </div>

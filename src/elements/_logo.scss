@@ -26,13 +26,14 @@
 }
 
 a.logo-text {
-  font-family: $stack-logo;
-  font-size: ms(4);
+  font-family: Mohave-Bold;
+  font-size: ms(8);
   line-height: $form-height*0.75;
-  color: $white;
+  color: $body-text-colour;
   text-transform: uppercase;
   text-decoration: none;
   text-indent: 0;
+  letter-spacing: -1px;
   &:hover {
     text-decoration: none;
     border-bottom: $border-normal $white solid;
@@ -48,9 +49,8 @@ a.logo-text.seax {
   float: left;
   background-position: 0 0;
   line-height: 1;
-  background: url('./components/header/seax.png') no-repeat;
+  background: url('./components/header/logo.png') no-repeat;
   background-size: $seax-width $seax-height;
-  border-bottom: $border-normal $brand solid;
   margin-top: 4px;
   margin-bottom: -6px;
   padding-bottom: 6px;

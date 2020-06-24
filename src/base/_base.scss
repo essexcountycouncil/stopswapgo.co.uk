@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  font-family: Mohave;
+  font-family: $stack;
   -webkit-font-smoothing: antialiased;
   background: $white;
   color: $body-text-colour;

@@ -3,8 +3,7 @@ import React from "react"
 export default () =>
 <section class="signup-background" aria-label="Subscribe to email">
   <div class="signup">
-    <h2 class="section-heading">Stay up to date</h2>
-    <p>Get the latest news and information about your council services</p>
+    <h2 class="section-heading">Keep me updated</h2>
     <form asp-controller="Home" asp-action="EmailSubscribe" method="get" class="form">
       <div class="group">
         <div class="signup-input">
@@ -13,7 +12,7 @@ export default () =>
           </label>
         </div>
         <div class="signup-button" id="submitYourEmailAddress">
-          <button type="submit" class="button subscribe" value="Subscribe">Subscribe</button>
+          <button type="submit" class="button subscribe" value="Subscribe">I am interested</button>
         </div>
       </div>
     </form>

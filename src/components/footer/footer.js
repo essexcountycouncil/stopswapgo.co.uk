@@ -6,12 +6,11 @@ export default () =>
       <div class="footer">
         <div class="nav">
           <ul class="nav-links">
-            <li><a href="https://www.essex.gov.uk/topic/about-essexgovuk">About essex.gov.uk</a></li><li>
+            <li>
               <a href="https://www.essex.gov.uk/accessibility">Accessibility</a></li><li>
               <a href="https://www.essex.gov.uk/cookies">Cookies</a></li><li>
               <a href="https://www.essex.gov.uk/terms-conditions">Terms and conditions</a></li><li>
-              <a href="https://www.essex.gov.uk/privacy-and-data-protection">Privacy and data protection</a></li><li>
-              <a href="/topic/contact-us">Contact us</a></li>
+              <a href="https://www.essex.gov.uk/privacy-and-data-protection">Privacy and data protection</a></li>
           </ul>
           <ul class="social">
             <li>

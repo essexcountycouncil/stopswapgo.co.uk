@@ -54,15 +54,19 @@
         margin-top: 0;
       }
       h1 {
-        font-family: Mohave;
+        font-family: Mohave-Bold;
         font-size: ms(12);
         line-height: $baseline*2.5;
+        color: $black;
         @include box-sizing(border-box);
-        padding: $baseline*3;
+        padding: $baseline*4 $baseline*2;
         display: inline-block;
-        background: $white;
+        background: $brand;
         margin-top: 0;
         margin-bottom: $border-thick;
+        span {
+          color: $white;
+        }
         @include media(mobile){
           width: 100%;
         }
