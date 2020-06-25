@@ -70,6 +70,7 @@ $very-black: #000;
 // text colour
 $text-colour: $black; // Text that isn't in the main body
 $body-text-colour: #1a191a; // Only main body text
+$body-text-colour: #414141;
 $white: #fff;
 
 // link colour
@@ -90,7 +91,7 @@ $focus-colour: #fab500;
 // overlay
 $overlay: rgba(255,255,255,0.2);
 $overlay-heavy: rgba(255,255,255,0.8);
-$overlay-brand: rgba(0,22,150,0.17);
+$overlay-brand: rgba(28,227,52,0.03);
 
 // element color
 $button: #00823b; // green taken from gov.uk
@@ -129,15 +130,11 @@ $padding-thinner: $baseline*0.25;
 $border-radius: 3px;
 
 // logo dimensions
-$logo-width: 300px;
-$logo-height: 40px;
-$logo-height: 1.602em;
-
 $logo-b-width: 225px;
 $logo-b-height: 30px;
 
-$seax-width: 208px;
-$seax-height: 57px;
+$logo-width: 500px * 0.5;
+$logo-height: 140px * 0.5;
 
 // header dimensions, based on logo
-$nav-height: $logo-height*2.5;
+$nav-height: $logo-height*4;
