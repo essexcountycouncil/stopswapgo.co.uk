@@ -121,16 +121,16 @@
         }
         .signup-button {
           button.button.subscribe {
-            background: $brand4;
-            color: $white;
-            border: $border-thick $brand4 solid;
+            background: $brand;
+            color: $body-text-colour;
+            border: $border-thick $brand solid;
             @include media(mobile) {
               margin-bottom: 0;
             }
             &:hover {
-              color: $body-text-colour;
-              background-color: $brand;
-              border: $border-thick $brand solid;
+              color: $white;
+              background-color: $brand4;
+              border: $border-thick $brand4 solid;
             }
           }
         }

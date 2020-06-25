@@ -25,47 +25,28 @@
   }
 }
 
-a.logo-text {
-  font-family: $stack-logo;
-  font-size: ms(4);
-  line-height: $form-height*0.75;
-  color: $white;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-indent: 0;
-  &:hover {
-    text-decoration: none;
-    border-bottom: $border-normal $white solid;
-  }
-  &:focus {
-    background-color: $brand;
-    outline: $border-thick solid $focus-colour;
-    border-bottom: $border-normal $white solid;
-  }
-}
 
-a.logo-text.seax {
+a.logo {
   float: left;
   background-position: 0 0;
   line-height: 1;
-  background: url('/public/images/seax.png') no-repeat;
-  background-size: $seax-width $seax-height;
-  border-bottom: $border-normal $brand solid;
+  background: url('./components/header/logo.png') no-repeat;
+  background-size: $logo-width $logo-height;
   margin-top: 4px;
   margin-bottom: -6px;
   padding-bottom: 6px;
   @media print {
     background-image: none;
-    border-bottom: $border-normal $white solid;
+    border-bottom: none;
   }
   &:hover {
     text-decoration: none;
-    border-bottom: $border-normal $white solid;
+    border-bottom: none;
   }
   &:focus {
     background-color: $brand;
     outline: $border-thick solid $focus-colour;
-    border-bottom: $border-normal $white solid;
+    border-bottom: none;
   }
   img {
     vertical-align: bottom;
