@@ -37,7 +37,7 @@
     // padding-top: $baseline*2;
     // padding-bottom: $baseline*2;
     &:nth-child(2n) {
-      border-left: $border-thin solid $black;
+      // border-left: $border-thin solid $black;
       // border-right: $border-thin solid $grey-light;
       @include media(mobile) {
         border: none;
