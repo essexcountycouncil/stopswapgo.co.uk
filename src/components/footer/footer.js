@@ -1,4 +1,5 @@
 import React from "react"
+import logo from "./seax.png"
 
 export default () =>
   <footer id="main-footer" class="footer-container">
@@ -27,7 +28,13 @@ export default () =>
         <ul class="credits">
           <li class="copyright">© Essex County Council 2019</li>
           <li class="design-link"><a href="https://servicedesign.blog.essex.gov.uk/">Built by the Service Design Team</a></li>
-        </ul>
+          <li class="footer-logo">
+            <a href="/" class="logo-text seax">
+              <img src={logo} width="36" height="30" alt="Essex County Council logo" />
+              Essex.gov.uk
+            </a>
+          </li>
+        </ul>  
       </div>
     </div>
   </footer>
