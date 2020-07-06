@@ -7,6 +7,7 @@
   background-size: cover;
   background-position-x: 0;
   background-position-y: center;
+  height: $baseline*20;
   @include media(mobile) {
     height: auto;
   }
@@ -23,6 +24,22 @@
     @media print {
       background: none;
     }
+  }
+  .arrow {
+    background-image: url("./components/search-home/SSG_Arrow_White.svg");
+    // background-image: url("./components/search-home/SSG_Arrow_Green.svg");
+    background-repeat:  no-repeat;
+    background-size: initial;
+    background-position-x: 0;
+    background-position-y: center;    
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    margin-top: $baseline*0.25;
+    margin-bottom: $baseline*0.25;
   }
   .search-container {
     @extend %site-width-container;
@@ -50,6 +67,7 @@
     }
     .greeting {
       @include grid-column(1 / 2);
+      z-index: 150;
       @include media(mobile) {
         margin-top: 0;
       }
@@ -57,10 +75,11 @@
         font-family: Mohave-Bold;
         font-size: ms(14);
         line-height: $baseline*3;
+        color: $white;
         @include box-sizing(border-box);
         padding: $baseline*2 $baseline*2;
         display: inline-block;
-        background: $white;
+        // background: $white;
         margin-top: 0;
         margin-bottom: $border-thick;
         @include media(mobile){

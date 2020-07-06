@@ -4,7 +4,7 @@ export default () =>
 <section class="signup-background" aria-label="Subscribe to email">
   <div class="signup">
     <div class="mantra">
-      <h2 class="strapline">Stop. Swap. WIN!</h2>
+      <h2 class="strapline">Stop.Swap.<i>WIN!</i></h2>
       <p>Want to win prizes for walking and cycling? Of course you do. Sign up to our newsletter and be the first to hear about our 60 Day Challenge. Just pop in your name, email and hit GO! We’ll do the rest.</p>
     </div>
     <form asp-controller="Home" asp-action="EmailSubscribe" method="get" class="form">
