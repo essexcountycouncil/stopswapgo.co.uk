@@ -3,6 +3,7 @@
   @extend %grid-row;
   margin-top: $baseline*3;
   margin-bottom: $baseline*3;
+  position: relative;
   @include media(mobile) {
     margin-top: $baseline*1.5;
     margin-bottom: $baseline;
@@ -24,6 +25,20 @@
   @include media(desktop) {
     margin-left: -$gutter*2 !important;
     margin-right: -$gutter*2 !important;
+    .preview-arrow {
+      background-image: url("./components/search-home/SSG_Arrow_Brand4.svg");
+      background-repeat:  no-repeat;
+      background-size: initial;
+      background-position-x: 0;
+      background-position-y: center;    
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      margin-top: -$baseline;
+    }      
     .preview {
       padding-left: $gutter*2 !important;
       padding-right: $gutter*2 !important;
@@ -33,6 +48,8 @@
     // background: $brand;
     min-height: $baseline*8;
     margin-bottom: $baseline;
+    position: relative;
+    z-index: 100;
     @include grid-column(6 / 12);
     // padding-top: $baseline*2;
     // padding-bottom: $baseline*2;

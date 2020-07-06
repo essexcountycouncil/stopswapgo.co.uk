@@ -2,13 +2,16 @@
   @media print {
     display: none;
   }
+  position: relative;
   .footer-top, .footer-bottom {
     @include small;
     padding-top: $baseline;
+    position: relative;
+    z-index: 100;
   }
   .footer-top {
     background-color: $brand4;
-    border-top: $baseline $brand solid;
+    border-top: $baseline*0.5 $brand solid;
   }
   .footer-bottom {
     background-color: $brand4;
