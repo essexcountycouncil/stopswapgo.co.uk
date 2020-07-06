@@ -89,14 +89,16 @@
           }
         }
       }
-      .copyright, .design-link {
+      .copyright, .design-link, .footer-logo {
         @include grid-column(6 / 12);
         display: block;
         color: $white;
         line-height: $baseline*1.25;
         text-align: left;
         @include media(mobile) {
-          margin-bottom: $baseline;
+          // display: block;
+          width: 100%;
+          margin-bottom: 0;
         }
         a {
           color: $white;
