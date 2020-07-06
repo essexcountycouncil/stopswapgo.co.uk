@@ -8,8 +8,8 @@ export default ({ data }) => {
   return (
     <Layout>
     <div class="mantra">
-    	<h2 class="strapline">It's time to rethink your commute</h2>
-    	<p>Swap the way you commute for the joys of walking or cycling to work.</p>
+    	<h2 class="strapline">Get ready to Stop. Swap. GO!</h2>
+    	<p>Hello! We’re making walking and cycling in Essex easier – and more rewarding – than ever. We’ve already seen people from all over Essex making the switch to walking and cycling. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
   	</div>
   	
   	<PreviewServices />

@@ -1,11 +1,11 @@
 import React from "react"
+import cyclist from "./Chelmsford-station-cyclist.jpg"
 
 export default () =>
 <>
 	<div class="previews">
 	  <div class="preview">
-	    <h3 class="sub-section-heading">Get ready to Stop. Swap. GO!</h3>
-	    <p>Hello! We’re making walking and cycling in Essex easier – and more rewarding – than ever. We’ve already seen people from all over Essex making the switch to walking and cycling. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
+	    <img src={cyclist} alt="" width="" height="" />
 	  </div>
 
 	  <div class="preview">
