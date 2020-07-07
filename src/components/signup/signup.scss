@@ -1,6 +1,6 @@
 .signup {
   margin-top: 0;
-  margin-bottom: $baseline*3;
+  margin-bottom: 0;
   @media print {
     display: none;
   }
@@ -80,12 +80,18 @@
 }
 
 .signup-background {
-  background-color: $white;
+  background-color: $grey-dark;
+  border: $border-thicker solid $white;
   .signup {
     @extend %site-width-container;
     @extend %contain-floats;
     padding-top: $baseline;
     padding-bottom: $baseline;
+    .mantra {
+      h2, p {
+        color: $white;
+      }
+    }
     @include media(mobile) {
       padding-top: $baseline;
       padding-bottom: $baseline;
@@ -124,16 +130,16 @@
         }
         .signup-button {
           button.button.subscribe {
-            background: $brand;
+            background: $white;
             color: $body-text-colour;
-            border: $border-thick $brand solid;
+            border: $border-thick $white solid;
             @include media(mobile) {
               margin-bottom: 0;
             }
             &:hover {
-              color: $white;
-              background-color: $brand4;
-              border: $border-thick $brand4 solid;
+              color: $body-text-colour;
+              background-color: $brand;
+              border: $border-thick $brand solid;
             }
           }
         }
