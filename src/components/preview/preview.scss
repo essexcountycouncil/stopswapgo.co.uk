@@ -2,7 +2,7 @@
   @extend %contain-floats;
   @extend %grid-row;
   margin-top: $baseline*3;
-  margin-bottom: $baseline*3;
+  margin-bottom: $baseline;
   position: relative;
   @include media(mobile) {
     margin-top: $baseline*1.5;
@@ -119,11 +119,20 @@
     .social {
       margin-bottom: 0;
       li {
-        background: $brand;
+        // background: $brand;
         padding: $gutter*0.5;
-        margin-right: 0;
-        a {
-          color: $body-text-colour;
+        // margin-right: 0;
+        a .fab {
+          font-size: $icon*3;
+        }
+        a.facebook {
+          color: $facebook;
+        }
+        a.instagram {
+          color: $instagram;
+        }
+        a.twitter {
+          color: $twitter;
         }
       }
     }

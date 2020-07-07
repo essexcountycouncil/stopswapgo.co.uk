@@ -14,7 +14,8 @@ export default ({ data }) => {
     </Helmet>
     <div class="mantra" id="get-ready">
     	<h2 class="strapline">Get ready to Stop.Swap.<i>GO!</i></h2>
-    	<p>Hello! We’re making walking and cycling in Essex easier – and more rewarding – than ever. We’ve already seen people from all over Essex making the switch to walking and cycling. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
+    	<p>Hello! We’re making getting around Essex easier – and more rewarding – than ever.</p>
+      <p>More and more of us are swapping from car to bus, bike or our own two feet. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
   	</div>
   	
   	<PreviewServices />

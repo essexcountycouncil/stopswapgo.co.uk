@@ -81,7 +81,6 @@
 
 .signup-background {
   background-color: $grey-dark;
-  border: $border-thicker solid $white;
   .signup {
     @extend %site-width-container;
     @extend %contain-floats;

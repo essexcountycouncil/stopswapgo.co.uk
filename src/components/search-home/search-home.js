@@ -5,7 +5,7 @@ const Searchhome = ({ siteTitle }) => (
     <div class="overlay"></div>
     <div class="search-container">
       <div class="greeting">
-        <h1 class="page-heading">Rethink Your <span>Travel</span> To Work</h1>
+        <h1 class="page-heading">Rethink Your Daily <span>Travel</span></h1>
       </div>
     </div>    
       <ul class="social">
