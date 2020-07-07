@@ -26,6 +26,15 @@
           }
         }
       }
+      ul.nav-links {
+        @include grid-column(1 / 2);
+        text-align: right;
+        margin-top: $baseline*1.5;
+        margin-bottom: $baseline*1.5;
+        @include media(mobile) {
+          text-align: center;
+        }
+      }
       span {
         @include small;
         font-size: 0.5em;
