@@ -41,6 +41,15 @@
     margin-top: $baseline*0.25;
     margin-bottom: $baseline*0.25;
   }
+  .social {
+    position: absolute;
+    right: $gutter*0.25;
+    top: $baseline*0.5;
+    z-index: 150;
+    li a span {
+      color: $white;
+    }
+  }
   .search-container {
     @extend %site-width-container;
     @extend %contain-floats;
