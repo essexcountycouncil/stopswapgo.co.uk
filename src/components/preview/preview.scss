@@ -24,21 +24,7 @@
   }
   @include media(desktop) {
     margin-left: -$gutter*2 !important;
-    margin-right: -$gutter*2 !important;
-    .preview-arrow {
-      background-image: url("./components/search-home/SSG_Arrow_Brand4.svg");
-      background-repeat:  no-repeat;
-      background-size: initial;
-      background-position-x: 0;
-      background-position-y: center;    
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 0;
-      margin-top: -$baseline;
-    }      
+    margin-right: -$gutter*2 !important;     
     .preview {
       padding-left: $gutter*2 !important;
       padding-right: $gutter*2 !important;
@@ -48,7 +34,6 @@
     min-height: $baseline*8;
     margin-bottom: $baseline;
     position: relative;
-    z-index: 100;
     @include grid-column(6 / 12);
     &:nth-child(2n) {
       @include media(mobile) {
@@ -80,10 +65,9 @@
     }
     img {
       margin-top: 0;
-      margin-bottom: $baseline;
+      margin-bottom: 0;
       height: auto;
       width: 100%;
-      border: $border-thicker solid $white;
       @include media(mobile) {
         margin-bottom: 0;
         width: 100%;
@@ -100,6 +84,18 @@
           margin-bottom: $baseline*0.5;
         }
       }
+    }
+    .img-arrow {
+      background-image: url("./components/search-home/SSG_Arrow_White.svg");
+      background-repeat:  no-repeat;
+      background-size: initial;
+      background-position-x: 0;
+      background-position-y: center;   
+      position: absolute;
+      top: 0;
+      left: -120px;
+      bottom: -1px;
+      right: 0;    
     }
     .meta {
       @include smaller;

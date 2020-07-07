@@ -6,6 +6,7 @@ export default () =>
 	<div class="previews">
 	  <div class="preview">
 	    <img src={cyclist} alt="" width="" height="" />
+	    <div class="img-arrow"></div>
 	  </div>
 	  <div class="preview">
 	    <h3 class="sub-section-heading">Join our community</h3>
