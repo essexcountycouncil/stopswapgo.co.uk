@@ -16,10 +16,8 @@ function Header() {
           <ul class="nav-links">
             <li>
               <a href="/">Home</a></li><li>
-              <a href="#get-ready">About SSG</a></li><li>
-              <a href="/get-started">Get started</a></li><li>
-              <a href="#challenge">60 Day Challenge</a></li>
-          </ul>
+              <a href="/get-started">Get started</a></li>
+          </ul>        
         </div>
       </div>
     </header>
