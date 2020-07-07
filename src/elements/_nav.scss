@@ -1,5 +1,6 @@
 .nav {
   ul.nav-links {
+    @include grid-column(1 / 2);
     padding-left: 0;
     margin-left: 0;
     li {

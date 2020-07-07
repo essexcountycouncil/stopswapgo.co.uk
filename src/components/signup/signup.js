@@ -1,7 +1,7 @@
 import React from "react"
 
 export default () =>
-<section class="signup-background" aria-label="Subscribe to email">
+<section class="signup-background" aria-label="Subscribe to email" id="challenge">
   <div class="signup">
     <div class="mantra">
       <h2 class="strapline">Stop.Swap.<i>WIN!</i></h2>

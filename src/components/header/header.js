@@ -13,6 +13,13 @@ function Header() {
               <img src={logo} width="250" height="70" alt="Stop Swap Go! logo" />
             </a>
           </div>
+          <ul class="nav-links">
+            <li>
+              <a href="/">Home</a></li><li>
+              <a href="#get-ready">About SSG</a></li><li>
+              <a href="/get-started">Get started</a></li><li>
+              <a href="#challenge">60 Day Challenge</a></li>
+          </ul>
         </div>
       </div>
     </header>
