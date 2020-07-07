@@ -120,6 +120,16 @@
     &.right {
       float: right;
     }
+    .social {
+      margin-bottom: 0;
+      li {
+        background: $brand;
+        padding: $gutter*0.5;
+        a {
+          color: $body-text-colour;
+        }
+      }
+    }
   }
   &.news {
     margin-top: 0;
