@@ -8,13 +8,9 @@
     padding-top: $baseline;
     position: relative;
     z-index: 100;
-  }
-  .footer-top {
-    background-color: $brand4;
-    border-top: $baseline*0.5 $brand solid;
+    background: $grey-darker;
   }
   .footer-bottom {
-    background-color: $brand4;
     padding-bottom: $baseline;
   }
   .footer {

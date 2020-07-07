@@ -119,6 +119,9 @@ h2, .h2, .content-heading {
   line-height: $baseline*2;
   margin-top: $baseline*1.5;
   margin-bottom: $baseline*0.5;
+  span {
+    color: $brand;
+  }
 }
 
 // .content-heading ~ .content-heading,

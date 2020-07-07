@@ -8,6 +8,7 @@
   background-position-x: 0;
   background-position-y: center;
   height: $baseline*20;
+  // border-top: $white solid $border-thicker;
   @include media(mobile) {
     height: auto;
   }
@@ -33,7 +34,9 @@
     background-position-x: 0;
     background-position-y: center;    
     position: absolute;
-    left: 0;
+    left: -254px;
+    // left: -418px;
+    // left: 0;
     top: 0;
     right: 0;
     bottom: 0;
@@ -42,12 +45,17 @@
     margin-bottom: $baseline*0.25;
   }
   .social {
+    background: $white;
     position: absolute;
-    right: $gutter*0.25;
-    top: $baseline*0.5;
+    right: 0;
+    top: $border-thicker;
+    padding: $gutter;
     z-index: 150;
     li a span {
-      color: $white;
+      color: $body-text-colour;
+    }
+    li:last-child {
+      margin-right: 0;
     }
   }
   .search-container {

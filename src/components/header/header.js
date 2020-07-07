@@ -16,7 +16,8 @@ function Header() {
           <ul class="nav-links">
             <li>
               <a href="/">Home</a></li><li>
-              <a href="/get-started">Get started</a></li>
+              <a href="/get-started">Get started</a></li><li>
+              <a href="/60-day-challenge">60 Day Challenge</a></li>
           </ul>        
         </div>
       </div>

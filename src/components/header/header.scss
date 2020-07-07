@@ -1,8 +1,9 @@
 .header-background {
-  background-color: $white;
+  background-color: $brand;
   height: auto;
   position: relative;
   z-index: 20;
+  border: $white solid $border-thicker;
   @media print {
     background-color: $white;
     height: auto;
@@ -33,6 +34,9 @@
         margin-bottom: $baseline*1.5;
         @include media(mobile) {
           text-align: center;
+        }
+        a {
+          color: $body-text-colour;
         }
       }
       span {
