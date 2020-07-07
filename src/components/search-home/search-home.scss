@@ -8,7 +8,6 @@
   background-position-x: 0;
   background-position-y: center;
   height: $baseline*20;
-  // border-top: $white solid $border-thicker;
   @include media(mobile) {
     height: auto;
   }
@@ -28,14 +27,14 @@
   }
   .arrow {
     background-image: url("./components/search-home/SSG_Arrow_White.svg");
-    // background-image: url("./components/search-home/SSG_Arrow_Green.svg");
+    background-image: url("./components/search-home/SSG_Arrow_Green.svg");
     background-repeat:  no-repeat;
     background-size: initial;
     background-position-x: 0;
     background-position-y: center;    
     position: absolute;
-    left: -254px;
-    // left: -418px;
+    // left: -254px;
+    left: -418px;
     // left: 0;
     top: 0;
     right: 0;
@@ -70,8 +69,8 @@
       padding-bottom: $baseline;
     }
     @include media(desktop) {
-      padding-top: $baseline*4;
-      padding-bottom: $baseline*4;
+      padding-top: $baseline*2;
+      padding-bottom: $baseline*2;
     }
     @media print {
       padding-top: $baseline;
@@ -92,11 +91,11 @@
         font-family: Mohave-Bold;
         font-size: ms(14);
         line-height: $baseline*3;
-        color: $white;
+        color: $body-text-colour;
         @include box-sizing(border-box);
         padding: $baseline*2 $baseline*2;
         display: inline-block;
-        // background: $white;
+        background: $white;
         margin-top: 0;
         margin-bottom: $border-thick;
         @include media(mobile){

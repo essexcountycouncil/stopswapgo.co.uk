@@ -50,11 +50,7 @@
     position: relative;
     z-index: 100;
     @include grid-column(6 / 12);
-    // padding-top: $baseline*2;
-    // padding-bottom: $baseline*2;
     &:nth-child(2n) {
-      // border-left: $border-thin solid $black;
-      // border-right: $border-thin solid $grey-light;
       @include media(mobile) {
         border: none;
       }
@@ -87,6 +83,7 @@
       margin-bottom: $baseline;
       height: auto;
       width: 100%;
+      border: $border-thicker solid $white;
       @include media(mobile) {
         margin-bottom: 0;
         width: 100%;
@@ -122,18 +119,32 @@
     .social {
       margin-bottom: 0;
       li {
-        background: $white;
+        background: $brand;
         padding: $gutter*0.5;
         a {
           color: $body-text-colour;
         }
       }
     }
-    &.block {
-      padding-top: $baseline*1.25;
-      padding-bottom: $baseline*1.25;
-      background: $brand;
-    }
+  }
+  .arrow {
+    background-image: url("./components/search-home/SSG_Arrow_White.svg");
+    background-image: url("./components/search-home/SSG_Arrow_Green.svg");
+    background-image: url("./components/search-home/SSG_Arrow_Black.svg");
+    background-repeat:  no-repeat;
+    background-size: initial;
+    background-position-x: 0;
+    background-position-y: center;    
+    position: absolute;
+    // left: -254px;
+    // left: -418px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    margin-top: $baseline*0.25;
+    margin-bottom: $baseline*0.25;
   }
   &.news {
     margin-top: 0;
