@@ -3,7 +3,7 @@ import cyclist from "./Chelmsford-station-cyclist.jpg"
 
 export default () =>
 <>
-	<div class="previews block">
+	<div class="previews">
 	  <div class="preview">
 	    <img src={cyclist} alt="" width="" height="" />
 	  </div>
