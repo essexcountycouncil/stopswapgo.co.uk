@@ -9,7 +9,8 @@ export default ({ data }) => {
   return (
     <Layout>
     <Helmet>
-        <script  src="https://public.govdelivery.com/assets/Signup.js" data-account-code="UKESSEX" data-signup-id="16846"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+      <script  src="https://public.govdelivery.com/assets/Signup.js" data-account-code="UKESSEX" data-signup-id="16846"></script>
     </Helmet>
     <div class="mantra" id="get-ready">
     	<h2 class="strapline">Get ready to Stop.Swap.<i>GO!</i></h2>
