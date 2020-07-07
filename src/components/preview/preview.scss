@@ -45,7 +45,6 @@
     }
   }
   .preview {
-    // background: $brand;
     min-height: $baseline*8;
     margin-bottom: $baseline;
     position: relative;
@@ -123,12 +122,17 @@
     .social {
       margin-bottom: 0;
       li {
-        background: $brand;
+        background: $white;
         padding: $gutter*0.5;
         a {
           color: $body-text-colour;
         }
       }
+    }
+    &.block {
+      padding-top: $baseline*1.25;
+      padding-bottom: $baseline*1.25;
+      background: $brand;
     }
   }
   &.news {
