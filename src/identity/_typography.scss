@@ -42,32 +42,32 @@ p {
 
 @mixin h1 {
   font-family: Mohave-Bold;
-  font-size: ms(9);
+  font-size: ms(11);
   font-weight: $bold;
   text-transform: none;
   line-height: $baseline*2;
   margin-top: $baseline*1.5;
   margin-bottom: $baseline*1.5;
   @include media(mobile) {
-    font-size: ms(5);
+    font-size: ms(8);
     line-height: $baseline*1.5;
-    margin-top: $baseline*0.5;
+    margin-top: $baseline*1.5;
     margin-bottom: $baseline;
   }
 }
 
 @mixin h2 {
   font-family: Mohave-Bold;
-  font-size: ms(5);
+  font-size: ms(7);
   font-weight: $bold;
   line-height: $baseline*1.5;
-  margin-top: $baseline*1.5;
-  margin-bottom: $baseline*0.5;
+  margin-top: $baseline*2;
+  margin-bottom: $baseline*0.25;
   text-transform: none;
   @include media(mobile) {
-    font-size: ms(2);
+    font-size: ms(5);
     line-height: $baseline;
-    margin-top: $baseline*0.5;
+    margin-top: $baseline*1.5;
     margin-bottom: $baseline*0.5;
   }
 }
@@ -77,11 +77,11 @@ p {
   font-size: ms(3);
   font-weight: $bold;
   line-height: $baseline;
-  margin-top: $baseline*1.5;
+  margin-top: $baseline;
   margin-bottom: $baseline*0.5;
   text-transform: none;
   @include media(mobile) {
-    font-size: ms(1);
+    font-size: ms(2);
     line-height: $baseline;
     margin-top: $baseline*0.5;
   }
@@ -96,7 +96,7 @@ p {
   margin-bottom: $baseline*0.5;
   text-transform: none;
   @include media(mobile) {
-    font-size: ms(1);
+    font-size: ms(2);
     line-height: $baseline;
     margin-top: $baseline*0.5;
   }
@@ -121,6 +121,12 @@ h2, .h2, .content-heading {
   margin-bottom: $baseline*0.5;
   span {
     color: $brand;
+  }
+  @include media(mobile) {
+    font-size: ms(5);
+    line-height: $baseline*1.5;
+    margin-top: $baseline*0.5;
+    margin-bottom: $baseline;
   }
 }
 
