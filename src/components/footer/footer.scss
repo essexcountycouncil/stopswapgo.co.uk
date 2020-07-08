@@ -12,6 +12,9 @@
   }
   .footer-bottom {
     padding-bottom: $baseline;
+    @include media(mobile) {
+      padding-top: 0;
+    }
   }
   .footer {
     @extend %site-width-container;

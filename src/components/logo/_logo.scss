@@ -92,6 +92,9 @@ a.logo-text.seax {
     background-image: none;
     border-bottom: $border-normal $white solid;
   }
+  @include media(mobile) {
+    width: 100%;
+  }
   &:hover {
     text-decoration: none;
     border: none;

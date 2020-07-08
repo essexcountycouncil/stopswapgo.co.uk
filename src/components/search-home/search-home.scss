@@ -100,6 +100,8 @@
         margin-top: 0;
         margin-bottom: $border-thick;
         @include media(mobile){
+          font-size: ms(12);
+          line-height: $baseline*2.5;
           width: 100%;
         }
         @media print {
