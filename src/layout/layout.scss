@@ -1,7 +1,7 @@
 %site-width-container {
   @include media(mobile) {
-    padding-left: $outer-grid-margin*1.5;
-    padding-right: $outer-grid-margin*1.5;
+    padding-left: $outer-grid-margin;
+    padding-right: $outer-grid-margin;
   }
   @include media(tablet) {
     padding-left: $outer-grid-margin*1.5;

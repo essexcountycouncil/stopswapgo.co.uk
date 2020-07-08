@@ -132,6 +132,7 @@
           button.button.subscribe {
             background: $white;
             color: $body-text-colour;
+            font-style: italic;
             border: $border-thick $white solid;
             @include media(mobile) {
               margin-bottom: 0;

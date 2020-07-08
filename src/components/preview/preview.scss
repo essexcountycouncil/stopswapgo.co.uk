@@ -7,11 +7,11 @@
   @include media(mobile) {
     margin-top: $baseline*1.5;
     margin-bottom: $baseline;
-    margin-left: -$gutter !important;
-    margin-right: -$gutter !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     .preview {
-      padding-left: $gutter !important;
-      padding-right: $gutter !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
   @include media(tablet) {
@@ -97,7 +97,7 @@
       bottom: -1px;
       right: 0;
       @include media(mobile) {
-        left: -$gutter*7;
+        left: -$gutter*5;
       }
     }
     .meta {

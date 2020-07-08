@@ -10,6 +10,7 @@
   height: $baseline*20;
   @include media(mobile) {
     height: auto;
+    // background-position-x: -$gutter*1.5;
   }
   @include media(tablet) {
     background-position-y: center;
@@ -42,6 +43,12 @@
     z-index: 100;
     margin-top: $baseline*0.25;
     margin-bottom: $baseline*0.25;
+    @include media(mobile) {
+      left: -50px;
+    }
+    @include media(tablet) {
+      left: -50px;
+    }    
   }
   .social {
     background: $white;
@@ -100,9 +107,10 @@
         margin-top: 0;
         margin-bottom: $border-thick;
         @include media(mobile){
-          font-size: ms(12);
+          font-size: ms(11);
           line-height: $baseline*2.5;
-          width: 100%;
+          padding: 0;
+          width: 70%;
         }
         @media print {
           padding: 0;
