@@ -49,8 +49,6 @@
     .sub-section-heading {
       @include h2;
       margin-top: 0;
-      margin-bottom: 0;
-      min-height: $baseline;
       @include media(mobile) {
         @include h4;
         min-height: initial;
