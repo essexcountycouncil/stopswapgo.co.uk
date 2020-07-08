@@ -10,7 +10,7 @@ function Header() {
         <div class="nav">
           <div class="logo-wrap">
             <a href="/" class="logo">
-              <img src={logo} width="319" height="70" alt="Stop Swap Go! logo" />
+              <img src={logo} width="320" height="70" alt="Stop Swap Go! logo" />
             </a>
           </div>
           <ul class="nav-links">

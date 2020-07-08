@@ -10,7 +10,7 @@
   height: $baseline*20;
   @include media(mobile) {
     height: auto;
-    // background-position-x: -$gutter*1.5;
+    background-position-x: center;
   }
   @include media(tablet) {
     background-position-y: center;
@@ -66,15 +66,18 @@
         display: inline-block;
         margin-top: 0;
         margin-bottom: $border-thick;
-        margin-left: 150px;
+        position: absolute;
+        left: 150px;
         .one, .two, .three {
           display: block;
         }
         @include media(mobile){
-          font-size: ms(11);
-          line-height: $baseline*2.5;
-          padding: 0;
-          width: 70%;
+          font-size: ms(13);
+          line-height: $baseline*3;
+          padding: 0 $gutter*0.5;
+          position: absolute;
+          top: 25%;
+          left: 350px;
         }
         @media print {
           padding: 0;
@@ -99,7 +102,7 @@
         margin-top: 0;
         margin-bottom: 0;
         @include media(mobile) {
-          // left: -50px;
+          left: -350px;
         }
         @include media(tablet) {
           // left: -50px;
