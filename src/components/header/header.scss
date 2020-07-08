@@ -40,6 +40,10 @@
         a {
           color: $body-text-colour;
         }
+        a:focus {
+          background-color: $white;
+          outline: $border-thick solid $white;
+        }
       }
       span {
         @include small;
