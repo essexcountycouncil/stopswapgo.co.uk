@@ -44,8 +44,8 @@ a.logo {
     border-bottom: none;
   }
   &:focus {
-    background-color: $brand;
-    outline: $border-thick solid $focus-colour;
+    background-color: $white;
+    outline: $border-thick solid $white;
     border-bottom: none;
   }
   img {
