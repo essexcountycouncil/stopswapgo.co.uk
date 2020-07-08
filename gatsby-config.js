@@ -9,9 +9,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Essex.gov.uk`,
-    description: `Description`,
+    title: `stopswapgo.co.uk`,
+    description: `Rethink your daily travel`,
     author: `Essex Service Design Team`,
+    siteUrl: `https://stopswapgo.co.uk`
   },
   plugins: [
     {

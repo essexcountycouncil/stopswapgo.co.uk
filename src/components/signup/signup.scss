@@ -104,8 +104,8 @@
     .section-heading, p {
       @extend %grid-row;
       @include media(mobile) {
-        padding-left: $gutter*0.5;
-        padding-right: $gutter*0.5;
+        padding-left: $gutter;
+        padding-right: $gutter;
       }
       @include media(tablet) {
         padding-left: $gutter*0.5;
@@ -133,6 +133,7 @@
             background: $white;
             color: $body-text-colour;
             font-style: italic;
+            font-weight: $bold;
             border: $border-thick $white solid;
             @include media(mobile) {
               margin-bottom: 0;
