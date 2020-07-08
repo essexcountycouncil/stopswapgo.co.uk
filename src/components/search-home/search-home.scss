@@ -26,30 +26,6 @@
       background: none;
     }
   }
-  .arrow {
-    background-image: url("./components/search-home/SSG_Arrow_White.svg");
-    // background-image: url("./components/search-home/SSG_Arrow_Green.svg");
-    background-repeat:  no-repeat;
-    background-size: initial;
-    background-position-x: 0;
-    background-position-y: center;    
-    position: absolute;
-    left: -254px;
-    // left: -418px;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    margin-top: $baseline*0.25;
-    margin-bottom: $baseline*0.25;
-    @include media(mobile) {
-      left: -50px;
-    }
-    @include media(tablet) {
-      left: -50px;
-    }    
-  }
   .social {
     background: $white;
     position: absolute;
@@ -67,45 +43,33 @@
   .search-container {
     @extend %site-width-container;
     @extend %contain-floats;
-    @include media(mobile) {
-      padding-top: $baseline;
-      padding-bottom: $baseline;
-    }
-    @include media(tablet) {
-      padding-top: $baseline;
-      padding-bottom: $baseline;
-    }
-    @include media(desktop) {
-      padding-top: $baseline*2;
-      padding-bottom: $baseline*2;
-    }
-    @media print {
-      padding-top: $baseline;
-      padding-bottom: $baseline;
-    }
+    height: $baseline*20;
     .greeting, .search-input {
       @extend %grid-row;
       @include border-radius($border-radius);
-      position: relative;;
     }
     .greeting {
-      @include grid-column(1 / 2);
       z-index: 150;
+      height: $baseline*20;
       @include media(mobile) {
         margin-top: 0;
       }
+      position: relative;
       h1 {
+        @include grid-column(1 / 2);
         font-family: Mohave-Bold;
         font-size: ms(15);
         line-height: $baseline*4;
-        color: $body-text-colour;
         color: $brand;
         @include box-sizing(border-box);
-        padding: $baseline;
+        padding: $baseline*4;
         display: inline-block;
-        // background: $white;
         margin-top: 0;
         margin-bottom: $border-thick;
+        margin-left: 150px;
+        .one, .two, .three {
+          display: block;
+        }
         @include media(mobile){
           font-size: ms(11);
           line-height: $baseline*2.5;
@@ -116,6 +80,31 @@
           padding: 0;
         }
       }
+      .arrow {
+        background-image: url("./components/search-home/SSG_Arrow_White.svg");
+        // background-image: url("./components/search-home/SSG_Arrow_Green.svg");
+        background-repeat:  no-repeat;
+        background-size: initial;
+        background-position-x: 0;
+        background-position-y: center;    
+        position: absolute;
+        // left: -254px;
+        // left: -418px;
+        left: 0;
+        left: -150px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        margin-top: 0;
+        margin-bottom: 0;
+        @include media(mobile) {
+          // left: -50px;
+        }
+        @include media(tablet) {
+          // left: -50px;
+        }    
+      }      
     }
     .form {
       @include grid-column(1 / 2);

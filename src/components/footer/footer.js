@@ -26,7 +26,7 @@ export default () =>
       <div class="footer">
         <ul class="credits">
           <li class="copyright">© Essex County Council 2020</li>
-          <li class="design-link"><a href="https://servicedesign.blog.essex.gov.uk/">Built by the Service Design Team</a></li>
+          <li class="design-link"><a href="https://servicetransformation.blog.essex.gov.uk">Built by the Service Transformation Team</a></li>
           <li class="footer-logo">
             <a href="https://www.essex.gov.uk" class="logo-text seax">
               <img src={logo} width="36" height="30" alt="Essex County Council logo" />
