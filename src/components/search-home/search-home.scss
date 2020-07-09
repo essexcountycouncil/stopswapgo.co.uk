@@ -90,7 +90,7 @@
         @include media(desktop){
           font-size: ms(14);
           line-height: $baseline*3.5;
-          padding: 0 $gutter*2;
+          padding: 0 10%;
           position: absolute;
           top: 20%;
           left: 150px;

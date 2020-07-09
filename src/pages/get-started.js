@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../layout/layout"
 
+
 const NotFoundPage = () => (
   <Layout>
     <h1>Get started</h1>

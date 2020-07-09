@@ -5,7 +5,7 @@ export default () =>
 <>
 	<div class="previews">
 	  <div class="preview">
-	    <img src={cyclist} alt="" width="" height="" />
+	    <img src={cyclist} alt="Cyclist picture" title="Join our community" />
 	    <div class="img-arrow"></div>
 	  </div>
 	  <div class="preview">
