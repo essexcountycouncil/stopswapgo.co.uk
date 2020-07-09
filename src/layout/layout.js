@@ -4,12 +4,9 @@ import Header from "../components/header/header"
 import SearchHome from "../components/search-home/search-home"
 import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
-import SEO from "../components/seo"
 
 export default ({ children }) => (
 <>
-
-  <SEO title="Stop.Swap.GO! - Essex County Council" />
   <Header />
   <Router>
     <SearchHome path="/" />

@@ -119,3 +119,21 @@ main#content {
     width: 100%;
   }
 }
+
+blockquote {
+  margin: 2% 5% 2% 5%;
+   p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+  }
+  p::before {
+    content: '\201C';
+  }
+  p::after {
+    content: '\201D';
+  }
+  footer {
+    font-weight: bold;
+  }
+}
