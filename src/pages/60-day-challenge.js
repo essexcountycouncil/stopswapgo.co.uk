@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../layout/layout"
+import SEO from "../components/seo"
 
 const Challenge = () => (
   <Layout>
+	<SEO title="Stop.Swap.GO! - Essex County Council" />
     <h1>60 Day Challenge</h1>
     <h2>Win prizes for walking and cycling with our 60 Day Challenge.</h2>
 
