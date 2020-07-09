@@ -1,11 +1,9 @@
 import React from "react"
 import Layout from "../layout/layout"
 
-import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-	<SEO title="Stop.Swap.GO! - Essex County Council" />
     <h1>Get started</h1>
 		<p>Here you&rsquo;ll find a treasure trove of essential advice, top tips and guidance on how to get the most out of walking and cycling.</p>
 		<p>Whether you&rsquo;re looking for a more scenic cycling route, or an excuse to get out, there&rsquo;s something for everyone here. We&rsquo;ve pulled together all the maps, apps and travel hacks you need to make it easy and enjoyable to:</p>
