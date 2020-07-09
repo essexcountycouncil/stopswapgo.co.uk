@@ -22,7 +22,6 @@ export default ({ data }) => {
       <p>Join our community @stopswapgo for the latest events, news and journey info. We’ll also be giving away prizes – including the chance to win a bike and cycling accessories worth £1,000 – with our 60 Day Challenge.</p>
     </div>
   	
-    <Signup />
   	<PreviewServices />
 
     </Layout>
