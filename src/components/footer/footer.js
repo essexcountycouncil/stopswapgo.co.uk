@@ -2,11 +2,11 @@ import React from "react"
 import logo from "./seax.png"
 
 export default () =>
-  <footer id="main-footer" class="footer-container">
-    <div class="footer-top">
-      <div class="footer">
-        <div class="nav">
-          <ul class="nav-links">
+  <footer id="main-footer" className="footer-container">
+    <div className="footer-top">
+      <div className="footer">
+        <div className="nav">
+          <ul className="nav-links">
             <li>
               <a href="https://www.essex.gov.uk/accessibility">Accessibility</a></li><li>
               <a href="https://www.essex.gov.uk/cookies">Cookies</a></li><li>
@@ -14,21 +14,21 @@ export default () =>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Privacy and data protection</a></li><li>
               <a href="mailto:stop.swap.go@essex.gov.uk">Contact us</a></li>
           </ul>
-          <ul class="social">
+          <ul className="social">
             <li>
-              <a href="https://www.facebook.com/stopswapgo"><span class="fab fa-facebook-f"></span><span>Facebook</span></a></li><li>
-              <a href="https://instagram.com/stopswapgo"><span class="fab fa-instagram"></span><span>Twitter</span></a></li>
+              <a href="https://www.facebook.com/stopswapgo"><span className="fab fa-facebook-f"></span><span>Facebook</span></a></li><li>
+              <a href="https://instagram.com/stopswapgo"><span className="fab fa-instagram"></span><span>Twitter</span></a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer">
-        <ul class="credits">
-          <li class="copyright">© Essex County Council 2020</li>
-          <li class="design-link"><a href="https://servicetransformation.blog.essex.gov.uk">Built by the Service Transformation Team</a></li>
-          <li class="footer-logo">
-            <a href="https://www.essex.gov.uk" class="logo-text seax">
+    <div className="footer-bottom">
+      <div className="footer">
+        <ul className="credits">
+          <li className="copyright">© Essex County Council 2020</li>
+          <li className="design-link"><a href="https://servicetransformation.blog.essex.gov.uk">Built by the Service Transformation Team</a></li>
+          <li className="footer-logo">
+            <a href="https://www.essex.gov.uk" className="logo-text seax">
               <img src={logo} width="36" height="30" alt="Essex County Council logo" />
               Essex.gov.uk
             </a>
