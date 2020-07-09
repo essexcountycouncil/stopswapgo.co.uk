@@ -16,8 +16,9 @@ export default () =>
           </ul>
           <ul className="social">
             <li>
+              <a href="https://www.twitter.com/stopswapgo"><span className="fab fa-twitter"></span><span>Twitter</span></a></li><li>
               <a href="https://www.facebook.com/stopswapgo"><span className="fab fa-facebook-f"></span><span>Facebook</span></a></li><li>
-              <a href="https://instagram.com/stopswapgo"><span className="fab fa-instagram"></span><span>Twitter</span></a></li>
+              <a href="https://instagram.com/stopswapgo"><span className="fab fa-instagram"></span><span>Instagram</span></a></li>
           </ul>
         </div>
       </div>

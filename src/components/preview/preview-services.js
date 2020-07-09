@@ -1,21 +1,35 @@
 import React from "react"
-import cyclist from "./Chelmsford-station-cyclist.jpg"
-
+import cyclistPicture from "./Chelmsford-station-cyclist.jpg"
+import familyPicture from "./young-family-walking-park.jpg"
+import ChallengeGoButton from "../challenge-go-button/challenge-go-button"
 export default () =>
-<>
-	<div className="previews">
-	  <div className="preview">
-	    <img src={cyclist} alt="Cyclist picture" title="Join our community" />
-	    <div className="img-arrow"></div>
-	  </div>
-	  <div className="preview">
-	    <h3 className="sub-section-heading">Join our community</h3>
-	    <p>Join our community @stopswapgo for the latest events, news and journey planning info. We’ll also be sharing your stories and experiences of walking and cycling. Sign up to our newsletter (below) for regular Stop. Swap. <i>GO!</i> community, walking and cycling updates and details of how you can join our 60 Day Challenge to win prizes.</p>
-	    <ul className="social">
-	      <li>
-	        <a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f"></span><span>Facebook</span></a></li><li>
-	        <a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram"></span><span>Twitter</span></a></li>
-	    </ul>
-	  </div>
-	</div>
-</>
+	<>
+
+		<div className="previews">
+			<div className="preview preview-grey">
+				<img src={cyclistPicture} alt="Cyclist picture" />
+			</div>
+			<div className="preview preview-grey">
+				<h3 className="sub-section-heading strapline"><span>Stop.Swap.</span><i>WIN!</i></h3>
+				<p>Want to win prizes for walking and cycling? Of course you do. Head over to our 60 Day Challenge
+page to learn more and register for exclusive VIP access and early bird rewards.</p>
+				<ChallengeGoButton/>
+			</div>
+		</div>
+
+		<div className="previews">
+			<div className="preview preview-grey">
+			<h3 className="sub-section-heading strapline"><span>Stop.Swap.</span><i>SHARE!</i></h3>
+				<p>Follow us @stopswapgo and share your active travel stories, tips and tricks. #StopSwapGo</p>
+				<ul className="social">
+					<li>
+						<a href="https://www.twitter.com/stopswapgo" className="twitter"><span className="fab fa-twitter"></span><span>Twitter</span></a></li><li>
+						<a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f"></span><span>Facebook</span></a></li><li>
+						<a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram"></span><span>Instagram</span></a></li>
+				</ul>
+			</div>
+			<div className="preview preview-grey">
+				<img src={familyPicture} alt="Family picture" title="Join our community" />
+			</div>
+		</div>
+	</>

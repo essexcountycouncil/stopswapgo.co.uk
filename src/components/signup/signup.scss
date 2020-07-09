@@ -91,6 +91,15 @@
       h2, p {
         color: $white;
       }
+      .strapline{
+        margin-top: $baseline*1.5;
+        margin-bottom: $baseline*0.5;
+
+        @include media(mobile) {
+          margin-top: $baseline*0.5;
+          margin-bottom: $baseline;
+        }
+      }
     }
     @include media(mobile) {
       padding-top: $baseline;

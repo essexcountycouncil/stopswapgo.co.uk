@@ -1,0 +1,24 @@
+
+.button-container-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.button-large{
+    width: 80%;
+    max-width: 239px;
+    background: #fff;
+    color: #414141;
+    font-style: italic;
+    font-weight: 700;
+    border: 3px #fff solid;
+    text-align: center;
+    height: 3.25rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+    &:hover {
+        border-color: $brand;
+        background-color: $brand;
+      }
+}
