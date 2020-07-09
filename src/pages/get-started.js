@@ -34,14 +34,14 @@ const NotFoundPage = () => (
 		<p><a href="https://www.lovetoride.net/essex">Love to Ride Essex</a> is a brilliant community for two-wheeled tips and inspirational cycling stories.</p>
 
 		<h3>Safety information for all road users</h3>
-		<p>Find general safety information for all road users on the <a href="https://saferessexroads.org/serp-offers-free-bikeability-sessions-for-adults-and-family-groups/">Safer Essex Roads Partnership</a> website.</p>
+		<p>Find general safety information for all road users on the <a href="https://saferessexroads.org/">Safer Essex Roads Partnership</a> website.</p>
 
 		<h3>Free adult and family cycle training</h3>
 		<p>Need a confidence boost to get back in the saddle or take to two wheels for the first time? Free cycle training from the <a href="https://saferessexroads.org/serp-offers-free-bikeability-sessions-for-adults-and-family-groups/">Safer Essex Roads Partnership</a> will have you moving in no time.</p>
 
 
 		<h3>Chelmsford is changing!</h3>
-		<p>The <a href="https://saferessexroads.org/serp-offers-free-bikeability-sessions-for-adults-and-family-groups/">Chelmsford City Growth Package</a> is all about improving walking and cycling infrastructure in the city. Learn more about upcoming features and when you can start using them on the Essex Highways website.</p>
+		<p>The <a href="https://www.essexhighways.org/highway-schemes-and-developments/highway-schemes/chelmsford-city-growth-package.aspx">Chelmsford City Growth Package</a> is all about improving walking and cycling infrastructure in the city. Learn more about upcoming features and when you can start using them on the Essex Highways website.</p>
 
 		<h3>Cycling and walking guidance for South Essex</h3>
 		<p>Just like us, <a href="https://forwardmotionsouthessex.co.uk/">Forward Motion</a> wants people to switch from driving to cycling or walking instead. Their website is full of travel tips and guidance for doing just that.</p>
