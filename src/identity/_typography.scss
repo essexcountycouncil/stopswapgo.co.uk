@@ -117,16 +117,12 @@ h2, .h2, .content-heading {
   font-size: ms(8);
   font-weight: $bold;
   line-height: $baseline*2;
-  margin-top: $baseline*1.5;
-  margin-bottom: $baseline*0.5;
   span {
     color: $brand;
   }
   @include media(mobile) {
     font-size: ms(5);
     line-height: $baseline*1.5;
-    margin-top: $baseline*0.5;
-    margin-bottom: $baseline;
   }
 }
 
