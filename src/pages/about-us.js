@@ -13,9 +13,10 @@ bus.</p>
 		information on local cycling and walking routes, and a place to swap your own
 stories with a growing community.</p>
 
-		<center><p><strong>Did you know?</strong> Up to 43% of car trips in Essex districts are
-under 3 miles – that’s just a 15-minute bike ride!</p></center>
-
+		<div className="notice">
+			<center><p><span>Did you know?</span> Up to 43% of car trips in Essex districts are
+	under 3 miles. That’s just a 15-minute bike ride!</p></center>
+	</div>
 
 		<p>Essex is already making a difference with all new temporary and permanent walking
 			and cycle lanes and in some places, reduced speed limits.</p>

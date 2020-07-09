@@ -5,8 +5,6 @@ import PreviewServices from "../components/preview/preview-services"
 /*import PreviewNews from "../components/preview/preview-news"
 import Impact from "../components/impact/impact"
 */
-import Signup from "../components/signup/signup"
-
 
 export default ({ data }) => {
   return (
@@ -21,9 +19,7 @@ export default ({ data }) => {
       <p>More and more of us are swapping from car to bus, bike or our own two feet. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
       <p>Join our community @stopswapgo for the latest events, news and journey info. We’ll also be giving away prizes – including the chance to win a bike and cycling accessories worth £1,000 – with our 60 Day Challenge.</p>
     </div>
-  	
   	<PreviewServices />
-
     </Layout>
   )
 }
