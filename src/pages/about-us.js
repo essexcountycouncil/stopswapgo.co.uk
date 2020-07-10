@@ -8,8 +8,8 @@ const AboutUs = () => (
 		<p>At Stop. Swap. <i>GO!</i> we&rsquo;re about making it easier than ever for the people of Essex to
 		swap the car for more sustainable ways to travel, like walking, cycling or using the
 bus.</p>
-		<div className="notice">
-			<p><h2>Did you know?</h2> Up to <span>43%</span> of car trips in Essex districts are
+		<div className="notice notice-side">
+			<h2>Did you know?</h2><p> Up to <span>43%</span> of car trips in Essex districts are
 	under <span>3 miles</span>. That&rsquo;s just a <span>15 minute</span> bike ride!</p>
 		</div>
 		<p>Across this site and on social media we&rsquo;ll give you top tips and advice, the latest

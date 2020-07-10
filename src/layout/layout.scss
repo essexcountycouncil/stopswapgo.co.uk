@@ -122,15 +122,16 @@ main#content {
 
 
 .notice {
-  float: right;
   background-color: lighten($brand, 40%);
-  margin: 1%;
-  margin-left: 3%;
   p{
-    padding: 20px 40px 20px 40px;
-    h2{
-      margin-top: 10px;
-    }
+    text-align: center;
+    padding: 0px 40px 20px 40px;
+    margin-top: 0px;
+  }   
+  h2, h3{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 40px 0px 40px;
   }
   @include media(mobile) {
     width: 100%;
@@ -141,6 +142,17 @@ main#content {
   @include media(desktop) {
     width: 30%;
   }
+}
+
+.notice-side {
+  margin: 1%;
+  margin-left: 3%;
+  float: right;
+}
+.notice-middle{
+  margin: 3% 0% 3% 0%;
+  width: 100%;
+  text-align: center;
 }
 
 .text-block{
