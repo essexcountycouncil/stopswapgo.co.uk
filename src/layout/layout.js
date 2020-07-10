@@ -2,7 +2,7 @@ import React from "react"
 import { Router } from "@reach/router"
 import Header from "../components/header/header"
 import SearchHome from "../components/search-home/search-home"
-import Signup from "../components/signup/signup"
+import Signup2 from "../components/signup2/signup2"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
 
@@ -10,7 +10,7 @@ export default ({ children, hasSignUp }) => {
 
   return (
     <>
-      <SEO title="Stop.Swap.GO! - Essex County Council" />
+    <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Router>
         <SearchHome path="/" />
@@ -24,9 +24,7 @@ export default ({ children, hasSignUp }) => {
           </div>
         </div>
       </main>
-      <Signup action={"WIN!"}
-        url={""}
-        body={"todo"} />
+      <Signup2 />
       <Footer />
     </>
   )

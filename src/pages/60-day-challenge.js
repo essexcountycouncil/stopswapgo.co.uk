@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../layout/layout"
+import IndexLayout from "../layout/index-layout"
 
 const Challenge = () => (
-  <Layout>
+  <IndexLayout>
     <h1>60 Day Challenge</h1>
     <h2>Win prizes for walking and cycling with our 60 Day Challenge.</h2>
 	<div className="text-block">
@@ -26,7 +26,7 @@ const Challenge = () => (
 
     <h2>FAQs</h2>
 	<p>You can find the 60 Day Challenge FAQs page <a href="/faq">here</a></p>
-  </Layout>
+  </IndexLayout>
 )
 
 export default Challenge
