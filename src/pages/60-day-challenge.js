@@ -23,6 +23,9 @@ const Challenge = () => (
 				<p>If you&rsquo;d like to be the first to hear when our waitlist goes live, sign up to our newsletter now and
 		we&rsquo;ll ping you an update when we&rsquo;re ready to <i>GO!</i></p>
 	</div>
+
+    <h2>FAQs</h2>
+	<p>You can find the 60 Day Challenge FAQs page <a href="/faq">here</a></p>
   </Layout>
 )
 
