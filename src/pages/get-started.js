@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../layout/layout"
 
 
-const NotFoundPage = () => (
+const GetStartedPage = () => (
   <Layout>
     <h1>Get started</h1>
 		<p>Here you&rsquo;ll find a treasure trove of essential advice, top tips and guidance on how to get the most out of walking and cycling.</p>
@@ -74,4 +74,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default GetStartedPage
