@@ -142,6 +142,9 @@ main#content {
   }
 }
 
+.text-block{
+  margin-top: $baseline;
+}
 
 blockquote {
     background: lighten($grey, 45%);
