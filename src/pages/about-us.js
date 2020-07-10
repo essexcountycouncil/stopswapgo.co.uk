@@ -5,7 +5,7 @@ const AboutUs = () => (
 	<Layout>
 		<h1>About us</h1>
 
-		<p>At Stop. Swap. GO! we&rsquo;re about making it easier than ever for the people of Essex to
+		<p>At Stop. Swap. <i>GO!</i> we&rsquo;re about making it easier than ever for the people of Essex to
 		swap the car for more sustainable ways to travel, like walking, cycling or using the
 bus.</p>
 		<div className="notice">
@@ -21,7 +21,7 @@ stories with a growing community.</p>
 		<p>Essex is already making a difference with all new temporary and permanent walking
 			and cycle lanes and in some places, reduced speed limits.</p>
 
-		<p>Stop. Swap. GO! is part of Essex County Council&rsquo;s <a href="https://www.essex.gov.uk/topic/energy-climate-environment">plans to create a greener Essex</a>. By
+		<p>Stop. Swap. <i>GO!</i> is part of Essex County Council&rsquo;s <a href="https://www.essex.gov.uk/topic/energy-climate-environment">plans to create a greener Essex</a>. By
 making it easier for you to walk, cycle and use the bus, we can reduce carbon
 emissions, protect the environment, and help you make the most of our beautiful
 county.</p>
@@ -32,7 +32,7 @@ county.</p>
 environment. Everybody wins.</p>
 
 		<blockquote cite="">
-			<p>Stop. Swap. GO! is helping people to switch from the car to more active
+			<p>Stop. Swap. <i>GO!</i> is helping people to switch from the car to more active
 			and sustainable travel. It&rsquo;s a unique chance to greatly improve our air
 quality, our health, and life opportunities for the next generation.</p>
 			<footer>Cllr Ray Gooding, <cite>Essex County Council</cite></footer>
