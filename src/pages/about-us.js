@@ -10,7 +10,7 @@ const AboutUs = () => (
 bus.</p>
 		<div className="notice notice-side">
 			<h2>Did you know?</h2><p> Up to <span>43%</span> of car trips in Essex districts are
-	under <span>3 miles</span>. That&rsquo;s just a <span>15 minute</span> bike ride!</p>
+	under <span>3 miles</span>. That&rsquo;s just a <span>15-minute</span> bike ride!</p>
 		</div>
 		<p>Across this site and on social media we&rsquo;ll give you top tips and advice, the latest
 		information on local cycling and walking routes, and a place to swap your own
@@ -35,7 +35,7 @@ environment. Everybody wins.</p>
 			<p>Stop. Swap. <i>GO!</i> is helping people to switch from the car to more active
 			and sustainable travel. It&rsquo;s a unique chance to greatly improve our air
 quality, our health, and life opportunities for the next generation.</p>
-			<footer>Cllr Ray Gooding, <cite>Essex County Council</cite></footer>
+			<footer>Cllr Ray Gooding, <cite>Essex County Council Cabinet Member with responsibility for Sustainable Travel</cite></footer>
 		</blockquote>
 
 	</Layout>
