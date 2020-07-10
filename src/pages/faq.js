@@ -6,7 +6,7 @@ const Faq = () => (
 	<Layout>
 		<h1>FAQs</h1>
 
-		<h2>60 Day Challenge frequent questions</h2>
+		<h2>Everything you need to know about the 60 Day Challenge</h2>
 
 		<h3>What is the Stop. Swap. GO! 60 Day Challenge?</h3>
 		<p>We are challenging people across Essex to swap to more active forms of travel for 60 days. From 1 August 2020, Essex residents will be able to take on the challenge and win prizes just by walking and cycling more. Sounds great, right?</p>
@@ -40,7 +40,7 @@ const Faq = () => (
 		<p>Fantastic. Thank you for signing up. </p>
 		<p>We&rsquo;ll send you an email as soon as the challenge launches directing you to the app. And if you&rsquo;re one of the lucky first 500, we&rsquo;ll tell you how you can claim your early bird gift. </p>
 
-		<p>In the meantime, follow us on social media @stopswapgo or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to GO</p>
+		<p>In the meantime, follow us on social media or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to GO</p>
 
 		<p>You could always make a start by walking or cycling now. There&rsquo;s no time like the present to make a change and Stop. Swap. GO! </p>
 
