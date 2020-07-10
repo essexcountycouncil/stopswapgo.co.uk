@@ -4,7 +4,8 @@ import Layout from "../layout/layout"
 
 const Faq = () => (
 	<Layout>
-		<h1>FAQs to fall under 60 Day Challenge page drop down button</h1>
+		<h1>FAQs</h1>
+		<h2>FAQs to fall under 60 Day Challenge page drop down button</h2>
 
 		<h3>What is the Stop. Swap. GO! 60 Day Challenge?</h3>
 		<p>We are challenging people across Essex to swap to more active forms of travel for 60 days. From 1 August 2020, Essex residents will be able to take on the challenge and win prizes just by walking and cycling more. Sounds great, right?</p>
@@ -29,7 +30,7 @@ const Faq = () => (
 		<p>All you need is a smartphone to download the app, and your own two feet – or a bike, if you&rsquo;re planning on cycling as part of your 60 Day Challenge.</p>
 
 		<h3>How do I download the app?</h3>
-		<p>Sign up to the 60 Day Challenge [LINKED WHEN LIVE] and we&rsquo;ll send you an email with a
+		<p>Sign up to the <a href="/60-day-challenge">60 Day Challenge</a> and we&rsquo;ll send you an email with a
  link to download the app on 1 August 2020. Your 60 Day Challenge will begin as soon as you register on the app.</p>
 
 		<p>Or, if you&rsquo;ve already registered for Early bird/VIP access, simply wait for the link to download the app to drop in your email inbox and register from there. </p>
@@ -38,7 +39,7 @@ const Faq = () => (
 		<p>Fantastic. Thank you for signing up. </p>
 		<p>We&rsquo;ll send you an email as soon as the challenge launches directing you to the app. And if you&rsquo;re one of the lucky first 500, we&rsquo;ll tell you how you can claim your early bird gift. </p>
 
-		<p>In the meantime, follow us on social media @stopswapgo or check out our get started page [LINK IN TEXT ONCE LIVE] for useful links and inspiration to help get you prepped and ready to GO</p>
+		<p>In the meantime, follow us on social media @stopswapgo or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to GO</p>
 
 		<p>You could always make a start by walking or cycling now. There&rsquo;s no time like the present to make a change and Stop. Swap. GO! </p>
 

@@ -122,14 +122,23 @@ main#content {
 
 
 .notice {
-  margin: 5%;
   float: right;
-  width: 30%;
-  padding: 0 10% 5% 10%;
   background-color: lighten($brand, 40%);
-  span{
-    font-weight: bold;
-    font-size: 1.4em;
+  margin: 1%;
+  p{
+    padding: 20px 40px 20px 40px;
+    h2{
+      margin-top: 10px;
+    }
+  }
+  @include media(mobile) {
+    width: 100%;
+  }
+  @include media(tablet) {
+    width: 30%;
+  }
+  @include media(desktop) {
+    width: 30%;
   }
 }
 
@@ -157,4 +166,28 @@ blockquote {
     margin-top: 10px;
     font-weight: bold;
   }
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  margin: 0% 3% 0 0;
+  @include media(mobile) {
+    width: 100%;
+  }
+  @include media(tablet) {
+    width: 40%;
+    height: 18rem;
+  }
+  @include media(desktop) {
+    width: 30%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

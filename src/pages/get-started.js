@@ -15,10 +15,10 @@ const GetStartedPage = () => (
 
 		<h2>Get started with walking and cycling in Essex</h2>
 		<h3>Latest news and advice for getting around in Essex</h3>
-		<p>Visit <a href="https://www.essexhighways.org/transport-and-roads.aspx">Essex Highways</a> for the latest news, tips and guidance on getting around in Essex. A great place to start.</p>
+		<p>Visit <a href="https://www.essexhighways.org/transport-and-roads.aspx" aria-label="Essex Highways transport and roads page">Essex Highways</a> for the latest news, tips and guidance on getting around in Essex. A great place to start.</p>
 
 		<h3>Be Safer, Greener, Healthier</h3>
-		<p>Essex County Council and Essex Highways are working hard to make our communities safer, greener and healthier. From additional cycle lanes and pedestrianised zones to reduced speed limits and parking, they&rsquo;ve introduced loads of measures to help you social distance. See what&rsquo;s coming to your town on the <a href="https://www.essexhighways.org/getting-around/safer-greener-healthier.aspx">Essex Highways</a> website.</p>
+		<p>Essex County Council and Essex Highways are working hard to make our communities safer, greener and healthier. From additional cycle lanes and pedestrianised zones to reduced speed limits and parking, they&rsquo;ve introduced loads of measures to help you social distance. See what&rsquo;s coming to your town on the <a href="https://www.essexhighways.org/getting-around/safer-greener-healthier.aspx"  aria-label="Essex Highways safer greener healthier page">Essex Highways</a> website.</p>
 
 		<h3>Essex cycle maps and route guides</h3>
 		<p>If you&rsquo;re taking a car trip of under 5km, it&rsquo;s easy to switch to cycling or walking.</p>
@@ -34,10 +34,10 @@ const GetStartedPage = () => (
 		<p><a href="https://www.lovetoride.net/essex">Love to Ride Essex</a> is a brilliant community for two-wheeled tips and inspirational cycling stories.</p>
 
 		<h3>Safety information for all road users</h3>
-		<p>Find general safety information for all road users on the <a href="https://saferessexroads.org/">Safer Essex Roads Partnership</a> website.</p>
+		<p>Find general safety information for all road users on the <a href="https://saferessexroads.org/" aria-label="Safer Essex Roads Partnership home page">Safer Essex Roads Partnership</a> website.</p>
 
 		<h3>Free adult and family cycle training</h3>
-		<p>Need a confidence boost to get back in the saddle or take to two wheels for the first time? Free cycle training from the <a href="https://saferessexroads.org/serp-offers-free-bikeability-sessions-for-adults-and-family-groups/">Safer Essex Roads Partnership</a> will have you moving in no time.</p>
+		<p>Need a confidence boost to get back in the saddle or take to two wheels for the first time? Free cycle training from the <a href="https://saferessexroads.org/serp-offers-free-bikeability-sessions-for-adults-and-family-groups/" aria-label="Safer Essex Roads Partnership Free bike training page">Safer Essex Roads Partnership</a> will have you moving in no time.</p>
 
 
 		<h3>Chelmsford is changing!</h3>
