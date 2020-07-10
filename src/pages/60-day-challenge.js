@@ -11,7 +11,7 @@ const Challenge = () => (
 			<p >Early bird VIP registrations for our 60 Day Challenge (launching 1 August 2020) are now open.
 Register using the form and get ready to Stop. Swap. <i>GO!</i></p>
 		</div>
-		
+
 		<div className="text-block">
 			<p>That&rsquo;s right. Swap to walking and cycling with our 60 Day Challenge and you could win fantastic
 		prizes.</p>
@@ -33,14 +33,16 @@ Register using the form and get ready to Stop. Swap. <i>GO!</i></p>
 prize as a thank you for supporting Stop. Swap. <i>GO!</i></p>
 
 			<p>And that's not all.</p>
-			<p className="bold">**One lucky VIP will win a bike plus cycling accessories to the value of £1,000!**</p>
-
-			<p>So, what are you waiting for? Fill in the form below and get ready to Stop. Swap. <i>GO!</i></p>
 
 
 		</div>
 		<div className="text-align-center">
+			<p className="bold">**One lucky VIP will win a bike plus cycling accessories to the value of £1,000!**</p>
+
+			<p>So, what are you waiting for? Fill in the form below and get ready to Stop. Swap. <i>GO!</i></p>
+			<br/>
 			<GovDeliveryForm id={"mid-data-signup-id"} formId="17087" style="button-dark" title="SUBMIT!" />
+			
 		</div>
 		<h2>FAQs</h2>
 		<p>You can find the 60 Day Challenge FAQs page <a href="/faq">here</a></p>
