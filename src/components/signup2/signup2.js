@@ -8,7 +8,7 @@ export default () =>
   <div className="signup">
     <div className="mantra">
       <h2 class="strapline"><span>Stop.Swap.</span><i>WIN!</i></h2>
-      <p>Stop. Swap. <i>GO!</i> wants to make getting around Essex on foot or by bike even more
+      <p>Stop.Swap.<i>GO!</i> wants to make getting around Essex on foot or by bike even more
 rewarding. So we’re delighted to announce our 60 Day Challenge: your chance to
 win awesome prizes like gift vouchers, walking and cycling accessories, and even a
 brand new bike and accessories worth £1000!</p>
