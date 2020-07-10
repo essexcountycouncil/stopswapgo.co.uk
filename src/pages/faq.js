@@ -1,9 +1,9 @@
 import React from "react"
-import Layout from "../layout/layout"
+import FaqLayout from "../layout/faq-layout"
 
 
 const Faq = () => (
-	<Layout>
+	<FaqLayout>
 		<h1>FAQs</h1>
 
 		<h2>Everything you need to know about the 60 Day Challenge</h2>
@@ -56,7 +56,7 @@ const Faq = () => (
 		<p>We might share your photos and videos with the Stop. Swap. <i>GO!</i> Community on social media, our website and our newsletters. If you don&rsquo;t want us to share your photos and videos, you can opt out when you sign up to the early bird waiting list for the 60 Day Challenge.
 </p>
 
-	</Layout>
+	</FaqLayout>
 )
 
 export default Faq
