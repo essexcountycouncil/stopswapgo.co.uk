@@ -1,6 +1,6 @@
 import React from "react"
-import cyclistPicture from "./Chelmsford-station-cyclist.jpg"
-import familyPicture from "./young-family-walking-park.jpg"
+import cyclistPicture from "./Website_Image2.png"
+import familyPicture from "./Website_Image.png"
 import ChallengeGoButton from "../challenge-go-button/challenge-go-button"
 export default () =>
 	<>

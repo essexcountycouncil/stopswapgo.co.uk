@@ -23,7 +23,7 @@ export default function HTML(props) {
       <body {...props.bodyAttributes}>
       {/* <!-- Google Tag Manager (noscript) --> */}
       <noscript dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W22VVHK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W22VVHK" height="0" width="0"></iframe>
               `,
           }}
       />
