@@ -14,8 +14,8 @@ bus.</p>
 stories with a growing community.</p>
 
 		<div className="notice">
-			<center><p><span>Did you know?</span> Up to 43% of car trips in Essex districts are
-	under 3 miles. That’s just a 15-minute bike ride!</p></center>
+			<center><p><h2>Did you know?</h2> Up to <span>43%</span> of car trips in Essex districts are
+	under <span>3 miles</span>. That’s just a <span>15 minute</span> bike ride!</p></center>
 	</div>
 
 		<p>Essex is already making a difference with all new temporary and permanent walking
