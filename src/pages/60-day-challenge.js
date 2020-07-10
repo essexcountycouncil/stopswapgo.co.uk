@@ -38,12 +38,12 @@ prize as a thank you for supporting Stop.Swap.<i>GO!</i></p>
 
 			<div className="notice-middle">
 				<h3>One lucky VIP will win a bike plus cycling accessories to the value of £1,000!</h3>
-				<p>So, what are you waiting for? Fill in the form below and get ready to Stop.Swap.<i>GO!</i></p>
+				<p>So, what are you waiting for? Sign up to our 60 Day Challenge and get ready to Stop.Swap.<i>GO!</i></p>
 			</div>
 
 		</div>
 		<div className="text-align-center">
-			<GovDeliveryForm id={"mid-data-signup-id"} formId="17087" style="button-dark" title="SUBMIT!" />
+			<GovDeliveryForm id={"mid-data-signup-id"} formId="17087" style="button-dark" title="SIGN UP!" />
 
 		</div>
 		<h2>More about the 60 Day Challenge</h2>
