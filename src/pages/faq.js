@@ -5,7 +5,8 @@ import Layout from "../layout/layout"
 const Faq = () => (
 	<Layout>
 		<h1>FAQs</h1>
-		<h2>FAQs to fall under 60 Day Challenge page drop down button</h2>
+
+		<h2>60 Day Challenge frequent questions</h2>
 
 		<h3>What is the Stop. Swap. GO! 60 Day Challenge?</h3>
 		<p>We are challenging people across Essex to swap to more active forms of travel for 60 days. From 1 August 2020, Essex residents will be able to take on the challenge and win prizes just by walking and cycling more. Sounds great, right?</p>
