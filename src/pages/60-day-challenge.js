@@ -46,8 +46,8 @@ prize as a thank you for supporting Stop. Swap. <i>GO!</i></p>
 			<GovDeliveryForm id={"mid-data-signup-id"} formId="17087" style="button-dark" title="SUBMIT!" />
 
 		</div>
-		<h2>FAQs</h2>
-		<p>You can find the 60 Day Challenge FAQs page <a href="/faq">here</a></p>
+		<h2>More about the 60 Day Challenge</h2>
+		<p>Find everything you need about the 60 Day Challenge on our <a href="/faq">FAQs page</a></p>
 	</IndexLayout>
 )
 

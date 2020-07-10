@@ -159,6 +159,10 @@ main#content {
   margin-top: $baseline;
 }
 
+.content{
+  margin-bottom: $baseline * 2;
+}
+
 blockquote {
     background: lighten($grey, 45%);
     border-left: 10px solid #ccc;

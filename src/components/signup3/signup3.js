@@ -6,9 +6,9 @@ export default () =>
   <div className="signup">
     <div className="mantra">
       <h2 class="strapline"><span>Stop.Swap.</span><i>WIN!</i></h2>
-      <p>Register for our 60 Day Challenge now. CLick the button below to sign up!</p>
+      <p>Sign up to our 60 Day Challenge to win prizes for walking and cycling!</p>
     
-      <GovDeliveryForm id={"data-signup-id"} style="" formId="17087" title="WIN!"/>
+      <GovDeliveryForm id={"data-signup-id"} style="" formId="17087" title="SIGN UP!"/>
     </div>
   </div>
 </section>
