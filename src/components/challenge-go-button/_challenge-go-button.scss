@@ -22,3 +22,15 @@
         background-color: $brand;
       }
 }
+
+
+.button.button-dark{
+    border-color: $brand !important;;
+    background-color: $brand !important;
+    color: black !important;
+    &:hover {
+        background: $grey !important;
+        color: white !important;
+        border-color: $grey !important;
+      }
+}
