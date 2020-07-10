@@ -142,6 +142,9 @@ main#content {
   }
 }
 
+.text-block{
+  margin-top: $baseline;
+}
 
 blockquote {
     background: lighten($grey, 45%);
@@ -190,4 +193,11 @@ blockquote {
   content: "";
   display: table;
   clear: both;
+}
+.text-align-center{
+  text-align: center;
+}
+
+p.bold{
+  font-weight: bold;
 }

@@ -23,7 +23,7 @@ page to learn more and register for exclusive VIP access and early bird rewards.
 				<p>Follow us and share your active travel stories, tips and tricks. #StopSwapGo</p>
 				<ul className="social">
 					<li>
-						<a href="https://www.twitter.com/stopswapgo" className="twitter"><span className="fab fa-twitter"></span><span>Twitter</span></a></li><li>
+						<a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter"></span><span>Twitter</span></a></li><li>
 						<a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f"></span><span>Facebook</span></a></li><li>
 						<a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram"></span><span>Instagram</span></a></li>
 				</ul>
