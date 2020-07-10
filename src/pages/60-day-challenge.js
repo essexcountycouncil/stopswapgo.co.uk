@@ -30,7 +30,7 @@ const Challenge = () => (
 			<p>Hint: the more you walk and cycle over
 		the 60 days, the more chances you&rsquo;ll have to win.</p>
 
-			<p>It couldn’t be easier to Stop.Swap.WIN! and if you register early we’ll give you VIP access when the
+			<p>It couldn’t be easier to Stop.Swap.<i>WIN</i>! and if you register early we’ll give you VIP access when the
 			challenge starts. Plus, we’re giving the first 500 lucky VIPs who start Day 1 of their challenge an extra
 prize as a thank you for supporting Stop.Swap.<i>GO!</i></p>
 
