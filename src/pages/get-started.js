@@ -15,7 +15,7 @@ const GetStartedPage = () => (
 
 		<h2>Get started with walking and cycling in Essex</h2>
 		<h3>Latest news and advice for getting around in Essex</h3>
-		<p>Visit <a href="https://www.essexhighways.org/transport-and-roads.aspx" aria-label="Essex Highways transport and roads page">Essex Highways</a> for the latest news, tips and guidance on getting around in Essex. A great place to start.</p>
+		<p>Visit <a href="https://www.essexhighways.org/transport-and-roads/getting-around.aspx" aria-label="Essex Highways transport and roads page">Essex Highways</a> for the latest news, tips and guidance on getting around in Essex. A great place to start.</p>
 
 		<h3>Be Safer, Greener, Healthier</h3>
 		<p>Essex County Council and Essex Highways are working hard to make our communities safer, greener and healthier. From additional cycle lanes and pedestrianised zones to reduced speed limits and parking, they&rsquo;ve introduced loads of measures to help you social distance. See what&rsquo;s coming to your town on the <a href="https://www.essexhighways.org/getting-around/safer-greener-healthier.aspx"  aria-label="Essex Highways safer greener healthier page">Essex Highways</a> website.</p>

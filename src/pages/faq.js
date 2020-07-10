@@ -40,7 +40,7 @@ const Faq = () => (
 		<p>Fantastic. Thank you for signing up. </p>
 		<p>We&rsquo;ll send you an email as soon as the challenge launches directing you to the app. And if you&rsquo;re one of the lucky first 500, we&rsquo;ll tell you how you can claim your early bird gift. </p>
 
-		<p>In the meantime, follow us on social media or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to GO</p>
+		<p>In the meantime, follow us on social media or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to GO!</p>
 
 		<p>You could always make a start by walking or cycling now. There&rsquo;s no time like the present to make a change and Stop.Swap.<i>GO!</i> </p>
 
