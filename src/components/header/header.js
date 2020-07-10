@@ -14,12 +14,12 @@ function Header() {
             </a>
           </div>
           <ul className="nav-links">
-            <li>
-              <a href="/">Home</a></li><li>
-              <a href="/about-us">About us</a></li><li>
-              <a href="/get-started">Get started</a></li><li>
-              <a href="/60-day-challenge">60 Day Challenge</a></li>
-          </ul>        
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-us">About us</a></li>
+            <li><a href="/get-started">Get started</a></li>
+            <li><a href="/60-day-challenge">60 Day Challenge</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
         </div>
       </div>
     </header>
