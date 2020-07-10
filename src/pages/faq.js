@@ -8,11 +8,11 @@ const Faq = () => (
 
 		<h2>Everything you need to know about the 60 Day Challenge</h2>
 
-		<h3>What is the Stop. Swap. <i>GO!</i> 60 Day Challenge?</h3>
+		<h3>What is the Stop.Swap.<i>GO!</i> 60 Day Challenge?</h3>
 		<p>We are challenging people across Essex to swap to more active forms of travel for 60 days. From 1 August 2020, Essex residents will be able to take on the challenge and win prizes just by walking and cycling more. Sounds great, right?</p>
 
 		<h3>Who is the challenge for?</h3>
-		<p>Anybody aged 18 years and older! It&rsquo;s never been easier to walk or cycle in Essex and we want everyone to experience the benefits of travelling by bike or foot. Whether you&rsquo;re a seasoned cyclist, or just finding your feet, you can Stop. Swap. <i>GO!</i> and be in with a chance to win.</p>
+		<p>Anybody aged 18 years and older! It&rsquo;s never been easier to walk or cycle in Essex and we want everyone to experience the benefits of travelling by bike or foot. Whether you&rsquo;re a seasoned cyclist, or just finding your feet, you can Stop.Swap.<i>GO!</i> and be in with a chance to win.</p>
 
 		<h3>How do I take part?</h3>
 		<p>From 1 August 2020, you&rsquo;ll be able sign up to the challenge and download our app. You&rsquo;ll then have 60 days to log as many daily cycling and walking trips as you can for the chance to win fantastic prizes. Hint: the more you walk and cycle, the more chances you&rsquo;ll have to win! </p>
@@ -42,18 +42,18 @@ const Faq = () => (
 
 		<p>In the meantime, follow us on social media or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to GO</p>
 
-		<p>You could always make a start by walking or cycling now. There&rsquo;s no time like the present to make a change and Stop. Swap. <i>GO!</i> </p>
+		<p>You could always make a start by walking or cycling now. There&rsquo;s no time like the present to make a change and Stop.Swap.<i>GO!</i> </p>
 
 		<h3>Why is bus travel not included in the 60 Day Challenge?</h3>
-		<p>The challenge focusses on walking and cycling to begin with, as bus travel has restrictions on capacity due to social distancing.  Good news though, there is a bus-focused initiative coming in the future as part of Stop. Swap. <i>GO!</i></p>
+		<p>The challenge focusses on walking and cycling to begin with, as bus travel has restrictions on capacity due to social distancing.  Good news though, there is a bus-focused initiative coming in the future as part of Stop.Swap.<i>GO!</i></p>
 
 
 		<h3>Why do you need my phone number, email and address when I sign up to the 60 Day Challenge?</h3>
 		<p>We need your phone number and email address so that we can contact you if you win a prize as part of the 60 Day Challenge. We need your address so that we know you live in Essex and so we can send you any prizes.</p>
-		<p>By providing your contact details, you&rsquo;re telling us you&rsquo;re keen to hear more about Stop. Swap. <i>GO!</i> and that you&rsquo;re happy for us to contact you by email, text or phone. Welcome to the community!</p>
+		<p>By providing your contact details, you&rsquo;re telling us you&rsquo;re keen to hear more about Stop.Swap.<i>GO!</i> and that you&rsquo;re happy for us to contact you by email, text or phone. Welcome to the community!</p>
 
 		<h3>What will you do with the photos and videos I upload to the app during the challenge?</h3>
-		<p>We might share your photos and videos with the Stop. Swap. <i>GO!</i> Community on social media, our website and our newsletters. If you don&rsquo;t want us to share your photos and videos, you can opt out when you sign up to the early bird waiting list for the 60 Day Challenge.
+		<p>We might share your photos and videos with the Stop.Swap.<i>GO!</i> Community on social media, our website and our newsletters. If you don&rsquo;t want us to share your photos and videos, you can opt out when you sign up to the early bird waiting list for the 60 Day Challenge.
 </p>
 
 	</FaqLayout>
