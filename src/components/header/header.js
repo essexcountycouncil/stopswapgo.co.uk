@@ -1,7 +1,6 @@
 import React from "react"
 import logo from "./logo.png"
 
-console.log(logo)
 
 function Header() {
   return (

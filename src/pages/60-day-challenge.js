@@ -1,9 +1,9 @@
 import React from "react"
-import IndexLayout from "../layout/index-layout"
-import GovDeliveryForm from "../components/govdelivery-form/govdelivery-form"
+import LayoutWithNewsletter from "../layout/layout-with-newsletter"
+import LargeButton from "../components/large-button/large-button"
 
 const Challenge = () => (
-	<IndexLayout>
+	<LayoutWithNewsletter>
 		<h1>60 Day Challenge</h1>
 		<h2>Win prizes for walking and cycling with our 60 Day Challenge.</h2>
 
@@ -43,12 +43,11 @@ prize as a thank you for supporting Stop.Swap.<i>GO!</i></p>
 
 		</div>
 		<div className="text-align-center">
-			<GovDeliveryForm id={"mid-data-signup-id"} formId="17087" style="button-dark" title="SIGN UP!" />
-
+			<LargeButton title="SIGN UP!" url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
 		</div>
 		<h2>More about the 60 Day Challenge</h2>
 		<p>Find everything you need about the 60 Day Challenge on our <a href="/faq">FAQs page</a></p>
-	</IndexLayout>
+	</LayoutWithNewsletter>
 )
 
 export default Challenge

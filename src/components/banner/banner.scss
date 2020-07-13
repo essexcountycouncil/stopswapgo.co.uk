@@ -1,5 +1,5 @@
-.search-background {
-  background-image: url("./components/search-home/two-women-walking.jpg");
+.banner-background {
+  background-image: url("./components/banner/two-women-walking.jpg");
   @media print {
     background-image: none;
   }
@@ -40,11 +40,11 @@
       margin-right: 0;
     }
   }
-  .search-container {
+  .banner-container {
     @extend %site-width-container;
     @extend %contain-floats;
     height: $baseline*20;
-    .greeting, .search-input {
+    .greeting, .banner-input {
       @extend %grid-row;
       @include border-radius($border-radius);
     }
@@ -100,8 +100,8 @@
         }
       }
       .arrow {
-        background-image: url("./components/search-home/SSG_Arrow_White.svg");
-        // background-image: url("./components/search-home/SSG_Arrow_Green.svg");
+        background-image: url("./components/banner/SSG_Arrow_White.svg");
+        // background-image: url("./components/banner/SSG_Arrow_Green.svg");
         background-repeat:  no-repeat;
         background-size: initial;
         background-position-x: 0;
@@ -140,11 +140,11 @@
           border: none;
           margin-bottom: 0;
         }     
-        .fa-search.search-icon-position  {
+        .fa-search.banner-icon-position  {
           background: $white;
           color: $search;
             &:hover {
-            color: $search-hover;
+            color: $banner-hover;
           }
         }
       }
