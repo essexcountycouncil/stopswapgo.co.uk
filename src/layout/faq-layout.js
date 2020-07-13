@@ -24,7 +24,12 @@ export default ({ children, hasSignUp }) => {
           </div>
         </div>
       </main>
-      <SignupChallengeForm />
+      <SignupChallengeForm 
+        tagline1="Stop.Swap." 
+        tagline2="WIN!" 
+        p1="Sign up to our 60 Day Challenge to win prizes for walking and cycling!"
+        label="SIGN UP!"
+        url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
       <Footer />
     </>
   )

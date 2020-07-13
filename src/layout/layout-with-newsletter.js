@@ -2,15 +2,15 @@ import React from "react"
 import { Router } from "@reach/router"
 import Header from "../components/header/header"
 import Banner from "../components/banner/banner"
-import SignupNewsletter from "../components/signup-newsletter/signup-newsletter"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
+import SignupChallengeForm from "../components/signup-challenge-form/signup-challenge-form"
 
 export default ({ children, hasSignUp }) => {
 
   return (
     <>
-    <SEO title="Stop.Swap.GO! - Essex County Council" />
+      <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Router>
         <Banner path="/" />
@@ -24,7 +24,11 @@ export default ({ children, hasSignUp }) => {
           </div>
         </div>
       </main>
-      <SignupNewsletter />
+      <SignupChallengeForm
+        tagline1="Keep on moving"
+        p1={["Sign up to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking. Just pop in your name, email and hit ", <i>GO!</i>, " We’ll do the rest."]}
+        label="GO!"
+        url="https://public.govdelivery.com/accounts/UKESSEX/signup/16846" />
       <Footer />
     </>
   )
