@@ -2,7 +2,7 @@ import React from "react"
 import { Router } from "@reach/router"
 import Header from "../components/header/header"
 import Banner from "../components/banner/banner"
-import SignupChallengeForm from "../components/signup-challenge-form/signup-challenge-form"
+import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
 
@@ -24,7 +24,7 @@ export default ({ children, hasSignUp }) => {
           </div>
         </div>
       </main>
-      <SignupChallengeForm 
+      <Signup 
         tagline1="Stop.Swap." 
         tagline2="WIN!" 
         p1="Sign up to our 60 Day Challenge to win prizes for walking and cycling!"

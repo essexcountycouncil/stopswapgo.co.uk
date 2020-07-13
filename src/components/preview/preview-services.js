@@ -7,7 +7,7 @@ export default () =>
 
 		<div className="previews">
 			<div className="preview">
-				<img src={cyclistPicture} alt="Cyclist picture" />
+				<img src={cyclistPicture} alt="Cyclist" />
 			</div>
 			<div className="preview">
 				<h3 className="sub-section-heading strapline"><span>Stop.Swap.</span><i>WIN!</i></h3>
@@ -29,7 +29,7 @@ page to learn more and register for exclusive VIP access and early bird rewards.
 				</ul>
 			</div>
 			<div className="preview">
-				<img src={familyPicture} alt="Family picture" title="Join our community" />
+				<img src={familyPicture} alt="Family" title="Join our community" />
 			</div>
 		</div>
 	</>

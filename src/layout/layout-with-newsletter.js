@@ -4,7 +4,7 @@ import Header from "../components/header/header"
 import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
-import SignupChallengeForm from "../components/signup-challenge-form/signup-challenge-form"
+import Signup from "../components/signup/signup"
 
 export default ({ children, hasSignUp }) => {
 
@@ -24,7 +24,7 @@ export default ({ children, hasSignUp }) => {
           </div>
         </div>
       </main>
-      <SignupChallengeForm
+      <Signup
         tagline1="Keep on moving"
         p1={["Sign up to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking. Just pop in your name, email and hit ", <i>GO!</i>, " We’ll do the rest."]}
         label="GO!"
