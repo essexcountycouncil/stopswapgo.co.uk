@@ -1,6 +1,6 @@
 import React from "react"
 
-import ChallengeGoButton from "../challenge-go-button/challenge-go-button"
+import LargeButton from "../large-button/large-button"
 
 // This is only a temporary component, to be deleted when not in use any more
 export default () =>
@@ -15,6 +15,6 @@ brand new bike and accessories worth £1000!</p>
 <p className="extra-space">Go to our 60 Day Challenge page to register for exclusive VIP access and see
 how you could win these fantastic prizes.</p>
     </div>
-   <ChallengeGoButton/>
+   <LargeButton title="WIN!" url="/60-day-challenge"/>
   </div>
 </section>

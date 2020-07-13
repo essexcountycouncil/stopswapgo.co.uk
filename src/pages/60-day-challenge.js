@@ -1,6 +1,6 @@
 import React from "react"
 import LayoutWithNewsletter from "../layout/layout-with-newsletter"
-import GovDeliveryForm from "../components/govdelivery-form/govdelivery-form"
+import LargeButton from "../components/large-button/large-button"
 
 const Challenge = () => (
 	<LayoutWithNewsletter>
@@ -43,8 +43,7 @@ prize as a thank you for supporting Stop.Swap.<i>GO!</i></p>
 
 		</div>
 		<div className="text-align-center">
-			<GovDeliveryForm id={"mid-data-signup-id"} formId="17087" style="button-dark" title="SIGN UP!" />
-
+			<LargeButton title="SIGN UP!" url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
 		</div>
 		<h2>More about the 60 Day Challenge</h2>
 		<p>Find everything you need about the 60 Day Challenge on our <a href="/faq">FAQs page</a></p>
