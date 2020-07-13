@@ -13,7 +13,7 @@ const slugifyOptions = {
 
 const axios = require('axios');
 const crypto = require('crypto');
-
+/**
 exports.sourceNodes = async ({ actions }) => {
   const { createNode } = actions;
 
@@ -64,4 +64,4 @@ exports.sourceNodes = async ({ actions }) => {
   });
 
   return;
-}
+} */
