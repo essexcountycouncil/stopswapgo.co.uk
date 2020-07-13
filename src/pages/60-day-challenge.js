@@ -1,9 +1,9 @@
 import React from "react"
-import IndexLayout from "../layout/index-layout"
+import LayoutWithNewsletter from "../layout/layout-with-newsletter"
 import GovDeliveryForm from "../components/govdelivery-form/govdelivery-form"
 
 const Challenge = () => (
-	<IndexLayout>
+	<LayoutWithNewsletter>
 		<h1>60 Day Challenge</h1>
 		<h2>Win prizes for walking and cycling with our 60 Day Challenge.</h2>
 
@@ -48,7 +48,7 @@ prize as a thank you for supporting Stop.Swap.<i>GO!</i></p>
 		</div>
 		<h2>More about the 60 Day Challenge</h2>
 		<p>Find everything you need about the 60 Day Challenge on our <a href="/faq">FAQs page</a></p>
-	</IndexLayout>
+	</LayoutWithNewsletter>
 )
 
 export default Challenge

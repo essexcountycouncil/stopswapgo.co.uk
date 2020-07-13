@@ -1,8 +1,8 @@
 import React from "react"
 import { Router } from "@reach/router"
 import Header from "../components/header/header"
-import SearchHome from "../components/search-home/search-home"
-import Signup2 from "../components/signup2/signup2"
+import Banner from "../components/banner/banner"
+import SignupChallengeLink from "../components/signup-challenge-link/signup-challenge-link"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
 
@@ -13,7 +13,7 @@ export default ({ children, hasSignUp }) => {
     <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Router>
-        <SearchHome path="/" />
+        <Banner path="/" />
       </Router>
       <main id="content">
         <div className="container">
@@ -24,7 +24,7 @@ export default ({ children, hasSignUp }) => {
           </div>
         </div>
       </main>
-      <Signup2 />
+      <SignupChallengeLink />
       <Footer />
     </>
   )
