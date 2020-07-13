@@ -93,7 +93,7 @@
       }
       .strapline{
         margin-top: $baseline*1.5;
-        margin-bottom: $baseline*0.5;
+        margin-bottom: $baseline*1.5;
 
         @include media(mobile) {
           margin-top: $baseline*0.5;

@@ -18,7 +18,7 @@ export default ({ children, hasSignUp }) => {
       <main id="content">
         <div className="container">
           <div className="main only">
-            <section className="content">
+            <section className="content" aria-label="Main content area">
               <div>{children}</div>
             </section>
           </div>
