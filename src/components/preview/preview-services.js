@@ -7,7 +7,7 @@ export default () =>
 
 		<div className="previews">
 			<div className="preview">
-				<img src={cyclistPicture} alt="Cyclist" />
+				<img src={cyclistPicture} alt="Cyclist" title="Win prizes walking and cycling"/>
 			</div>
 			<div className="preview">
 				<h3 className="sub-section-heading strapline"><span>Stop. Swap. </span><i>WIN!</i></h3>
