@@ -8,6 +8,10 @@ require("dotenv").config({
 })
 
 module.exports = {
+  proxy: {
+    prefix: "/api",
+    url: "https://stage-api.govdelivery.com/api/account/UKESSEX/subscriptions",
+  },
   siteMetadata: {
     title: `stopswapgo.co.uk`,
     description: `Rethink your daily travel`,

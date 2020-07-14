@@ -1,65 +1,74 @@
-import React from "react"
+import React from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
-export default class SignupNewsletter extends React.Component {
-  constructor(props) {
-    super(props);
+export default function SignupNewsletter() {
+  const { register, handleSubmit, watch, errors } = useForm();
+  const onSubmit = data => {
+    const username = ''
+    const password = ''
+    const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64')
 
-    this.state = {
-      fields: {},
-      errors: {}
-    }
-  }
+    const request = `<subscriber>
+      <email>${data}</email>
+      <send-notifications type='boolean'>false</send-notifications>
+          <topics type='array'>
+            <topic>
+              <code>UKESSEX_568</code>
+            </topic>
+            <topic>
+              <code>UKESSEX_</code>
+            </topic>
+          </topics>
+        </subscriber>`
 
-  handleValidation() {
-    let fields = this.state.fields;
-    let errors = {};
-    let formIsValid = true;
+    axios.post('/api', request, {
+      headers: {
+        'Authorization': `Basic ${token}`,
+        'Content-Type': 'application/xml'
+      },
+    })
+    .then((response) => {
+      console.log(response.data)
+      console.log(response.status)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+  };
 
-    // Email
-    if (!fields["email"]) {
-      formIsValid = false;
-      errors["email"] = "Cannot be empty";
-    }
+  watch("email");
 
-    if (typeof fields["email"] !== "undefined") {
+  return (
+    <section className="signup-background" aria-label="Subscribe to email" id="challenge" >
+      <div className="signup">
+        <div className="mantra">
+          <h2 className="strapline"><span>Keep on moving</span></h2>
+          <p>Sign up to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking. Just pop in your name, email and hit ", <i>GO!</i>, " We’ll do the rest.</p>
+          <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm">
 
-      if (true) {
-        formIsValid = false;
-        errors["email"] = "Email is not valid";
-      }
-    }
-
-    this.setState({ errors: errors });
-    return formIsValid;
-  }
-
-  newsletterSubmit(e) {
-    e.preventDefault();
-    if (this.handleValidation()) {
-      alert("Form submitted");
-    } else {
-      alert("Form has errors.")
-    }
-  }
-
-  render() {
-    return (
-      <section className="signup-background" aria-label="Subscribe to email" id="challenge" >
-        <div className="signup">
-          <div className="mantra">
-            <h2 className="strapline"><span>Keep on moving</span></h2>
-            <p>Sign up to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking. Just pop in your name, email and hit ", <i>GO!</i>, " We’ll do the rest.</p>
-            <form onSubmit={this.newsletterSubmit.bind(this)}>
-              <input refs="email" type="text" size="30" placeholder="Email" onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]} />
-              <span style={{ color: "red" }}>{this.state.errors["email"]}</span>
-
-              <div className="button-container-middle">
-                <button type="submit" className="button button-dark button-large extra-space">GO!</button>
-              </div>
-            </form>
-          </div>
+            <div className={"input-group-container-middle"}>
+              <label htmlFor="email">Email:</label>
+              <p className="errors">{errors.email?.message}</p>
+              <input
+                name="email"
+                className={errors.email?.message ? "error" : ""}
+                type="text"
+                ref={register({
+                  required: 'Email address required',
+                  pattern: {
+                    value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                    message: 'Invalid email address',
+                  },
+                })}
+              />
+            </div>
+            <div className="">
+              <button type="submit" className="button button-dark button-large extra-space">GO!</button>
+            </div>
+          </form>
         </div>
-      </section >
-    )
-  }
+      </div>
+    </section >
+  )
 }
