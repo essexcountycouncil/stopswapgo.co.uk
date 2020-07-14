@@ -40,7 +40,7 @@ export default function SignupNewsletter() {
   watch("email");
 
   return (
-    <section className="signup-background" aria-label="Subscribe to email" id="challenge" >
+    <section className="signup-background" aria-label="Subscribe to newsletter via email" id="challenge" >
       <div className="signup">
         <div className="mantra">
           <h2 className="strapline"><span>Keep on moving</span></h2>

@@ -1,41 +1,31 @@
 form.newsletterForm {
     padding: 1em;
-
+    margin: auto;
     background: white;
+    @include media(mobile) {
+        width: 80%;
+    }      
+    @include media(tablet) {
+        width: 60%;
+    }      
+    @include media(desktop) {
+        width: 35%;
+    }
     input {
         border: $border-thick $brand4 solid;
-        @include media(mobile) {
-            width: 100%;
-        }      
-        @include media(tablet) {
-            width: 100%;
-        }      
-        @include media(desktop) {
-            width: 30%;
-        }
     }
     input.error {
         border: $border-thick $error solid !important;
     }
     label {
         width: 100%;
+        font-weight: bold;
     }
     .errors {
         margin-top: 1em !important;
-        background: white;
         color: $error !important;
         font-weight: bold;
         padding: 0;
-        @include media(mobile) {
-            width: 100%;
-        }      
-        @include media(tablet) {
-            width: 100%;
-        }      
-        @include media(desktop) {
-            width: 30%;
-            margin: auto;
-        }
     }
 
 }
