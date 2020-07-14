@@ -62,6 +62,10 @@
 .headerLogo {
   width: 320px;
   overflow: hidden;
+
+  @include media(mobile) {
+    width: 100%;
+  }
 }
 
 a.skip-main {
