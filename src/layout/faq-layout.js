@@ -10,7 +10,7 @@ export default ({ children, hasSignUp }) => {
 
   return (
     <>
-    <SEO title="Stop. Swap. GO! - Essex County Council" />
+    <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Router>
         <Banner path="/" />
@@ -25,7 +25,7 @@ export default ({ children, hasSignUp }) => {
         </div>
       </main>
       <Signup 
-        tagline1="Stop. Swap. " 
+        tagline1="Stop.Swap." 
         tagline2="WIN!" 
         p1="Sign up to our 60 Day Challenge to win prizes for walking and cycling!"
         label="SIGN UP!"

@@ -13,7 +13,7 @@ const Challenge = () => (
 
 			<div className="notice notice-middle">
 				<h3>Early bird VIP registrations for our 60 Day Challenge (launching 1 August 2020) are now open.</h3>
-				<p>Register using the form and get ready to Stop. Swap. <i>GO!</i></p>
+				<p>Register using the form and get ready to Stop.Swap.<i>GO!</i></p>
 			</div>
 			<p>That&rsquo;s right. Swap to walking and cycling with our 60 Day Challenge and you could win fantastic
 		prizes.</p>
@@ -30,15 +30,14 @@ const Challenge = () => (
 			<p>Hint: the more you walk and cycle over
 		the 60 days, the more chances you&rsquo;ll have to win.</p>
 
-			<p>It couldn’t be easier to Stop. Swap. <i>WIN</i>! and if you register early we’ll give you VIP access when the
-			challenge starts. Plus, we’re giving the first 500 lucky VIPs who start Day 1 of their challenge an extra
-prize as a thank you for supporting Stop. Swap. <i>GO!</i></p>
+			<p>It couldn’t be easier to Stop.Swap.<i>WIN!</i> and if you register early we’ll give you VIP access when the
+			challenge starts. Plus, we’re giving the first 500 lucky VIPs who start Day 1 of their challenge a prize as a thank you for supporting Stop.Swap.<i>GO!</i></p>
 
 			<p>And that's not all.</p>
 
 			<div className="notice-middle">
 				<h3>One lucky VIP will win a bike plus cycling accessories to the value of £1,000!</h3>
-				<p>So, what are you waiting for? Sign up to our 60 Day Challenge and get ready to Stop. Swap. <i>GO!</i></p>
+				<p>So, what are you waiting for? Sign up to our 60 Day Challenge and get ready to Stop.Swap.<i>GO!</i></p>
 			</div>
 
 		</div>

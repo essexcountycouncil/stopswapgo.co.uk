@@ -10,7 +10,7 @@ export default ({ children, hasSignUp }) => {
 
   return (
     <>
-      <SEO title="Stop. Swap. GO! - Essex County Council" />
+      <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Router>
         <Banner path="/" />
