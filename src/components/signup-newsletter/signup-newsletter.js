@@ -5,10 +5,10 @@ import axios from "axios";
 export default function SignupNewsletter() {
   const [submitted, setSubmitted] = useState('');
   const { register, handleSubmit, watch, errors } = useForm();
+  const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   function onSubmit(data) {
-    const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
- 
+
     const username = ''
     const password = ''
     const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64')
@@ -26,20 +26,20 @@ export default function SignupNewsletter() {
           </topics>
         </subscriber>`
 
-    axios.post('/api', request, {
+    axios.post('https://stage-api.govdelivery.com/api/account/UKESSEX/subscriptions.xml', request, {
       headers: {
         'Authorization': `Basic ${token}`,
         'Content-Type': 'application/xml'
       },
     })
-      .then((response) => {
+    .then((response) => {
         console.log(response.data)
         console.log(response.status)
         setSubmitted('true')
-      })
-      .catch((error) => {
+    })
+    .catch((error) => {
         console.error(error)
-      })
+    })
   };
 
   watch("email");
@@ -69,7 +69,7 @@ export default function SignupNewsletter() {
                     ref={register({
                       required: 'Email address required',
                       pattern: {
-                        value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                        value: EMAIL_REGEX,
                         message: 'Invalid email address',
                       },
                     })}
