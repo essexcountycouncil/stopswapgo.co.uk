@@ -5,11 +5,12 @@ import logo from "./logo.png"
 function Header() {
   return (
     <header className="header-background">
+    <a className="skip-main" href="#content">Skip to main content</a>
       <div className="header">
         <div className="nav">
           <div className="logo-wrap">
             <a href="/" className="logo">
-              <img src={logo} className="headerLogo" alt="Stop Swap Go! logo" />
+              <img src={logo} className="headerLogo" alt="logo" title="Stop Swap Go" />
             </a>
           </div>
           <ul className="nav-links">

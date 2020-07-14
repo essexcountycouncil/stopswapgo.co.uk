@@ -30,7 +30,7 @@ export default () =>
           <li className="design-link"><a href="https://servicetransformation.blog.essex.gov.uk">Built by the Service Transformation Team</a></li>
           <li className="footer-logo">
             <a href="https://www.essex.gov.uk" className="logo-text seax">
-              <img src={logo} width="36" height="30" alt="Essex County Council logo" />
+              <img src={logo} width="36" height="30" alt="Essex County Council logo" title="Essex County Council" />
               Essex.gov.uk
             </a>
           </li>

@@ -7,8 +7,10 @@ html {
 }
 
 html, body {
-	font-size: ms(0);
-	line-height: $baseline;
+  font-size: ms(0);
+  // accessibility requirements do not fall below these
+  line-height: 1.5em;
+  word-spacing: 0.16em;
 }
 
 body {
@@ -22,4 +24,9 @@ body {
 .js-enabled .js-hidden {
   display: none;
   visibility: hidden;
+}
+
+
+p {
+  margin-bottom: 2em !important;
 }
