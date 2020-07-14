@@ -10,7 +10,7 @@ export default () =>
 				<img src={cyclistPicture} alt="Cyclist" title="Win prizes walking and cycling"/>
 			</div>
 			<div className="preview">
-				<h3 className="sub-section-heading strapline"><span>Stop. Swap. </span><i>WIN!</i></h3>
+				<h3 className="sub-section-heading strapline"><span>Stop.Swap.</span><i>WIN!</i></h3>
 				<p>Want to win prizes for walking and cycling? Of course you do. Head over to our 60 Day Challenge
 page to learn more and register for exclusive VIP access and early bird rewards.</p>
 				<LargeButton title="WIN!" url="/60-day-challenge"/>
@@ -19,7 +19,7 @@ page to learn more and register for exclusive VIP access and early bird rewards.
 
 		<div className="previews">
 			<div className="preview">
-			<h3 className="sub-section-heading strapline"><span>Stop. Swap. </span><i>SHARE!</i></h3>
+			<h3 className="sub-section-heading strapline"><span>Stop.Swap.</span><i>SHARE!</i></h3>
 				<p>Follow us and share your active travel stories, tips and tricks. #StopSwapGo</p>
 				<ul className="social">
 					<li>
