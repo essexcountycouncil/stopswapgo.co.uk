@@ -16,8 +16,6 @@ export default function SignupNewsletter() {
    //   console.log(response);
    // });
 
-
-    https.globalAgent.options.rejectUnauthorized = false;
     axios({
         url: `https://staging-api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
         adapter: jsonpAdapter,
@@ -61,7 +59,7 @@ export default function SignupNewsletter() {
                   />
                 </div>
                 <div>
-                  <button type="submit" className="button button-dark button-large extra-space">GO!</button>
+                  <button type="submit" className="button button-dark button-large extra-space">SIGN UP</button>
                 </div>
               </div>)}
           </form>
