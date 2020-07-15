@@ -8,10 +8,6 @@ require("dotenv").config({
 })
 
 module.exports = {
-  proxy: {
-    prefix: "/api",
-    url: "https://stage-api.govdelivery.com/api",
-  },
   siteMetadata: {
     title: `stopswapgo.co.uk`,
     description: `Rethink your daily travel`,
@@ -58,7 +54,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/images/favicon2.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
