@@ -10,7 +10,8 @@ export default function SignupNewsletter() {
 
   function onSubmit(form) {
     const apiKey = process.env.GOV_DELIVERY_API_KEY;
-
+    console.log("API KEY IS: ", apiKey);
+    
     axios({
         url: `https://api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
         adapter: jsonpAdapter,
