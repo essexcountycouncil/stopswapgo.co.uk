@@ -1,48 +1,31 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import axios from "axios";
+const jsonp = require('jsonp');
+let axios = require('axios');
+let jsonpAdapter = require('axios-jsonp');
 
 export default function SignupNewsletter() {
   const [submitted, setSubmitted] = useState('');
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm();
   const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  function onSubmit(data) {
+  function onSubmit(form) {
+    const apiKey = process.env.GOV_DELIVERY_API_KEY;
+  //  jsonp(`https://staging-api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`, null, (response) => {
+   //   console.log(response);
+   // });
 
-    const username = ''
-    const password = ''
-    const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64')
 
-    const request = `<subscriber>
-      <email>${data}</email>
-      <send-notifications type='boolean'>false</send-notifications>
-          <topics type='array'>
-            <topic>
-              <code>UKESSEX_568</code>
-            </topic>
-            <topic>
-              <code>UKESSEX_</code>
-            </topic>
-          </topics>
-        </subscriber>`
+    axios({
+        url: `https://staging-api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
+        adapter: jsonpAdapter,
+        callbackParamName: 'c' // optional, 'callback' by default
+    }).then((res) => {
+      console.log("hi")
+    });
 
-    axios.post('https://stage-api.govdelivery.com/api/account/UKESSEX/subscriptions.xml', request, {
-      headers: {
-        'Authorization': `Basic ${token}`,
-        'Content-Type': 'application/xml'
-      },
-    })
-    .then((response) => {
-        console.log(response.data)
-        console.log(response.status)
-        setSubmitted('true')
-    })
-    .catch((error) => {
-        console.error(error)
-    })
-  };
-
-  watch("email");
+    //setSubmitted('true')
+  }
 
   return (
     <section className="signup-background" aria-label="Subscribe to newsletter via email" id="challenge" >
