@@ -1,6 +1,4 @@
 .previews {
-  @extend %contain-floats;
-  @extend %grid-row;
   position: relative;
   @include media(mobile) {
     margin-top: $baseline*1.5;
@@ -24,8 +22,8 @@
     margin-left: -$gutter*2 !important;
     margin-right: -$gutter*2 !important;     
     .preview {
-      padding-left: $gutter*2 !important;
-      padding-right: $gutter*2 !important;
+      padding-left: $gutter !important;
+      padding-right: $gutter !important;
     }
   }
   .preview {
@@ -58,7 +56,7 @@
     }
     img {
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 2em;
       width: 100%;
       @include media(mobile) {
         margin-bottom: 0;
@@ -102,6 +100,7 @@
       text-align: center;
       margin-bottom: 0;
       padding-bottom: 0;
+      margin-bottom: 60px;
       li {
         // background: $brand;
         padding: $gutter*0.5;
@@ -144,29 +143,10 @@
 }
 
 
-.preview-grey{
-  background-color: $grey-dark;
-  color: white;
-  min-height: 337.5px;
-  p {
-    color: white;
-    padding: 10px 20px 10px 20px;
-  }
-  h3 {
-    padding: 10px 20px 10px 20px;
-  }
-}
-
-
 .preview-grey-border{
   border: 2px solid $grey-dark;
   padding: 2em;
   .button-container-middle {
     margin-bottom: 0px !important;
   }
-}
-
-.preview-img{
-  border: 2px solid $grey-dark;
-  min-height: 337.5px;
 }
