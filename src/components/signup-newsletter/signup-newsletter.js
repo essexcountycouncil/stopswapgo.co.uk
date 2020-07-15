@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 const jsonp = require('jsonp');
 let axios = require('axios');
 let jsonpAdapter = require('axios-jsonp');
+const https = require('https');
 
 export default function SignupNewsletter() {
   const [submitted, setSubmitted] = useState('');
@@ -16,6 +17,7 @@ export default function SignupNewsletter() {
    // });
 
 
+    https.globalAgent.options.rejectUnauthorized = false;
     axios({
         url: `https://staging-api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
         adapter: jsonpAdapter,
