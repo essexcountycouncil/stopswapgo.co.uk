@@ -14,7 +14,13 @@ module.exports = {
     author: `Essex Service Design Team`,
     siteUrl: `https://stopswapgo.co.uk`
   },
-  plugins: [
+  plugins: [ 
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["GOV_DELIVERY_API_KEY"]
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
