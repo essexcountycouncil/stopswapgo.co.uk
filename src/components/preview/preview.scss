@@ -48,7 +48,7 @@
       @include h2;
       margin-top: 0;
       @include media(mobile) {
-        @include h4;
+        @include h2;
         min-height: initial;
         margin-top: 0;
         margin-bottom: $baseline*0.25;
@@ -144,7 +144,7 @@
 
 
 .preview-grey-border{
-  border: 2px solid $grey-dark;
+  background-color: lighten($grey-light, 7%);
   padding: 2em;
   .button-container-middle {
     margin-bottom: 0px !important;
