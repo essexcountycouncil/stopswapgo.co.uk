@@ -1,5 +1,6 @@
 .banner-background {
   background-image: url("./components/banner/two-women-walking.jpg");
+  border-bottom: 10px solid $brand;
   @media print {
     background-image: none;
   }
@@ -60,7 +61,6 @@
         font-family: Mohave-Bold;
         font-size: ms(14);
         line-height: $baseline*4;
-        color: $brand;
         @include box-sizing(border-box);
         padding: $baseline*4;
         display: inline-block;
@@ -105,15 +105,15 @@
         background-repeat:  no-repeat;
         background-size: initial;
         background-position-x: 0;
-        background-position-y: center;    
+        background-position-y: center;
         position: absolute;
         // left: -254px;
         // left: -418px;
         left: 0;
         left: -150px;
-        top: $border-thicker;
+        top: 0;
         right: 0;
-        bottom: $border-thicker;
+        bottom: 0;
         z-index: 100;
         margin-top: 0;
         margin-bottom: 0;
