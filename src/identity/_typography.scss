@@ -125,6 +125,13 @@ h2, .h2, .content-heading {
     line-height: $baseline*1.5;
   }
 }
+.strapline-highlighted {
+  background-color: $grey-dark !important;
+  margin:0;
+  i {
+    color: white;
+  }
+}
 
 // .content-heading ~ .content-heading,
 // .page-heading ~ .content-heading {
