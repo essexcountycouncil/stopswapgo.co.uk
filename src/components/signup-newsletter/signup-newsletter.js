@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-const jsonp = require('jsonp');
 let axios = require('axios');
 let jsonpAdapter = require('axios-jsonp');
-const https = require('https');
 
 export default function SignupNewsletter() {
   const [submitted, setSubmitted] = useState('');
@@ -12,19 +10,15 @@ export default function SignupNewsletter() {
 
   function onSubmit(form) {
     const apiKey = process.env.GOV_DELIVERY_API_KEY;
-  //  jsonp(`https://staging-api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`, null, (response) => {
-   //   console.log(response);
-   // });
 
     axios({
-        url: `https://staging-api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
+        url: `https://api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
         adapter: jsonpAdapter,
-        callbackParamName: 'c' // optional, 'callback' by default
+        callbackParamName: 'c'
     }).then((res) => {
-      console.log("hi")
+      console.log(res)
+      setSubmitted('true')
     });
-
-    //setSubmitted('true')
   }
 
   return (
