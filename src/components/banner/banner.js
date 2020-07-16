@@ -1,7 +1,7 @@
 import React from "react"
 
 const Banner = ({ siteTitle }) => (
-  <section className="banner-background" aria-label="Banner container with slogan">
+  <section className="banner-background" role="img" aria-label="Ladies walking in the park" title="Ladies walking in the park">
     <div className="overlay"></div>
     <div className="banner-container">
       <div className="greeting">
