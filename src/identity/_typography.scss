@@ -110,7 +110,7 @@ h1, .h1, .page-heading {
 .page-heading {
   .one, .two, .three {
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      background-color: white;
+      color: white;
     }
   }
 }
