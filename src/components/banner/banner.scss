@@ -101,6 +101,10 @@
       }
       .arrow {
         background-image: url("./components/banner/SSG_Arrow_White.svg");
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          background-image: url("/static/images/logo.png");
+        }
         // background-image: url("./components/banner/SSG_Arrow_Green.svg");
         background-repeat:  no-repeat;
         background-size: initial;
