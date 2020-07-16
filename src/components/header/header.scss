@@ -26,10 +26,14 @@
           }
         }
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          background-image: url("./components/header/logo-b.png");
-          width: $logo-b-width;
           a.logo{
-            display:none;
+            img {
+              background-image: url("./components/header/logo-b.png");
+              position: relative;
+                overflow: hidden;
+                width: 320px;
+                height: 63;
+            }
           }
         }
       }
