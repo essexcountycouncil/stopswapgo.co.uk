@@ -15,10 +15,18 @@ export default function SignupNewsletter() {
         url: `https://api.govdelivery.com/api/add_script_subscription?t=UKESSEX_568&c=&k=${apiKey}&e=${form.email}`,
         adapter: jsonpAdapter,
         callbackParamName: 'c'
-    }).then((res) => {
-      console.log(res)
+    }).then((response) => {
+      if(response.status === 200){
+        console.log(response.data.message)
+      } else {
+        console.error("Error: ", response)
+      }
       setSubmitted('true')
     });
+  }
+
+  function clearSubmission(){
+    setSubmitted('')
   }
 
   return (
@@ -32,7 +40,7 @@ export default function SignupNewsletter() {
             {submitted ?
               (<div>
                 <p className="submitted">You have successfully subscribed to our newsletter!</p>
-                <button onClick={() => setSubmitted('')} className="button button-dark button-large extra-space">Add another email</button>
+                <button onClick={clearSubmission} className="button button-dark button-large extra-space">Add another email</button>
               </div>) :
               (<div>
                 <div className="input-group-container-middle">
@@ -42,7 +50,6 @@ export default function SignupNewsletter() {
                     name="email"
                     className={errors.email?.message ? "error" : ""}
                     type="text"
-                    onChange={() => setSubmitted('')}
                     ref={register({
                       required: 'Email address required',
                       pattern: {
