@@ -6,7 +6,7 @@ import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
 
-export default ({ children, hasSignUp }) => {
+export default ({ children }) => {
 
   return (
     <>

@@ -107,6 +107,14 @@ h1, .h1, .page-heading {
   @include h1;
 }
 
+.page-heading {
+  .one, .two, .three {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      color: white;
+    }
+  }
+}
+
 // content-heading is used for each new and unlreated piece of content within a page.
 h2, .h2, .content-heading {
   @include h2;
@@ -124,6 +132,14 @@ h2, .h2, .content-heading {
     font-size: ms(5);
     line-height: $baseline*1.5;
   }
+}
+.strapline-highlighted {
+  background-color: $grey-dark !important;
+  margin:0;
+  i {
+    color: white;
+  }
+  margin-bottom: 0px !important;
 }
 
 // .content-heading ~ .content-heading,

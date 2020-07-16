@@ -14,7 +14,13 @@ module.exports = {
     author: `Essex Service Design Team`,
     siteUrl: `https://stopswapgo.co.uk`
   },
-  plugins: [
+  plugins: [ 
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["GOV_DELIVERY_API_KEY"]
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -54,7 +60,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon2.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

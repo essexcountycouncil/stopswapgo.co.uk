@@ -1,0 +1,40 @@
+form.newsletterForm {
+    padding: 1em;
+    margin: auto;
+    background: white;
+    @include media(mobile) {
+        width: 80%;
+    }      
+    @include media(tablet) {
+        width: 60%;
+    }      
+    @include media(desktop) {
+        width: 40%;
+    }
+    input {
+        border: $border-thick $brand4 solid;
+    }
+    input.error {
+        border: $border-thick $error solid !important;
+    }
+    label {
+        width: 100%;
+        font-weight: bold;
+    }
+    .errors {
+        margin-top: 1em !important;
+        color: $error !important;
+        font-weight: bold;
+        padding: 0;
+    }
+
+}
+.submitted {
+    margin-top: 2em !important;
+    font-weight: bold;
+    color: $body-text-colour !important;
+}
+.form-group-errors{
+    border-left: 5px solid $error;
+    padding-left: 15px;
+}
