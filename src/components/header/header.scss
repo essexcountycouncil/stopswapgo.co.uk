@@ -26,7 +26,7 @@
           }
         }
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          background-image: url("/static/images/logo.png");
+          background-image: url("./components/header/logo.png");
           a.logo{
             display:none;
           }
