@@ -102,9 +102,11 @@
       padding-bottom: 0;
       margin-bottom: 60px;
       li {
-        // background: $brand;
-        padding: $gutter*0.5;
-        // margin-right: 0;
+
+        padding: $gutter * 0.5;
+        @include media(mobile){
+          padding: 10px;
+        }
         a .fab {
           font-size: $icon*3;
         }

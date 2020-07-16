@@ -1,6 +1,6 @@
 import React from "react"
 import FaqLayout from "../layout/faq-layout"
-
+import { Link } from 'gatsby'
 
 const Faq = () => (
 	<FaqLayout>
@@ -31,7 +31,7 @@ const Faq = () => (
 		<p>All you need is a smartphone to download the app, and your own two feet – or a bike, if you&rsquo;re planning on cycling as part of your 60 Day Challenge.</p>
 
 		<h3>How do I download the app?</h3>
-		<p>Sign up to the <a href="/60-day-challenge">60 Day Challenge</a> and we&rsquo;ll send you an email with a
+		<p>Sign up to the <Link to="/60-day-challenge">60 Day Challenge</Link> and we&rsquo;ll send you an email with a
  link to download the app on 1 August 2020. Your 60 Day Challenge will begin as soon as you register on the app.</p>
 
 		<p>Or, if you&rsquo;ve already registered for Early bird/VIP access, simply wait for the link to download the app to drop in your email inbox and register from there. </p>
@@ -40,7 +40,7 @@ const Faq = () => (
 		<p>Fantastic. Thank you for signing up. </p>
 		<p>We&rsquo;ll send you an email as soon as the challenge launches directing you to the app. And if you&rsquo;re one of the lucky first 500, we&rsquo;ll tell you how you can claim your early bird gift. </p>
 
-		<p>In the meantime, follow us on social media or check out our <a href="/get-started">get started page</a> for useful links and inspiration to help get you prepped and ready to <i>GO!</i></p>
+		<p>In the meantime, follow us on social media or check out our <Link to="/get-started">get started page</Link> for useful links and inspiration to help get you prepped and ready to <i>GO!</i></p>
 
 		<p>You could always make a start by walking or cycling now. There&rsquo;s no time like the present to make a change and Stop.Swap.<i>GO!</i> </p>
 

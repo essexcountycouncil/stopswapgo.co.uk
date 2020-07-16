@@ -1,6 +1,7 @@
 import React from "react"
 import LayoutWithNewsletter from "../layout/layout-with-newsletter"
 import LargeButton from "../components/large-button/large-button"
+import { Link } from 'gatsby'
 
 const Challenge = () => (
 	<LayoutWithNewsletter>
@@ -45,7 +46,7 @@ const Challenge = () => (
 			<LargeButton title="SIGN UP!" url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
 		</div>
 		<h2>More about the 60 Day Challenge</h2>
-		<p>Find everything you need about the 60 Day Challenge on our <a href="/faq">FAQs page</a></p>
+		<p>Find everything you need about the 60 Day Challenge on our  <Link to="/faq">FAQs page</Link></p>
 	</LayoutWithNewsletter>
 )
 
