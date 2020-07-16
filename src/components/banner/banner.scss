@@ -103,8 +103,7 @@
         background-image: url("./components/banner/SSG_Arrow_White.svg");
         
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          background-image: none;      
-          color: white;
+          background-image: none;  
         }
         background-repeat:  no-repeat;
         background-size: initial;

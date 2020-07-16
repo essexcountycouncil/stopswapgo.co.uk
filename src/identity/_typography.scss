@@ -107,6 +107,14 @@ h1, .h1, .page-heading {
   @include h1;
 }
 
+.page-heading {
+  .one, .two, .three {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      background-color: white;
+    }
+  }
+}
+
 // content-heading is used for each new and unlreated piece of content within a page.
 h2, .h2, .content-heading {
   @include h2;
