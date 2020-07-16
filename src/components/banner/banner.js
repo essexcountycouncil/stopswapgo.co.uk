@@ -9,7 +9,8 @@ const Banner = ({ siteTitle }) => (
 					<h1 className="page-heading"><span className="one">Rethink</span> <span className="two">Your Daily</span> <span className="three">Travel</span></h1>
 	      </div>
       </div>
-    </div>    
+    </div>  
+    <div className="ms-ie-notification"><p>This website is not optimised for Internet Explorer, please switch browser for a better experience</p></div>  
   </section>
 )
 
