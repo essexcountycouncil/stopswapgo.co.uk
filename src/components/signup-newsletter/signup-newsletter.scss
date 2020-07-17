@@ -61,16 +61,6 @@ form.newsletterForm {
                 width: 20% !important;
             }
         }
-        .large-checkbox{
-            float: left;
-            width: 2em;
-            height: 2em;
-            margin-right: 20px;
-            outline: $border-thick white solid !important;
-        }
-        input[type="checkbox"].error {
-            outline: $border-thick $error solid !important;
-        }
 
         label {
             width: 90%;
@@ -87,8 +77,99 @@ form.newsletterForm {
         a {
             color: $brand;
         }
+
+    }
         
+    div.disclaimer > p {
+        margin-top: 40px;
+        a {
+            color: $brand;
+        }
     }
 
+}
 
+
+/** Checkbox styling **/
+
+        input[type="checkbox"]{
+            float: left;
+            width: 2em;
+            height: 2em;
+            margin-right: 20px;
+            outline: $border-thick white solid !important;
+        }
+        input[type="checkbox"].error {
+            outline: $border-thick $error solid !important;
+        }
+        
+.checkbox {
+    width: 100%;
+    margin: 15px auto;
+    position: relative;
+    display: block;
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+}
+.checkbox label {
+    position: relative;
+}
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+    border: 2px solid $brand;
+}
+.checkbox label:after {
+  content: '';
+    display: block;
+    width: 19px;
+    height: 8px;
+    border-bottom: 5px solid $brand;
+    border-left: 5px solid $brand;
+    -webkit-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0.25s;
+    will-change: transform;
+    position: absolute;
+    top: 7px;
+    left: 6px; 
+}
+.checkbox input[type="checkbox"]:checked ~ label::before {
+    color: $brand;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+    min-height: 34px;
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: sub;
+}
+.checkbox label span {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: 0;
 }
