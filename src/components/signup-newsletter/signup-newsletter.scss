@@ -119,8 +119,8 @@ form.newsletterForm {
 }
 
 .checkbox-error label:before {
-    border: 2px solid $white !important;
-    background-color: $error;
+    border: 2px solid $error !important;
+    background-color: $white;
 }
 
 .checkbox label {
