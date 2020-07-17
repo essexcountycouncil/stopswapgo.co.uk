@@ -121,7 +121,13 @@
         margin-top: 0;
         margin-bottom: 0;
         @include media(mobile) {
-          left: -425px;
+          background-image: url("./components/banner/SSG_Triangle_White.svg");
+          left: -400px;
+          top: 190px;
+          .page-heading {
+            margin-top: 50px;
+            margin-left: -20px;
+          }
         }
         @include media(tablet) {
           left: -325px;
