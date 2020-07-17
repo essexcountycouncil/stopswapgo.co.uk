@@ -1,40 +1,94 @@
 form.newsletterForm {
-    padding: 1em;
-    margin: auto;
-    background: white;
-    @include media(mobile) {
-        width: 80%;
-    }      
-    @include media(tablet) {
-        width: 60%;
-    }      
-    @include media(desktop) {
-        width: 40%;
-    }
-    input {
-        border: $border-thick $brand4 solid;
-    }
-    input.error {
+    width: 100%;
+    button.error, input.error {
         border: $border-thick $error solid !important;
-    }
-    label {
-        width: 100%;
-        font-weight: bold;
     }
     .errors {
         margin-top: 1em !important;
-        color: $error !important;
+        color: white !important;
+        background-color: $error;
         font-weight: bold;
-        padding: 0;
+        padding: 1em;
+        margin:auto;
+        text-align: left;
+        line-height: 1.2em;
     }
 
-}
-.submitted {
-    margin-top: 2em !important;
-    font-weight: bold;
-    color: $body-text-colour !important;
-}
-.form-group-errors{
-    border-left: 5px solid $error;
-    padding-left: 15px;
+    .submitted {
+        margin-top: 2em !important;
+        font-weight: bold;
+        color: white !important;
+    }
+    .form-group-errors{
+        border-left: 5px solid $error;
+        padding-left: 15px;
+    }
+
+    .input-group-container-middle {
+        width: 80%;
+        margin: auto;
+        ul {
+            list-style: none;
+            margin: 0 0 10px  0;
+            padding: 0;
+        }
+        li {
+            margin: 0 !important;
+        }
+        .large-input{
+            height: 3.25rem !important;
+            border: $border-thick white solid;
+   
+            @include media(mobile) {
+                width: 100%;
+            }      
+            @include media(tablet) {
+                width: 70%;
+            }      
+            @include media(desktop) {
+                width: 80%;
+            }
+        }
+        button {
+            @include media(mobile) {
+                margin-top: 10px;
+                width: 100% !important;
+            }      
+            @include media(tablet) {
+                width: 30% !important;
+            }      
+            @include media(desktop) {
+                width: 20% !important;
+            }
+        }
+        .large-checkbox{
+            float: left;
+            width: 2em;
+            height: 2em;
+            margin-right: 20px;
+            outline: $border-thick white solid !important;
+        }
+        input[type="checkbox"].error {
+            outline: $border-thick $error solid !important;
+        }
+
+        label {
+            width: 90%;
+            color: white;
+            display: block;
+            text-align: left;
+            padding-top: 5px;
+        }
+
+        p {
+            margin-top: 0px !important;
+        }
+
+        a {
+            color: $brand;
+        }
+        
+    }
+
+
 }

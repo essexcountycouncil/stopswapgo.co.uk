@@ -6,6 +6,7 @@ let jsonpAdapter = require('axios-jsonp');
 export default function SignupNewsletter() {
   const [submitted, setSubmitted] = useState('');
   const { register, handleSubmit, errors } = useForm();
+
   const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   function onSubmit(form) {
@@ -43,24 +44,35 @@ export default function SignupNewsletter() {
                 <button onClick={clearSubmission} className="button button-dark button-large extra-space">Add another email</button>
               </div>) :
               (<div>
+              <div className="input-group-container-middle">
+                <ul>
+                   {errors.email? (<li className="errors">{errors.email?.message}</li>) : (null)}
+                  {errors.agreement? (<li className="errors">{errors.agreement?.message}</li>) : (null)}
+                 </ul>
+              </div>
                 <div className="input-group-container-middle">
-                  <label htmlFor="email">Email:</label>
-                  <p className="errors">{errors.email?.message}</p>
                   <input
                     name="email"
-                    className={errors.email?.message ? "error" : ""}
+                    className={"large-input" + (errors.email?.message ? " error" : "")}
                     type="text"
                     ref={register({
                       required: 'Email address required',
                       pattern: {
                         value: EMAIL_REGEX,
-                        message: 'Invalid email address',
+                        message: 'Invalid email address entered',
                       },
                     })}
                   />
+                 <button type="submit" className={"button button-dark button-large" + (errors.email?.message ? " error" : "")}>SUBSCRIBE!</button>
+                 
                 </div>
-                <div>
-                  <button type="submit" className="button button-dark button-large extra-space">SIGN UP</button>
+
+                <div className="input-group-container-middle checkboxes">
+                  <input type="checkbox" id="agreement" name="agreement"  className={"large-checkbox" + (errors.agreement?.message ? " error" : "")}
+                  ref={register({
+                      required: 'Please provide consent to our data privacy policy'
+                    })} />
+                  <label htmlFor="agreement">By checking this box, you consent to our data <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection" target="_blank">privacy policy</a></label>
                 </div>
               </div>)}
           </form>
