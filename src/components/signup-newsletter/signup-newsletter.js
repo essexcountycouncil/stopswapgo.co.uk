@@ -36,7 +36,7 @@ export default function SignupNewsletter() {
       <div className="signup">
         <div className="mantra">
           <h2 className="strapline"><span>Keep on moving</span></h2>
-          <p>Subscribe to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking</p>
+          <p>Subscribe to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking.</p>
           <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm">
 
             {submitted ?
@@ -60,7 +60,7 @@ export default function SignupNewsletter() {
                       required: 'Email address required',
                       pattern: {
                         value: EMAIL_REGEX,
-                        message: 'Invalid email address entered',
+                        message: 'Enter an email address in the correct format, like name@example.com',
                       },
                     })}
                   />
@@ -73,7 +73,7 @@ export default function SignupNewsletter() {
                     checked={checked}
                     onChange={() => setChecked(!checked)}
                     ref={register({
-                      required: 'Please provide consent to our data privacy policy'
+                      required: 'Select the checkbox to consent to our data privacy policy'
                     })} />
 
                   <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank">data privacy policy</a></label>
