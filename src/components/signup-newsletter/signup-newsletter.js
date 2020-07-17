@@ -68,8 +68,8 @@ export default function SignupNewsletter() {
 
                 </div>
 
-                <div className="input-group-container-middle checkbox">
-                  <input type="checkbox" id="agreement" name="agreement" className={(errors.agreement?.message ? " error" : "")}
+                <div className={"input-group-container-middle checkbox" + (errors.agreement?.message ? " checkbox-error" : "")}>
+                  <input type="checkbox" id="agreement" name="agreement"
                     checked={checked}
                     onChange={() => setChecked(!checked)}
                     ref={register({

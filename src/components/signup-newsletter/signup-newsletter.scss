@@ -117,6 +117,12 @@ form.newsletterForm {
     left: 0;
     margin-left: -20px;
 }
+
+.checkbox-error label:before {
+    border: 2px solid $white !important;
+    background-color: $error;
+}
+
 .checkbox label {
     position: relative;
 }
@@ -131,6 +137,7 @@ form.newsletterForm {
     border-radius: 3px;
     border: 2px solid $brand;
 }
+
 .checkbox label:after {
   content: '';
     display: block;
@@ -146,6 +153,7 @@ form.newsletterForm {
     top: 7px;
     left: 6px; 
 }
+
 .checkbox input[type="checkbox"]:checked ~ label::before {
     color: $brand;
 }
