@@ -1,6 +1,7 @@
 import React from "react"
+import { Router } from "@reach/router"
 import Header from "../components/header/header"
-import Banner from "../components/banner/banner"
+import Banner from "../components/banner/bannerb"
 import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
