@@ -1,7 +1,7 @@
 import React from "react"
 
-export default ({ heading1, heading2, heading3, ariaLabel, title }) =>
-  <section className="banner-background" role="img" aria-label={ariaLabel} title={title}>
+export default ({ heading1, heading2, heading3, ariaLabel, title, bannerbackground }) =>
+  <section class={bannerbackground} role="img" aria-label={ariaLabel} title={title}>
     <div className="overlay"></div>
     <div className="banner-container">
       <div className="greeting">

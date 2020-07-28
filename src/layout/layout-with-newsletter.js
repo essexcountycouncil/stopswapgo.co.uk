@@ -22,6 +22,7 @@ export default ({ children }) => {
         heading3="Travel"
         ariaLabel="Ladies walking in the park"
         title="Ladies walking in the park"
+        bannerbackground="banner-background"
         />
       <main id="content">
         <div className="container">

@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/header/headerb"
-import Banner from "../components/banner/bannerb"
+import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
 
@@ -22,6 +22,7 @@ export default ({ children }) => {
         heading3="Travel"
         ariaLabel="Ladies walking in the park"
         title="Ladies walking in the park"
+        bannerbackground="banner-background getting-to-school"
         />
       <main id="content">
         <div className="container">
