@@ -1,7 +1,7 @@
 import React from "react"
 import { Router } from "@reach/router"
-import Header from "../components/header/header"
-import Banner from "../components/banner/bannerb"
+import Header from "../components/header/headerb"
+import Banner from "../components/banner/banner"
 import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
@@ -12,7 +12,9 @@ export default ({ children }) => {
     <>
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
-      <Banner />
+      <Router>
+        <Banner path="/" />
+      </Router>
       <main id="content">
         <div className="container">
           <div className="main only">
