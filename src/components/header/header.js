@@ -18,7 +18,8 @@ function Header() {
             <li><a href="/about-us">About us</a></li>
             <li><a href="/get-started">Get started</a></li>
             <li><a href="/60-day-challenge">60 Day Challenge</a></li>
-            <li>|<a href="/getting-to-school">Getting to school</a></li>
+            <li class="pipe">|</li>
+            <li><a href="/getting-to-school">Getting to school</a></li>
           </ul>
         </div>
       </div>

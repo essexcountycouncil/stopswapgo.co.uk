@@ -14,10 +14,11 @@ function Header() {
             </a>
           </div>
           <ul className="nav-links">
-            <li><a href="/">Stop.Swap.Go</a></li>
             <li><a href="/getting-to-school/useful-info">Useful info</a></li>
-            <li><a href="/getting-to-school/faq">faq</a></li>
-            <li><a href="/getting-to-school/maps">maps</a></li>
+            <li><a href="/getting-to-school/faq">FAQ</a></li>
+            <li><a href="/getting-to-school/maps">Maps</a></li>
+            <li class="pipe">|</li>
+            <li><a href="/">Stop.Swap.Go</a></li>
           </ul>
         </div>
       </div>
