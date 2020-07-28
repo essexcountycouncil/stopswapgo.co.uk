@@ -1,14 +1,10 @@
 import React from "react"
-import Header from "../components/header/header"
+import { Router } from "@reach/router"
+import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
+import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
-
-// SignupNewsletter is the component that uses integration directly to GovDelivery 
-import SignupNewsletter from "../components/signup-newsletter/signup-newsletter"
-
-// Signup is a dull redirect
-import Signup from "../components/signup/signup"
 
 export default ({ children }) => {
 
@@ -16,14 +12,9 @@ export default ({ children }) => {
     <>
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
-      <Banner 
-        heading1="Rethink"
-        heading2="Your Daily"
-        heading3="Travel"
-        ariaLabel="Ladies walking in the park"
-        title="Ladies walking in the park"
-        bannerbackground="banner-background"
-        />
+      <Router>
+        <Banner path="/" />
+      </Router>
       <main id="content">
         <div className="container">
           <div className="main only">
@@ -33,7 +24,12 @@ export default ({ children }) => {
           </div>
         </div>
       </main>
-      <SignupNewsletter />
+      <Signup 
+        tagline1="Stop.Swap." 
+        tagline2="WIN!" 
+        p1="Sign up to our 60 Day Challenge to win prizes for walking and cycling!"
+        label="SIGN UP!"
+        url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
       <Footer />
     </>
   )

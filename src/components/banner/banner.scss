@@ -1,6 +1,9 @@
 .banner-background {
   background-image: url("./components/banner/two-women-walking.jpg");
   border-bottom: 10px solid $brand;
+  &.getting-to-school {
+    background-image: url("./components/banner/children-walking-to-school.jpg");
+  }
   @media print {
     background-image: none;
   }
