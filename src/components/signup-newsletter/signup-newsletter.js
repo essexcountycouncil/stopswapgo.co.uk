@@ -36,7 +36,7 @@ export default function SignupNewsletter() {
       <div className="signup">
         <div className="mantra">
           <h2 className="strapline"><span>Keep on moving</span></h2>
-          <p>Subscribe to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking.</p>
+          <p>Get the latest walking and cycling news, tips, community updates and exclusive offers straight to your inbox. Just enter your email address and hit ‘Subscribe’ – we’ll do the rest.</p>
           <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm">
 
             {submitted ?

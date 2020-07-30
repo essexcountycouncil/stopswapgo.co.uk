@@ -150,13 +150,14 @@ main#content {
   float: right;
 }
 .notice-middle{
-  margin: 3% 0% 3% 0%;
+  margin-bottom: $baseline;
+  padding: $baseline $gutter*0.5;
   width: 100%;
   text-align: center;
-}
-
-.text-block{
-  margin-top: $baseline;
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .content{
@@ -212,9 +213,7 @@ blockquote {
   display: table;
   clear: both;
 }
-.text-align-center{
-  text-align: center;
-}
+
 
 p.bold{
   font-weight: bold;

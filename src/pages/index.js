@@ -14,9 +14,8 @@ export default ({ data }) => {
     	<h2 className="strapline">Get ready to Stop.Swap.<i>GO!</i></h2>
       <br/>
     	<h3>Hello! We’re making getting around Essex easier – and more rewarding – than ever.</h3>
-      <p>More and more of us are <span>swapping from car to bus, bike or our own two feet</span>. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
-      <p>Join our community for the latest events, news and journey info. We’ll also be giving away prizes – including the chance to win a bike and cycling accessories worth <span>£1,000</span> – with our <span>60 Day Challenge</span>.</p>
-      <br/>
+      <p>More and more of us are swapping from car to bus, bike or our own two feet. And whether you’re off to the shops, visiting friends or family, or getting to and from work or school, we’re here to help keep you moving.</p>
+      <p>Join our community for the latest events, news and journey info. We’ll also be giving away prizes – including the chance to win a bike and cycling accessories worth £1,000 – with our 60 Day Challenge.</p>
     </div>
   	<PreviewServices />
     <SocialFeed />
