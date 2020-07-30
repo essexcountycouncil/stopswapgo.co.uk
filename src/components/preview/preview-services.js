@@ -1,5 +1,5 @@
 import React from "react"
-import cyclistPicture from "./Website_Image2.png"
+import previewPicture from "./two-women-walking.jpg"
 import familyPicture from "./Website_Image.png"
 import LargeButton from "../large-button/large-button"
 export default () =>
@@ -10,7 +10,7 @@ export default () =>
 			<div className="preview">
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>WIN!</i></h3>
 				<div className="preview-grey-border">
-				<img src={cyclistPicture} alt="Woman with a bicycle outside Chelmsford Railway Station" title="Woman with a bicycle outside Chelmsford Railway Station" />
+				<img src={previewPicture} alt="Two women walking" title="Two women walking" />
 			
 					<p>Want to win prizes for walking and cycling? Of course you do. Head over to our 60 Day Challenge
 page to learn more and register for exclusive VIP access and early bird rewards.</p>
