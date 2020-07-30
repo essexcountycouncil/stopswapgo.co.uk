@@ -16,9 +16,7 @@ export default () =>
 page to learn more and register for exclusive VIP access and early bird rewards.</p>
 					<LargeButton title="WIN!" url="/60-day-challenge" /></div>
 			</div>
-		</div>
 
-		<div className="previews">
 			<div className="preview">
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SHARE!</i></h3>
 				<div className="preview-grey-border">

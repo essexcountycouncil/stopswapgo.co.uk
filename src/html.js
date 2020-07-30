@@ -34,7 +34,7 @@ export default function HTML(props) {
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
-        {props.postBodyComponents}
+        {props.postBodyComponents}           
       </body>
     </html>
   )

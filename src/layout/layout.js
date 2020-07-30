@@ -22,8 +22,8 @@ export default ({ children }) => {
               <div>{children}</div>
             </section>
           </div>
-        </div>
-      </main>
+        </div>       
+      </main>      
       <Signup
         tagline1="Stop.Swap."
         tagline2="WIN!"
