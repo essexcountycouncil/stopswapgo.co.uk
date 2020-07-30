@@ -17,9 +17,9 @@ export default ({ children }) => {
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Banner 
-        heading1="Rethink"
-        heading2="Your Daily"
-        heading3="Travel"
+        heading1="60 Day"
+        heading2="Challenge"
+        heading3="now live!"
         ariaLabel="Cyclists in the forest"
         title="Cyclists in the forest"
         bannerbackground="banner-background challenge"
