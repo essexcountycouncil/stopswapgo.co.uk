@@ -149,6 +149,15 @@
 .preview-grey-border{
   background-color: lighten($grey-light, 7%);
   padding: 2em;
+  @include media(mobile) {
+    min-height: auto;
+  }
+  @include media(tablet) {
+    min-height: auto;
+  }
+  @include media(desktop) {
+    min-height: $baseline*28;
+  }
   .button-container-middle {
     margin-bottom: 0px !important;
   }
