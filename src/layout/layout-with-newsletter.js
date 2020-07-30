@@ -2,7 +2,6 @@ import React from "react"
 import Header from "../components/header/header"
 import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
-import Twitter from "../components/social-feed/social-feed"
 import SEO from "../components/seo"
 
 // SignupNewsletter is the component that uses integration directly to GovDelivery 
@@ -30,7 +29,6 @@ export default ({ children }) => {
           <div className="main only">
             <section className="content" aria-label="Main content area">
               <div>{children}</div>
-              <Twitter />
             </section>           
           </div>
         </div>

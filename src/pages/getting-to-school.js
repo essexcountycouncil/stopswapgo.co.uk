@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import LayoutH2sWithNewsletter from "../layout/layout-h2s-with-newsletter"
 import PreviewServices from "../components/preview/preview-services"
+import SocialFeed from "../components/social-feed/social-feed"
 
 export default ({ data }) => {
   return (
@@ -18,6 +19,7 @@ export default ({ data }) => {
       <br/>
     </div>
   	<PreviewServices />
+    <SocialFeed />
     </LayoutH2sWithNewsletter>
   )
 }
