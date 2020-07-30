@@ -1,5 +1,5 @@
 import React from "react"
-import LayoutWithNewsletter from "../layout/layout-with-newsletter"
+import LayoutWithNewsletter from "../layout/60-day"
 import LargeButton from "../components/large-button/large-button"
 import { Link } from 'gatsby'
 

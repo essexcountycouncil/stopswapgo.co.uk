@@ -1,9 +1,12 @@
 .banner-background {
-  background-image: url("./components/banner/two-women-walking.jpg");
+  background-image: url("./components/banner/two-cyclists-by-church.jpg");
   border-bottom: 10px solid $brand;
   &.getting-to-school {
     background-image: url("./components/banner/children-walking-to-school.jpg");
   }
+  &.challenge {
+    background-image: url("./components/banner/cyclists-in-the-forest.jpg");
+  }  
   @media print {
     background-image: none;
   }
