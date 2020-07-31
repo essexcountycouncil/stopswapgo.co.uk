@@ -35,22 +35,25 @@ const Faq = () => (
 
 		<h2>How do the prize draws work – and what can I win?</h2>
 		<p>Over the course of our 60 Day Challenge we&rsquo;ll be giving away prizes weekly and bi-monthly (every two months).</p>
-		<h3>There are three main ways to win:</h3>
+		<p>There are three main ways to win:</p>
 		<ol>
 			<li>
-				<p>Weekly prize raffles – for every trip you log in the Indeemo app each week, you&rsquo;ll gain an entry into our weekly prize raffle to win one of five available £50.00 e-gift cards. You get to choose between e-giftcards for Love2Shop or Amazon).</p>
+				<h3>Weekly prize raffles</h3> 
+				<p>For every trip you log in the Indeemo app each week, you&rsquo;ll gain an entry into our weekly prize raffle to win one of five available £50.00 e-gift cards. You get to choose between e-giftcards for Love2Shop or Amazon).</p>
 				<p>Bonus multiplier: every time you hit a trip-based milestone (e.g. 10 daily trips logged; 20 trips; 30 trips; 45 trips; 60 trips), we’ll give you the same number of additional entries into our weekly prize raffles so you&rsquo;ll have even more chances to win. For example, if you&rsquo;ve logged 30 daily trips in Indeemo, you&rsquo;ll get an additional 30 raffle entries!</p> 
 				<p>Plus! Should you reach the lofty heights of 60 logged trips during your 60 Day Challenge, you&rsquo;ll qualify for entry into our Golden Ticket raffle, – keep reading for more details.</p>
 				<p>Winners will be picked at random each week and notified via Indeemo.</p>
 			</li>
 			<li>
-				<p>Weekly bonus challenges – an extra chance to win a prize by going the extra mile!</p>
+				<h3>Weekly bonus challenges</h3>
+				<p>An extra chance to win a prize by going the extra mile!</p>
 				<p>Each week you’ll see a &rdquo;Weekly bonus challenge&rdquo; task in Indeemo. Complete it and you&rsquo;ll be entered into our bonus challenge to win a £25.00 Love2Shop or Amazon e-gift card (winner’s choice).</p>
 				<p>There&rsquo;ll be a different bonus challenge every week. It could be something simple, like uploading a selfie at your favourite Essex beauty spot, or silly, like pimping your bike or walking gear. Either way it&rsquo;s sure to be fun and a great way to win more prizes.</p>
 				<p>Team Stop.Swap.<i>GO!</i> will review all entries each week and choose a lucky winner to be notified via Indeemo.</p>
 			</li>
 			<li>
-				<p>Golden Ticket raffle (bi-monthly) – a chance at a whopping prize for the most active of challengers!!</p>
+				<h3>Golden Ticket raffle (bi-monthly)</h3>
+				<p>A chance at a whopping prize for the most active of challengers!!</p>
 				<p>We&rsquo;ll be holding bi-monthly Golden Ticket raffles where one lucky winner will scoop £1,000 to spend on a bike plus cycling and walking accessories of their choice!</p>
 				<p>Stop.Swap.<i>WOW!</i></p>
 				<p>To get your hands on a golden ticket entry, complete 60 daily trip diaries using the Indeemo app and you&rsquo;ll automatically be entered into your nearest Golden Ticket raffle draw.</p>
