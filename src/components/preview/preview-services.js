@@ -2,6 +2,7 @@ import React from "react"
 import previewPicture from "./two-women-walking.jpg"
 import familyPicture from "./Website_Image.png"
 import LargeButton from "../large-button/large-button"
+import { Link } from 'gatsby'
 export default () =>
 	<div>
 
@@ -12,7 +13,8 @@ export default () =>
 				<div className="preview-grey-border">
 				<img src={previewPicture} alt="Two women walking" title="Two women walking" />
 					<p>Want to win prizes for walking and cycling? Of course you do. Our 60 Day Challenge is now live and we’re giving you the chance to win Amazon gift cards, Love2Shop vouchers and more!</p>
-					<p>To be in with a chance to win, hit the button to learn more and get your 60 Day Challenge started. Terms & conditions apply.</p>
+					<p>To be in with a chance to win, hit the button to learn more and get your 60 Day Challenge started.</p>
+					<p class="small"><Link to="/terms-and-conditions">Terms and conditions apply</Link>.</p>
 					<LargeButton title="WIN!" url="/60-day-challenge" /></div>
 			</div>
 

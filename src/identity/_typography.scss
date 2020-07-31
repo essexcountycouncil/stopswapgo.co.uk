@@ -242,6 +242,12 @@ ul {
   &.no-bullets li {
     list-style: none;
   }
+  &.bold {
+    font-weight: $bold;
+    li p {
+      font-weight: $regular;
+    }
+  }
 }
 
 ol {

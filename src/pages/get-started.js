@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../layout/layout"
+import Layout from "../layout/faq-layout"
 
 
 const GetStartedPage = () => (
@@ -55,6 +55,10 @@ const GetStartedPage = () => (
 
 		<h3>Want free cake for cycling?</h3>
 		<p>Join the <a href="https://www.thecakeescape.org.uk/">Cake Escape</a>, ride to its scenic cafes, collect stamps, and that free cake is all yours. Yes, really. Sign us up!</p>
+
+		<h3>Protect your bike from theft</h3>
+		<p>Deter thieves and <a href="https://www.bikeregister.com/">visit BikeRegister to log your bike</a> on their database for free. You'll also receive a security marking kit and warning labels. Police forces across the country are linked to the register so you’re also more likely to get your bike back if it gets swiped – awesome!</p>
+
 
 		<h3>Advice on walking to school and work</h3>
 		<p><a href="https://www.livingstreets.org.uk/">Living Streets</a> is the national charity for everyday walking. The website offers lots of advice to help you walk to school and work.</p>
