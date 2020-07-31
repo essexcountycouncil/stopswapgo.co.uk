@@ -36,7 +36,7 @@ const Faq = () => (
 		<h2>How do the prize draws work – and what can I win?</h2>
 		<p>Over the course of our 60 Day Challenge we&rsquo;ll be giving away prizes weekly and bi-monthly (every two months).</p>
 		<p>There are three main ways to win:</p>
-		<ol>
+		<ol class="bold">
 			<li>
 				<h3>Weekly prize raffles</h3> 
 				<p>For every trip you log in the Indeemo app each week, you&rsquo;ll gain an entry into our weekly prize raffle to win one of five available £50.00 e-gift cards. You get to choose between e-giftcards for Love2Shop or Amazon).</p>
