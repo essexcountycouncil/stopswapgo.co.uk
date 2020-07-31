@@ -87,8 +87,11 @@
     padding-top: $baseline;
     padding-bottom: $baseline;
     .mantra {
-      h2, p {
+      h2, p, a {
         color: $white;
+      }
+      p.small {
+        @include small;
       }
       .strapline{
         margin-top: $baseline*1.5;

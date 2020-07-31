@@ -7,7 +7,7 @@ const Challenge = () => (
 	<LayoutWithNewsletter>
 		<h1>Win prizes for walking and cycling with our 60 Day Challenge</h1>
 		<div className="notice notice-middle">
-			<p>Join people across Essex making the swap from driving to walking or cycling to win prizes. Sign up now and get ready to Stop. Swap. GO!</p>
+			<p>Join people across Essex making the swap from driving to walking or cycling to win prizes. Sign up now and get ready to Stop.Swap.<i>GO!</i></p>
 		</div>
 		<p>That&rsquo;s right. Swap to walking and cycling with our 60 Day Challenge and you could win fantastic prizes, including Love2Shop vouchers, Amazon gift cards and even the chance to win a bike and accessories to the value of £1,000!</p>
 		<p>All you have to do to be in with a chance to win is take part in the 60 Day Challenge. It’s completely free and every trip counts. It doesn’t matter if you’re walking to work or simply cycling to the shops to pick up a pint of milk: tell us about your trip and you could win! It’s as simple as that.</p>

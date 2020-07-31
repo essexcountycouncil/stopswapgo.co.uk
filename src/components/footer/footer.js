@@ -1,5 +1,6 @@
 import React from "react"
 import logo from "./seax.png"
+import { Link } from 'gatsby'
 
 export default () =>
   <footer id="main-footer" className="footer-container">
@@ -10,7 +11,7 @@ export default () =>
             <li>
               <a href="https://www.essex.gov.uk/accessibility">Accessibility</a></li><li>
               <a href="https://www.essex.gov.uk/cookies">Cookies</a></li><li>
-              <a href="https://www.essex.gov.uk/terms-conditions">Terms and conditions</a></li><li>
+              <Link to="/terms-and-conditions">Terms and conditions</Link></li><li>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Privacy and data protection</a></li><li>
               <a href="mailto:stop.swap.go@essex.gov.uk">Contact us</a></li>
           </ul>
