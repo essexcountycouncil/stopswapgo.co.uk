@@ -19,7 +19,7 @@ export default ({ children }) => {
       <Banner 
         heading1="60 Day"
         heading2="Challenge"
-        heading3="now live!"
+        heading3="Now Live!"
         ariaLabel="Cyclists in the forest"
         title="Cyclists in the forest"
         bannerbackground="banner-background challenge"

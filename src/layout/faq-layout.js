@@ -26,10 +26,13 @@ export default ({ children }) => {
       </main>
       <Signup 
         tagline1="Stop.Swap." 
-        tagline2="WIN!" 
-        p1="Want to win prizes for walking and cycling? Of course you do. Our 60 Day Challenge is now live and we’re giving you the chance to win Amazon gift cards, Love2Shop vouchers and more! To be in with a chance to win, hit the button to learn more and get your 60 Day Challenge started. Terms and conditions apply. "
-        label="SIGN UP!"
-        url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
+        tagline2={[<i>WIN!</i>]}
+        p1="Want to win prizes for walking and cycling? Of course you do. Our 60 Day Challenge is now live and we’re giving you the chance to win Amazon gift cards, Love2Shop vouchers and more!"
+        p2="To be in with a chance to win, hit the button to learn more and get your 60 Day Challenge started."
+        p3="Terms & conditions apply. "
+        p3link="/terms-and-conditions"
+        label={[<i>WIN!</i>]}
+        url="/60-day-challenge"/>
       <Footer />
     </>
   )

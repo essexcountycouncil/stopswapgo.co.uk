@@ -12,6 +12,16 @@ $modularscale: (
   text-transform: none;
 }
 
+@mixin small {
+  font-size: ms(-1);
+  line-height: 1.6153846rem;
+}
+
+@mixin smaller {
+  font-size: ms(-2);
+  line-height: 1.14286rem;
+}
+
 p {
   @include p;
   @include word-break;
@@ -28,16 +38,9 @@ p {
       font-size: ms(0);
     }
   }
-}
-
-@mixin small {
-  font-size: ms(-1);
-  line-height: 1.6153846rem;
-}
-
-@mixin smaller {
-  font-size: ms(-2);
-  line-height: 1.14286rem;
+  &.small {
+    @include small;
+  }
 }
 
 @mixin h1 {

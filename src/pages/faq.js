@@ -23,7 +23,7 @@ const Faq = () => (
 		<p>Of course you can! We want as many people as possible to switch car-use for active travel.</p>
 
 		<h2>Can I invite my friends and family to join the challenge too?</h2>
-		<p>Yes! The more the merrier. Share the 60 Day Challenge page with your family and friends and they can register for the challenge, too.</p>
+		<p>Yes! The more the merrier. Share the <Link to="/60-day-challenge">60 Day Challenge</Link> page with your family and friends and they can register for the challenge, too.</p>
 
 		<h2>What do I need to join the challenge?</h2>
 		<p>As long as you&rsquo;re 18+ years old, all you need is a smartphone to download the app, and your own two feet. Or a bike, if you&rsquo;re planning on cycling as part of your 60 Day Challenge.</p>
@@ -47,12 +47,12 @@ const Faq = () => (
 				<p>Weekly bonus challenges – an extra chance to win a prize by going the extra mile!</p>
 				<p>Each week you’ll see a &rdquo;Weekly bonus challenge&rdquo; task in Indeemo. Complete it and you&rsquo;ll be entered into our bonus challenge to win a £25.00 Love2Shop or Amazon e-gift card (winner’s choice).</p>
 				<p>There&rsquo;ll be a different bonus challenge every week. It could be something simple, like uploading a selfie at your favourite Essex beauty spot, or silly, like pimping your bike or walking gear. Either way it&rsquo;s sure to be fun and a great way to win more prizes.</p>
-				<p>Team Stop. Swap. GO! will review all entries each week and choose a lucky winner to be notified via Indeemo.</p>
+				<p>Team Stop.Swap.<i>GO!</i> will review all entries each week and choose a lucky winner to be notified via Indeemo.</p>
 			</li>
 			<li>
 				<p>Golden Ticket raffle (bi-monthly) – a chance at a whopping prize for the most active of challengers!!</p>
 				<p>We&rsquo;ll be holding bi-monthly Golden Ticket raffles where one lucky winner will scoop £1,000 to spend on a bike plus cycling and walking accessories of their choice!</p>
-				<p>Stop.Swap.WOW!</p>
+				<p>Stop.Swap.<i>WOW!</i></p>
 				<p>To get your hands on a golden ticket entry, complete 60 daily trip diaries using the Indeemo app and you&rsquo;ll automatically be entered into your nearest Golden Ticket raffle draw.</p>
 				<p>The lucky winner will be picked at random and notified via Indeemo.</p>
 			</li>
@@ -67,10 +67,10 @@ const Faq = () => (
 		<p>The challenge focusses on walking and cycling to begin with, as bus travel has restrictions on capacity due to social distancing. Good news though, there is a bus-focused initiative coming in the future as part of Stop.Swap.<i>GO!</i></p>
 
 		<h2>Why do you need my postcode and email address when I sign up to the 60 Day Challenge?</h2>
-		<p>We need your email address so that we can check that you have registered to the live challenge using the Indeemo app. We&rsquo;ll also use it to contact you in the event that you win one of our available prizes and to share any news or updates about Stop.Swap.GO!. We need your postcode so that we can verify that you live in Essex and are eligible to take part in the 60 Day Challenge.</p>
+		<p>We need your email address so that we can check that you have registered to the live challenge using the Indeemo app. We&rsquo;ll also use it to contact you in the event that you win one of our available prizes and to share any news or updates about Stop.Swap.<i>GO!</i>. We need your postcode so that we can verify that you live in Essex and are eligible to take part in the 60 Day Challenge.</p>
 
 		<h2>What will you do with any content (notes, comments, photos and videos) I upload to the app during the challenge?</h2>
-		<p>If you have consented for us to share your app content uploads as part of our marketing activity we might share your notes, comments, photos and videos as part of our Stop. Swap. <i>GO!</i> content for these channels.</p>
+		<p>If you have consented for us to share your app content uploads as part of our marketing activity we might share your notes, comments, photos and videos as part of our Stop. Swap.<i>GO!</i> content for these channels.</p>
 		<p>If you do not want your content to be shared, we will honour your decision to opt-out. Your content will be kept secure within our app platform and will not be shared publicly.</p>
 	</FaqLayout>
 )
