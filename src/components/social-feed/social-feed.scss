@@ -30,7 +30,7 @@
     text-align: center;
     margin-bottom: $baseline * 2;
     position: relative;
-    @include grid-column(4 / 12);
+    @include grid-column(1);
     &:nth-child(2n) {
       @include media(mobile) {
         border: none;
