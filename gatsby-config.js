@@ -14,7 +14,8 @@ module.exports = {
     author: `Essex Service Design Team`,
     siteUrl: `https://stopswapgo.co.uk`
   },
-  plugins: [ 
+  plugins: [
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {

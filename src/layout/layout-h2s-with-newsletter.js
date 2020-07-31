@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "../components/header/header"
+import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
@@ -22,14 +22,14 @@ export default ({ children }) => {
         heading3="Travel"
         ariaLabel="Ladies walking in the park"
         title="Ladies walking in the park"
-        bannerbackground="banner-background"
+        bannerbackground="banner-background getting-to-school"
         />
       <main id="content">
         <div className="container">
           <div className="main only">
             <section className="content" aria-label="Main content area">
               <div>{children}</div>
-            </section>           
+            </section>
           </div>
         </div>
       </main>

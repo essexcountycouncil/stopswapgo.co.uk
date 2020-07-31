@@ -36,7 +36,7 @@ export default function SignupNewsletter() {
       <div className="signup">
         <div className="mantra">
           <h2 className="strapline"><span>Keep on moving</span></h2>
-          <p>Subscribe to our newsletter for the latest walking and cycling news, tips, and exclusive offers to keep moving. You’ll also be the first to hear about our 60 Day Challenge where you can win prizes for cycling and walking.</p>
+          <p>Get the latest walking and cycling news, tips, community updates and exclusive offers straight to your inbox. Just enter your email address and hit ‘Subscribe’ – we’ll do the rest.</p>
           <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm">
 
             {submitted ?
@@ -76,16 +76,16 @@ export default function SignupNewsletter() {
                       required: 'Select the checkbox to consent to our data privacy policy'
                     })} />
 
-                  <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank">data privacy policy</a></label>
+                  <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a></label>
                 </div>
 
                 <div className="disclaimer">
-                  <p>Essex County Council is the controller of the personal information you submit here. We'll use the information you provide to keep you updated with Stop.Swap.<i>GO!</i> If it looks like you might be committing fraud or crime, the law may require us to share your information with the police or fraud investigation organisations. For more details about how we use your personal information, please read our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank">data privacy policy</a>.</p>
+                  <p>Essex County Council is the controller of the personal information you submit here. We'll use the information you provide to keep you updated with Stop.Swap.<i>GO!</i> If it looks like you might be committing fraud or crime, the law may require us to share your information with the police or fraud investigation organisations. For more details about how we use your personal information, please read our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a>.</p>
                 </div>
               </div>)}
           </form>
         </div>
       </div>
-    </section >
+    </section>
   )
 }

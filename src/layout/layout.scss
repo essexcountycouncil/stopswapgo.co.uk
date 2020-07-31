@@ -123,15 +123,12 @@ main#content {
 
 .notice {
   background-color: lighten($brand, 40%);
-  p{
+  padding: $gutter;
+  p, h2, h3 {
     text-align: center;
-    padding: 0px 40px 30px 40px;
-    margin-top: 0px;
-  }   
-  h2, h3{
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px 40px 0px 40px;
+  }
+  h2, h3 {
+    margin-top: 0;
   }
   @include media(mobile) {
     width: 100%;
@@ -150,13 +147,14 @@ main#content {
   float: right;
 }
 .notice-middle{
-  margin: 3% 0% 3% 0%;
+  margin-bottom: $baseline;
+  padding: $baseline $gutter*0.5;
   width: 100%;
   text-align: center;
-}
-
-.text-block{
-  margin-top: $baseline;
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .content{
@@ -167,23 +165,26 @@ blockquote {
     background: lighten($grey, 45%);
     border-left: 10px solid #ccc;
     margin: 5% 10% 5% 10%;
-    padding: 20px;
+    padding: $gutter*1.5;
     quotes: "\201C""\201D""\2018""\2019";
+    position: relative;
     &:before {
       color: #ccc;
       content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
+      font-size: ms(4);
+      line-height: $baseline*2;
       margin-right: 0.25em;
       vertical-align: -0.4em;
+      position: absolute;
       }
     p {
-      display: inline;
-      font-size: 1.2em;
+      text-indent: $gutter*1.5;
+      font-size: ms(0);
+      line-height: $baseline;
+      margin-bottom: $baseline;
     }
 
   footer {
-    margin-top: 10px;
     font-weight: bold;
 
   }
@@ -212,9 +213,7 @@ blockquote {
   display: table;
   clear: both;
 }
-.text-align-center{
-  text-align: center;
-}
+
 
 p.bold{
   font-weight: bold;

@@ -1,6 +1,6 @@
 import React from "react"
 import { Router } from "@reach/router"
-import Header from "../components/header/header"
+import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
 import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
@@ -22,15 +22,14 @@ export default ({ children }) => {
               <div>{children}</div>
             </section>
           </div>
-        </div>       
-      </main>      
-      <Signup
-        tagline1="Stop.Swap."
-        tagline2="WIN!"
-        p1={["Stop.Swap.", <i>GO!</i>, " wants to make getting around Essex on foot or by bike even more rewarding. So we’re delighted to announce our 60 Day Challenge: your chance to win awesome prizes like gift vouchers, walking and cycling accessories, and even a brand new bike and accessories worth £1000!"]}
-        p2="Go to our 60 Day Challenge page to register for exclusive VIP access and see how you could win these fantastic prizes."
-        label="WIN!"
-        url="/60-day-challenge" />
+        </div>
+      </main>
+      <Signup 
+        tagline1="Stop.Swap." 
+        tagline2="WIN!" 
+        p1="Sign up to our 60 Day Challenge to win prizes for walking and cycling!"
+        label="SIGN UP!"
+        url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
       <Footer />
     </>
   )

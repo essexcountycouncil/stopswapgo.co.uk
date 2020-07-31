@@ -1,5 +1,4 @@
-.previews {
-  @extend %grid-row;
+.previews.social-feed {
   position: relative;
   @include media(mobile) {
     margin-top: $baseline*1.5;
@@ -31,7 +30,7 @@
     text-align: center;
     margin-bottom: $baseline * 2;
     position: relative;
-    @include grid-column(6 / 12);
+    @include grid-column(1);
     &:nth-child(2n) {
       @include media(mobile) {
         border: none;
@@ -42,6 +41,9 @@
         margin-top: 0;
       }
       min-height: 0;
+    }
+    &.strapline {
+      @include grid-column(1);
     }
     .sub-section-heading {
 
@@ -149,15 +151,6 @@
 .preview-grey-border{
   background-color: lighten($grey-light, 7%);
   padding: 2em;
-  @include media(mobile) {
-    min-height: auto;
-  }
-  @include media(tablet) {
-    min-height: auto;
-  }
-  @include media(desktop) {
-    min-height: $baseline*28;
-  }
   .button-container-middle {
     margin-bottom: 0px !important;
   }

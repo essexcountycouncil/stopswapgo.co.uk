@@ -1,6 +1,6 @@
 import React from "react"
 import { Router } from "@reach/router"
-import Header from "../components/header/header"
+import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
 import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
@@ -22,8 +22,8 @@ export default ({ children }) => {
               <div>{children}</div>
             </section>
           </div>
-        </div>       
-      </main>      
+        </div>
+      </main>
       <Signup
         tagline1="Stop.Swap."
         tagline2="WIN!"

@@ -17,12 +17,12 @@ export default ({ children }) => {
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <Banner 
-        heading1="Rethink"
-        heading2="Your Daily"
-        heading3="Travel"
-        ariaLabel="Ladies walking in the park"
-        title="Ladies walking in the park"
-        bannerbackground="banner-background"
+        heading1="60 Day"
+        heading2="Challenge"
+        heading3="Now Live!"
+        ariaLabel="Cyclists in the forest"
+        title="Cyclists in the forest"
+        bannerbackground="banner-background challenge"
         />
       <main id="content">
         <div className="container">
