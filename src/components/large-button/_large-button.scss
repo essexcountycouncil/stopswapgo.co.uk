@@ -1,40 +1,47 @@
 
 .button-container-middle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: $baseline*2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $baseline*2;
 }
 
 .button.button-large{
-    width: 80%;
-    max-width: 239px;
-    background: #fff;
-    color: #414141;
-    font-style: italic;
-    font-weight: 700;
-    border: 3px #fff solid;
-    text-align: center;
-    height: 3.25rem;
-    line-height: 2rem;
-    margin-bottom: 10px;
-    &:hover {
-        border-color: $brand;
-        background-color: $brand;
-      }
+  width: 80%;
+  max-width: 239px;
+  background: #fff;
+  color: #414141;
+  font-style: italic;
+  font-weight: 700;
+  border: 3px #fff solid;
+  text-align: center;
+  height: 3.25rem;
+  line-height: 2rem;
+  margin-bottom: 10px;
+  &:hover {
+    border-color: $brand;
+    background-color: $brand;
+  }
 }
 
 .button.extra-space {
-    margin-top: $baseline;		
+  margin-top: $baseline;		
 }
 
 .button.button-dark{
-    border-color: $brand !important;;
-    background-color: $brand !important;
-    color: #414141 !important;
-    &:hover {
-        background: $grey !important;
-        color: white !important;
-        border-color: $grey !important;
-      }
+  border-color: $brand !important;;
+  background-color: $brand !important;
+  color: #414141 !important;
+  &:hover {
+    background: $grey !important;
+    color: white !important;
+    border-color: $grey !important;
+  }
+}
+
+.button.deactive {
+  color: white !important;
+  cursor: default;
+  background-color: $grey !important;
+  border-color: $grey !important;
 }

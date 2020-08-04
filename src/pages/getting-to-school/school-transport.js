@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../../layout/layout-h2s"
+import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
 
 const Transport = () => (
 	<Layout>
