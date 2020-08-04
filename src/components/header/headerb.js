@@ -16,7 +16,6 @@ function Header() {
           <ul className="nav-links">
             <li><a href="/getting-to-school">Getting to school</a></li>
             <li><a href="/getting-to-school/prepare">Prepare</a></li>
-            <li><a href="/getting-to-school/routes">Routes</a></li>
             <li><a href="/getting-to-school/training">Training</a></li>
             <li><a href="/getting-to-school/school-transport">School transport</a></li>
           </ul>

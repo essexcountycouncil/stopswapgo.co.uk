@@ -13,7 +13,6 @@ export default () =>
               <a href="https://www.essex.gov.uk/cookies">Cookies</a></li><li>
               <a href="https://www.essex.gov.uk/terms-conditions">Terms and conditions</a></li><li>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Privacy and data protection</a></li><li>
-              <a href="mailto:stop.swap.go@essex.gov.uk">Contact us</a></li><li>
               <Link to="/terms-and-conditions">Competiton terms and conditions</Link></li>
           </ul>
           <ul className="social">

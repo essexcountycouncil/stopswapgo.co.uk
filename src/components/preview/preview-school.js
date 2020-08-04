@@ -4,6 +4,7 @@ import prepare from "./people-walking-with-masks.png"
 import training from "./cyclists-training.png"
 import transport from "./school-kids.png"
 import LargeButton from "../large-button/large-button"
+import DeactiveButton from "../large-button/deactive-button"
 import { Link } from 'gatsby'
 export default () =>
 	<div>
@@ -15,7 +16,7 @@ export default () =>
 				<div className="preview-grey-border">
 					<img src={mapPreview} alt="Two women walking" title="Two women walking" />
 					<p>Check out our maps for travel to schools and colleges. Find suggested drop off places to miss the heaviest traffic! Better yet, if you live within a 30 minute walk, why not walk, cycle, or scoot to school?</p>
-					<LargeButton title="ROUTES!" url="/getting-to-school/routes" />
+					<DeactiveButton title="Coming soon!" url="#" />
 				</div>
 			</div>
 
@@ -41,7 +42,7 @@ export default () =>
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>TRANSPORT!</i></h3>
 				<div className="preview-grey-border">
 					<img src={transport} alt="Two school kids walking" title="Two school kids walking" />
-					<p>Box text: We’d love to see all children move to walking and cycling to school and we’re here to help. Essex County Council (ECC) will still provide transport options for your child, if eligible.</p>
+					<p>We’d love to see all children move to walking and cycling to school and we’re here to help. Essex County Council (ECC) will still provide transport options for your child, if eligible.</p>
 					<LargeButton title="TRANSPORT!" url="/getting-to-school/school-transport" />
 				</div>
 			</div>			
