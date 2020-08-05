@@ -9,10 +9,10 @@ const Prepare = () => (
 		<p>Here&rsquo;s a whole bunch of information and advice on how to get you and your children walking, scooting, and cycling during the school run.</p>
 		<p>Ditching the car will help your children get some fresh air, grow their confidence and help them learn how to plan trips. Plus, it&rsquo;ll help you keep clear of traffic jams and delays that are only going to become worse come school time!</p>
 
-		<ul class="bold">
-			<li>Stop making car trips to the school gates</li>
-			<li>Swap them to cycling, walking or scooting, at least part of the way</li>
-			<li><i>GO!</i> and get them to school on time with less annoying traffic</li>
+		<ul>
+			<li><strong>Stop</strong> making car trips to the school gates</li>
+			<li><strong>Swap</strong> them to cycling, walking or scooting, at least part of the way</li>
+			<li><strong><i>GO!</i></strong> and get them to school on time with less annoying traffic</li>
 		</ul>
 
 		<h2>Stop &ndash; rethink getting to school or college</h2>
