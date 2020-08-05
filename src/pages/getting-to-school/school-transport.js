@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
 
 const Transport = () => (
@@ -11,7 +12,7 @@ const Transport = () => (
 
 	<p>
 	If you have any queries or concerns about transport which ECC do not pay
-	for then you will need to contact one of the local bus operators in Essex.
+	for then you will need to contact one of the <Link to="/bus-operators">local bus operators in Essex.</Link>
 		</p>
 
 	<h2>Using a dedicated taxi, minibus or bus for education transport</h2>
