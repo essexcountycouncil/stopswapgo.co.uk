@@ -16,14 +16,6 @@ export default ({ children }) => {
     <>
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
-      <Banner 
-        heading1="Rethink"
-        heading2="Your School"
-        heading3="Run"
-        ariaLabel="Girls walking to school"
-        title="Girls walking to school"
-        bannerbackground="banner-background getting-to-school"
-        />
       <main id="content">
         <div className="container">
           <div className="main only">

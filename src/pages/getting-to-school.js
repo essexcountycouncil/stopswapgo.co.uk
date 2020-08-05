@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import LayoutH2sWithNewsletter from "../layout/layout-h2s-with-newsletter"
-import PreviewServices from "../components/preview/preview-services"
+import PreviewSchool from "../components/preview/preview-school"
 import SocialFeed from "../components/social-feed/social-feed"
 
 export default ({ data }) => {
@@ -11,14 +11,15 @@ export default ({ data }) => {
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     </Helmet>
     <div className="mantra" id="get-ready">
-    	<h2 className="strapline">Get ready to Stop.Swap.<i>GO!</i></h2>
+    	<h2 className="strapline">Stop.Swap.<i>GO!</i> to school in September</h2>
       <br/>
-    	<h3>Hello! We’re making getting around Essex easier – and more rewarding – than ever.</h3>
-      <p>More and more of us are <span>swapping from car to bus, bike or our own two feet</span>. And whether you’re off to the shops, visiting friends or family, or getting to and from work, we’re here to help keep you moving.</p>
-      <p>Join our community for the latest events, news and journey info. We’ll also be giving away prizes – including the chance to win a bike and cycling accessories worth <span>£1,000</span> – with our <span>60 Day Challenge</span>.</p>
-      <br/>
+    	<h3>Rethink how your child goes back to school or college</h3>
+      <p>Loads of people have swapped to cycling and walking around Essex to stay active during lockdown. We’re here to help you avoid traffic or long waits for the socially distanced bus when schools and colleges return. We’ll also help you get those steps in as well.</p>
+      <p>So we’ve put together plenty of advice to help you make the swap, as well as walking and cycling maps to your school including suggested drop off and pick-up points that aren’t going to drag you through the busy town or to the school gates. They’ll help you avoid the traffic, stay healthy and help the environment.</p>
+      <p>We have a ‘how to’ guide on swapping and we’ll be adding plenty more maps and information over time, so stay tuned. GO! sign up to our newsletter so you’re always up to date.</p>
+      <p>We want to get everyone in schools and colleges to have a go at walking, cycling, or scooting, so the information here is for everyone. But we’ll cover off some specifics if you are entitled to transport from Essex County Council too.</p>
     </div>
-  	<PreviewServices />
+  	<PreviewSchool />
     <SocialFeed />
     </LayoutH2sWithNewsletter>
   )
