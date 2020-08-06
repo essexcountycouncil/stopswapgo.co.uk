@@ -5,7 +5,6 @@ import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
 const EducationTransportOperators = () => (
 	<Layout>
 		<h1>Education transport operators</h1>
-g
 		<p>Schools are listed in alphabetical order. Please use the links below to find your school and the associated transport operator.</p>
 		<p>These operators are contracted by Essex County Council to supply education transport to each school. Please note, one school may have multiple transport operators.</p>
 		<ul>
