@@ -60,7 +60,7 @@ $brand3: #292929; // used for footer top
 $brand4: #051a31; // used for footer bottom
 
 // greyscale
-$grey-lighter: #f5f5f5;
+$grey-lighter: #f1f2f3;
 $grey-light: #dee0e2;
 $grey: #808080;
 $grey-dark: #494949;
@@ -101,7 +101,7 @@ $overlay-brand: rgba(28,227,52,0.03);
 $button: #00823b; // green taken from gov.uk
 $button-banner-box: $grey-dark;
 $button-banner-box-hover: #151515;
-$white-on-black-hover: #d9d9d9;
+$white-on-black-hover: $white;
 $search: $black;
 $banner-hover: $grey-dark;
 $linkbox: #0072C6; // Linking to external sites
