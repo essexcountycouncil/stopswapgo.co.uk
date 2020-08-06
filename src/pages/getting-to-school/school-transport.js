@@ -18,7 +18,7 @@ const Transport = () => (
 		<li>enhanced cleaning</li>
 	</ul>
 	<p>These measures will vary by school and journey. So make sure your child listens to the transport operator taking them to and from school, and the school teachers.</p>
-	<p>You’ll get a letter by the second week of August that will have more information and the contact details of the operator running your service. Alternatively, you can contact your transport operator.</p>
+	<p>You’ll get a letter by the second week of August that will have more information and the contact details of the operator running your service. Alternatively, you can <Link to="/getting-to-school/education-transport-operators">contact your transport operator</Link>.</p>
 	<p>Please be assured, the transport operators running these services will be following the latest government guidelines.</p>
 	<h2>Using a ticket for a public bus or train for home to school transport</h2>
 	<p>If your child gets a public bus, train, tube ticket, or oyster card from Essex County Council then <a href="https://www.gov.uk/guidance/coronavirus-covid-19-safer-travel-guidance-for-passengers#public-transport">government guidance on public transport</a> will apply, including social distancing and wearing a face covering.</p>
