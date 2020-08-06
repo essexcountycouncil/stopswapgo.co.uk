@@ -37,7 +37,7 @@ const Prepare = () => (
 		<p>There are plenty of things you can do to make your child safer on the roads. Safer Essex Roads Partnership offers <Link to="https://saferessexroads.org/road-users/cycling/">road and bike safety</Link> lessons to give your child the skills they need to handle their trip to school. They&rsquo;re great for getting children used to the roads in a safe way. You could even spend a bit of time taking the route with your family over summer, so everyone can feel comfortable and safe.</p>
 
 		<div className="notice notice-middle">
-			<h2>GO! &ndash; what to do from now until school starts</h2>
+			<h2><i>GO!</i> &ndash; what to do from now until school starts</h2>
 			<ol class="bold">
 				<li>Plan your route
 					<p>Use our maps that are specific to your route, or think about how to get from your front door to school. Google Maps is another great place to start. You&rsquo;re looking for things like quiet roads, good crossing points, and well-lit areas.</p>
