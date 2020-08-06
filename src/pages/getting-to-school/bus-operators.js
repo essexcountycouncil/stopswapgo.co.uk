@@ -9,7 +9,13 @@ const BusOperators = () => (
 		<h1>Bus operators in Essex</h1>
 		<p>We&rsquo;ve compiled this list of public bus operators. Visit their sites to stay up to date with the latest safety and timetable information.</p>
 		
-		<p>[Subheading] Names A to E</p>
+		<ul>
+			<li><a href="#ae">A to E</a></li>
+			<li><a href="#fk">F to K</a></li>
+			<li><a href="#lz">L to Z</a></li>
+		</ul>
+
+		<h2 id="ae">Names A to E</h2>
 		<ul>
 			<li><a href="https://www.arrivabus.co.uk/herts-and-essex/">Arriva (Herts and Essex)</a></li>
 			<li><a href="https://www.arrivabus.co.uk/london/contact-arriva-london/">Arriva London</a></li>
@@ -20,7 +26,7 @@ const BusOperators = () => (
 			<li><a href="http://www.efcommunitytransport.co.uk/">Epping Forest Community Transport</a></li>
 		</ul>
 
-		<p>[Subheading] Names F to K</p>
+		<h2 id="fk">Names F to K</h2>
 		<ul>
 			<li><a href="https://www.firstgroup.com/essex">First Essex</a></li>
 			<li><a href="http://www.flagfinders.com/">Flagfinders</a></li>
@@ -32,7 +38,7 @@ const BusOperators = () => (
 			<li><a href="https://www.konectbus.co.uk/">Konectbus (trading as Hedingham/Chambers)</a></li>
 		</ul>
 
-		<p>[Subheading] Names L to Z</p>
+		<h2 id="lz">Names L to Z</h2>
 		<ul>
 			<li><a href="https://www.thelondonbuscompany.co.uk/">London Vintage Bus Hire (trading as The London Bus Company)</a></li>
 			<li><a href="http://www.horizonbus.co.uk/">New Horizon Travel</a></li>

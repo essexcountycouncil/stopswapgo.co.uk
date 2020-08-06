@@ -134,6 +134,7 @@ h2, .h2, .content-heading {
   @include media(mobile) {
     font-size: ms(5);
     line-height: $baseline*1.5;
+    word-break: break-all; //temp fix
   }
 }
 .strapline-highlighted {

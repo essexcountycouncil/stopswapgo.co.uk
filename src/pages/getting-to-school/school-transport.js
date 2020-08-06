@@ -8,6 +8,7 @@ const Transport = () => (
 	<p>We’d love to see your child give walking, scooting, or cycling a go if that works for them. This will not affect your <a href="https://www.essex.gov.uk/school-transport/who-qualifies-for-home-to-school-transport">eligibility for education transport</a> as long as you continue to meet criteria.</p>
 	<p>Due to the pandemic and in order to keep everyone safe there are some changes to how Essex County Council education transport is run. Essex County Council are following up-to-date government guidance but this may change come school term time. Be sure to check the most up to date government guidance.</p>
 	<p>If you have any queries or concerns about transport which ECC do not pay for then you will need to contact one of the <Link to="/getting-to-school/bus-operators">local bus operators in Essex.</Link></p>
+	
 	<h2>Using a dedicated taxi, minibus or bus for education transport</h2>
 	<p>A ‘dedicated service’ is one that’s not open to the public and just takes children to school. In order to keep everyone safe, there will be some changes you need to be aware of, which include:</p>
 	<ul>
@@ -20,7 +21,8 @@ const Transport = () => (
 	<p>These measures will vary by school and journey. So make sure your child listens to the transport operator taking them to and from school, and the school teachers.</p>
 	<p>You’ll get a letter by the second week of August that will have more information and the contact details of the operator running your service. Alternatively, you can <Link to="/getting-to-school/education-transport-operators">contact your transport operator</Link>.</p>
 	<p>Please be assured, the transport operators running these services will be following the latest government guidelines.</p>
-	<h2>Using a ticket for a public bus or train for home to school transport</h2>
+	
+	<h2>Using a ticket for a public bus or train for education transport</h2>
 	<p>If your child gets a public bus, train, tube ticket, or oyster card from Essex County Council then <a href="https://www.gov.uk/guidance/coronavirus-covid-19-safer-travel-guidance-for-passengers#public-transport">government guidance on public transport</a> will apply, including social distancing and wearing a face covering.</p>
 	<p>We know that public buses and trains will get far busier come September as they need to socially distance people. This could mean waiting longer for a bus. You could make your child leave for school much earlier, or get them to switch to walking, cycling, or scooting to avoid the problem for now.</p>
 	<p>You should also check the operator’s website for up to date details on the requirements of travelling on public transport and details on timetables and journeys.</p>
