@@ -5,6 +5,7 @@
       margin-top: $baseline;
       margin-bottom: $baseline;
     }
+    border: $border-thin solid $black;
     margin-top: $baseline*0.5;
     margin-bottom: $baseline;
     border-collapse: collapse;
@@ -15,7 +16,7 @@
     }
     th,
     td {
-      padding: $baseline $baseline $baseline 0;
+      padding: $baseline*0.5 $baseline;
       text-align: left;
       border-bottom: 1px solid $black;
     }

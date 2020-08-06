@@ -1,5 +1,6 @@
 .previews.social-feed {
   position: relative;
+  background-color: $white;
   @include media(mobile) {
     margin-top: $baseline*1.5;
     margin-bottom: $baseline;
@@ -40,7 +41,6 @@
       h3 {
         margin-top: 0;
       }
-      min-height: 0;
     }
     &.strapline {
       @include grid-column(1);
@@ -52,7 +52,6 @@
       margin-top: 0;
       @include media(mobile) {
         @include h2;
-        min-height: initial;
         margin-top: 0;
         margin-bottom: $baseline*0.25;
       }
@@ -144,14 +143,5 @@
         padding-right: $gutter*0.5 !important;
       }
     }
-  }
-}
-
-
-.preview-grey-border{
-  background-color: lighten($grey-light, 7%);
-  padding: 2em;
-  .button-container-middle {
-    margin-bottom: 0px !important;
   }
 }

@@ -9,7 +9,7 @@ html {
 html, body {
   font-size: ms(0);
   // accessibility requirements do not fall below these
-  line-height: 1.5em;
+  line-height: $baseline;
   word-spacing: 0.16em;
 }
 
