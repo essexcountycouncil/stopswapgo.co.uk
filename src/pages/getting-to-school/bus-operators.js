@@ -15,7 +15,7 @@ const BusOperators = () => (
 			<li><a href="#lz">L to Z</a></li>
 		</ul>
 
-		<h2 id="ae">Names A to E</h2>
+		<h2 id="ae">A to E</h2>
 		<ul>
 			<li><a href="https://www.arrivabus.co.uk/herts-and-essex/">Arriva (Herts and Essex)</a></li>
 			<li><a href="https://www.arrivabus.co.uk/london/contact-arriva-london/">Arriva London</a></li>
@@ -26,7 +26,7 @@ const BusOperators = () => (
 			<li><a href="http://www.efcommunitytransport.co.uk/">Epping Forest Community Transport</a></li>
 		</ul>
 
-		<h2 id="fk">Names F to K</h2>
+		<h2 id="fk">F to K</h2>
 		<ul>
 			<li><a href="https://www.firstgroup.com/essex">First Essex</a></li>
 			<li><a href="http://www.flagfinders.com/">Flagfinders</a></li>
@@ -38,7 +38,7 @@ const BusOperators = () => (
 			<li><a href="https://www.konectbus.co.uk/">Konectbus (trading as Hedingham/Chambers)</a></li>
 		</ul>
 
-		<h2 id="lz">Names L to Z</h2>
+		<h2 id="lz">L to Z</h2>
 		<ul>
 			<li><a href="https://www.thelondonbuscompany.co.uk/">London Vintage Bus Hire (trading as The London Bus Company)</a></li>
 			<li><a href="http://www.horizonbus.co.uk/">New Horizon Travel</a></li>
