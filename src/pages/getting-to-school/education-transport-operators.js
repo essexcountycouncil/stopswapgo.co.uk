@@ -23,21 +23,23 @@ g
 		<h2 id="ab">A to B</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Alec Hunter Academy</p>
@@ -91,7 +93,7 @@ g
 			        <p><a href="http://www.24x7ltd.co.uk/">www.24x7ltd.co.uk</a></p>
 			      </td>
 			      <td>
-			        <p>contracts@24x7ltd.co.uk</p>
+			        <p><a href="mailto:contracts@24x7ltd.co.uk">contracts@24x7ltd.co.uk</a></p>
 			      </td>
 			    </tr>
 			    <tr>
@@ -259,7 +261,7 @@ g
 			        <p><a href="http://www.24x7ltd.co.uk/">www.nibsbuses.com</a></p>
 			      </td>
 			      <td>
-			        <p>info@nibsbuses.com</p>
+			        <p><a href="mailto:info@nibsbuses.com">info@nibsbuses.com</a></p>
 			      </td>
 			    </tr>
 			    <tr>
@@ -313,21 +315,23 @@ g
 		<h2 id="cd">C to D</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Caldecott Foundation School</p>
@@ -672,21 +676,23 @@ g
 		<h2 id="eg">E to G</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Eastlea Community School</p>
@@ -754,7 +760,7 @@ g
 			        <p><a href="http://www.24x7ltd.co.uk/">www.nibsbuses.com</a></p>
 			      </td>
 			      <td>
-			        <p>info@nibsbuses.com</p>
+			        <p><a href="mailto:info@nibsbuses.com">info@nibsbuses.com</a></p>
 			      </td>
 			    </tr>
 			    <tr>
@@ -989,21 +995,23 @@ g
 		<h2 id="h">H</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Holme Court School</p>
@@ -1376,21 +1384,23 @@ g
 		<h2 id="il">I to L</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Ian Mikardo School</p>
@@ -1651,21 +1661,23 @@ g
 		<h2 id="mo">M to O</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Maltings Academy</p>
@@ -1996,21 +2008,23 @@ g
 		<h2 id="pr">P to R</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Passmores Academy, Enhanced Provision</p>
@@ -2341,21 +2355,23 @@ g
 		<h2 id="s">S</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Saffron Walden County High School</p>
@@ -2742,21 +2758,23 @@ g
 		<h2 id="ty">T to Y</h2>
 		<div class="table">
 			<table cellspacing="0" cellpadding="0">
-			  <tbody>
+				<thead>
 			    <tr>
-			      <td>
+			      <th>
 			        <p>School</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator name</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator website</p>
-			      </td>
-			      <td>
+			      </th>
+			      <th>
 			        <p>Transport operator email</p>
-			      </td>
+			      </th>
 			    </tr>
+		    </thead>			
+			  <tbody>
 			    <tr>
 			      <td>
 			        <p>Tabor Academy</p>

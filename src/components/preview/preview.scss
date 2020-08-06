@@ -43,7 +43,7 @@
       @include h2;
       margin-top: 0;
       @include media(mobile) {
-        @include h2;
+        @include h3;
         margin-top: 0 !important;
         margin-bottom: $baseline*0.25;
       }
