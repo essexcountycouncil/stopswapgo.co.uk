@@ -12,7 +12,7 @@ const Transport = () => (
 
 	<p>
 	If you have any queries or concerns about transport which ECC do not pay
-	for then you will need to contact one of the <Link to="/bus-operators">local bus operators in Essex.</Link>
+	for then you will need to contact one of the <Link to="/getting-to-school/bus-operators">local bus operators in Essex.</Link>
 		</p>
 
 	<h2>Using a dedicated taxi, minibus or bus for education transport</h2>
