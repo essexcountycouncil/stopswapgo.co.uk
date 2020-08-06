@@ -42,7 +42,7 @@ export default () =>
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>TRANSPORT!</i></h3>
 				<div className="preview-grey-border">
 					<img src={transport} alt="Two school kids walking" title="Two school kids walking" />
-					<p>We’d love to see all children move to walking and cycling to school and we’re here to help. Essex County Council (ECC) will still provide transport options for your child, if eligible.</p>
+					<p>We'd love to see all children move to walking and cycling to school and we're help to help.  Essex County Council provides statutory transport to some children and there are important Covid-related changes to be aware of.</p>
 					<LargeButton title="TRANSPORT!" url="/getting-to-school/school-transport" />
 				</div>
 			</div>			

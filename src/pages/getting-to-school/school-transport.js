@@ -4,11 +4,11 @@ import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
 
 const Transport = () => (
 	<Layout>
-	<h1>Taking part if your child has school transport from Essex County Council</h1>
+	<h1>Taking part if your child has education transport from Essex County Council</h1>
 
-	<p>We’d love to see your child give walking, scooting, or cycling a go if that works for them. This will not affect your <a href="https://www.essex.gov.uk/school-transport/who-qualifies-for-home-to-school-transport">eligibility for home to school transport</a> as long as you continue to meet criteria.</p>
+	<p>We’d love to see your child give walking, scooting, or cycling a go if that works for them. This will not affect your <a href="https://www.essex.gov.uk/school-transport/who-qualifies-for-home-to-school-transport">eligibility for education transport</a> as long as you continue to meet criteria.</p>
 	
-	<p>Due to the pandemic and in order to keep everyone safe there are some changes to how Essex County Council school transport is run. Essex County Council are following up-to-date government guidance but this may change come school term time. Be sure to check the most up to date government guidance.</p>
+	<p>Due to the pandemic and in order to keep everyone safe there are some changes to how Essex County Council education transport is run. Essex County Council are following up-to-date government guidance but this may change come school term time. Be sure to check the most up to date government guidance.</p>
 
 	<p>
 	If you have any queries or concerns about transport which ECC do not pay
@@ -72,7 +72,7 @@ const Transport = () => (
 	</p>
 	<p>
 	If your child gets a public bus, train, tube ticket, or oyster card from
-	Essex County Council then <a href="https://www.gov.uk/guidance/coronavirus-covid-19-safer-travel-guidance-for-passengers#travel-safely-during-the-coronavirus-outbreak">government guidance on public transport</a> will apply, including social distancing and wearing a face covering.
+	Essex County Council then <a href="https://www.gov.uk/guidance/coronavirus-covid-19-safer-travel-guidance-for-passengers#public-transport">government guidance on public transport</a> will apply, including social distancing and wearing a face covering.
 	</p>
 	<p>
 	We know that public buses and trains will get far busier come September as
