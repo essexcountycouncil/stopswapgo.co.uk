@@ -45,9 +45,9 @@
     border-color: $button-hover-darken;
     background-color: $button-hover-darken;
   }
-  &:active {
-    top: 2px;
-  }
+  // &:active {
+  //   top: 2px;
+  // }
   &.disabled,
   &[disabled="disabled"],
   &[disabled] {

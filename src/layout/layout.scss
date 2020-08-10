@@ -155,6 +155,12 @@ main#content {
     margin: 0;
     padding: 0;
   }
+  ol, ol p {
+    text-align: left;
+  }
+  ol p {
+    margin-bottom: $baseline;
+  }
 }
 
 .content{
