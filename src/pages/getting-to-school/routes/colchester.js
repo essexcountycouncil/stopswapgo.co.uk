@@ -11,13 +11,12 @@ const Colchester = () => (
 		<p>Select your school from the list below to see the available map options:</p>
 		<ul>
 			<li><Link to="colchester-country-high">Colchester County High School</Link></li>
-			<li>Colchester High School</li>
-			<li>Colchester Institute</li>
-			<li>Colchester Royal Grammar</li>
-			<li>Colchester Sixth Form College</li>
-			<li>Philip Morant</li>
-			<li>St Benedicts</li>
-			<li>St Helena</li>
+			<li><Link to="colchester-institute">Colchester Institute</Link></li>
+			<li><Link to="colchester-royal-grammar">Colchester Royal Grammar</Link></li>
+			<li><Link to="colchester-sixth-form">Colchester Sixth Form College</Link></li>
+			<li><Link to="philip-morant">Philip Morant</Link></li>
+			<li><Link to="st-benedict">St Benedicts</Link></li>
+			<li><Link to="st-helena">St Helena</Link></li>
 		</ul>
 
 	</Layout>
