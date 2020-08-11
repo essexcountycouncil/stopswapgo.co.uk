@@ -1,10 +1,9 @@
 import React from "react"
 
-export default () =>
+export default ({urlOne, one, two}) =>
 <nav className="breadcrumbs" aria-label="breadcrumbs">
   <ol>
-    <li>Home</li>
-    <li><a href="/">Breadcrumb</a></li>
-    <li>Page</li>
+    <li><a href={urlOne}>{one}</a></li>
+    <li>{two}</li>
   </ol>
 </nav>
