@@ -2,9 +2,15 @@ import React from "react"
 import { Link } from 'gatsby'
 import map from "./G2S School Page - Col Institute - Map.png"
 import Layout from "../../../../layout/routes"
+import Breadcrumbs from "../../../../components/breadcrumbs/breadcrumbs"
 
 const ColchesterInstitute = () => (
 	<Layout>
+
+		<Breadcrumbs
+			urlOne="/getting-to-school/routes/colchester"
+			one="Schools in Colchester"
+			two="Getting to and from Colchester Institute" />
 
 		<h1>Getting to and from Colchester Institute</h1>
 		<img src={map} />
