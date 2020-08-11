@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from 'gatsby'
 import map from "./G2S School Page - Col County High - Map.png"
-import Layout from "../../../../layout/layout-h2s"
+import Layout from "../../../../layout/layout-h2s-with-newsletter-no-banner"
 
 const ColchesterCountryHigh = () => (
 	<Layout>
-
+	
 		<h1>Colchester County High School for Girls</h1>
 		<img src={map} />
 

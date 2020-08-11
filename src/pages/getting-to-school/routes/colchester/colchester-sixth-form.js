@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import map from "./G2S School Page - Col 6th - Map.png"
-import Layout from "../../../../layout/layout-h2s"
+import Layout from "../../../../layout/layout-h2s-with-newsletter-no-banner"
 
 const ColchesterSixthForm = () => (
 	<Layout>

@@ -4,7 +4,6 @@ import prepare from "./people-walking-with-masks.png"
 import training from "./cyclists-training.png"
 import transport from "./school-kids.png"
 import LargeButton from "../large-button/large-button"
-import DeactiveButton from "../large-button/deactive-button"
 import { Link } from 'gatsby'
 export default () =>
 	<div>
@@ -14,7 +13,7 @@ export default () =>
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>ROUTES!</i></h3>
 				<img src={mapPreview} alt="Two women walking" title="Two women walking" />
 				<p>Check out our maps for travel to schools and colleges. Find suggested drop off places to miss the heaviest traffic! Better yet, if you live within a 30 minute walk, why not walk, cycle, or scoot to school?</p>
-				<DeactiveButton title="Coming soon!" url="#" />
+				<LargeButton title="ROUTES!" url="/getting-to-school/routes" />
 			</div>
 
 			<div className="preview">
