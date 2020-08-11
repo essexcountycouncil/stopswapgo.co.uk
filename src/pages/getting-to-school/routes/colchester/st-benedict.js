@@ -2,9 +2,15 @@ import React from "react"
 import { Link } from 'gatsby'
 import map from "./G2S School Page - St Ben - Map.png"
 import Layout from "../../../../layout/routes"
+import Breadcrumbs from "../../../../components/breadcrumbs/breadcrumbs"
 
 const StBenedict = () => (
 	<Layout>
+
+		<Breadcrumbs
+			urlOne="/getting-to-school/routes/colchester"
+			one="Schools in Colchester"
+			two="St Benedict’s Catholic College" />
 
 		<h1>St Benedict’s Catholic College</h1>
 		<img src={map} />

@@ -3,7 +3,6 @@ import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
-import Back from "../components/breadcrumbs/breadcrumbs"
 
 // SignupNewsletter is the component that uses integration directly to GovDelivery 
 import SignupNewsletter from "../components/signup-newsletter/signup-newsletter"
@@ -18,7 +17,6 @@ export default ({ children }) => {
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
       <main id="content">
-        <Back />
         <div className="container">
           <div className="main only">
             <section className="content" aria-label="Main content area">
