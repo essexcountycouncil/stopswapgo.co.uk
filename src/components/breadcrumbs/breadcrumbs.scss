@@ -1,5 +1,4 @@
 .breadcrumbs {
-  @extend %site-width-container;
   @media print {
     display: none;
   }
