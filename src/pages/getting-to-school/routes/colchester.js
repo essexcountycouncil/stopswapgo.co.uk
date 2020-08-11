@@ -6,8 +6,6 @@ const Colchester = () => (
 	<Layout>
 		<h1>Schools in Colchester</h1>
 
-		<h2>We’re working on your map!</h2>
-		<p>Your route map isn’t ready yet, but your school is on the list. Check back here or follow us on Instagram, Facebook, or Twitter as we’ll launch new routes in for schools over the coming weeks and months.</p>
 		<p>Select your school from the list below to see the available map options:</p>
 		<ul>
 			<li><Link to="colchester-country-high">Colchester County High School</Link></li>
