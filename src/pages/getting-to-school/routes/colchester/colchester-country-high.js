@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import map from "./G2S School Page - Col County High - Map.png"
-import Layout from "../../../../layout/layout-h2s-with-newsletter-no-banner"
+import Layout from "../../../../layout/routes"
 
 const ColchesterCountryHigh = () => (
 	<Layout>
@@ -27,7 +27,7 @@ const ColchesterCountryHigh = () => (
 		<p>There’s lots of footpaths around Colchester County High School and its neighbouring schools. They’re a perfect way to dodge the traffic. The Norman Way route between Lexden Road and Shrub End Road provides an ideal sneaky short-cut for walkers.</p>
 
 		<h2>Cycling routes</h2>
-		<p>Norman Way, as described above, is also a local cycle way.. It links with <a href="https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/route-1/">National Cycle Network route 1</a> into central Colchester, as well as other off-road routes through <a href="https://www.colchester.gov.uk/info/cbc-article/?catid=country-parks-and-local-nature-reserves&amp;amp;id=KA-01615">Hilly Fields nature reserve</a>. Those same routes also head south of the school site, joining up with many residential areas,. <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Colchester cycle map</a> can show you other routes which may help.</p>
+		<p>Norman Way, as described above, is also a local cycle way.. It links with <a href="https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/route-1/">National Cycle Network route 1</a> into central Colchester, as well as other off-road routes through <a href="https://www.colchester.gov.uk/info/cbc-article/?catid=country-parks-and-local-nature-reserves&amp;amp;id=KA-01615">Hilly Fields nature reserve</a>. Those same routes also head south of the school site, joining up with many residential areas. <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Colchester cycle map</a> can show you other routes which may help.</p>
 
 		<h2>Park &amp; Ride</h2>
 		<p><a href="https://www.essexhighways.org/Transport-and-Roads/Getting-Around/Bus/Park-and-Ride.aspx">Park &amp; Ride at Colchester</a> could help you on your journey. </p>

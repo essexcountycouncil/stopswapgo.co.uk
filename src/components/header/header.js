@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./SSG_Logo_Colour_3chevrons_RGB.svg"
+import logo from "./SSG_Logo_Colour_3chevrons_RGB_b.svg"
 
 
 function Header() {
