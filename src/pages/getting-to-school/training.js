@@ -41,90 +41,139 @@ const Training = () => {
       <p>The training will take place in small groups. We’ll make sure we keep everyone COVID-19 safe by running sessions according to which school your child is due to attend and ages.</p>
       <p>To get started, enter your details in the training request form and hit ‘Submit’:</p>
 
-      <form onSubmit={handleOnSubmit}>
-        <div className="form-group">
-          <label>
-            Your email (or your parent or guardian’s email if under 18)*
-            <input type="email" name="email" />
-          </label>
+      <form onSubmit={handleOnSubmit} class="form">
+        <div className="form-group group">
+          <label>Your email*</label>
+           <span class="form-hint">You or your parent or guardian’s email if under 18</span> 
+          <input type="email" name="email" class="form-control" />
           {/*<br/>*/}
         </div>
-        <div className="input-group-container-middle">
-          <label>
-            Would you like walking training?*
-            <input type="radio" value="yes" name="wants_walking_training" />
-            <label>Yes</label>
-            <input type="radio" value="no" name="wants_walking_training" />
-            <label>No</label>
-          </label>
+
+        <div className="input-group-container-middle group">
+          <fieldset>
+            <legend>Would you like walking training?*</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="yes" name="wants_walking_training" />
+              <label>Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="no" name="wants_walking_training" />
+              <label>No</label>
+            </div>
+          </fieldset>
+          {/*<br/>*/}
         </div>
-        {/*<br/>*/}
-        <label>
-          Have you or your child had any previous walking training with South Essex Road Partnership?
-          <input type="radio" value="yes" name="has_walking_training_experience" />
-          <label>Yes</label>
-          <input type="radio" value="no" name="has_walking_training_experience" />
-          <label>No</label>
-        </label>
-        <br/>
-        <label>
-          Would you like cycling training?*
-          <input type="radio" value="yes" name="wants_cycling_training" />
-          <label>Yes</label>
-          <input type="radio" value="no" name="wants_cycling_training" />
-          <label>No</label>
-        </label>
-        <br/>
-        <label>
-          Do you own a bike?
-          <input type="radio" value="yes" name="owns_bike" />
-          <label>Yes</label>
-          <input type="radio" value="no" name="owns_bike" />
-          <label>No</label>
-        </label>
-        <br/>
-        <label>
-          Do you own a helmet?
-          <input type="radio" value="yes" name="owns_helmet" />
-          <label>Yes</label>
-          <input type="radio" value="no" name="owns_helmet" />
-          <label>No</label>
-        </label>
-        <br/>
-        <div className="input-group-container-middle">
-          <label>
-            Have you or your child had any previous cycling training with South Essex Road Partnership?
-            <input type="radio" value="yes" name="has_cycling_training_experience" />
-            <label>Yes</label>
-            <input type="radio" value="no" name="has_cycling_training_experience" />
-            <label>No</label>
-          </label>
+
+        <div className="input-group-container-middle group">
+          <fieldset>
+            <legend>Have you or your child had any previous walking training with South Essex Road Partnership?</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="yes" name="has_walking_training_experience" />
+              <label>Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="no" name="has_walking_training_experience" />
+              <label>No</label>
+            </div>
+          </fieldset>
         </div>
-        <div className="input-group-container-middle">
-          <label>
-            What Essex school will you or your child attend in September?*
-              <input type="text" name="school" />
-          </label>
+
+        <div className="input-group-container-middle group">
+          <fieldset>
+            <legend>Would you like cycling training?*</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="yes" name="wants_cycling_training" />
+              <label>Yes</label>
+            </div>
+            <div class="multiple-choice">  
+              <input type="radio" value="no" name="wants_cycling_training" />
+              <label>No</label>
+            </div>
+          </fieldset>
         </div>
-        <div className="input-group-container-middle">
-          <label>
-            What year group will you or your child be in?*
-            <input type="radio" value="year_7" name="year_group" />
-            <label>Year 7</label>
-            <input type="radio" value="year_8" name="year_group" />
-            <label>Year 8</label>
-            <input type="radio" value="year_9" name="year_group" />
-            <label>Year 9</label>
-            <input type="radio" value="year_10" name="year_group" />
-            <label>Year 10</label>
-            <input type="radio" value="year_11" name="year_group" />
-            <label>Year 11</label>
-            <input type="radio" value="year_12" name="year_group" />
-            <label>Year 12</label>
-            <input type="radio" value="year_13" name="year_group" />
-            <label>Year 13</label>
-          </label>
+
+        <div className="input-group-container-middle group">        
+          <fieldset>
+            <legend>Do you own a bike?</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="yes" name="owns_bike" />
+              <label>Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="no" name="owns_bike" />
+              <label>No</label>
+            </div>
+          </fieldset>
         </div>
+
+
+        <div className="input-group-container-middle group">        
+          <fieldset>
+            <legend>Do you own a helmet?</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="yes" name="owns_helmet" />
+              <label>Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="no" name="owns_helmet" />
+              <label>No</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div className="input-group-container-middle group">
+          <fieldset>
+            <legend>Have you or your child had any previous cycling training with South Essex Road Partnership?</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="yes" name="has_cycling_training_experience" />
+              <label>Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="no" name="has_cycling_training_experience" />
+              <label>No</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div className="input-group-container-middle group">
+          <label>What Essex school will you or your child attend in September?*</label>
+          <input type="text" name="school" />
+        </div>
+
+        <div className="input-group-container-middle group">
+          <fieldset>
+            <legend>What year group will you or your child be in?*</legend>
+            <div class="multiple-choice">
+              <input type="radio" value="year_7" name="year_group" />
+              <label>Year 7</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="year_8" name="year_group" />
+              <label>Year 8</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="year_9" name="year_group" />
+              <label>Year 9</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="year_10" name="year_group" />
+              <label>Year 10</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="year_11" name="year_group" />
+              <label>Year 11</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="year_12" name="year_group" />
+              <label>Year 12</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="year_13" name="year_group" />
+              <label>Year 13</label>
+            </div>
+          </fieldset>
+        </div>
+
         <button type="submit" className="btn btn-primary" disabled={serverState.submitting}>
           Submit
         </button>
