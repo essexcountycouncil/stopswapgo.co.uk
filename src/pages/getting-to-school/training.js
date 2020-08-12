@@ -15,6 +15,100 @@ const Training = () => (
 			<li>What school will your child be going to in September?</li>
 			<li>What year group will your child be in?</li>
 		</ol>
+    {/*<form action="https://getform.io/f/034d6f3e-50ff-4872-a52d-1533b29adc89" method="POST">
+      <input type="text" name="name"></input>
+      <input type="email" name="email"></input>
+      <input type="text" name="message"></input>
+      <button type="submit">Send</button>
+    </form>*/}
+
+    <form method="post" action="https://getform.io/f/12e9d628-1d0f-4be0-87f7-edf85363c31d" method="POST">
+      <div className="input-group-container-middle">
+        <label>
+          Your email (or your parent or guardian’s email if under 18)*
+          <input type="email" name="email" />
+        </label>
+        {/*<br/>*/}
+      </div>
+      <div className="input-group-container-middle">
+        <label>
+          Would you like walking training?*
+          <input type="radio" value="yes" name="wants_walking_training" />
+          <label>Yes</label>
+          <input type="radio" value="no" name="wants_walking_training" />
+          <label>No</label>
+        </label>
+      </div>
+      {/*<br/>*/}
+      <label>
+        Have you or your child had any previous walking training with South Essex Road Partnership?
+        <input type="radio" value="yes" name="has_walking_training_experience" />
+        <label>Yes</label>
+        <input type="radio" value="no" name="has_walking_training_experience" />
+        <label>No</label>
+      </label>
+      <br/>
+      <label>
+        Would you like cycling training?*
+        <input type="radio" value="yes" name="wants_cycling_training" />
+        <label>Yes</label>
+        <input type="radio" value="no" name="wants_cycling_training" />
+        <label>No</label>
+      </label>
+      <br/>
+      <label>
+        Do you own a bike?
+        <input type="radio" value="yes" name="owns_bike" />
+        <label>Yes</label>
+        <input type="radio" value="no" name="owns_bike" />
+        <label>No</label>
+      </label>
+      <br/>
+      <label>
+        Do you own a helmet?
+        <input type="radio" value="yes" name="owns_helmet" />
+        <label>Yes</label>
+        <input type="radio" value="no" name="owns_helmet" />
+        <label>No</label>
+      </label>
+      <br/>
+      <div className="input-group-container-middle">
+        <label>
+          Have you or your child had any previous cycling training with South Essex Road Partnership?
+          <input type="radio" value="yes" name="has_cycling_training_experience" />
+          <label>Yes</label>
+          <input type="radio" value="no" name="has_cycling_training_experience" />
+          <label>No</label>
+        </label>
+      </div>
+      <div className="input-group-container-middle">
+        <label>
+          What Essex school will you or your child attend in September?*
+            <input type="text" name="school" />
+        </label>
+      </div>
+      <div className="input-group-container-middle">
+        <label>
+          What year group will you or your child be in?*
+          <input type="radio" value="year_7" name="year_group" />
+          <label>Year 7</label>
+          <input type="radio" value="year_8" name="year_group" />
+          <label>Year 8</label>
+          <input type="radio" value="year_9" name="year_group" />
+          <label>Year 9</label>
+          <input type="radio" value="year_10" name="year_group" />
+          <label>Year 10</label>
+          <input type="radio" value="year_11" name="year_group" />
+          <label>Year 11</label>
+          <input type="radio" value="year_12" name="year_group" />
+          <label>Year 12</label>
+          <input type="radio" value="year_13" name="year_group" />
+          <label>Year 13</label>
+        </label>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
 		<p class="small">Please note, the Safer Essex Roads Partnership will use your information to administer Bikeability. Your information and personal information will be shared with the course instructors for the duration of the course. Information will be retained for the duration of eligibility for Bikeability services. For more information regarding your rights and our commitments visit our <Link to="https://www.essex.gov.uk/privacy-environment-and-transport">privacy notice</Link>.</p>
 	</Layout>
 )
