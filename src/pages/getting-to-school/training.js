@@ -42,6 +42,7 @@ const Training = () => {
       <p>To get started, enter your details in the training request form and hit ‘Submit’:</p>
 
       <form onSubmit={handleOnSubmit}>
+        <h3>Stop.Swap.TRAINING!</h3>
         <div className="form-group">
           <label>
             Your email (or your parent or guardian’s email if under 18)*
