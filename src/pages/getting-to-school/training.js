@@ -36,22 +36,10 @@ const Training = () => {
   return (
   	<Layout>
   		<h1>Training offer</h1>
-  		<p>Stop.Swap.<i>GO!</i> has teamed up with the <Link to="https://saferessexroads.org/">Safer Essex Roads Partnership</Link> to offer children going into Years 7 through to 13 cycling and walking training during the summer holidays!</p>
-  		<p>Using <Link to="https://bikeability.org.uk/">Bikeability</Link>, we’ll show your child how to keep safe on the roads and streets to make getting to school in September by walking, cycling, or scooting a breeze. The training takes place at our Park & Ride sites in Chelmsford and Colchester.</p>
-  		<p>The training will take place in small groups. We’ll make sure we keep everyone COVID-19 safe by running sessions according to which school your child is due to attend and ages.</p>
-  		<p>To get started, email the <a href="mailto:saferessexroads@essexhighways.org?subject=Stop.Swap.GO! training">Safer Essex Roads Partnership</a> with the following details:</p>
-  		<ol>
-  			<li>What type of training would you like, walking, cycling or both?</li>
-  			<li>If you want cycling training, does your child have a bike and helmet?</li>
-  			<li>What school will your child be going to in September?</li>
-  			<li>What year group will your child be in?</li>
-  		</ol>
-      {/*<form action="https://getform.io/f/034d6f3e-50ff-4872-a52d-1533b29adc89" method="POST">
-        <input type="text" name="name"></input>
-        <input type="email" name="email"></input>
-        <input type="text" name="message"></input>
-        <button type="submit">Send</button>
-      </form>*/}
+      <p>Stop.Swap.GO! has teamed up with the <a href="https://saferessexroads.org/">Safer Essex Roads Partnership</a> to offer children going into Years 7 through to 13 cycling and walking training during the summer holidays!</p>
+      <p>Using <a href="https://bikeability.org.uk/">Bikeability</a>, we’ll show your child how to keep safe on the roads and streets to make getting to school in September by walking, cycling, or scooting a breeze. The training takes place at our Park & Ride sites in Chelmsford and Colchester.</p>
+      <p>The training will take place in small groups. We’ll make sure we keep everyone COVID-19 safe by running sessions according to which school your child is due to attend and ages.</p>
+      <p>To get started, enter your details in the training request form and hit ‘Submit’:</p>
 
       <form onSubmit={handleOnSubmit}>
         <div className="form-group">
