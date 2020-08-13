@@ -45,24 +45,22 @@ const Training = () => {
         <h3>Stop.Swap.TRAINING!</h3>
         <div className="form-group group">
           <label>Your email*</label>
-           <span class="form-hint">You or your parent or guardian’s email if under 18</span> 
-          <input type="email" name="email" class="form-control" />
-          {/*<br/>*/}
+          <span class="form-hint">You or your parent or guardian’s email if under 18</span> 
+          <input type="email" name="email" class="form-control" required aria-required="true" />
         </div>
 
         <div className="input-group-container-middle group">
           <fieldset>
             <legend>Would you like walking training?*</legend>
             <div class="multiple-choice">
-              <input type="radio" value="yes" name="wants_walking_training" />
+              <input type="radio" value="yes" name="wants_walking_training" required aria-required="true" />
               <label>Yes</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="no" name="wants_walking_training" />
+              <input type="radio" value="no" name="wants_walking_training" required aria-required="true" />
               <label>No</label>
             </div>
           </fieldset>
-          {/*<br/>*/}
         </div>
 
         <div className="input-group-container-middle group">
@@ -83,11 +81,11 @@ const Training = () => {
           <fieldset>
             <legend>Would you like cycling training?*</legend>
             <div class="multiple-choice">
-              <input type="radio" value="yes" name="wants_cycling_training" />
+              <input type="radio" value="yes" name="wants_cycling_training" required aria-required="true" />
               <label>Yes</label>
             </div>
             <div class="multiple-choice">  
-              <input type="radio" value="no" name="wants_cycling_training" />
+              <input type="radio" value="no" name="wants_cycling_training" required aria-required="true" />
               <label>No</label>
             </div>
           </fieldset>
@@ -138,38 +136,38 @@ const Training = () => {
 
         <div className="input-group-container-middle group">
           <label>What Essex school will you or your child attend in September?*</label>
-          <input type="text" name="school" />
+          <input type="text" name="school" required aria-required="true" />
         </div>
 
         <div className="input-group-container-middle group">
           <fieldset>
             <legend>What year group will you or your child be in?*</legend>
             <div class="multiple-choice">
-              <input type="radio" value="year_7" name="year_group" />
+              <input type="radio" value="year_7" name="year_group" required aria-required="true" />
               <label>Year 7</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="year_8" name="year_group" />
+              <input type="radio" value="year_8" name="year_group" required aria-required="true" />
               <label>Year 8</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="year_9" name="year_group" />
+              <input type="radio" value="year_9" name="year_group" required aria-required="true" />
               <label>Year 9</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="year_10" name="year_group" />
+              <input type="radio" value="year_10" name="year_group" required aria-required="true" />
               <label>Year 10</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="year_11" name="year_group" />
+              <input type="radio" value="year_11" name="year_group" required aria-required="true" />
               <label>Year 11</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="year_12" name="year_group" />
+              <input type="radio" value="year_12" name="year_group" required aria-required="true" />
               <label>Year 12</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="year_13" name="year_group" />
+              <input type="radio" value="year_13" name="year_group" required aria-required="true" />
               <label>Year 13</label>
             </div>
           </fieldset>
