@@ -2,6 +2,7 @@ import React from "react"
 import LayoutWithNewsletter from "../layout/60-day"
 import LargeButton from "../components/large-button/large-button"
 import { Link } from 'gatsby'
+import SignupSixtyDay from "../components/signup-sixty-day/signup-sixty-day"
 
 const Challenge = () => (
 	<LayoutWithNewsletter>
@@ -24,7 +25,7 @@ const Challenge = () => (
 			<LargeButton title="SIGN UP!" url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
 		</div>
 		<h3>More about the 60 Day Challenge</h3>
-		<p>For more information about the 60 Day Challenge, prizes and the Indeemo app, please visit our <Link to="/faq">FAQs page</Link>.</p>
+		<p>For more information about the 60 Day Challenge, prizes and the Indeemo app, please visit our <Link to="/faq">FAQs page</Link>.<SignupSixtyDay></SignupSixtyDay></p>
 	</LayoutWithNewsletter>
 )
 
