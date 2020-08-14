@@ -43,93 +43,71 @@ const Training = () => {
 
       <form onSubmit={handleOnSubmit} class="form">
         <h3>Stop.Swap.TRAINING!</h3>
+        <strong>Note * indicates required answer</strong>
         <div className="form-group group">
           <label>Your email*</label>
-          <span class="form-hint">You or your parent or guardian’s email if under 18</span> 
+          <span class="form-hint">(or your parent or guardian’s email if under 18)</span> 
           <input type="email" name="email" class="form-control" required aria-required="true" />
         </div>
 
         <div className="input-group-container-middle group">
           <fieldset>
-            <legend>Would you like walking training?*</legend>
+            <legend>What type of training does the participant need?*</legend>
             <div class="multiple-choice">
-              <input type="radio" value="yes" name="wants_walking_training" required aria-required="true" />
-              <label>Yes</label>
+              <input type="radio" value="walking" name="type_of_training" required aria-required="true" />
+              <label>Walking</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="no" name="wants_walking_training" required aria-required="true" />
-              <label>No</label>
-            </div>
-          </fieldset>
-        </div>
-
-        <div className="input-group-container-middle group">
-          <fieldset>
-            <legend>Have you or your child had any previous walking training with South Essex Road Partnership?</legend>
-            <div class="multiple-choice">
-              <input type="radio" value="yes" name="has_walking_training_experience" />
-              <label>Yes</label>
+              <input type="radio" value="no" name="type_of_training" required aria-required="true" />
+              <label>Cycling</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="no" name="has_walking_training_experience" />
-              <label>No</label>
+              <input type="radio" value="walking_and_cycling" name="type_of_training" required aria-required="true" />
+              <label>Both walking and cycling </label>
             </div>
           </fieldset>
         </div>
 
         <div className="input-group-container-middle group">
           <fieldset>
-            <legend>Would you like cycling training?*</legend>
+            <legend>Has the participant had any previous training with Safer Essex Roads Partnership?*</legend>
             <div class="multiple-choice">
-              <input type="radio" value="yes" name="wants_cycling_training" required aria-required="true" />
-              <label>Yes</label>
-            </div>
-            <div class="multiple-choice">  
-              <input type="radio" value="no" name="wants_cycling_training" required aria-required="true" />
-              <label>No</label>
-            </div>
-          </fieldset>
-        </div>
-
-        <div className="input-group-container-middle group">        
-          <fieldset>
-            <legend>Do you own a bike?</legend>
-            <div class="multiple-choice">
-              <input type="radio" value="yes" name="owns_bike" />
-              <label>Yes</label>
+              <input type="radio" value="walking" name="previous_training" />
+              <label>Walking training</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="no" name="owns_bike" />
-              <label>No</label>
-            </div>
-          </fieldset>
-        </div>
-
-
-        <div className="input-group-container-middle group">        
-          <fieldset>
-            <legend>Do you own a helmet?</legend>
-            <div class="multiple-choice">
-              <input type="radio" value="yes" name="owns_helmet" />
-              <label>Yes</label>
+              <input type="radio" value="cycling" name="previous_training" />
+              <label>Cycling training</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="no" name="owns_helmet" />
-              <label>No</label>
+              <input type="radio" value="walking_and_cycling" name="previous_training" />
+              <label>Both walking and cycling training</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="none" name="previous_training" />
+              <label>No previous training</label>
             </div>
           </fieldset>
         </div>
 
         <div className="input-group-container-middle group">
           <fieldset>
-            <legend>Have you or your child had any previous cycling training with South Essex Road Partnership?</legend>
+            <legend>If the participant would like cycling training, do they own a bike and a bike helmet?</legend>
             <div class="multiple-choice">
-              <input type="radio" value="yes" name="has_cycling_training_experience" />
-              <label>Yes</label>
+              <input type="radio" value="bike_and_helmet" name="equipment_owned" required aria-required="true" />
+              <label>Yes, both</label>
             </div>
             <div class="multiple-choice">
-              <input type="radio" value="no" name="has_cycling_training_experience" />
-              <label>No</label>
+              <input type="radio" value="bike" name="equipment_owned" required aria-required="true" />
+              <label>A bike but no helmet</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="helmet" name="equipment_owned" required aria-required="true" />
+              <label>A helmet but no bike</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" value="none" name="equipment_owned" required aria-required="true" />
+              <label>Neither a bike or a helmet</label>
             </div>
           </fieldset>
         </div>
