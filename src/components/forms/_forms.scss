@@ -16,43 +16,37 @@ select:focus::-ms-value {
   background-color: $link;
 }
 
+.form-background {
+  background-color: $grey-lighter;
+  padding: $gutter*1.5;
+  margin-bottom: $baseline;
+  @include media(mobile) {
+    padding-bottom: $baseline;
+    padding: $gutter*0.5;
+  }
+}
+
 .form {
   margin-bottom: $baseline*2;
   legend {
     @include h3;
     margin-top: 0;
   }
-  &.grey-border {
-    background-color: $grey-lighter;
-    padding: $gutter*1.5;
-    margin-bottom: $baseline;
+  .strapline {
+    padding: $baseline;
+    @include h2;
+    margin-top: 0;
+    text-align: center;
     @include media(mobile) {
-      padding-bottom: $baseline;
-      padding: $gutter*0.5;
+      @include h3;
+      margin-top: 0 !important;
+      margin-bottom: $baseline*0.25;
     }
-    .strapline {
-      padding: $baseline;
-      @include h2;
-      margin-top: 0;
-      text-align: center;
-      @include media(mobile) {
-        @include h3;
-        margin-top: 0 !important;
-        margin-bottom: $baseline*0.25;
-      }
-    }
-    .form-internal {
-      background-color: $white;
-      padding: $gutter;
-      @include media(mobile) {
-        padding: $gutter*0.5;
-      }
-    }
-    .warning {
-      @include small;      
-      margin-top: $baseline*0.5;
-      margin-bottom: $baseline;
-    } 
+  }
+  .warning {
+    @include small;      
+    margin-top: $baseline*0.5;
+    margin-bottom: $baseline;
   }
   .group, .all-sections {
     display: block;
