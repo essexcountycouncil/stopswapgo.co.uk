@@ -37,7 +37,7 @@ const Training = () => {
   return (
   	<Layout>
   		<h1>Training offer</h1>
-      <p>Stop.Swap.GO! has teamed up with the <a href="https://saferessexroads.org/">Safer Essex Roads Partnership</a> to offer children going into Years 7 through to 13 cycling and walking training during the summer holidays!</p>
+      <p>Stop.Swap.<i>GO!</i> has teamed up with the <a href="https://saferessexroads.org/">Safer Essex Roads Partnership</a> to offer children going into Years 7 through to 13 cycling and walking training during the summer holidays!</p>
       <p>Using <a href="https://bikeability.org.uk/">Bikeability</a>, we’ll show your child how to keep safe on the roads and streets to make getting to school in September by walking, cycling, or scooting a breeze. The training takes place at our Park & Ride sites in Chelmsford and Colchester.</p>
       <p>The training will take place in small groups. We’ll make sure we keep everyone COVID-19 safe by running sessions according to which school your child is due to attend and ages.</p>
       <p>To get started, enter your details in the training request form and hit ‘Submit’:</p>
@@ -45,7 +45,6 @@ const Training = () => {
       <form onSubmit={handleOnSubmit} className="form grey-border">
         <div className="form-internal">
         <h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></h3>
-        <p className="warning">Note * indicates required answer</p>
         <div className="form-group group">
           <label className="section-heading">Your email*</label>
           <span className="form-hint">(or your parent or guardian’s email if under 18)</span> 
@@ -115,7 +114,7 @@ const Training = () => {
         </div>
 
         <div className="input-group-container-middle group">
-          <label>What Essex school will you or your child attend in September?*</label>
+          <label>What Essex school will the participant attend in September?*</label>
           <input type="text" name="school" required aria-required="true" className="form-control" />
         </div>
 
@@ -136,7 +135,7 @@ const Training = () => {
         </div>
 
         <button type="submit" className="button button-dark button-large extra-space" disabled={serverState.submitting}>
-          Submit
+          SUBMIT!
         </button>
 
         {serverState.status &&
