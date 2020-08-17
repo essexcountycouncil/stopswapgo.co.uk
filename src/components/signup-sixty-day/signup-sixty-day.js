@@ -42,59 +42,59 @@ export default function SignupSixtyDay() {
 
           </div>) :
           (<div>
-            <div className="input-group-container-middle">
-              <ul>
-                {errors.email ? (<li className="errors">{errors.email?.message}</li>) : (null)}
-                {errors.agreement ? (<li className="errors">{errors.agreement?.message}</li>) : (null)}
+            <div>
+              <ul className="errors">
+                
+                {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
               </ul>
             </div>
-            <div className="form-group group">
-              <label className="section-heading">Your full name*
-                <input
-                  name="full_name"
-                  className={"large-input form-control" + (errors.email?.message ? " error" : "")}
-                  type="text"
-                  ref={register({
-                    required: 'Full name required',
+            <div className={"form-group group" + (errors.full_name?.message ? " error-block" : "")}>
+              <label className="section-heading">Your full name*</label>
+              {errors.full_name ? (<span className="error">{errors.full_name?.message}</span>) : (null)}
+              <input
+                name="full_name"
+                className={"large-input form-control" + (errors.full_name?.message ? " error" : "")}
+                type="text"
+                ref={register({
+                  required: 'You full name is required',
+                  // pattern: {
+                  //   value: EMAIL_REGEX,
+                  //   message: 'Enter an email address in the correct format, like name@example.com',
+                  // },
+                })}
+              />
+            </div>
+            <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
+              <label className="section-heading">Your email address*</label>
+              {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
+              <input
+                name="email"
+                className={"large-input form-control" + (errors.email?.message ? " error" : "")}
+                type="text"
+                ref={register({
+                  required: 'Your email address is required',
+                  pattern: {
+                    value: EMAIL_REGEX,
+                    message: 'Enter an email address in the correct format, like name@example.com',
+                  },
+                })}
+              />
+            </div>
+            <div className={"form-group group" + (errors.postcode?.message ? " error-block" : "")}>
+              <label className="section-heading">Your postcode*</label>
+              {errors.postcode ? (<span className="error">{errors.postcode?.message}</span>) : (null)}
+              <input
+                name="postcode"
+                className={"large-input" + (errors.postcode?.message ? " error" : "")}
+                type="text"
+                ref={register({
+                  required: 'Your postcode is required',
                     // pattern: {
                     //   value: EMAIL_REGEX,
                     //   message: 'Enter an email address in the correct format, like name@example.com',
                     // },
-                  })}
-                />
-              </label>
-            </div>
-            <div className="form-group group">
-              <label className="section-heading">Your email address*
-                <input
-                  name="email"
-                  className={"large-input form-control" + (errors.email?.message ? " error" : "")}
-                  type="text"
-                  ref={register({
-                    required: 'Email address required',
-                    pattern: {
-                      value: EMAIL_REGEX,
-                      message: 'Enter an email address in the correct format, like name@example.com',
-                    },
-                  })}
-                />
-              </label>
-            </div>
-            <div className="form-group group">
-              <label className="section-heading">Your postcode*
-                <input
-                  name="postcode"
-                  className={"large-input" + (errors.postcode?.message ? " error" : "")}
-                  type="text"
-                  ref={register({
-                    required: 'Postcode address required',
-                      // pattern: {
-                      //   value: EMAIL_REGEX,
-                      //   message: 'Enter an email address in the correct format, like name@example.com',
-                      // },
-                  })}
-                />
-              </label>
+                })}
+              />
             </div>
             <div className="form-group group">
               <fieldset>
@@ -109,10 +109,14 @@ export default function SignupSixtyDay() {
                 </div>
               </fieldset>
             </div>
-            <div className="form-group group">
+            <div className={"form-group group" + (errors.council?.message ? " error-block" : "")}>
               <fieldset>
                 <legend>What is the name of your local council?*</legend>
-                  <select name="council" ref={register({
+                {errors.council ? (<span className="error">{errors.council?.message}</span>) : (null)}
+                  <select 
+                  name="council" 
+                  className={"large-input" + (errors.council?.message ? " error" : "")}
+                  ref={register({
                     required: 'You must select a council',
                   })}>
                   <option value="" disabled selected>--Select your council--</option>
@@ -149,7 +153,7 @@ export default function SignupSixtyDay() {
             </div>
 
             <div className="button-container-middle">
-              <button type="submit" className={"button button-dark button-large" + (errors.email?.message ? " error" : "")}>SIGN UP!</button>
+              <button type="submit" className="button button-dark button-large">SIGNUP!</button>
             </div>
 
             <div className="disclaimer">
