@@ -14,7 +14,7 @@ export default function SignupSixtyDay() {
     const apiKey = process.env.GOV_DELIVERY_API_KEY;
 
     axios({
-      url: `https://api.govdelivery.com/api/add_script_subscription?t=UKESSEX_569&c=&k=${apiKey}&e=${form.email}&q_84487=${form.full_name}&q_84759=${form.postcode}&q_84959=${form.over_eighteen}&q_84762=${form.council}&q_84760=${form.consent}`,
+      url: `https://api.govdelivery.com/api/add_script_subscription?t=UKESSEX_569&c=&k=${apiKey}&e=${form.email}&q_84487=${form.full_name}&q_84759=${form.postcode}&q_84959=${form.over_eighteen}&q_84762=${form.council}&q_84760=${form.consent_to_share}`,
       adapter: jsonpAdapter,
       callbackParamName: 'c'
     }).then((response) => {
@@ -100,9 +100,9 @@ export default function SignupSixtyDay() {
                 <div className="input-group-container-middle">
                   <label>Are you 18 years of age or older? Please note, only people aged 18 or over are able to take part in the 60 DC.
                     <div class="multiple-choice">
-                      <input name="over_eighteen" value="294706" type="radio" />
+                      <input name="over_eighteen" value="294706" type="radio" ref={register({ required: true })}/>
                       <label>Yes</label>
-                      <input name="over_eighteen" value="294707" type="radio" />
+                      <input name="over_eighteen" value="294707" type="radio" ref={register({ required: true })}/>
                       <label>No</label>
                     </div>
                   </label>
@@ -131,12 +131,12 @@ export default function SignupSixtyDay() {
                 </div>
                 <div className="input-group-container-middle">
                   <label>
-                    <p>As part of your 60 Day Challenge you will be asked to share your daily trips with short notes or photos and videos. If you would be happy for us to then share your responses as part of our marketing to help us get more people walking and cycling, please specify here. We’ll contact you if you’ve won a prize or to share the latest news about Stop.Swap.GO!</p>
-                    <p>Bonus: we will be giving away additional prizes to those who share as a ‘thank you’ for supporting Stop. Swap. GO!</p>
+                    As part of your 60 Day Challenge you will be asked to share your daily trips with short notes or photos and videos. If you would be happy for us to then share your responses as part of our marketing to help us get more people walking and cycling, please specify here. We’ll contact you if you’ve won a prize or to share the latest news about Stop.Swap.GO!
+                    Bonus: we will be giving away additional prizes to those who share as a ‘thank you’ for supporting Stop. Swap. GO!
                     <div class="multiple-choice">
-                      <input name="consent" value="294328" type="radio" />
+                      <input name="consent_to_share" value="294328" type="radio" ref={register({ required: true })}/>
                       <label>Yes, you can share content I upload to the app</label>
-                      <input name="consent" value="294329" type="radio" />
+                      <input name="consent_to_share" value="294329" type="radio" ref={register({ required: true })}/>
                       <label>No, please do not share my content</label>
                     </div>
                   </label>
