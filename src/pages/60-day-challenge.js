@@ -13,13 +13,22 @@ const Challenge = () => (
 		</div>
 		<p>That&rsquo;s right. Swap to walking and cycling with our 60 Day Challenge and you could win fantastic prizes, including Love2Shop vouchers, Amazon gift cards and even the chance to win a bike and accessories to the value of £1,000!</p>
 		<p>All you have to do to be in with a chance to win is take part in the 60 Day Challenge. It’s completely free and every trip counts. It doesn’t matter if you’re walking to work or simply cycling to the shops to pick up a pint of milk: tell us about your trip and you could win! It’s as simple as that.</p>
-		<h2>Five simple steps to starting your 60 Day Challenge:</h2>
+		<h2>Four simple steps to starting your 60 Day Challenge:</h2>
 		<ol>
-			<li>Hit the “Sign up” button to launch the registration form for the 60 Day Challenge and then enter your details</li>
-			<li>Check your email inbox for an email from us containing the link to download our challenge smartphone app (it’s called “Indeemo”)</li>
-			<li>Click the link and create an Indeemo account using the same email address you used to register for the 60 Day Challenge</li>
-			<li>Download the Indeemo app and log in to it via your smartphone</li>
-			<li>Follow the quick app tutorial and start your challenge!</li>
+			<li>
+        <p>Complete the sign up form below. Remember, you need to be an Essex resident and over 18 to take part!</p>
+        <p>After you’ve submitted the form you’ll see a link to our challenge smartphone app called Indeemo.</p>
+      </li>
+			<li>
+        <p>Click the link and create an Indeemo account using the same email address you used to register for the 60 Day Challenge.</p>
+        <p>You can either do this straight away using the link or check your inbox for an email from us. We’ll automatically send you an email with the link within 24 hours of you signing up. </p>
+      </li>
+      <li>
+        <p>Download the Indeemo app and log in to it via your smartphone.</p>
+      </li>
+      <li>
+        <p>Follow the quick app tutorial and start your challenge!</p>
+      </li>
 		</ol>
 		<div className="text-align-center">
 			<LargeButton title="SIGN UP!" url="https://public.govdelivery.com/accounts/UKESSEX/signup/17087"/>
