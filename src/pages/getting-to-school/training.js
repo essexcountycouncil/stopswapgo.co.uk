@@ -122,6 +122,7 @@ const Training = () => {
           <fieldset>
             <legend>What year group will you or your child be in?*</legend>
             <select name="year_group">
+              <option value="" disabled selected>--Select year group--</option>
               <option value="year_7">Year 7</option>
               <option value="year_8">Year 8</option>
               <option value="year_9">Year 9</option>
