@@ -42,7 +42,6 @@ const Training = () => {
       <p>To get started, enter your details in the training request form and hit ‘Submit’:</p>
 
       <form onSubmit={handleOnSubmit} className="form grey-border">
-        <div className="form-internal">
         <h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></h3>
         <p className="warning">Note * indicates required answer</p>
         <div className="form-group group">
@@ -151,16 +150,16 @@ const Training = () => {
             </div>
           </fieldset>
         </div>
-
-        <button type="submit" className="button button-dark button-large extra-space" disabled={serverState.submitting}>
-          Submit
-        </button>
+        <div className="button-container-middle">
+          <button type="submit" className="button button-dark button-large extra-space" disabled={serverState.submitting}>
+            Submit
+          </button>
+        </div>
         {serverState.status && (
           <p className={!serverState.status.ok ? "errorMsg" : ""}>
             {serverState.status.msg}
           </p>
         )}
-        </div>
       </form>
 
   		<p className="small">Please note, the Safer Essex Roads Partnership will use your information to administer Bikeability. Your information and personal information will be shared with the course instructors for the duration of the course. Information will be retained for the duration of eligibility for Bikeability services. For more information regarding your rights and our commitments visit our <Link to="https://www.essex.gov.uk/privacy-environment-and-transport">privacy notice</Link>.</p>
