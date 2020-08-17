@@ -1,10 +1,8 @@
 .form-block {
   float: left;
   clear: left;
-
   margin-top: -5px;
   margin-bottom: 5px;
-
   @include media(tablet) {
     margin-top: 0;
     margin-bottom: 10px;
@@ -21,8 +19,40 @@ select:focus::-ms-value {
 .form {
   margin-bottom: $baseline*2;
   legend {
-    @include p;
+    @include h3;
     margin-top: 0;
+  }
+  &.grey-border {
+    background-color: $grey-lighter;
+    padding: $gutter*1.5;
+    margin-bottom: $baseline;
+    @include media(mobile) {
+      padding-bottom: $baseline;
+      padding: $gutter*0.5;
+    }
+    .strapline {
+      padding: $baseline;
+      @include h2;
+      margin-top: 0;
+      text-align: center;
+      @include media(mobile) {
+        @include h3;
+        margin-top: 0 !important;
+        margin-bottom: $baseline*0.25;
+      }
+    }
+    .form-internal {
+      background-color: $white;
+      padding: $gutter;
+      @include media(mobile) {
+        padding: $gutter*0.5;
+      }
+    }
+    .warning {
+      @include small;      
+      margin-top: $baseline*0.5;
+      margin-bottom: $baseline;
+    } 
   }
   .group, .all-sections {
     display: block;
@@ -32,7 +62,6 @@ select:focus::-ms-value {
       display: block;
     }
     label {
-      @include p;
       display: block;
       margin-top: $baseline*0.5;
       margin-bottom: $baseline*0.25;
@@ -48,12 +77,14 @@ select:focus::-ms-value {
     }
     .form-control {
       width: 50%;
+      @include media(mobile) {
+        width: 100%;
+      }
     }
     select {
       @include media(desktop) {
         width: 50%;
       }
-
     }
   }
 }
