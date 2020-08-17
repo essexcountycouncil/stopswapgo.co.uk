@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import axios from "axios"
 import { Link } from 'gatsby'
 import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
+import TrainingSubmissionThankyou from "../../components/training-submission-thankyou/training-submission-thankyou"
 
 const Training = () => {
   const [serverState, setServerState] = useState({
@@ -27,7 +28,7 @@ const Training = () => {
       data: new FormData(form)
     })
       .then(r => {
-        handleServerResponse(true, "Thanks!", form);
+        handleServerResponse(true, null, form);
       })
       .catch(r => {
         handleServerResponse(false, r.response.data.error, form);
@@ -137,12 +138,13 @@ const Training = () => {
         <button type="submit" className="button button-dark button-large extra-space" disabled={serverState.submitting}>
           Submit
         </button>
-        {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : ""}>
-            {serverState.status.msg}
-          </p>
-        )}
-        </div>
+
+        {serverState.status &&
+          <>
+          {serverState.status.ok ? <TrainingSubmissionThankyou /> : <p className="errorMsg">{serverState.status.msg}</p>}
+         </>
+       }
+      </div>
       </form>
 
   		<p className="small">Please note, the Safer Essex Roads Partnership will use your information to administer Bikeability. Your information and personal information will be shared with the course instructors for the duration of the course. Information will be retained for the duration of eligibility for Bikeability services. For more information regarding your rights and our commitments visit our <Link to="https://www.essex.gov.uk/privacy-environment-and-transport">privacy notice</Link>.</p>
