@@ -121,34 +121,15 @@ const Training = () => {
         <div className="input-group-container-middle group">
           <fieldset>
             <legend>What year group will you or your child be in?*</legend>
-            <div className="multiple-choice">
-              <input type="radio" value="year_7" name="year_group" required aria-required="true" />
-              <label>Year 7</label>
-            </div>
-            <div className="multiple-choice">
-              <input type="radio" value="year_8" name="year_group" required aria-required="true" />
-              <label>Year 8</label>
-            </div>
-            <div className="multiple-choice">
-              <input type="radio" value="year_9" name="year_group" required aria-required="true" />
-              <label>Year 9</label>
-            </div>
-            <div className="multiple-choice">
-              <input type="radio" value="year_10" name="year_group" required aria-required="true" />
-              <label>Year 10</label>
-            </div>
-            <div className="multiple-choice">
-              <input type="radio" value="year_11" name="year_group" required aria-required="true" />
-              <label>Year 11</label>
-            </div>
-            <div className="multiple-choice">
-              <input type="radio" value="year_12" name="year_group" required aria-required="true" />
-              <label>Year 12</label>
-            </div>
-            <div className="multiple-choice">
-              <input type="radio" value="year_13" name="year_group" required aria-required="true" />
-              <label>Year 13</label>
-            </div>
+            <select name="year_group">
+              <option value="year_7">Year 7</option>
+              <option value="year_8">Year 8</option>
+              <option value="year_9">Year 9</option>
+              <option value="year_10">Year 10</option>
+              <option value="year_11">Year 11</option>
+              <option value="year_12">Year 12</option>
+              <option value="year_13">Year 13</option>
+            </select>
           </fieldset>
         </div>
 
