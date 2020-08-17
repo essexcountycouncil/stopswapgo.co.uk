@@ -36,8 +36,8 @@ const Challenge = () => (
 		<h3>More about the 60 Day Challenge</h3>
 		<p>
       For more information about the 60 Day Challenge, prizes and the Indeemo app, please visit our <Link to="/faq">FAQs page</Link>.
-      <SignupSixtyDay></SignupSixtyDay>
     </p>
+    <SignupSixtyDay></SignupSixtyDay>
 	</LayoutWithNewsletter>
 )
 

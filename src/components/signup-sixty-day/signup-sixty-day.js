@@ -110,7 +110,10 @@ export default function SignupSixtyDay() {
                 <div className="input-group-container-middle">
                   <label>What is the name of your local council?*
                     <div class="multiple-choice">
-                      <select name="council" ref={register}>
+                      <select name="council" ref={register({
+                        required: 'You must select a council',
+                      })}>
+                        <option value="" disabled selected>--Select your council--</option>
                         <option value="294330">Basildon</option>
                         <option value="294331">Braintree</option>
                         <option value="294332">Brentwood</option>
