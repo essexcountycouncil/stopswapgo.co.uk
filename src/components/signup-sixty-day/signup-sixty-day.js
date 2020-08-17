@@ -20,6 +20,7 @@ export default function SignupSixtyDay() {
     }).then((response) => {
       if (response.status === 200) {
         console.log(response.data.message)
+        window.location = "https://register.indeemo.com/s/338325";
       } else {
         console.error("Error: ", response)
       }
