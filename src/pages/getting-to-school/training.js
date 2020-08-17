@@ -114,7 +114,7 @@ const Training = () => {
         </div>
 
         <div className="input-group-container-middle group">
-          <label>What Essex school will the participant attend in September?*</label>
+          <legend>What Essex school will the participant attend in September?*</legend>
           <input type="text" name="school" required aria-required="true" className="form-control" />
         </div>
 
