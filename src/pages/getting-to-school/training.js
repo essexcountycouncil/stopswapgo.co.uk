@@ -11,31 +11,33 @@ const Training = () => {
     submitting: false,
     status: null
   });
-  const handleServerResponse = (ok, msg, form) => {
-    setServerState({
-      submitting: false,
-      status: { ok, msg }
-    });
-    if (ok) {
-      form.reset();
-    }
-  };
-  const handleOnSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    setServerState({ submitting: true });
-    axios({
-      method: "post",
-      url: "https://getform.io/f/12e9d628-1d0f-4be0-87f7-edf85363c31d",
-      data: new FormData(form)
-    })
-      .then(r => {
-        handleServerResponse(true, null, form);
-      })
-      .catch(r => {
-        handleServerResponse(false, r.response.data.error, form);
+  function onSubmit(form) {
+    const handleServerResponse = (ok, msg, form) => {
+      setServerState({
+        submitting: false,
+        status: { ok, msg }
       });
+      if (ok) {
+        form.reset();
+      }
     };
+    const handleOnSubmit = e => {
+      e.preventDefault();
+      const form = e.target;
+      setServerState({ submitting: true });
+      axios({
+        method: "post",
+        url: "https://getform.io/f/12e9d628-1d0f-4be0-87f7-edf85363c31d",
+        data: new FormData(form)
+      })
+        .then(r => {
+          handleServerResponse(true, null, form);
+        })
+        .catch(r => {
+          handleServerResponse(false, r.response.data.error, form);
+        });
+      };
+    }
   return (
   	<Layout>
   		<h1>Training offer</h1>
@@ -44,7 +46,7 @@ const Training = () => {
       <p>The training will take place in small groups. We’ll make sure we keep everyone COVID-19 safe by running sessions according to which school your child is due to attend and ages.</p>
       <p>To get started, enter your details in the training request form and hit ‘Submit’:</p>
 
-      <form onSubmit={handleOnSubmit} className="form grey-border">
+      <form onSubmit={handleSubmit(onSubmit)} className="form form-background newsletterForm">
         <div className="form-internal">
           <h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></h3>
 
@@ -81,11 +83,11 @@ const Training = () => {
                 <label>Walking</label>
               </div>
               <div className="multiple-choice">
-                <input type="radio" value="no" name="type_of_training" required aria-required="true" />
+                <input type="radio" value="no" name="type_of_training" />
                 <label>Cycling</label>
               </div>
               <div className="multiple-choice">
-                <input type="radio" value="walking_and_cycling" name="type_of_training" required aria-required="true" />
+                <input type="radio" value="walking_and_cycling" name="type_of_training" />
                 <label>Both walking and cycling </label>
               </div>
             </fieldset>
@@ -119,19 +121,19 @@ const Training = () => {
               <legend>If the participant would like cycling training, do they own a bike and a bike helmet?</legend>
               {errors.equipment_owned ? (<span className="error">{errors.equipment_owned?.message}</span>) : (null)}
               <div className="multiple-choice">
-                <input type="radio" value="bike_and_helmet" name="equipment_owned" required aria-required="true" />
+                <input type="radio" value="bike_and_helmet" name="equipment_owned" />
                 <label>Yes, both</label>
               </div>
               <div className="multiple-choice">
-                <input type="radio" value="bike" name="equipment_owned" required aria-required="true" />
+                <input type="radio" value="bike" name="equipment_owned" />
                 <label>A bike but no helmet</label>
               </div>
               <div className="multiple-choice">
-                <input type="radio" value="helmet" name="equipment_owned" required aria-required="true" />
+                <input type="radio" value="helmet" name="equipment_owned" />
                 <label>A helmet but no bike</label>
               </div>
               <div className="multiple-choice">
-                <input type="radio" value="none" name="equipment_owned" required aria-required="true" />
+                <input type="radio" value="none" name="equipment_owned" />
                 <label>Neither a bike or a helmet</label>
               </div>
             </fieldset>
@@ -140,7 +142,7 @@ const Training = () => {
           <div className={"form-group group" + (errors.school?.message ? " error-block" : "")}>
             <legend>What Essex school will the participant attend in September?*</legend>
             {errors.school ? (<span className="error">{errors.school?.message}</span>) : (null)}
-            <input type="text" name="school" required aria-required="true" className="form-control" />
+            <input type="text" name="school" className="form-control" />
           </div>
 
           <div className={"form-group group" + (errors.year_group?.message ? " error-block" : "")}>
@@ -160,7 +162,7 @@ const Training = () => {
             </fieldset>
           </div>
 
-          <button type="submit" className="button button-dark button-large extra-space" disabled={serverState.submitting}>
+          <button type="submit" className="button button-dark button-large extra-space">
             SUBMIT!
           </button>
 
