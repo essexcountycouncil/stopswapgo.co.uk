@@ -46,9 +46,9 @@ export default function SignupNewsletter() {
               </div>) :
               (<div>
                 <div className="input-group-container-middle">
-                  <ul>
-                    {errors.email ? (<li className="errors">{errors.email?.message}</li>) : (null)}
-                    {errors.agreement ? (<li className="errors">{errors.agreement?.message}</li>) : (null)}
+                  <ul className="errors">
+                    {errors.email ? (<li className="error">{errors.email?.message}</li>) : (null)}
+                    {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
                   </ul>
                 </div>
                 <div className="input-group-container-middle">
@@ -64,7 +64,7 @@ export default function SignupNewsletter() {
                       },
                     })}
                   />
-                  <button type="submit" className={"button button-dark button-large" + (errors.email?.message ? " error" : "")}>SUBSCRIBE!</button>
+                  <button type="submit" className="button button-dark button-large">SUBSCRIBE!</button>
 
                 </div>
 

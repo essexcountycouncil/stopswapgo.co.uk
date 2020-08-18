@@ -1,185 +1,193 @@
 form.newsletterForm {
-    width: 100%;
-    button.error, input.error {
-        border: $border-thick $error solid !important;
-    }
-    .errors {
-        margin-top: 1em !important;
-        color: white !important;
-        background-color: $error;
-        font-weight: bold;
-        padding: 1em;
-        margin:auto;
-        text-align: left;
-        line-height: 1.2em;
-    }
+  width: 100%;
+  button.error, input.error {
+    border: $border-thick $error solid !important;
+  }
 
-    .submitted {
-        margin-top: 2em !important;
-        font-weight: bold;
-        color: white !important;
-    }
-    .form-group-errors{
-        border-left: 5px solid $error;
-        padding-left: 15px;
-    }
+  .error-block {
+    border-left: solid $border-thicker $error;
+    padding-left: $gutter*0.5;
+  }
 
-    .input-group-container-middle {
+  .errors {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .error, .error-message {
+    display: block;
+    margin-top: $border-thick;
+    color: $error !important;
+    font-weight: bold;
+    padding: 0;
+    text-align: left;
+    line-height: $baseline;
+  }  
+
+  .submitted {
+    margin-top: 2em !important;
+    font-weight: bold;
+    color: white !important;
+  }
+  .form-group-errors{
+    border-left: 5px solid $error;
+    padding-left: 15px;
+  }
+
+  .input-group-container-middle {
+    width: 80%;
+    margin: auto;
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding: 0;      
+    }
+    .large-input{
+      height: 3.25rem !important;
+      border: $border-thick white solid;
+
+      @include media(mobile) {
+        width: 100%;
+      }      
+      @include media(tablet) {
+        width: 70%;
+      }      
+      @include media(desktop) {
         width: 80%;
-        margin: auto;
-        ul {
-            list-style: none;
-            margin: 0 0 10px  0;
-            padding: 0;
-        }
-        li {
-            margin: 0 !important;
-        }
-        .large-input{
-            height: 3.25rem !important;
-            border: $border-thick white solid;
-   
-            @include media(mobile) {
-                width: 100%;
-            }      
-            @include media(tablet) {
-                width: 70%;
-            }      
-            @include media(desktop) {
-                width: 80%;
-            }
-        }
-        button {
-            @include media(mobile) {
-                margin-top: 10px;
-                width: 100% !important;
-            }      
-            @include media(tablet) {
-                width: 30% !important;
-            }      
-            @include media(desktop) {
-                width: 20% !important;
-            }
-        }
-
-        label {
-            width: 90%;
-            color: white;
-            display: block;
-            text-align: left;
-            padding-top: 5px;
-        }
-
-        p {
-            margin-top: 0px !important;
-        }
-
-        a {
-            color: $brand;
-        }
-
+      }
     }
-        
-    div.disclaimer > p {
-        font-size: 0.88889rem;
-        margin-top: 40px;
-        a {
-            color: $brand;
-        }
+    button {
+      @include media(mobile) {
+        margin-top: 10px;
+        width: 100% !important;
+      }      
+      @include media(tablet) {
+        width: 30% !important;
+      }      
+      @include media(desktop) {
+        width: 20% !important;
+      }
     }
+
+    label {
+      width: 90%;
+      color: white;
+      display: block;
+      text-align: left;
+      padding-top: 5px;
+    }
+
+    p {
+      margin-top: 0px !important;
+    }
+
+    a {
+      color: $brand;
+    }
+
+  }
+
+  div.disclaimer > p {
+    font-size: 0.88889rem;
+    margin-top: 40px;
+    a {
+      color: $brand;
+    }
+  }
 
 }
 
 
 /** Checkbox styling **/
 
-        input[type="checkbox"]{
-            float: left;
-            width: 2em;
-            height: 2em;
-            margin-right: 20px;
-            outline: $border-thick white solid !important;
-        }
-        input[type="checkbox"].error {
-            outline: $border-thick $error solid !important;
-        }
-        
+input[type="checkbox"]{
+  float: left;
+  width: 2em;
+  height: 2em;
+  margin-right: 20px;
+  outline: $border-thick white solid !important;
+}
+input[type="checkbox"].error {
+  outline: $border-thick $error solid !important;
+}
+
 .checkbox {
-    width: 100%;
-    margin: 15px auto;
-    position: relative;
-    display: block;
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  display: block;
 }
 
 .checkbox input[type="checkbox"] {
-    width: auto;
-    opacity: 0.00000001;
-    position: absolute;
-    left: 0;
-    margin-left: -20px;
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px;
 }
 
 .checkbox-error label:before {
-    border: 2px solid $error !important;
-    background-color: $white;
+  border: 2px solid $error !important;
+  background-color: $white;
 }
 
 .checkbox label {
-    position: relative;
+  position: relative;
 }
 .checkbox label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.28s ease;
-    border-radius: 3px;
-    border: 2px solid $brand;
-    background-color: $white;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 2px solid $brand;
+  background-color: $white;
 }
 
 .checkbox label:after {
   content: '';
-    display: block;
-    width: 19px;
-    height: 8px;
-    border-bottom: 5px solid $body-text-colour;
-    border-left: 5px solid $body-text-colour;
-    -webkit-transform: rotate(-45deg) scale(0);
-    transform: rotate(-45deg) scale(0);
-    transition: transform ease 0.25s;
-    will-change: transform;
-    position: absolute;
-    top: 7px;
-    left: 6px; 
+  display: block;
+  width: 19px;
+  height: 8px;
+  border-bottom: 5px solid $body-text-colour;
+  border-left: 5px solid $body-text-colour;
+  -webkit-transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 7px;
+  left: 6px; 
 }
 
 .checkbox input[type="checkbox"]:checked ~ label::before {
-    color: $brand;
+  color: $brand;
 }
 
 .checkbox input[type="checkbox"]:checked ~ label::after {
-    -webkit-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
 }
 
 .checkbox label {
-    min-height: 34px;
-    display: block;
-    padding-left: 40px;
-    margin-bottom: 0;
-    font-weight: normal;
-    cursor: pointer;
-    vertical-align: sub;
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: sub;
 }
 .checkbox label span {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .checkbox input[type="checkbox"]:focus + label::before {
-    outline: 0;
+  outline: 0;
 }

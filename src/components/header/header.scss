@@ -39,7 +39,6 @@
         text-align: right;
         margin-top: $baseline*1.5;
         margin-bottom: $baseline*1.5;
-        padding-right: 0px !important;
         @include media(mobile) {
           float: left;
           text-align: center;
@@ -53,8 +52,8 @@
           background-color: $white;
           outline: $border-thick solid $white;
         }
-        li.pipe {
-          
+        li {
+          margin-left: $gutter*0.5;
         }
       }
       span {

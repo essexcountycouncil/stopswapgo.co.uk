@@ -1,5 +1,4 @@
 .previews {
-  @extend %grid-row;
   position: relative;
   @include media(mobile) {
     margin-top: $baseline*1.5;
@@ -154,7 +153,8 @@
 }
 
 
-.previews-grey-border{
+.previews-grey-border {
+  float: left;
   background-color: $grey-lighter;
   padding: $gutter*1.5 $gutter*0.5;
   margin-bottom: $baseline;
