@@ -56,7 +56,7 @@ export default function SignupSixtyDay() {
                 className={"large-input form-control" + (errors.full_name?.message ? " error" : "")}
                 type="text"
                 ref={register({
-                  required: 'You full name is required',
+                  required: 'Enter your full name',
                   // pattern: {
                   //   value: EMAIL_REGEX,
                   //   message: 'Enter an email address in the correct format, like name@example.com',
@@ -88,7 +88,7 @@ export default function SignupSixtyDay() {
                 className={"large-input" + (errors.postcode?.message ? " error" : "")}
                 type="text"
                 ref={register({
-                  required: 'Your postcode is required',
+                  required: 'Enter a real postcode',
                     // pattern: {
                     //   value: EMAIL_REGEX,
                     //   message: 'Enter an email address in the correct format, like name@example.com',
@@ -117,7 +117,7 @@ export default function SignupSixtyDay() {
                   name="council" 
                   className={"large-input" + (errors.council?.message ? " error" : "")}
                   ref={register({
-                    required: 'You must select a council',
+                    required: 'Expand the list and select your local council',
                   })}>
                   <option value="" disabled selected>--Select your council--</option>
                   <option value="294330">Basildon</option>
