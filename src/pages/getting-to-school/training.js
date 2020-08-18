@@ -1,10 +1,12 @@
 import React, { useState } from "react"
+import { useForm } from "react-hook-form";
 import axios from "axios"
 import { Link } from 'gatsby'
 import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
 import TrainingSubmissionThankyou from "../../components/training-submission-thankyou/training-submission-thankyou"
 
 const Training = () => {
+  const { register, handleSubmit, getValues, errors } = useForm();
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null
@@ -45,17 +47,37 @@ const Training = () => {
       <form onSubmit={handleOnSubmit} className="form grey-border">
         <div className="form-internal">
           <h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></h3>
-          <div className="form-group group">
+
+          <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
             <label className="section-heading">Your email*</label>
-            <span className="form-hint">(or your parent or guardian’s email if under 18)</span> 
-            <input type="email" name="email" className="form-control" required aria-required="true" />
+            <span className="form-hint">(or your parent or guardian’s email if under 18)</span>
+            {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
+            <input 
+              name="email"
+              className={"large-input form-control" + (errors.email?.message ? " error" : "")}
+              type="email" 
+              ref={register({
+                required: 'Enter an email address in the correct format, like name@example.com'
+              })}
+              />
           </div>
 
-          <div className="input-group-container-middle group">
+          <div className={"form-group group" + (errors.type_of_training?.message ? " error-block" : "")}>
             <fieldset>
               <legend>What type of training does the participant need?*</legend>
+              {errors.type_of_training ? (<span className="error">{errors.type_of_training?.message}</span>) : (null)}
               <div className="multiple-choice">
-                <input type="radio" value="walking" name="type_of_training" required aria-required="true" />
+                <input 
+                  name="type_of_training"
+                  className={"large-input form-control" + (errors.type_of_training?.message ? " error" : "")}
+                  type="radio"
+                  value="walking" 
+                  ref={register({
+                    required: 'Select the type of training you need'
+                  })}
+                  // so duplicating this on each checkbox is obv wrong, so stopped here Dom as not sure.
+                  // also brough in react-hook-form and some variables which is also prob wrong :)
+                  />
                 <label>Walking</label>
               </div>
               <div className="multiple-choice">
@@ -69,9 +91,10 @@ const Training = () => {
             </fieldset>
           </div>
 
-          <div className="input-group-container-middle group">
+          <div className={"form-group group" + (errors.previous_training?.message ? " error-block" : "")}>
             <fieldset>
               <legend>Has the participant had any previous training with Safer Essex Roads Partnership?*</legend>
+              {errors.previous_training ? (<span className="error">{errors.previous_training?.message}</span>) : (null)}
               <div className="multiple-choice">
                 <input type="radio" value="walking" name="previous_training" />
                 <label>Walking training</label>
@@ -91,9 +114,10 @@ const Training = () => {
             </fieldset>
           </div>
 
-          <div className="input-group-container-middle group">
+          <div className={"form-group group" + (errors.equipment_owned?.message ? " error-block" : "")}>
             <fieldset>
               <legend>If the participant would like cycling training, do they own a bike and a bike helmet?</legend>
+              {errors.equipment_owned ? (<span className="error">{errors.equipment_owned?.message}</span>) : (null)}
               <div className="multiple-choice">
                 <input type="radio" value="bike_and_helmet" name="equipment_owned" required aria-required="true" />
                 <label>Yes, both</label>
@@ -113,14 +137,16 @@ const Training = () => {
             </fieldset>
           </div>
 
-          <div className="input-group-container-middle group">
+          <div className={"form-group group" + (errors.school?.message ? " error-block" : "")}>
             <legend>What Essex school will the participant attend in September?*</legend>
+            {errors.school ? (<span className="error">{errors.school?.message}</span>) : (null)}
             <input type="text" name="school" required aria-required="true" className="form-control" />
           </div>
 
-          <div className="input-group-container-middle group">
+          <div className={"form-group group" + (errors.year_group?.message ? " error-block" : "")}>
             <fieldset>
               <legend>What year group will you or your child be in?*</legend>
+              {errors.year_group ? (<span className="error">{errors.year_group?.message}</span>) : (null)}
               <select name="year_group">
                 <option value="" disabled selected>--Select year group--</option>
                 <option value="year_7">Year 7</option>
