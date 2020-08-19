@@ -109,7 +109,7 @@ export default function SignupTraining() {
                 value="walking"
                 name="previous_training"
                 ref={register({
-                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                  required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
               <label>Walking training</label>
@@ -120,7 +120,7 @@ export default function SignupTraining() {
                 value="cycling"
                 name="previous_training"
                 ref={register({
-                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                  required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
               <label>Cycling training</label>
@@ -131,7 +131,7 @@ export default function SignupTraining() {
                 value="walking_and_cycling"
                 name="previous_training"
                 ref={register({
-                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                  required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
               <label>Both walking and cycling training</label>
@@ -142,7 +142,7 @@ export default function SignupTraining() {
                 value="none"
                 name="previous_training"
                 ref={register({
-                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                  required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
               <label>No previous training</label>
@@ -160,7 +160,7 @@ export default function SignupTraining() {
                 value="bike_and_helmet"
                 name="equipment_owned"
                 ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
               <label>Yes, both</label>
@@ -171,7 +171,7 @@ export default function SignupTraining() {
                 value="bike"
                 name="equipment_owned"
                 ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
               <label>A bike but no helmet</label>
@@ -182,7 +182,7 @@ export default function SignupTraining() {
                 value="helmet"
                 name="equipment_owned"
                 ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
               <label>A helmet but no bike</label>
@@ -193,7 +193,7 @@ export default function SignupTraining() {
                 value="none"
                 name="equipment_owned"
                 ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
               <label>Neither a bike or a helmet</label>
