@@ -236,9 +236,11 @@ export default function SignupTraining() {
           </fieldset>
         </div>
 
-        <button type="submit" className="button button-dark button-large extra-space">
-          SUBMIT!
-        </button>
+        <div className="button-container-middle">
+          <button type="submit" className="button button-dark button-large extra-space">
+            SUBMIT!
+          </button>
+        </div>
         { (submitted && success)
           ? <TrainingSubmissionThankyou />
           : <p></p>
