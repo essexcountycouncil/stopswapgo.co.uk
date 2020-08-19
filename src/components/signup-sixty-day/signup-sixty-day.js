@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import SixtyDaySubmissionThankyou from "../sixty-day-submission-thankyou/sixty-day-submission-thankyou"
 let axios = require('axios');
 let jsonpAdapter = require('axios-jsonp');
 
 export default function SignupSixtyDay() {
   const [submitted, setSubmitted] = useState('');
   const [checked, setChecked] = useState('');
+  const [success, setSuccess] = useState('');
   const { register, handleSubmit, getValues, errors } = useForm();
 
   const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -20,6 +22,8 @@ export default function SignupSixtyDay() {
     }).then((response) => {
       if (response.status === 200) {
         console.log(response.data.message)
+        setSuccess(true)
+        setSubmitted(true)
         window.location = "https://register.indeemo.com/s/338325";
       } else {
         console.error("Error: ", response)
@@ -39,7 +43,7 @@ export default function SignupSixtyDay() {
         <p className="warning">Note * indicates required answer</p>
         {submitted ?
           (<div>
-
+            <SixtyDaySubmissionThankyou />
           </div>) :
           (<div>
             <div>
