@@ -42,6 +42,8 @@ const StJohnPayne = () => (
 		<h2>Bus routes</h2>
 		<p>Being so close to Broomfield Road helps with buses, as it’s a major corridor into town from Braintree and the villages to the north. There are lots of bus stops very close to the school.</p>
 
+		<h2>Train routes</h2>
+		<p>John Payne is a 1.3 mile walk from <a href="https://www.nationalrail.co.uk/stations_destinations/CHM.aspx">Chelmsford station</a>, which is a healthy and refreshing walk at either end of the school day. Getting the train will be by far the quickest way to get to Chelmsford for those living in Witham, Ingatestone and Shenfield. Greater Anglia offer <a href="https://www.greateranglia.co.uk/tickets-fares/business-travel/schoolcollege-travel-discounts">discounts on train travel for students</a> at some schools, chat to staff about this.</p>
 	</Layout>
 )
 
