@@ -7,7 +7,7 @@ export default function SignupTraining() {
   const [submitted, setSubmitted] = useState('');
   const [success, setSuccess] = useState('');
   const [checked, setChecked] = useState('');
-  const { register, handleSubmit, getValues, errors } = useForm();
+  const { register, handleSubmit, getValues, errors, setValue } = useForm();
 
   const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -26,6 +26,12 @@ export default function SignupTraining() {
         //console.log(response.data.message)
         setSubmitted(true)
         setSuccess(true)
+        setValue('email', null)
+        setValue('type_of_training', null)
+        setValue('previous_training', null)
+        setValue('equipment_owned', null)
+        setValue('school', null)
+        setValue('year_group', null)
       } else {
         console.error("Error: ", response)
       }
