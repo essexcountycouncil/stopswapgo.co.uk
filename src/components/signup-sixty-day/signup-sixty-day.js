@@ -48,23 +48,6 @@ export default function SignupSixtyDay() {
                 {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
               </ul>
             </div>
-            <div className={"form-group group" + (errors.over_eighteen?.message ? " error-block" : "")}>
-              <fieldset>
-                <legend>Are you 18 years of age or older?</legend>
-                <span className="form-hint"> Please note, only people aged 18 or over are able to take part in the 60 DC.</span>
-                {errors.over_eighteen ? (<span className="error">{errors.over_eighteen?.message}</span>) : (null)}
-                <div class="multiple-choice">
-                  <label><input
-                    name="over_eighteen"
-                    className={"large-input form-control" + (errors.over_eighteen?.message ? " error" : "")}
-                    value="294706"
-                    type="checkbox"
-                    ref={register({
-                      required: 'Select yes only if you are 18 or older'
-                    })}/>Yes</label>
-                </div>
-              </fieldset>
-            </div>
             <div className={"form-group group" + (errors.full_name?.message ? " error-block" : "")}>
               <label className="section-heading">Your full name*</label>
               {errors.full_name ? (<span className="error">{errors.full_name?.message}</span>) : (null)}
@@ -112,6 +95,25 @@ export default function SignupSixtyDay() {
                     // },
                 })}
               />
+            </div>
+            <div className={"form-group group" + (errors.over_eighteen?.message ? " error-block" : "")}>
+              <fieldset>
+                <legend>Are you 18 years of age or older?</legend>
+                <span className="form-hint"> Please note, only people aged 18 or over are able to take part in the 60 DC.</span>
+                {errors.over_eighteen ? (<span className="error">{errors.over_eighteen?.message}</span>) : (null)}
+                <div class="multiple-choice">
+                  <input
+                    name="over_eighteen"
+                    className={"large-input form-control" + (errors.over_eighteen?.message ? " error" : "")}
+                    value="294706"
+                    type="checkbox"
+                    ref={register({
+                      required: 'Select yes only if you are 18 or older'
+                    })}
+                  />
+                <label>Yes</label>
+                </div>
+              </fieldset>
             </div>
             <div className={"form-group group" + (errors.council?.message ? " error-block" : "")}>
               <fieldset>
