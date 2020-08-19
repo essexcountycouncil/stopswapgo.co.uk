@@ -137,8 +137,6 @@ export default function SignupSixtyDay() {
                   <option value="294339">Rochford</option>
                   <option value="294340">Tendring</option>
                   <option value="294341">Uttlesford</option>
-                  <option value="294342">I'm not sure</option>
-                  <option value="294343">None of these</option>
                 </select>
               </fieldset>
             </div>
