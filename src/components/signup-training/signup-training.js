@@ -83,7 +83,7 @@ export default function SignupTraining() {
             <div className="multiple-choice">
               <input 
                 type="radio"
-                value="no"
+                value="cycling"
                 name="type_of_training"
                 ref={register({
                   required: 'Select the type of training you need'
