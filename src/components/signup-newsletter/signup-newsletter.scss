@@ -1,3 +1,16 @@
+.signup-background {
+  form.newsletterForm {
+    .large-input.error {
+      display: inline;
+      margin-top: 0;
+    }
+    .error {
+      background-color: $white;
+      padding: $gutter*0.25;
+    }
+  }
+}
+
 form.newsletterForm {
   width: 100%;
   button.error, input.error,  {

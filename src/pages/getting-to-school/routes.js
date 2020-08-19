@@ -26,6 +26,7 @@ const Routes = () => (
 		<p>Select the area your school is in from the list to see available map options:</p>
 		<ul>
 			<li><Link to="/getting-to-school/routes/colchester">Colchester</Link></li>
+			<li><Link to="/getting-to-school/routes/chelmsford">Chelmsford</Link></li>
 		</ul>
 	</Layout>
 )
