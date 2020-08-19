@@ -118,7 +118,7 @@ export default function SignupSixtyDay() {
             <div className={"form-group group" + (errors.council?.message ? " error-block" : "")}>
               <fieldset>
                 <legend>What is the name of your local council?*</legend>
-                <span className="form-hint">Please note, only people in the eligible Essex areas listed are able to take part in the 60 Day Challenge. If you don&rsquo;t know, you can <a href="https://www.gov.uk/find-local-council">find your local council</a> on GOV.UK</span>
+                <span className="form-hint">If you don’t know, you can <a href="https://www.gov.uk/find-local-council">find your local council</a> on GOV.UK. Please note, only people in the eligible Essex areas listed are able to take part in the 60 DC.</span>
                 {errors.council ? (<span className="error">{errors.council?.message}</span>) : (null)}
                   <select 
                   name="council" 
