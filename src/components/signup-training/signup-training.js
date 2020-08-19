@@ -18,6 +18,7 @@ export default function SignupTraining() {
     axios({
       method: "post",
       url: "https://getform.io/f/12e9d628-1d0f-4be0-87f7-edf85363c31d",
+      data: form
       //callbackParamName: 'c'
     }).then((response) => {
       if (response.status === 200) {
