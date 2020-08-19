@@ -60,7 +60,7 @@ export default function SignupSixtyDay() {
                     value="294706" 
                     type="checkbox" 
                     ref={register({ 
-                      required: 'Confirm you are 18 years or older' 
+                      required: 'Select yes only if you are 18 or older'
                     })}/>
                   <label>Yes</label>
                 </div>
@@ -142,16 +142,31 @@ export default function SignupSixtyDay() {
                 </select>
               </fieldset>
             </div>
-            <div className="form-group group">
+            <div className={"form-group group" + (errors.consent_to_share?.message ? " error-block" : "")}>
               <fieldset>
-                <legend>Can we share your content?</legend>
+                <legend>Can we share your content?*</legend>
                 <p>As part of your 60 Day Challenge you will be asked to share your daily trips with short notes or photos and videos. If you would be happy for us to then share your responses as part of our marketing to help us get more people walking and cycling, please specify here. We’ll contact you if you’ve won a prize or to share the latest news about Stop.Swap.GO! Bonus: we will be giving away additional prizes to those who share as a ‘thank you’ for supporting Stop. Swap. GO!</p>
+                {errors.consent_to_share ? (<span className="error">{errors.consent_to_share?.message}</span>) : (null)}
                 <div class="multiple-choice">
-                  <input name="consent_to_share" value="294328" type="radio" ref={register({ required: true })}/>
+                  <input
+                    name="consent_to_share"
+                    value="294328"
+                    type="radio"
+                    ref={register({
+                      required: "Select yes if we can share your content or select no if not"
+                    })}
+                  />
                   <label>Yes, you can share content I upload to the app</label>
                 </div>
                 <div class="multiple-choice">
-                  <input name="consent_to_share" value="294329" type="radio" ref={register({ required: true })}/>
+                  <input
+                    name="consent_to_share"
+                    value="294329"
+                    type="radio"
+                    ref={register({
+                      required: "Select yes if we can share your content or select no if not"
+                    })}
+                  />
                   <label>No, please do not share my content</label>
                 </div>
               </fieldset>
