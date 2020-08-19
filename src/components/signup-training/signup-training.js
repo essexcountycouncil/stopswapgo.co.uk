@@ -5,6 +5,7 @@ let axios = require('axios');
 
 export default function SignupTraining() {
   const [submitted, setSubmitted] = useState('');
+  const [success, setSuccess] = useState('');
   const [checked, setChecked] = useState('');
   const { register, handleSubmit, getValues, errors } = useForm();
 
@@ -22,7 +23,9 @@ export default function SignupTraining() {
       //callbackParamName: 'c'
     }).then((response) => {
       if (response.status === 200) {
-        console.log(response.data.message)
+        //console.log(response.data.message)
+        setSubmitted(true)
+        setSuccess(true)
       } else {
         console.error("Error: ", response)
       }
@@ -72,11 +75,25 @@ export default function SignupTraining() {
               <label>Walking</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="no" name="type_of_training" />
+              <input 
+                type="radio"
+                value="no"
+                name="type_of_training"
+                ref={register({
+                  required: 'Select the type of training you need'
+                })}
+              />
               <label>Cycling</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="walking_and_cycling" name="type_of_training" />
+              <input
+                type="radio"
+                value="walking_and_cycling"
+                name="type_of_training"
+                ref={register({
+                  required: 'Select the type of training you need'
+                })}
+              />
               <label>Both walking and cycling </label>
             </div>
           </fieldset>
@@ -222,6 +239,10 @@ export default function SignupTraining() {
         <button type="submit" className="button button-dark button-large extra-space">
           SUBMIT!
         </button>
+        { (submitted && success)
+          ? <TrainingSubmissionThankyou />
+          : <p></p>
+        }
 
       </div>
     </form>
