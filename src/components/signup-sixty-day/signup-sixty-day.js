@@ -44,7 +44,7 @@ export default function SignupSixtyDay() {
           (<div>
             <div>
               <ul className="errors">
-                
+
                 {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
               </ul>
             </div>
@@ -54,18 +54,17 @@ export default function SignupSixtyDay() {
                 <span className="form-hint"> Please note, only people aged 18 or over are able to take part in the 60 DC.</span>
                 {errors.over_eighteen ? (<span className="error">{errors.over_eighteen?.message}</span>) : (null)}
                 <div class="multiple-choice">
-                  <input 
+                  <label><input
                     name="over_eighteen"
                     className={"large-input form-control" + (errors.over_eighteen?.message ? " error" : "")}
-                    value="294706" 
-                    type="checkbox" 
-                    ref={register({ 
+                    value="294706"
+                    type="checkbox"
+                    ref={register({
                       required: 'Select yes only if you are 18 or older'
-                    })}/>
-                  <label>Yes</label>
+                    })}/>Yes</label>
                 </div>
               </fieldset>
-            </div>            
+            </div>
             <div className={"form-group group" + (errors.full_name?.message ? " error-block" : "")}>
               <label className="section-heading">Your full name*</label>
               {errors.full_name ? (<span className="error">{errors.full_name?.message}</span>) : (null)}
@@ -169,6 +168,22 @@ export default function SignupSixtyDay() {
                 </div>
               </fieldset>
             </div>
+            <div className={"form-group group" + (errors.consent_data_privacy?.message ? " error-block" : "")}>
+              <fieldset>
+                {errors.consent_data_privacy ? (<span className="error">{errors.consent_data_privacy?.message}</span>) : (null)}
+                <div class="multiple-choice">
+                  <input 
+                    name="consent_data_privacy"
+                    className={"large-input form-control" + (errors.consent_data_privacy?.message ? " error" : "")}
+                    value="294706" 
+                    type="checkbox" 
+                    ref={register({ 
+                      required: 'Select the checkbox to consent to our data privacy policy'
+                    })}/>
+                  <label>By checking this box, you consent the data privacy polices of <a href="https://subscriberhelp.granicus.com/s/article/Privacy">GovDelivery</a> and <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Essex County Council.</a></label>
+                </div>
+              </fieldset>
+            </div>       
 
             <div className="button-container-middle">
               <button type="submit" className="button button-dark button-large">SIGNUP!</button>
