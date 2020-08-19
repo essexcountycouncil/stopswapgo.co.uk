@@ -6,8 +6,7 @@ import SignupSixtyDay from "../components/signup-sixty-day/signup-sixty-day"
 
 const Challenge = () => (
 	<LayoutWithNewsletter>
-		<h1>60 Day Challenge Now Live!</h1>
-		<h2>Win prizes for walking and cycling with our 60 Day Challenge</h2>
+		<h1>Win prizes for walking and cycling with our 60 Day Challenge</h1>
 		<div className="notice notice-middle">
 			<h2 class="section-heading">Join people across Essex making the swap from driving to walking or cycling to win prizes.</h2>
 			<p>Sign up now and get ready to Stop.Swap.<i>GO!</i></p>
@@ -15,7 +14,7 @@ const Challenge = () => (
 		<p>That&rsquo;s right. Swap to walking and cycling with our 60 Day Challenge and you could win fantastic prizes, including Love2Shop vouchers, Amazon gift cards and even the chance to win a bike and accessories to the value of £1,000!</p>
 		<p>All you have to do to be in with a chance to win is take part in the 60 Day Challenge. It’s completely free and every trip counts. It doesn’t matter if you’re walking to work or simply cycling to the shops to pick up a pint of milk: tell us about your trip and you could win! It’s as simple as that.</p>
 		
-		<h3>Four simple steps to start your 60 Day Challenge</h3>
+		<h2>Four simple steps to start your 60 Day Challenge</h2>
 		<p>Remember, you need to be over 18 and live in an eligible Essex area to take part. If you are younger or don&rsquo;t live in these areas you can still join the community on&nbsp;<a href="https://www.facebook.com/stopswapgo/">Facebook</a>,&nbsp;<a href="https://twitter.com/stopswapgoessex">Twitter&nbsp;</a>and&nbsp;<a href="https://www.instagram.com/stopswapgo/">Instagram</a>. If you do, let&rsquo;s get you started!</p>
 		<ol>
 			<li>
@@ -35,7 +34,7 @@ const Challenge = () => (
       </li>
 		</ol>
 
-		<h3>More about the 60 Day Challenge</h3>
+		<h2>More about the 60 Day Challenge</h2>
 		<p>For more information about the 60 Day Challenge, prizes and the Indeemo app, please visit our&nbsp;<a href="https://www.stopswapgo.co.uk/faq">FAQs page</a>.</p>
     <SignupSixtyDay></SignupSixtyDay>
 	</LayoutWithNewsletter>
