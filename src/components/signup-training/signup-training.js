@@ -87,19 +87,47 @@ export default function SignupTraining() {
             <legend>Has the participant had any previous training with Safer Essex Roads Partnership?*</legend>
             {errors.previous_training ? (<span className="error">{errors.previous_training?.message}</span>) : (null)}
             <div className="multiple-choice">
-              <input type="radio" value="walking" name="previous_training" />
+              <input 
+                type="radio"
+                value="walking"
+                name="previous_training"
+                ref={register({
+                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                })}
+              />
               <label>Walking training</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="cycling" name="previous_training" />
+              <input
+                type="radio"
+                value="cycling"
+                name="previous_training"
+                ref={register({
+                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                })}
+              />
               <label>Cycling training</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="walking_and_cycling" name="previous_training" />
+              <input
+                type="radio"
+                value="walking_and_cycling"
+                name="previous_training"
+                ref={register({
+                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                })}
+              />
               <label>Both walking and cycling training</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="none" name="previous_training" />
+              <input
+                type="radio"
+                value="none"
+                name="previous_training"
+                ref={register({
+                  required: "Select the type of training you've had before or, if you've had none, select 'No previous training"
+                })}
+              />
               <label>No previous training</label>
             </div>
           </fieldset>
@@ -110,19 +138,47 @@ export default function SignupTraining() {
             <legend>If the participant would like cycling training, do they own a bike and a bike helmet?</legend>
             {errors.equipment_owned ? (<span className="error">{errors.equipment_owned?.message}</span>) : (null)}
             <div className="multiple-choice">
-              <input type="radio" value="bike_and_helmet" name="equipment_owned" />
+              <input
+                type="radio"
+                value="bike_and_helmet"
+                name="equipment_owned"
+                ref={register({
+                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                })}
+              />
               <label>Yes, both</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="bike" name="equipment_owned" />
+              <input
+                type="radio"
+                value="bike"
+                name="equipment_owned"
+                ref={register({
+                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                })}
+              />
               <label>A bike but no helmet</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="helmet" name="equipment_owned" />
+              <input
+                type="radio"
+                value="helmet"
+                name="equipment_owned"
+                ref={register({
+                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                })}
+              />
               <label>A helmet but no bike</label>
             </div>
             <div className="multiple-choice">
-              <input type="radio" value="none" name="equipment_owned" />
+              <input
+                type="radio"
+                value="none"
+                name="equipment_owned"
+                ref={register({
+                  required: "Select the equipment you own or, if you don't have any, select 'Neither a bike or a helmet"
+                })}
+              />
               <label>Neither a bike or a helmet</label>
             </div>
           </fieldset>
@@ -131,14 +187,26 @@ export default function SignupTraining() {
         <div className={"form-group group" + (errors.school?.message ? " error-block" : "")}>
           <legend>What Essex school will the participant attend in September?*</legend>
           {errors.school ? (<span className="error">{errors.school?.message}</span>) : (null)}
-          <input type="text" name="school" className="form-control" />
+          <input
+            type="text"
+            name="school"
+            className="form-control"
+            ref={register({
+              required: "Enter the name of the relevant Essex school the participant will go to in September"
+            })}
+          />
         </div>
 
         <div className={"form-group group" + (errors.year_group?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>What year group will you or your child be in?*</legend>
+            <legend>What year group will the participant be in?*</legend>
             {errors.year_group ? (<span className="error">{errors.year_group?.message}</span>) : (null)}
-            <select name="year_group">
+            <select
+              name="year_group"
+              ref={register({
+                required: "Expand the list and select the correct school year for the participant"
+              })}
+            >
               <option value="" disabled selected>--Select year group--</option>
               <option value="year_7">Year 7</option>
               <option value="year_8">Year 8</option>
