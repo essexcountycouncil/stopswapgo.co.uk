@@ -192,7 +192,7 @@ export default function SignupSixtyDay() {
             </div>
 
             <div className="disclaimer">
-              <p>Essex County Council is the controller of the personal information you submit here. We'll use the information you provide to keep you updated with Stop.Swap.<i>GO!</i> If it looks like you might be committing fraud or crime, the law may require us to share your information with the police or fraud investigation organisations. For more details about how we use your personal information, please read our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a>.</p>
+              <p>By submitting your contact details, you acknowledge the <a href="https://www.stopswapgo.co.uk/terms-and-conditions">terms and conditions for the 60 Day Challenge</a>. Essex County Council is the controller of this personal information. If it looks like you might be committing fraud, we might have to share it with the police or fraud investigators. For more details about how we use your personal data, please read the <a href="https://subscriberhelp.granicus.com/s/article/Privacy">GovDelivery data privacy policy</a> and <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Essex County Council’s data privacy policy.</a></p>
             </div>
           </div>)}
       </form>
