@@ -34,7 +34,7 @@ const Hylands = () => (
 		<p>The housing estate next to the school has a good network of footpaths, enabling quick access to the school. There are also footpaths at the back of the school which link to the popular riverside route into Chelmsford.</p>
 
 		<h2>Cycling routes</h2>
-		<p>The riverside route mentioned for walkers is also part of <a href="https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/route-1/">the National Cycle Network route 1</a>. This is a very popular route to ride into town. There are tracks that link directly to the school.<a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Chelmsford cycle map</a> provides information on this route, both near the school and beyond.</p>
+		<p>The riverside route mentioned for walkers is also part of <a href="https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/route-1/">the National Cycle Network route 1</a>. This is a very popular route to ride into town. There are tracks that link directly to the school. <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Chelmsford cycle map</a> provides information on this route, both near the school and beyond.</p>
 
 		<h2>Park &amp; Ride</h2>
 		<p><a href="https://www.essexhighways.org/Transport-and-Roads/Getting-Around/Bus/Park-and-Ride.aspx">Park &amp; Ride at Chelmsford</a> could help you on your journey.</p>

@@ -19,7 +19,7 @@ const ChelmsfordCountryHigh = () => (
 		<p>These routes and maps are suggestions of how you could stop taking the car and swap to cycling, walking, or scooting to school. They don’t show every possible route and you could have fun finding a way that works for you. If you know a safe way that gets you there even quicker, that’s great! Take that route instead.</p>
 
 		<h2>Address</h2>
-		<p><a href="www.cchs.co.uk">Chelmsford County High School for Girls</a>,<br/>
+		<p><a href="https://www.cchsg.com/">Chelmsford County High School for Girls</a>,<br/>
 		Broomfield Road<br/>
 		Chelmsford<br/>
 		Essex<br/>
@@ -37,7 +37,7 @@ const ChelmsfordCountryHigh = () => (
 		<p>Cycle lanes are available in both directions near Broomfield Road. There are also lots of much quieter roads you can use. <a href="https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/route-1/">National Cycle Network route 1</a> follows the river not far from the school and joins central Chelmsford to Writtle and Chelmer Village.</p>
 
 		<h2>Park &amp; Ride</h2>
-		<p><a href="https://www.essexhighways.org/Transport-and-Roads/Getting-Around/Bus/Park-and-Ride.aspx">Park &amp; Ride at Colchester</a> could help you on your journey.</p>
+		<p><a href="https://www.essexhighways.org/Transport-and-Roads/Getting-Around/Bus/Park-and-Ride.aspx">Park &amp; Ride at Chelmsford</a> could help you on your journey.</p>
 
 		<h2>Bus routes</h2>
 		<p>Broomfield Road is one of the main routes into Chelmsford, meaning Chelmsford County High School is well served for buses. Services from Broomfield, the Walthams, Great Leighs and Braintree have stops near the school. <a href="https://www.openstreetmap.org/node/474893111"> Chelmsford bus station is about 5 minute walk</a>.</p>

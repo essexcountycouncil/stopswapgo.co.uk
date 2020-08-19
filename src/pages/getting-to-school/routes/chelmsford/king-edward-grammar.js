@@ -42,6 +42,8 @@ const KingEdward = () => (
 		<h2>Bus routes</h2>
 		<p>Being on one of the main routes into Chelmsford, KEGS benefits from being close to bus services from Broomfield, the Walthams, Great Leighs and Braintree. For those going elsewhere <a href="https://www.openstreetmap.org/node/474893111">Chelmsford bus station</a> is about a 5 minute walk away.</p>
 
+		<h2>Train routes</h2>
+		<p><a href="https://www.nationalrail.co.uk/stations_destinations/CHM.aspx">Chelmsford train station</a> has trains to and from Shenfield, Ingatestone, Witham and Colchester, amongst others. Lots of KEGS students get the train to school. Greater Anglia offer <a href="https://www.greateranglia.co.uk/tickets-fares/business-travel/schoolcollege-travel-discounts">discounts on train travel for students</a> at some schools, chat to staff about this.</p>
 	</Layout>
 )
 
