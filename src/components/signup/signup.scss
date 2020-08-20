@@ -79,7 +79,7 @@
     @extend %site-width-container;
     padding-top: $baseline;
     padding-bottom: $baseline;
-    .mantra {
+    .mantra, .disclaimer {
       h2, p, a {
         color: $white;
       }

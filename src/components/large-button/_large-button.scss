@@ -1,3 +1,5 @@
+// loads of !important in here, needs cleaning
+
 
 .button-container-middle {
   display: flex;
@@ -6,15 +8,15 @@
 }
 
 .button.button-large{
-  width: 80%;
-  max-width: 239px;
-  background: #fff;
-  color: #414141;
+  width: 100%;
+  max-width: $button-width;
+  background: $brand;
+  color: $black;
   font-style: italic;
-  font-weight: 700;
-  border: 3px #fff solid;
+  font-weight: $bold;
+  border: $border-thick solid $brand;
   text-align: center;
-  height: 3.25rem;
+  height: $button-height;
   line-height: 2rem;
   &:hover {
     border-color: $brand;
@@ -22,20 +24,20 @@
   }
 }
 
-.button.button-dark{
-  border-color: $brand !important;;
-  background-color: $brand !important;
-  color: #414141 !important;
-  &:hover {
-    background: $grey !important;
-    color: white !important;
-    border-color: $grey !important;
-  }
-}
+// .button.button-dark{
+//   border-color: $brand !important;;
+//   background-color: $brand !important;
+//   color: #414141 !important;
+//   &:hover {
+//     background: $grey !important;
+//     color: white !important;
+//     border-color: $grey !important;
+//   }
+// }
 
 .button.deactive {
-  color: white !important;
+  color: white;
   cursor: default;
-  background-color: $grey !important;
-  border-color: $grey !important;
+  background-color: $grey;
+  border-color: $grey;
 }

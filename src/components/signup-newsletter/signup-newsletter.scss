@@ -1,3 +1,5 @@
+// lots of !important were added here, this needs cleaning
+
 .signup-background {
   form.newsletterForm {
     .large-input.error {
@@ -48,42 +50,23 @@ form.newsletterForm {
   }
 
   .input-group-container-middle {
-    width: 80%;
-    margin: auto;
+    position: relative;
     ul {
       list-style: none;
       margin-left: 0;
       padding: 0;      
     }
     .large-input{
-      height: 3.25rem !important;
+      height: $button-height;
       border: $border-thick white solid;
-
-      @include media(mobile) {
-        width: 100%;
-      }      
-      @include media(tablet) {
-        width: 70%;
-      }      
-      @include media(desktop) {
-        width: 80%;
-      }
+      width: calc(100% - #{$button-width + $border-thicker});
     }
     button {
-      @include media(mobile) {
-        margin-top: 10px;
-        width: 100% !important;
-      }      
-      @include media(tablet) {
-        width: 30% !important;
-      }      
-      @include media(desktop) {
-        width: 20% !important;
-      }
+      position: absolute;
+      right: 0;
     }
 
     label {
-      width: 90%;
       color: white;
       display: block;
       text-align: left;
@@ -101,8 +84,8 @@ form.newsletterForm {
   }
 
   div.disclaimer > p {
-    font-size: 0.88889rem;
-    margin-top: 40px;
+    @include smaller;
+    margin-top: $baseline;
     a {
       color: $brand;
     }
@@ -118,7 +101,7 @@ input[type="checkbox"]{
   width: 2em;
   height: 2em;
   margin-right: 20px;
-  outline: $border-thick white solid !important;
+  outline: $border-thick $white solid !important;
 }
 input[type="checkbox"].error {
   outline: $border-thick $error solid !important;
@@ -126,7 +109,7 @@ input[type="checkbox"].error {
 
 .checkbox {
   width: 100%;
-  margin: 15px auto;
+  margin-top: $baseline*0.5;
   position: relative;
   display: block;
 }
@@ -140,7 +123,7 @@ input[type="checkbox"].error {
 }
 
 .checkbox-error label:before {
-  border: 2px solid $error !important;
+  border: $border-normal solid $error !important;
   background-color: $white;
 }
 
@@ -165,8 +148,8 @@ input[type="checkbox"].error {
   display: block;
   width: 19px;
   height: 8px;
-  border-bottom: 5px solid $body-text-colour;
-  border-left: 5px solid $body-text-colour;
+  border-bottom: $border-thicker solid $body-text-colour;
+  border-left: $border-thicker solid $body-text-colour;
   -webkit-transform: rotate(-45deg) scale(0);
   transform: rotate(-45deg) scale(0);
   transition: transform ease 0.25s;
