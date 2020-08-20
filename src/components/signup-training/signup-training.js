@@ -69,6 +69,7 @@ export default function SignupTraining() {
             <div className="multiple-choice">
               <input 
                 name="type_of_training"
+                id="training-type-walking"
                 className={"large-input form-control" + (errors.type_of_training?.message ? " error" : "")}
                 type="radio"
                 value="walking" 
@@ -78,29 +79,31 @@ export default function SignupTraining() {
                 // so duplicating this on each checkbox is obv wrong, so stopped here Dom as not sure.
                 // also brough in react-hook-form and some variables which is also prob wrong :)
                 />
-              <label>Walking</label>
+              <label for="training-type-walking">Walking</label>
             </div>
             <div className="multiple-choice">
               <input 
-                type="radio"
-                value="cycling"
                 name="type_of_training"
+                id="training-type-cycling"
+                type="radio"
+                value="cycling"                
                 ref={register({
                   required: 'Select the type of training you need'
                 })}
               />
-              <label>Cycling</label>
+              <label for="training-type-cycling">Cycling</label>
             </div>
             <div className="multiple-choice">
               <input
-                type="radio"
-                value="walking_and_cycling"
                 name="type_of_training"
+                id="training-type-walking-cycling"
+                type="radio"
+                value="walking_and_cycling"                
                 ref={register({
                   required: 'Select the type of training you need'
                 })}
               />
-              <label>Both walking and cycling </label>
+              <label for="training-type-walking-cycling">Both walking and cycling </label>
             </div>
           </fieldset>
         </div>
@@ -111,6 +114,7 @@ export default function SignupTraining() {
             {errors.previous_training ? (<span className="error">{errors.previous_training?.message}</span>) : (null)}
             <div className="multiple-choice">
               <input 
+                id="walking-training"
                 type="radio"
                 value="walking"
                 name="previous_training"
@@ -118,10 +122,11 @@ export default function SignupTraining() {
                   required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
-              <label>Walking training</label>
+              <label for="walking-training">Walking training</label>
             </div>
             <div className="multiple-choice">
               <input
+                id="cycling-training"
                 type="radio"
                 value="cycling"
                 name="previous_training"
@@ -129,10 +134,11 @@ export default function SignupTraining() {
                   required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
-              <label>Cycling training</label>
+              <label for="cycling-training">Cycling training</label>
             </div>
             <div className="multiple-choice">
               <input
+                id="walking-cycling-training"
                 type="radio"
                 value="walking_and_cycling"
                 name="previous_training"
@@ -140,10 +146,11 @@ export default function SignupTraining() {
                   required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
-              <label>Both walking and cycling training</label>
+              <label for="walking-cycling-training">Both walking and cycling training</label>
             </div>
             <div className="multiple-choice">
               <input
+                id="no-training"
                 type="radio"
                 value="none"
                 name="previous_training"
@@ -151,7 +158,7 @@ export default function SignupTraining() {
                   required: "Select the type of training you've had before or, if you've had none, select \"No previous training\""
                 })}
               />
-              <label>No previous training</label>
+              <label for="no-training">No previous training</label>
             </div>
           </fieldset>
         </div>
@@ -162,6 +169,7 @@ export default function SignupTraining() {
             {errors.equipment_owned ? (<span className="error">{errors.equipment_owned?.message}</span>) : (null)}
             <div className="multiple-choice">
               <input
+                id="bike-helmet"
                 type="radio"
                 value="bike_and_helmet"
                 name="equipment_owned"
@@ -169,10 +177,11 @@ export default function SignupTraining() {
                   required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
-              <label>Yes, both</label>
+              <label for="bike-helmet">Yes, both</label>
             </div>
             <div className="multiple-choice">
               <input
+                id="bike"
                 type="radio"
                 value="bike"
                 name="equipment_owned"
@@ -180,10 +189,11 @@ export default function SignupTraining() {
                   required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
-              <label>A bike but no helmet</label>
+              <label for="bike">A bike but no helmet</label>
             </div>
             <div className="multiple-choice">
               <input
+                id="helmet"
                 type="radio"
                 value="helmet"
                 name="equipment_owned"
@@ -191,10 +201,11 @@ export default function SignupTraining() {
                   required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
-              <label>A helmet but no bike</label>
+              <label for="helmet">A helmet but no bike</label>
             </div>
             <div className="multiple-choice">
               <input
+                id="no-bike-helmet"
                 type="radio"
                 value="none"
                 name="equipment_owned"
@@ -202,7 +213,7 @@ export default function SignupTraining() {
                   required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
                 })}
               />
-              <label>Neither a bike or a helmet</label>
+              <label for="no-bike-helmet">Neither a bike or a helmet</label>
             </div>
           </fieldset>
         </div>
