@@ -18,7 +18,7 @@ function Header() {
             <li><a href="/getting-to-school/prepare">Prepare</a></li>
             <li><a href="/getting-to-school/routes">Routes</a></li>
             <li><a href="/getting-to-school/training">Training</a></li>
-            <li><a href="/getting-to-school/school-transport">Transport</a></li>
+            <li><a href="/getting-to-school/transport">Transport</a></li>
           </ul>
         </div>
       </div>
