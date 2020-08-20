@@ -158,7 +158,7 @@ export default function SignupTraining() {
 
         <div className={"form-group group" + (errors.equipment_owned?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>If the participant would like cycling training, do they own a bike and a bike helmet?</legend>
+            <legend>If the participant would like cycling training, do they own a bike and a bike helmet?*</legend>
             {errors.equipment_owned ? (<span className="error">{errors.equipment_owned?.message}</span>) : (null)}
             <div className="multiple-choice">
               <input
