@@ -69,7 +69,7 @@ p {
   text-transform: none;
   @include media(mobile) {
     font-size: ms(5);
-    line-height: $baseline;
+    line-height: $baseline*1.25;
     margin-top: $baseline*1.5;
     margin-bottom: $baseline*0.5;
   }
@@ -144,12 +144,6 @@ h2, .h2, .content-heading {
   }
   margin-bottom: 0px !important;
 }
-
-// .content-heading ~ .content-heading,
-// .page-heading ~ .content-heading {
-//   @include content-break-large;
-//   padding-top: $baseline;
-// }
 
 // section-heading is used for each section within content on a page.
 h3,.h3, .section-heading {
@@ -255,12 +249,89 @@ ol {
   @include ie-lte(7) {
     padding-left: 28px;
   }
-  // li:nth-child(n+10) {
-  //   margin-left: 10px;
-  //   padding-left: 0px;
-  // }
 }
 
 ul {
   list-style-type: disc;
+}
+
+blockquote {
+  background: lighten($grey, 45%);
+  border-left: 10px solid #ccc;
+  @include media(mobile) {
+    margin: $baseline 0 $baseline 0;
+  }
+  @include media(tablet) {
+    margin: $baseline $gutter $baseline $gutter;
+  }
+  @include media(desktop) {
+    margin: $baseline $gutter*4 $baseline $gutter*4;
+  }    
+  padding: $gutter*1.5;
+  quotes: "\201C""\201D""\2018""\2019";
+  position: relative;
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: ms(4);
+    line-height: $baseline*2;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    position: absolute;
+    }
+  p {
+    text-indent: $gutter*1.5;
+    font-size: ms(0);
+    line-height: $baseline;
+    margin-bottom: $baseline;
+  }
+
+  footer {
+    font-weight: bold;
+
+  }
+}
+
+.notice {
+  background: $highlight-box-light;
+  padding: $gutter;
+  margin-top: $baseline*0.5;
+  margin-bottom: $baseline;
+  box-sizing: border-box;
+  p, h2, h3 {
+    text-align: center;
+  }
+  h2, h3 {
+    margin-top: 0;
+  }
+  @include media(mobile) {
+    width: 100%;
+  }
+  @include media(tablet) {
+    width: 30%;
+  }
+  @include media(desktop) {
+    width: 30%;
+  }
+}
+
+.notice-side {
+  margin-left: $gutter;
+  float: right;
+}
+.notice-middle{
+  margin-bottom: $baseline;
+  padding: $baseline $gutter*0.5;
+  width: 100%;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  ol, ol p {
+    text-align: left;
+  }
+  ol p {
+    margin-bottom: $baseline;
+  }
 }

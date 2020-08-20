@@ -48,6 +48,9 @@ $twitter: #55acee;
 
 // button
 $button-height: $baseline*2;
+$button-width: $gutter*8;
+
+// form
 $form-height: $baseline*2;
 $form-padding: $gutter*0.25; //15px
 
@@ -111,7 +114,7 @@ $warning: $focus-colour;
 $info: $grey;
 
 $highlight-box: $link;
-$highlight-box-light: #dbf0ff;
+$highlight-box-light: lighten($brand, 40%);
 $subscribe: $brand;
 $alert: $brand;
 

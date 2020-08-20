@@ -24,12 +24,6 @@
         z-index: 0;
         margin-right: 0;
       }
-      .signup-input, .signup-button {
-        @include media(mobile) {
-          padding-left: $gutter;
-          padding-right: $gutter;
-        }
-      }
       .signup-input {
         position: relative;
         @include grid-column(8 / 12);
@@ -83,10 +77,9 @@
   border-top: $border-thicker solid $brand;
   .signup {
     @extend %site-width-container;
-    @extend %contain-floats;
     padding-top: $baseline;
     padding-bottom: $baseline;
-    .mantra {
+    .mantra, .disclaimer {
       h2, p, a {
         color: $white;
       }
@@ -113,19 +106,6 @@
       }
     }
     .section-heading, p {
-      @extend %grid-row;
-      @include media(mobile) {
-        padding-left: $gutter;
-        padding-right: $gutter;
-      }
-      @include media(tablet) {
-        padding-left: $gutter*0.5;
-        padding-right: $gutter*0.5;
-      }
-      @include media(desktop) {
-        padding-left: $gutter;
-        padding-right: $gutter;
-      }
       color: $body-text-colour;
       margin-top: 0;
     }
