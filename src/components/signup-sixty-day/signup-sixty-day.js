@@ -57,10 +57,6 @@ export default function SignupSixtyDay() {
             type="text"
             ref={register({
               required: 'Enter your full name',
-              // pattern: {
-              //   value: EMAIL_REGEX,
-              //   message: 'Enter an email address in the correct format, like name@example.com',
-              // },
             })}
           />
         </div>
@@ -89,10 +85,6 @@ export default function SignupSixtyDay() {
             type="text"
             ref={register({
               required: 'Enter a real postcode',
-                // pattern: {
-                //   value: EMAIL_REGEX,
-                //   message: 'Enter an email address in the correct format, like name@example.com',
-                // },
             })}
           />
         </div>
@@ -104,13 +96,14 @@ export default function SignupSixtyDay() {
             <div class="multiple-choice">
               <input 
                 name="over_eighteen"
+                id="over-eighteen"
                 className={"large-input form-control" + (errors.over_eighteen?.message ? " error" : "")}
                 value="294706" 
                 type="checkbox" 
                 ref={register({ 
                   required: 'Select yes only if you are 18 or older'
                 })}/>
-              <label>Yes</label>
+              <label for="over-eighteen">Yes</label>
             </div>
           </fieldset>
         </div>
@@ -149,24 +142,26 @@ export default function SignupSixtyDay() {
             <div class="multiple-choice">
               <input
                 name="consent_to_share"
+                id="consent-to-share-yes"
                 value="294328"
                 type="radio"
                 ref={register({
                   required: "Select yes if we can share your content or select no if not"
                 })}
               />
-              <label>Yes, you can share content I upload to the app</label>
+              <label for="consent-to-share-yes">Yes, you can share content I upload to the app</label>
             </div>
             <div class="multiple-choice">
               <input
                 name="consent_to_share"
+                id="consent-to-share-no"
                 value="294329"
                 type="radio"
                 ref={register({
                   required: "Select yes if we can share your content or select no if not"
                 })}
               />
-              <label>No, please do not share my content</label>
+              <label for="consent-to-share-no">No, please do not share my content</label>
             </div>
           </fieldset>
         </div>
@@ -176,13 +171,14 @@ export default function SignupSixtyDay() {
             <div class="multiple-choice">
               <input 
                 name="consent_data_privacy"
+                id="conent-data-privacy"
                 className={"large-input form-control" + (errors.consent_data_privacy?.message ? " error" : "")}
                 value="294706" 
                 type="checkbox" 
                 ref={register({ 
                   required: 'Select the checkbox to consent to our data privacy policy'
                 })}/>
-              <label>By checking this box, you consent the data privacy polices of <a href="https://subscriberhelp.granicus.com/s/article/Privacy">GovDelivery</a> and <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Essex County Council.</a></label>
+              <label for="conent-data-privacy">By checking this box, you consent the data privacy polices of <a href="https://subscriberhelp.granicus.com/s/article/Privacy">GovDelivery</a> and <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Essex County Council.</a></label>
             </div>
           </fieldset>
         </div>       
