@@ -1,6 +1,3 @@
-// loads of !important in here, needs cleaning
-
-
 .button-container-middle {
   display: flex;
   align-items: center;
@@ -19,21 +16,11 @@
   height: $button-height;
   line-height: 2rem;
   &:hover {
-    border-color: $brand;
-    background-color: $brand;
+    color: $white;
+    border-color: $grey-dark;
+    background-color: $grey-dark;
   }
 }
-
-// .button.button-dark{
-//   border-color: $brand !important;;
-//   background-color: $brand !important;
-//   color: #414141 !important;
-//   &:hover {
-//     background: $grey !important;
-//     color: white !important;
-//     border-color: $grey !important;
-//   }
-// }
 
 .button.deactive {
   color: white;

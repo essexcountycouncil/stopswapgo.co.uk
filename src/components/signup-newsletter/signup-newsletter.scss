@@ -10,6 +10,12 @@
       background-color: $white;
       padding: $gutter*0.25;
     }
+    .button-large {
+      &:hover {
+        background-color: $grey;
+        border-color: $grey;
+      }
+    }
   }
 }
 
