@@ -35,7 +35,7 @@ const Sandon = () => (
 		<p>Molrams Lane is opposite the school and has an excellent foot/cycle path called the Bringey. This provides excellent direct off-road access to large parts of Great Baddow, heading underneath the Baddow Bypass. There&rsquo;s a zebra crossing at either end, on Church Road in Baddow and at Molrams Lane outside the school. <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Chelmsford cycle map</a> also helps plan walking journeys.</p>
 
 		<h2>Cycling routes</h2>
-		<p>The Bringey, linking the school to the centre of Great Baddow, provides safe cycle access to the school from many neighbouring residential areas. There are many other short-cuts, for walkers and cyclists. <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Chelmsford cycle ma</a>p provides information on the full network, both near the school and beyond.</p>
+		<p>The Bringey, linking the school to the centre of Great Baddow, provides safe cycle access to the school from many neighbouring residential areas. There are many other short-cuts, for walkers and cyclists. <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">The Chelmsford cycle map</a> provides information on the full network, both near the school and beyond.</p>
 
 		<h2>Park &amp; Ride</h2>
 		<p><a href="https://www.essexhighways.org/Transport-and-Roads/Getting-Around/Bus/Park-and-Ride.aspx">Park &amp; Ride at Chelmsford</a> could help you on your journey.</p>
