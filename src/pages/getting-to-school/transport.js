@@ -6,7 +6,11 @@ import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
 
 const Transport = () => (
 	<Layout>
-	<h1>Using a dedicated taxi, minibus or bus for education transport</h1>
+	<h1>Taking part if your child has education transport from Essex County Council</h1>
+	<p>We&rsquo;d love to see your child give walking, scooting, or cycling a go if that works for them. This will not affect your&nbsp;<a href="https://www.essex.gov.uk/school-transport/who-qualifies-for-home-to-school-transport">eligibility for education transport</a>&nbsp;as long as you continue to meet criteria.</p>
+	<p>Due to the pandemic and in order to keep everyone safe there are some changes to how Essex County Council education transport is run. Essex County Council are following up-to-date government guidance but this may change come school term time. Be sure to check the most up to date government guidance.</p>
+	<p>If you have any queries or concerns about transport which ECC do not pay for then you will need to contact one of the&nbsp;<Link to="/getting-to-school/bus-operators">local bus operators in Essex.</Link></p>
+	<h2>Using a dedicated taxi, minibus or bus for education transport</h2>
 	<p>A &lsquo;dedicated service&rsquo; is one that&rsquo;s not open to the public and just takes children to school. In order to keep everyone safe, there will be some changes you need to be aware of</p>
 	<p>We are asking all children who can to wear a <a href="https://www.gov.uk/government/publications/how-to-wear-and-make-a-cloth-face-covering">face covering</a>. Some children are&nbsp;<a href="https://www.gov.uk/guidance/coronavirus-covid-19-safer-travel-guidance-for-passengers#exemptions-face-coverings">exempt from wearing face coverings</a>.</p>
 	<p>Wearing a face covering helps keep everyone safe. It takes a bit of getting used to, but it&rsquo;s a simple measure most children can take. A face covering doesn&rsquo;t have to be a single use mask. It can be something you already have at home, like a scarf.&nbsp;<a href="https://www.gov.uk/government/publications/face-coverings-when-to-wear-one-and-how-to-make-your-own/face-coverings-when-to-wear-one-and-how-to-make-your-own#making-your-own-face-covering">Why not try making your own?</a></p>
