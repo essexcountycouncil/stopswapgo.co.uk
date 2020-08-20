@@ -4,8 +4,8 @@
     padding-right: $outer-grid-margin;
   }
   @include media(tablet) {
-    padding-left: $outer-grid-margin*1.5;
-    padding-right: $outer-grid-margin*1.5;
+    padding-left: $outer-grid-margin;
+    padding-right: $outer-grid-margin;
   }
   @include media(desktop) {
     padding-left: $outer-grid-margin*2;
@@ -76,7 +76,7 @@ main#content {
       .head {
         @include grid-column(1);
       }
-      .content, .intro, .function {
+      .content, .intro, .function, {
         @include grid-column(8 / 12);
         &.only {
           @include grid-column(1);
@@ -120,82 +120,10 @@ main#content {
   }
 }
 
-
-.notice {
-  background-color: lighten($brand, 40%);
-  padding: $gutter;
-  p, h2, h3 {
-    text-align: center;
-  }
-  h2, h3 {
-    margin-top: 0;
-  }
-  @include media(mobile) {
-    width: 100%;
-  }
-  @include media(tablet) {
-    width: 30%;
-  }
-  @include media(desktop) {
-    width: 30%;
-  }
-}
-
-.notice-side {
-  margin: 1%;
-  margin-left: 3%;
-  float: right;
-}
-.notice-middle{
-  margin-bottom: $baseline;
-  padding: $baseline $gutter*0.5;
-  width: 100%;
-  text-align: center;
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  ol, ol p {
-    text-align: left;
-  }
-  ol p {
-    margin-bottom: $baseline;
-  }
-}
-
 .content{
   margin-bottom: $baseline * 2;
   img {
     width: 100%;
-  }
-}
-
-blockquote {
-    background: lighten($grey, 45%);
-    border-left: 10px solid #ccc;
-    margin: 5% 10% 5% 10%;
-    padding: $gutter*1.5;
-    quotes: "\201C""\201D""\2018""\2019";
-    position: relative;
-    &:before {
-      color: #ccc;
-      content: open-quote;
-      font-size: ms(4);
-      line-height: $baseline*2;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-      position: absolute;
-      }
-    p {
-      text-indent: $gutter*1.5;
-      font-size: ms(0);
-      line-height: $baseline;
-      margin-bottom: $baseline;
-    }
-
-  footer {
-    font-weight: bold;
-
   }
 }
 

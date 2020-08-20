@@ -8,7 +8,7 @@ const Colchester = () => (
 
 		<p>Select your school from the list below to see the available map options:</p>
 		<ul>
-			<li><Link to="colchester-country-high">Colchester County High School</Link></li>
+			<li><Link to="colchester-county-high">Colchester County High School</Link></li>
 			<li><Link to="colchester-institute">Colchester Institute</Link></li>
 			<li><Link to="colchester-royal-grammar">Colchester Royal Grammar</Link></li>
 			<li><Link to="colchester-sixth-form">Colchester Sixth Form College</Link></li>

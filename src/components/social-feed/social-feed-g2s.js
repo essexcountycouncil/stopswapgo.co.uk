@@ -1,7 +1,7 @@
 import React from "react"
 export default () =>
 	<div>
-		<div className="previews social-feed">
+		<div className="previews social-feed previews-grey-border">
 			<div className="preview">
 				<h2 className="strapline">Stop.Swap.<i>SHARE!</i></h2>
 				<p>Join our community on social media and share your active travel school stories, tips and tricks. We’ll also be posting updates on getting to school information – including details of a competition where prizes are on offer! Keep your eyes peeled, everyone.</p>

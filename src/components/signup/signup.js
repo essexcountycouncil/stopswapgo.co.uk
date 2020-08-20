@@ -9,7 +9,7 @@ export default ({ tagline1, tagline2, p1, p2, p3, p3link, url, label }) =>
         <p>{p1}</p>
         <p>{p2}</p>
         <p class="small"><a href={p3link}>{p3}</a></p>
-        <LargeButton title={label} url={url} />
       </div>
+      <LargeButton title={label} url={url} />
     </div>
   </section>

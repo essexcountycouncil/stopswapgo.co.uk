@@ -9,7 +9,7 @@ export default () =>
         <div className="nav">
           <ul className="nav-links">
             <li>
-              <a href="https://www.essex.gov.uk/accessibility">Accessibility</a></li><li>
+              <Link to="/accessibility">Accessibility</Link></li><li>
               <a href="https://www.essex.gov.uk/cookies">Cookies</a></li><li>
               <a href="https://www.essex.gov.uk/terms-conditions">Terms and conditions</a></li><li>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Privacy and data protection</a></li><li>
