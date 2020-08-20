@@ -1,5 +1,5 @@
 import React from "react"
-import FaqLayout from "../layout/faq-layout"
+import FaqLayout from "../../layout/faq-layout"
 import { Link } from 'gatsby'
 
 const Faq = () => (

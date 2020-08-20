@@ -35,7 +35,7 @@ const Challenge = () => (
 		</ol>
 
 		<h2>More about the 60 Day Challenge</h2>
-		<p>For more information about the 60 Day Challenge, prizes and the Indeemo app, please visit our&nbsp;<a href="https://www.stopswapgo.co.uk/faq">FAQs page</a>.</p>
+		<p>For more information about the 60 Day Challenge, prizes and the Indeemo app, please visit our&nbsp;<Link to="/60-day-challenge/faq">FAQs page</Link>.</p>
     <SignupSixtyDay></SignupSixtyDay>
 	</LayoutWithNewsletter>
 )
