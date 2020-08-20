@@ -64,10 +64,19 @@ form.newsletterForm {
       height: $button-height;
       border: $border-thick white solid;
       width: calc(100% - #{$button-width + $border-thicker});
+      @include media(mobile) {
+        width: 100%;
+      }
     }
     button {
       position: absolute;
       right: 0;
+      @include media(mobile) {
+        margin-top: $baseline*0.5;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+      }      
     }
 
     label {
