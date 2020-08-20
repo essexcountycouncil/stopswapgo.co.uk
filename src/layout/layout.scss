@@ -76,7 +76,7 @@ main#content {
       .head {
         @include grid-column(1);
       }
-      .content, .intro, .function {
+      .content, .intro, .function, {
         @include grid-column(8 / 12);
         &.only {
           @include grid-column(1);
