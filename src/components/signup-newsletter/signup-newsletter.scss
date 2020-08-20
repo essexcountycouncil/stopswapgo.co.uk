@@ -1,7 +1,6 @@
 // lots of !important were added here, this needs cleaning
 
 .signup-background {
-  form.newsletterForm {
     .large-input.error {
       display: inline;
       margin-top: 0;
@@ -16,7 +15,6 @@
         border-color: $grey;
       }
     }
-  }
 }
 
 form.newsletterForm {
@@ -143,7 +141,6 @@ input[type="checkbox"].error {
   top: 0;
   width: 30px;
   height: 30px;
-  transition: transform 0.28s ease;
   border-radius: 3px;
   border: 2px solid $brand;
   background-color: $white;
@@ -158,7 +155,6 @@ input[type="checkbox"].error {
   border-left: $border-thicker solid $body-text-colour;
   -webkit-transform: rotate(-45deg) scale(0);
   transform: rotate(-45deg) scale(0);
-  transition: transform ease 0.25s;
   will-change: transform;
   position: absolute;
   top: 7px;
