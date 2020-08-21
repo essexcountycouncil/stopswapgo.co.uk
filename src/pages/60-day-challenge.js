@@ -19,7 +19,7 @@ const Challenge = () => (
 		<ol>
 			<li>
         <p>Complete the sign up form below. Remember, you need to be an Essex resident and over 18 to take part!</p>
-        <p>After you’ve submitted the form registration for our challenge smartphone app, called Indeemo, will open.</p>
+        <p>After you’ve submitted the registration form our challenge smartphone app, called Indeemo, will open.</p>
       </li>
 			<li>
         <p>Create an Indeemo account using the same email address you used to register for the 60 Day Challenge</p>
