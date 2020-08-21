@@ -40,7 +40,6 @@ export default function SignupSixtyDay() {
     <section className="form-background" aria-label="Subscribe to newsletter via email" id="challenge" >
       <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm form">
         <h3 className="sub-section-heading strapline strapline-highlighted"><span>STOP.SWAP.</span><i>SIGNUP!</i></h3>
-        <p className="warning">Note * indicates required answer</p>
         <div>
           <ul className="errors">
 
