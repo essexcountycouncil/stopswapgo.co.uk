@@ -20,7 +20,7 @@ export default ({ children }) => {
         heading1="60 Day"
         heading2="Challenge"
         heading3="Now Live!"
-        ariaLabel="Cyclists in the forest"
+        ariaLabel="A family of four laughing as they cycle through a forest"
         title="Cyclists in the forest"
         bannerbackground="banner-background challenge"
         />

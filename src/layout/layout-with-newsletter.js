@@ -20,7 +20,7 @@ export default ({ children }) => {
         heading1="Rethink"
         heading2="Your Daily"
         heading3="Travel"
-        ariaLabel="Ladies walking in the park"
+        ariaLabel="A woman and a man wearing helmets while cycling through a park"
         title="Ladies walking in the park"
         bannerbackground="banner-background"
         />
