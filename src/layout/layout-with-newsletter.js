@@ -21,7 +21,7 @@ export default ({ children }) => {
         heading2="Your Daily"
         heading3="Travel"
         ariaLabel="A woman and a man wearing helmets while cycling through a park"
-        title="Ladies walking in the park"
+        title="A woman and a man wearing helmets while cycling through a park"
         bannerbackground="banner-background"
         />
       <main id="content">

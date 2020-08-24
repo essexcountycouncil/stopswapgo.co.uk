@@ -17,7 +17,7 @@ const Transport = () => (
 	<p>Please make sure your child has a face covering and knows how to use it. This video shows you how to wear a face covering.</p>
 	<Video 
 		videoSrcURL={transortVideo}
-		videoTitle="title"
+		videoTitle="NHS video explaining how to stay safe during COVID-19"
 	/>
 	<p>Other changes you need to be aware of include:</p>
 	<ul>

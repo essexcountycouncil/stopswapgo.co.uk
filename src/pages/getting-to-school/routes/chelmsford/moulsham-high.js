@@ -13,7 +13,7 @@ const MoulshamHigh = () => (
 			two="Moulsham High School" />
 	
 		<h1>Moulsham High School</h1>
-		<img src={map} />
+		<img src={map} alt="A map showing cycle and walking routes to and from Moulsham High School" title="A map showing cycle and walking routes to and from Moulsham High School" />
 
 		<h2>Getting to and from Moulsham High School</h2>
 		<p>These routes and maps are suggestions of how you could stop taking the car and swap to cycling, walking, or scooting to school. They don’t show every possible route and you could have fun finding a way that works for you. If you know a safe way that gets you there even quicker, that’s great! Take that route instead.</p>
