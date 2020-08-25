@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import LayoutWithNewsletter from "../layout/layout-with-newsletter"
 import PreviewServices from "../components/preview/preview-services"
-import SocialFeed from "../components/social-feed/social-feed"
+import SocialFeed from "../components/social/social"
 
 export default ({ data }) => {
   return (
