@@ -15,7 +15,7 @@ export default () =>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Privacy and data protection</a></li><li>
               <Link to="/terms-and-conditions">Competition terms and conditions</Link></li>
           </ul>
-          <ul className="social">
+          <ul className="social-icons">
             <li>
               <a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter" title="Twitter" aria-hidden="true"></span><span>Twitter</span></a></li><li>
             <a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" title="Facebook" aria-hidden="true"></span><span>Facebook</span></a></li><li>

@@ -255,43 +255,6 @@ ul {
   list-style-type: disc;
 }
 
-blockquote {
-  background: lighten($grey, 45%);
-  border-left: 10px solid #ccc;
-  @include media(mobile) {
-    margin: $baseline 0 $baseline 0;
-  }
-  @include media(tablet) {
-    margin: $baseline $gutter $baseline $gutter;
-  }
-  @include media(desktop) {
-    margin: $baseline $gutter*4 $baseline $gutter*4;
-  }    
-  padding: $gutter*1.5;
-  quotes: "\201C""\201D""\2018""\2019";
-  position: relative;
-  &:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: ms(4);
-    line-height: $baseline*2;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-    position: absolute;
-    }
-  p {
-    text-indent: $gutter*1.5;
-    font-size: ms(0);
-    line-height: $baseline;
-    margin-bottom: $baseline;
-  }
-
-  footer {
-    font-weight: bold;
-
-  }
-}
-
 .notice {
   background: $highlight-box-light;
   padding: $gutter;

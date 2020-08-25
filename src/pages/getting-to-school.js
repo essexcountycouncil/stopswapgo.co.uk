@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import LayoutH2sWithNewsletter from "../layout/layout-h2s-with-newsletter"
 import PreviewSchool from "../components/preview/preview-school"
-import SocialFeed from "../components/social-feed/social-feed-g2s"
+import Social from "../components/social/social-g2s"
 
 export default ({ data }) => {
   return (
@@ -19,7 +19,7 @@ export default ({ data }) => {
       <p>We want to get everyone in schools and colleges to have a go at walking, cycling, or scooting, so the information here is for everyone. But we'll cover off some specifics if you receive transport from Essex County Council too.</p>
     </div>
   	<PreviewSchool />
-    <SocialFeed />
+    <Social />
     </LayoutH2sWithNewsletter>
   )
 }

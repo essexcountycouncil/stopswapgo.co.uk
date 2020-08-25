@@ -31,11 +31,11 @@ county.</p>
 		wellbeing, it saves money, and it&rsquo;s better for local communities and the Essex
 environment. Everybody wins.</p>
 
-		<blockquote cite="">
+		<blockquote className="blockquote" cite="">
 			<p>Stop.Swap.<i>GO!</i> is helping people to switch from the car to more active
 			and sustainable travel. It&rsquo;s a unique chance to greatly improve our air
 quality, our health, and life opportunities for the next generation.</p>
-			<footer>– Cllr Ray Gooding, <cite>Essex County Council Cabinet Member with responsibility for Sustainable Travel</cite></footer>
+			<cite className="cite">– Cllr Ray Gooding, Essex County Council Cabinet Member with responsibility for Sustainable Travel</cite>
 		</blockquote>
 
 	</Layout>
