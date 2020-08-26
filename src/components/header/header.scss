@@ -18,7 +18,7 @@
     @extend %grid-row;
       .logo-wrap {
         // height: $form-height*1.25;
-        @include grid-column(1 / 4);
+        @include grid-column(4 / 12);
         a.logo-text {
           @media print {
             color: $black;
@@ -35,7 +35,7 @@
         }
       }
       ul.nav-links {
-        @include grid-column(3 / 4);
+        @include grid-column(8 / 12);
         text-align: right;
         margin-top: $baseline*1.5;
         margin-bottom: $baseline*1.5;
