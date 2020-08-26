@@ -18,6 +18,7 @@ const Transport = () => (
 	<Video 
 		videoSrcURL={transortVideo}
 		videoTitle="NHS video explaining how to stay safe during COVID-19"
+		autoPlay="false"
 	/>
 	<p>Other changes you need to be aware of include:</p>
 	<ul>
