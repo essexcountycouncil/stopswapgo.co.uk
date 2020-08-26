@@ -15,6 +15,8 @@ const Prepare = () => (
 			<li><strong><i>GO!</i></strong> and get them to school or college on time with less annoying traffic</li>
 		</ul>
 
+		<p>However, if your child is feeling anxious about returning to school or college, there is help available. Essex County Council provides <Link to="https://www.essex.gov.uk/staying-well?utm_medium=getting%20to%20school%20page&amp;utm_campaign=covid19%20cyp&amp;utm_source=ssg%20website&amp;utm_content=&amp;utm_term=">back to school advice and guidance</Link> including support from local organisations. This can help children, young people and parents feel confident about returning to school.</p>
+
 		<h2>Stop &ndash; rethink getting to school or college</h2>
 		<p>This September will be the first time back to school or college for many children and young people since the start of the pandemic. Others might have been attending on a part-time basis or using staggered start times.</p>
 		<p>Buses have less space as they&rsquo;ve been told to maintain social distancing, so they&rsquo;ll be picking fewer passengers up. The bus companies don&rsquo;t have lots of spare buses they can run. This means your child will be waiting longer and could end up late for school. We don&rsquo;t want that!</p>
