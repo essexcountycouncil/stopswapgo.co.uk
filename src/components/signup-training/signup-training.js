@@ -219,14 +219,14 @@ export default function SignupTraining() {
         </div>
 
         <div className={"form-group group" + (errors.school?.message ? " error-block" : "")}>
-          <legend>What Essex school will the participant attend in September?*</legend>
+          <legend>What Essex school or college will the participant attend in September?*</legend>
           {errors.school ? (<span className="error">{errors.school?.message}</span>) : (null)}
           <input
             type="text"
             name="school"
             className="form-control"
             ref={register({
-              required: "Enter the name of the relevant Essex school the participant will go to in September"
+              required: "Enter the name of the relevant Essex school or college the participant will go to in September"
             })}
           />
         </div>
