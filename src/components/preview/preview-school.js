@@ -19,7 +19,7 @@ export default () =>
 			<div className="preview">
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>PREPARE!</i></h3>
 				<img src={prepare} alt="A father and daughter wearing face masks as they walk through a town together" title="A father and daughter wearing face masks as they walk through a town together" />
-				<p>Tips and ideas to help families swap from driving them in the car for walking, cycling or scooting to school.</p>
+				<p>Tips and ideas to help families swap from driving the car for walking, cycling or scooting to school or college.</p>
 				<LargeButton title="PREPARE!" url="/getting-to-school/prepare" />
 			</div>
 		</div>

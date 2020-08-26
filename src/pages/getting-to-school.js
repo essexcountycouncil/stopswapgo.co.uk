@@ -11,7 +11,7 @@ export default ({ data }) => {
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     </Helmet>
     <div className="mantra" id="get-ready">
-    	<h2 className="strapline">Stop.Swap.<i>GO!</i> to school in September</h2>
+    	<h2 className="strapline">Stop.Swap.<i>GO!</i> to school or college in September</h2>
     	<h3>Rethink how your child goes back to school or college</h3>
       <p>Loads of people have swapped to cycling and walking around Essex to stay active during lockdown. We’re here to help you avoid traffic or long waits for the socially distanced bus when schools and colleges return. We’ll also help you get those steps in as well.</p>
       <p>So we’ve put together plenty of advice to help you make the swap, as well as walking and cycling maps to your school including suggested drop off and pick-up points that aren’t going to drag you through the busy town or to the school gates. They’ll help you avoid the traffic, stay healthy and help the environment.</p>
