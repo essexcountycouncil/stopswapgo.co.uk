@@ -1,9 +1,6 @@
 .video {
-	iframe {
-		display: block;
-		visibility: initial;
-		width: 100%;
-		height: $baseline*20;
-	}
+	display: block;
+	width: 100%;
+	height: $baseline*20;
 	margin-bottom: $baseline;
 }

@@ -8,7 +8,7 @@ const GetStartedPage = () => (
 		<p>Here you&rsquo;ll find a treasure trove of essential advice, top tips and guidance on how to get the most out of walking and cycling.</p>
 		<p>Whether you&rsquo;re looking for a more scenic cycling route, or an excuse to get out, there&rsquo;s something for everyone here. We&rsquo;ve pulled together all the maps, apps and travel hacks you need to make it easy and enjoyable to:</p>
 		<ul>
-			<li><strong>Stop</strong> making car journeys to work, the shops or school</li> 
+			<li><strong>Stop</strong> making car journeys to work, the shops, school or college</li> 
 			<li><strong>Swap</strong> to more active and sustainable travel options</li>
 			<li><strong><i>GO!</i></strong> and make the most of your day &ndash; and feel great!</li>  
 		</ul>
@@ -27,8 +27,8 @@ const GetStartedPage = () => (
 		<h3>Discover great places to visit in Essex</h3>
 		<p>Check out <a href="http://www.visitessex.com/discover/rural/essex-walks.aspx">picturesque walking routes</a> and <a href="http://www.visitessex.com/discover/rural/essex-cycle-routes.aspx">fun cycling routes</a> on the Visit Essex website, as well as up-to-date tourist information on great places to visit near you.</p>
 
-		<h3>Explore hidden gems on your doorstep</h3>
-		<p>Another great website to inspire you to explore secret spots in Essex and get active with the whole family. Find out more on the <a href="https://www.explore-essex.com/places-to-go/get-active">Explore Essex</a> website.</p>
+		<h3>Explore green spaces on your doorstep and beyond</h3>
+		<p>A great website to inspire you to get active with the whole family at the Essex County Council run Country Parks. Find out more about these brilliant green spaces on your doorstep and beyond, explore them all on the <a href="https://www.explore-essex.com/places-to-go/get-active">Explore Essex website</a>.</p>
 
 		<h3>Get two-wheeled tips and inspiration from people in Essex</h3>
 		<p><a href="https://www.lovetoride.net/essex">Love to Ride Essex</a> is a brilliant community for two-wheeled tips and inspirational cycling stories.</p>

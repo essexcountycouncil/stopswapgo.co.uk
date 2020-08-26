@@ -21,7 +21,7 @@ export default ({ children }) => {
         heading2="Your School"
         heading3="Run"
         ariaLabel="Two teenage girls laughing and walking to school through a park"
-        title="Girls walking to school"
+        title="Two teenage girls laughing and walking to school through a park"
         bannerbackground="banner-background getting-to-school"
         />
       <main id="content">

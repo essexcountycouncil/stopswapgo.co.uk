@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import LayoutWithNewsletter from "../layout/layout-with-newsletter"
 import PreviewServices from "../components/preview/preview-services"
-import SocialFeed from "../components/social-feed/social-feed"
+import SocialFeed from "../components/social/social"
 
 export default ({ data }) => {
   return (
@@ -14,7 +14,7 @@ export default ({ data }) => {
     	<h2 className="strapline">Get ready to Stop.Swap.<i>GO!</i></h2>
       <br/>
     	<h3>Hello! We’re making getting around Essex easier – and more rewarding – than ever.</h3>
-      <p>More and more of us are swapping from car to bus, bike or our own two feet. And whether you’re off to the shops, visiting friends or family, or getting to and from work or school, we’re here to help keep you moving.</p>
+      <p>More and more of us are swapping from car to bus, bike or our own two feet. And whether you’re off to the shops, visiting friends or family, or getting to and from work, school or college, we’re here to help keep you moving.</p>
       <p>Join our community for the latest events, news and journey info. We’ll also be giving away prizes – including the chance to win a bike and cycling accessories worth £1,000 – with our 60 Day Challenge.</p>
     </div>
   	<PreviewServices />
