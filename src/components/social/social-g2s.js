@@ -3,7 +3,7 @@ export default () =>
 	<div>
 		<div className="social">
 			<h2 className="strapline">Stop.Swap.<i>SHARE!</i></h2>
-			<p>Join our community on social media and share your active travel school stories, tips and tricks. We’ll also be posting updates on getting to school information – including details of a competition where prizes are on offer! Keep your eyes peeled, everyone.</p>
+			<p>Join our community on social media and share your active travel school or college stories, tips and tricks. We’ll also be posting updates on getting to school or college – including details of a competition where prizes are on offer! Keep your eyes peeled, everyone.</p>
 			<p>#StopSwapGo #StopSwapWin</p>
 			<ul className="social-icons">
 				<li>

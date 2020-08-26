@@ -20,7 +20,7 @@ export default () =>
 			<div className="preview">
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SCHOOL!</i></h3>
 				<img src={schoolKids} alt="Two teenagers in school uniform walking through church grounds" title="Two teenagers in school uniform walking through church grounds" />
-				<p>Your child’s trip to school is a perfect time to get them walking, cycling, or scooting. Use us to help you plan and prepare for them travelling to school in September in a safer and healthy way.</p>
+				<p>Your child’s trip to school or college is a perfect time to get them walking, cycling, or scooting. Use us to help you plan and prepare for them travelling in September in a safer and healthy way.</p>
 				<LargeButton title="SCHOOL!" url="/getting-to-school" />
 			</div>
 
