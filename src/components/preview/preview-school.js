@@ -4,7 +4,6 @@ import prepare from "./people-walking-with-masks.png"
 import training from "./cyclists-training.png"
 import transport from "./school-kids.png"
 import LargeButton from "../large-button/large-button"
-import { Link } from 'gatsby'
 export default () =>
 	<div>
 
