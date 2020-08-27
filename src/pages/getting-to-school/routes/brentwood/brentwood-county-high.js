@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from 'gatsby'
-import map from "./SSGG2SMapRouteFinal_V01_BrentwoodBecketKeys.png"
+import map from "./SSGG2SMapRouteFinal_V01_BrentwoodBrentwoodCountyHigh.png"
 import Layout from "../../../../layout/routes"
 import Breadcrumbs from "../../../../components/breadcrumbs/breadcrumbs"
 
