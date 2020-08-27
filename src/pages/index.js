@@ -1,24 +1,24 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default ({ data }) => {
+const ComponentName = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allContentfulBlogPost {
+        edges {
+          node {
+            title
+          }
+        }
+      }
+    }
+  `)
   return (
     <>
-    {data.allContentfulBlogPost.edges.map(({ node }) => (
-      {node.title}
-    ))}
+      {data.allContentfulBlogPost.edges.map({ node }) => (
+      )}
     </>
   )
 }
 
-export const query = graphql`
-  query {
-    allContentfulBlogPost {
-      edges {
-        node {
-          title
-        }
-      }
-    }
-  }
-`
+export default ComponentName
