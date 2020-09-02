@@ -14,7 +14,7 @@ function Header() {
             </a>
           </div>
           <ul className="nav-links">
-            <li><a href="/getting-to-school">Getting to school or college</a></li>
+            <li><a href="/getting-to-school">Getting to school</a></li>
             <li><a href="/getting-to-school/prepare">Prepare</a></li>
             <li><a href="/getting-to-school/routes">Routes</a></li>
             <li><a href="/getting-to-school/training">Training</a></li>
