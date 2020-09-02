@@ -1,24 +1,28 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import Layout from "../layout/layout"
 
-const ComponentName = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allContentfulBlogPost {
-        edges {
-          node {
-            title
-          }
-        }
-      }
-    }
-  `)
+export default function About({ data }) {
   return (
-    <>
-      {data.allContentfulBlogPost.edges.map({ node }) => (
-      )}
-    </>
+    <Layout>
+      <h1>About {data.allContentfulBlogPost.title}</h1>
+      <p>
+        We're the only site running on your computer dedicated to showing the
+        best photos and videos of pandas eating lots of food.
+      </p>
+    </Layout>
   )
 }
 
-export default ComponentName
+
+export const query = graphql`
+  query {
+    allContentfulBlogPost {
+      edges {
+        node {
+          title
+        }
+      }
+    }
+  }
+`
