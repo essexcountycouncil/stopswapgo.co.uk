@@ -18,8 +18,8 @@ export default ({ children }) => {
       <Header />
       <Banner 
         heading1="Rethink"
-        heading2="Your School"
-        heading3="Run"
+        heading2="Your Daily"
+        heading3="Travel"
         ariaLabel="Two teenage girls laughing and walking to school through a park"
         title="Two teenage girls laughing and walking to school through a park"
         bannerbackground="banner-background getting-to-school"
