@@ -17,7 +17,7 @@ const Woodlands = () => (
 		<h2>Getting to and from Woodlands School</h2>
 		<p>These routes and maps are suggestions of how you could stop taking the car and swap to cycling, walking, or scooting to school. They don’t show every possible route and you could have fun finding a way that works for you. If you know a safe way that gets you there even quicker, that’s great! Take that route instead.</p>
 		<h2>Address</h2>
-		<p><a href="https://www.dlsbasildon.org/">Woodlands School</a><br/>
+		<p><a href="https://www.woodlandsschool.org/">Woodlands School</a><br/>
 		Woodlands Approach<br/>
 		Off Nether Mayne<br/>
 		Basildon<br/>
