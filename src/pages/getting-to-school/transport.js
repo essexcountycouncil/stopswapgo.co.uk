@@ -25,7 +25,7 @@ const Transport = () => (
 		<li>enhanced cleaning</li>
 	</ul>
 	<p>These measures will vary by school and journey. So make sure your child listens to the transport operator taking them to and from school, and the school teachers.</p>
-	<p>You&rsquo;ll get a letter by the second week of August that will have more information and the contact details of the operator running your service. Alternatively, you can&nbsp;<a href="https://www.stopswapgo.co.uk/getting-to-school/education-transport-operators">contact your transport operator</a>.</p>
+	<p>You&rsquo;ll get a letter by the second week of August that will have more information and the contact details of the operator running your service. Alternatively, you can&nbsp;<Link to="/getting-to-school/education-transport-operators">contact your transport operator</Link>.</p>
 	<p>Please be assured, the transport operators running these services will be following the latest government guidelines.</p>
 
 	<h2>Using a ticket for a public bus or train for education transport</h2>

@@ -27,7 +27,7 @@ const NotleyHigh = () => (
 		<h2>Walking routes</h2>
 		<p>Notley High School and Braintree Sixth Form has a zebra crossing right outside and there’s an adjacent footbridge over the A120. These help students stay safe and avoid traffic on their walk from Great Notley and outlying villages.</p>
 		<h2>Cycling routes</h2>
-		<p>The footbridge over the A120 is ramped and split in half for walkers and cyclists. On the other side of the bridge from the school and college, the cycle path goes through Great Notley to route 16 of the National Cycle Network and the off-road Flitch Way, which runs along a disused railway line. The<a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx"> Braintree cycle map</a> provides information on the cycle network, both near the school and beyond.</p>
+		<p>The footbridge over the A120 is ramped and split in half for walkers and cyclists. On the other side of the bridge from the school and college, the cycle path goes through Great Notley to route 16 of the National Cycle Network and the off-road Flitch Way, which runs along a disused railway line. The <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">Braintree cycle map</a> provides information on the cycle network, both near the school and beyond.</p>
 		<h2>Bus routes</h2>
 		<p>Notley High School and Braintree Sixth Form has bus stops in both directions right outside which are serviced by lots of bus routes. Some go into town, and others go to nearby estates and villages. Braintree bus station is just over a mile from the school and sixth-form college and offers connections to towns and villages around Braintree as well as Chelmsford and Colchester.</p>
 		<h2>Train routes</h2>
