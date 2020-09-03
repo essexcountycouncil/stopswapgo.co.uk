@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import SixtyDaySubmissionThankyou from "../sixty-day-submission-thankyou/sixty-day-submission-thankyou"
+import { Link } from 'gatsby'
 let axios = require('axios');
 let jsonpAdapter = require('axios-jsonp');
 
@@ -192,7 +193,7 @@ export default function SignupSixtyDay() {
         }
 
         <div className="disclaimer">
-          <p>By submitting your contact details, you acknowledge the <a href="https://www.stopswapgo.co.uk/terms-and-conditions">terms and conditions for the 60 Day Challenge</a>. Essex County Council is the controller of this personal information. If it looks like you might be committing fraud, we might have to share it with the police or fraud investigators. For more details about how we use your personal data, please read the <a href="https://subscriberhelp.granicus.com/s/article/Privacy">GovDelivery data privacy policy</a> and <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Essex County Council’s data privacy policy.</a></p>
+          <p>By submitting your contact details, you acknowledge the <Link to="/terms-and-conditions">terms and conditions for the 60 Day Challenge</Link>. Essex County Council is the controller of this personal information. If it looks like you might be committing fraud, we might have to share it with the police or fraud investigators. For more details about how we use your personal data, please read the <a href="https://subscriberhelp.granicus.com/s/article/Privacy">GovDelivery data privacy policy</a> and <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">Essex County Council’s data privacy policy.</a></p>
         </div>
       </form>
     </section>
