@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../layout/layout-with-newsletter"
+
 
 const ComponentName = () => {
   const data = useStaticQuery(graphql`
@@ -16,10 +16,8 @@ const ComponentName = () => {
     }
   `)
   return (
-    <Layout>
       <h1>{data.contentfulPage.title}</h1>
-      {data.contentfulPage.childContentfulPageBodyRichTextNode.json}
-    </Layout>
+      
   )
 }
 
