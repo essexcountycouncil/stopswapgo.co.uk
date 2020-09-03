@@ -1,16 +1,16 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../layout/layout"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 
 
-const ComponentName = () => {
+const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
       contentfulPage {
         title
-        contentful_id
-        childContentfulPageBodyRichTextNode {
+        body {
           json
         }
       }
@@ -19,9 +19,10 @@ const ComponentName = () => {
   return (
     <Layout>
       <h1>{data.contentfulPage.title}</h1>
+      {documentToReactComponents(data.contentfulPage.body.json)}
     </Layout>
       
   )
 }
 
-export default ComponentName
+export default IndexPage

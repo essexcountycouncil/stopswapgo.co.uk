@@ -8,6 +8,7 @@
   },
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
     "@reach/router": "^1.2.1",
     "axios": "^0.19.1",
     "axios-jsonp": "^1.0.4",
