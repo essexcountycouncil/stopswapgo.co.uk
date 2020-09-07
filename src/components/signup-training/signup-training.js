@@ -29,9 +29,6 @@ export default function SignupTraining() {
         setValue('email', null)
         setValue('type_of_training', null)
         setValue('previous_training', null)
-        setValue('equipment_owned', null)
-        setValue('school', null)
-        setValue('year_group', null)
       } else {
         console.error("Error: ", response)
       }
@@ -163,19 +160,15 @@ export default function SignupTraining() {
           </fieldset>
         </div>
 
-        <div className={"form-group group" + (errors.equipment_owned?.message ? " error-block" : "")}>
+        <div className="form-group group">
           <fieldset>
-            <legend>If the participant would like cycling training, do they own a bike and a bike helmet?*</legend>
-            {errors.equipment_owned ? (<span className="error">{errors.equipment_owned?.message}</span>) : (null)}
+            <legend>If cycling training is needed, does the participant own a bike or bike helmet?</legend>
             <div className="multiple-choice">
               <input
                 id="bike-helmet"
                 type="radio"
                 value="bike_and_helmet"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="bike-helmet">Yes, both</label>
             </div>
@@ -185,9 +178,6 @@ export default function SignupTraining() {
                 type="radio"
                 value="bike"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="bike">A bike but no helmet</label>
             </div>
@@ -197,9 +187,6 @@ export default function SignupTraining() {
                 type="radio"
                 value="helmet"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="helmet">A helmet but no bike</label>
             </div>
@@ -209,39 +196,27 @@ export default function SignupTraining() {
                 type="radio"
                 value="none"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="no-bike-helmet">Neither a bike or a helmet</label>
             </div>
           </fieldset>
         </div>
 
-        <div className={"form-group group" + (errors.school?.message ? " error-block" : "")}>
-          <legend>What Essex school or college will the participant attend in September?*</legend>
-          {errors.school ? (<span className="error">{errors.school?.message}</span>) : (null)}
+        <div className="form-group group">
+          <legend>If walking training is needed, what Essex school or college does the participant attend?</legend>
           <input
             type="text"
             name="school"
             className="form-control"
-            ref={register({
-              required: "Enter the name of the relevant Essex school or college the participant will go to in September"
-            })}
           />
         </div>
 
-        <div className={"form-group group" + (errors.year_group?.message ? " error-block" : "")}>
+        <div className="form-group group">
           <fieldset>
-            <legend>What year group will the participant be in?*</legend>
-            {errors.year_group ? (<span className="error">{errors.year_group?.message}</span>) : (null)}
+            <legend>If walking training is needed, what year group is the participant in?</legend>
             <select
               name="year_group"
-              ref={register({
-                required: "Expand the list and select the correct school year for the participant"
-              })}
             >
-              <option value="" disabled selected>--Select year group--</option>
               <option value="year_7">Year 7</option>
               <option value="year_8">Year 8</option>
               <option value="year_9">Year 9</option>
