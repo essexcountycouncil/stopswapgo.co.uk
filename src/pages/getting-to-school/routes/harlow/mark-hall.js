@@ -4,7 +4,7 @@ import map from "./SSGG2SMapRouteFinal_V02_HarlowMarkHall.png"
 import Layout from "../../../../layout/routes"
 import Breadcrumbs from "../../../../components/breadcrumbs/breadcrumbs"
 
-const BasildonLower = () => (
+const MarkHallAcademy = () => (
 
 	<Layout>
 		<Breadcrumbs
@@ -36,4 +36,4 @@ const BasildonLower = () => (
 	</Layout>
 )
 
-export default BasildonLower
+export default MarkHallAcademy

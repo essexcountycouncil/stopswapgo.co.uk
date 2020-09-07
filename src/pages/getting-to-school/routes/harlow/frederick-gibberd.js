@@ -4,7 +4,7 @@ import map from "./SSGG2SMapRouteFinal_V01_HarlowSirFrederickGibberd.png"
 import Layout from "../../../../layout/routes"
 import Breadcrumbs from "../../../../components/breadcrumbs/breadcrumbs"
 
-const BasildonLower = () => (
+const FrederickGibberdCollege = () => (
 
 	<Layout>
 		<Breadcrumbs
@@ -35,4 +35,4 @@ const BasildonLower = () => (
 	</Layout>
 )
 
-export default BasildonLower
+export default FrederickGibberdCollege

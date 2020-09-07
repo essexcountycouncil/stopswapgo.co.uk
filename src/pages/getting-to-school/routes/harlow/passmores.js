@@ -4,7 +4,7 @@ import map from "./SSGG2SMapRouteFinal_V02_HarlowPassmores.png"
 import Layout from "../../../../layout/routes"
 import Breadcrumbs from "../../../../components/breadcrumbs/breadcrumbs"
 
-const BasildonLower = () => (
+const PassmoresAcademy = () => (
 
 	<Layout>
 		<Breadcrumbs
@@ -34,4 +34,4 @@ const BasildonLower = () => (
 	</Layout>
 )
 
-export default BasildonLower
+export default PassmoresAcademy
