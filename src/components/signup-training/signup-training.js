@@ -160,7 +160,7 @@ export default function SignupTraining() {
           </fieldset>
         </div>
 
-        <div className={"form-group group" + (errors.equipment_owned?.message ? " error-block" : "")}>
+        <div className="form-group group">
           <fieldset>
             <legend>If cycling training is needed, does the participant own a bike or bike helmet?</legend>
             <div className="multiple-choice">
@@ -178,9 +178,6 @@ export default function SignupTraining() {
                 type="radio"
                 value="bike"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="bike">A bike but no helmet</label>
             </div>
@@ -190,9 +187,6 @@ export default function SignupTraining() {
                 type="radio"
                 value="helmet"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="helmet">A helmet but no bike</label>
             </div>
@@ -202,16 +196,13 @@ export default function SignupTraining() {
                 type="radio"
                 value="none"
                 name="equipment_owned"
-                ref={register({
-                  required: "Select the equipment you own or, if you don't have any, select \"Neither a bike or a helmet\""
-                })}
               />
               <label for="no-bike-helmet">Neither a bike or a helmet</label>
             </div>
           </fieldset>
         </div>
 
-        <div className={"form-group group" + (errors.school?.message ? " error-block" : "")}>
+        <div className="form-group group">
           <legend>If walking training is needed, what Essex school or college does the participant attend?</legend>
           <input
             type="text"
@@ -220,7 +211,7 @@ export default function SignupTraining() {
           />
         </div>
 
-        <div className={"form-group group" + (errors.year_group?.message ? " error-block" : "")}>
+        <div className="form-group group">
           <fieldset>
             <legend>If walking training is needed, what year group is the participant in?</legend>
             <select
