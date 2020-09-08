@@ -26,7 +26,7 @@ const StMarks = () => (
 		<p>The highlighted heavy traffic zone on the map shows the area that will have the heaviest traffic at school time. By using alternate routes and a mix of walking and cycling, you can avoid sitting in traffic and being late for school.</p>
 		<h2>Walking routes</h2>
 		<p>Harlow, including Tye Green where the school is, is very well served by footpaths and short-cuts. There are many footpaths cutting through the housing estates, plus you can use a short-cut footpath through the park behind the school to get directly into the town centre.</p>
-		<p>A number of <a href="https://www.harlow.gov.uk/parking/car-parks">Harlow Council car parks</a> allow you to park your car before walking the remaining distance.. A free ticket valid for an hour must be displayed, otherwise a fine will be issued.</p>
+		<p>A number of <a href="https://www.harlow.gov.uk/parking/car-parks">Harlow Council car parks</a> allow you to park your car before walking the remaining distance. A free ticket valid for an hour must be displayed, otherwise a fine will be issued.</p>
 		<h2>Cycling routes</h2>
 		<p>As with walking, Harlow is well designed for cycling. Although Tripton Road doesn’t have its own cycle lane, there are many off-road cycle tracks, cutting through Tye Green, alongside but separated from Second Avenue, and via the park behind the school. The school features on the <a href="https://www.essexhighways.org/getting-around/cycling/routes-and-maps.aspx">Harlow cycle map</a>.</p>
 		<h2>Bus routes</h2>
