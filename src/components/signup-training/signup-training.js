@@ -29,6 +29,9 @@ export default function SignupTraining() {
         setValue('email', null)
         setValue('type_of_training', null)
         setValue('previous_training', null)
+        setValue('equipment_owned', null)
+        setValue('school', null)
+        setValue('year_group', null)
       } else {
         console.error("Error: ", response)
       }
@@ -169,6 +172,7 @@ export default function SignupTraining() {
                 type="radio"
                 value="bike_and_helmet"
                 name="equipment_owned"
+                ref={register()}                
               />
               <label for="bike-helmet">Yes, both</label>
             </div>
@@ -178,6 +182,7 @@ export default function SignupTraining() {
                 type="radio"
                 value="bike"
                 name="equipment_owned"
+                ref={register()}                
               />
               <label for="bike">A bike but no helmet</label>
             </div>
@@ -187,6 +192,7 @@ export default function SignupTraining() {
                 type="radio"
                 value="helmet"
                 name="equipment_owned"
+                ref={register()}                
               />
               <label for="helmet">A helmet but no bike</label>
             </div>
@@ -196,6 +202,7 @@ export default function SignupTraining() {
                 type="radio"
                 value="none"
                 name="equipment_owned"
+                ref={register()}
               />
               <label for="no-bike-helmet">Neither a bike or a helmet</label>
             </div>
@@ -208,6 +215,7 @@ export default function SignupTraining() {
             type="text"
             name="school"
             className="form-control"
+            ref={register()}            
           />
         </div>
 
@@ -216,6 +224,7 @@ export default function SignupTraining() {
             <legend>If walking training is needed, what year group is the participant in?</legend>
             <select
               name="year_group"
+              ref={register()}
             >
               <option value="" disabled="" selected="">--Select year group--</option>
               <option value="year_7">Year 7</option>
