@@ -4,7 +4,7 @@ import Layout from "../../../layout/layout-h2s-with-newsletter-no-banner"
 
 const FrintonOnSea = () => (
 	<Layout>
-		<h1>Schools in Frinton-on-sea</h1>
+		<h1>Schools in Frinton-on-Sea</h1>
 
 		<p>Select your school from the list below to see the available map options:</p>
 		<ul>

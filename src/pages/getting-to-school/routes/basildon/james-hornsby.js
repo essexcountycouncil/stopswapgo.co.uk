@@ -10,14 +10,14 @@ const JamesHornsby = () => (
 		<Breadcrumbs
 			urlOne="/getting-to-school/routes/basildon"
 			one="Schools in Basildon"
-			two="The James Hornsby School" />
+			two="James Hornsby School, The" />
 	
-		<h1>The James Hornsby School</h1>
-		<img src={map} alt="A map showing cycle and walking routes to and from The James Hornsby School" title="A map showing cycle and walking routes to and from The James Hornsby School" />
-		<h2>Getting to and from The James Hornsby School</h2>
+		<h1>James Hornsby School, The</h1>
+		<img src={map} alt="A map showing cycle and walking routes to and from James Hornsby School, The" title="A map showing cycle and walking routes to and from James Hornsby School, The" />
+		<h2>Getting to and from James Hornsby School, The</h2>
 		<p>These routes and maps are suggestions of how you could stop taking the car and swap to cycling, walking, or scooting to school. They don’t show every possible route and you could have fun finding a way that works for you. If you know a safe way that gets you there even quicker, that’s great! Take that route instead.</p>
 		<h2>Address</h2>
-		<p><a href="https://www.jameshornsby.essex.sch.uk/index.asp">The James Hornsby School</a><br/>
+		<p><a href="https://www.jameshornsby.essex.sch.uk/index.asp">James Hornsby School, The</a><br/>
 		Leinster Road<br/>
 		Laindon<br/>
 		Basildon<br/>
