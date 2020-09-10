@@ -67,8 +67,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-slug-field',
       options: {
+        filter: { internal: { type: 'ContentfulSchool' } },
         source: ['townOrCity'],
-        fieldName: 'slug',
+        fieldName: 'postSlug',
         urlSlugOptions: {
           separator: '-'
         }

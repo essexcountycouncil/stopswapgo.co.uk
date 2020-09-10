@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
 import Layout from "../../layout/page"
+import * as urlSlug from 'url-slug'
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Routes = () => {
@@ -19,6 +20,9 @@ const Routes = () => {
             title 
             townOrCity
             slug
+            fields {
+              postSlug 
+            }            
           }
         }
       }
@@ -31,7 +35,7 @@ const Routes = () => {
       <ul>
       {data.allContentfulSchool.edges.map(({ node }) => (
         <div>
-        <li><Link to={`${node.townOrCity}/${node.slug}`}>{node.townOrCity}</Link></li>
+        <li><Link to={`${node.fields.postSlug}/${node.slug}`}>{node.townOrCity}</Link></li>
         </div>
       ))}
 
