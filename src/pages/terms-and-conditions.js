@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import Layout from "../layout/layout"
 
 
@@ -11,7 +12,7 @@ const TermsAndConditions = () => (
 			<li>No purchase is necessary and the 60 Day Challenge is free to enter.</li>
 			<li>Entrants must be 18 years or older.</li>
 			<li>Entrants must live in statutory Essex, any other entrants will be disqualified.</li>
-			<li>Entrants must sign up to the 60 Day Challenge using the form on the <a href="https://www.stopswapgo.co.uk/60-day-challenge/">60 Day Challenge page</a>.</li>
+			<li>Entrants must sign up to the 60 Day Challenge using the form on the <Link to="/60-day-challenge/">60 Day Challenge page</Link>.</li>
 			<li>Entrants must download and register to the Indeemo app to take part in the 60 Day Challenge using the link to Indeemo provided at point of sign up.</li>
 			<li>To qualify for 60 Day Challenge sign up promotions, prize draws and weekly bonus challenges; tasks must be completed within the Indeemo app and in accordance with instructions given unless otherwise specified.</li>
 			<li>Competition winners will be drawn as specified (see prizes and schedule) after entries to each prize draw or bonus challenge have closed. Closing dates will be clearly specified within the Indeemo app.</li>
