@@ -29,12 +29,12 @@ const Routes = () => (
 			<li><Link to="/getting-to-school/routes/braintree">Braintree</Link></li>
 			<li><Link to="/getting-to-school/routes/brentwood">Brentwood</Link></li>
 			<li><Link to="/getting-to-school/routes/chelmsford">Chelmsford</Link></li>
-			<li><Link to="/getting-to-school/routes/clacton">Clacton</Link></li>
+			<li><Link to="/getting-to-school/routes/clacton-on-sea">Clacton-on-Sea</Link></li>
 			<li><Link to="/getting-to-school/routes/colchester">Colchester</Link></li>
-			<li><Link to="/getting-to-school/routes/frinton-on-sea">Frinton On Sea</Link></li>
+			<li><Link to="/getting-to-school/routes/frinton-on-sea">Frinton-on-Sea</Link></li>
 			<li><Link to="/getting-to-school/routes/harlow">Harlow</Link></li>
 			<li><Link to="/getting-to-school/routes/shenfield">Shenfield</Link></li>
-			<li><Link to="/getting-to-school/routes/thorpe-le-soken">Thorpe Le Soken</Link></li>
+			<li><Link to="/getting-to-school/routes/thorpe-le-soken">Thorpe-le-Soken</Link></li>
 		</ul>
 	</Layout>
 )

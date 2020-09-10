@@ -8,8 +8,8 @@ const ClactonCountyHigh = () => (
 
 	<Layout>
 		<Breadcrumbs
-			urlOne="/getting-to-school/routes/clacton"
-			one="Schools in Clacton"
+			urlOne="/getting-to-school/routes/clacton-on-sea"
+			one="Schools in Clacton-on-Sea"
 			two="Clacton County High School" />
 	
 		<h1>Clacton County High School</h1>
