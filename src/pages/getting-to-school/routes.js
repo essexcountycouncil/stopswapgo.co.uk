@@ -30,9 +30,9 @@ const Routes = () => {
       {documentToReactComponents(data.contentfulRoutes.content.json)}
       <ul>
       {data.allContentfulSchool.edges.map(({ node }) => (
-        <>
+        <div>
         <li><Link to={`${node.townOrCity}/${node.slug}`}>{node.townOrCity}</Link></li>
-        </>
+        </div>
       ))}
 
       </ul>
