@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
-import Layout from "../../layout/page"
+import Layout from "../layout/page"
 import * as urlSlug from 'url-slug'
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
@@ -26,16 +26,18 @@ const Routes = () => {
           }
         }
       }
+      contentfulSchool {
+        townOrCity
+      }     
     }
   `)
   return (
     <Layout>
-      <h1>{data.contentfulRoutes.title}</h1>
-      {documentToReactComponents(data.contentfulRoutes.content.json)}
+      <h1>Schools in {data.contentfulSchool.townOrCity}</h1>
       <ul>
       {data.allContentfulSchool.edges.map(({ node }) => (
         <div>
-        <li><Link to={`${node.fields.postSlug}`}>{node.townOrCity}</Link></li>
+        <li><Link to={`${node.slug}`}>{node.title}</Link></li>
         </div>
       ))}
 

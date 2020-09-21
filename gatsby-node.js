@@ -14,6 +14,9 @@ const slugifyOptions = {
 // We'll use Gatsby's createPage API for generating the pages
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+  const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
+  const schoolTemplate = path.resolve(`./src/templates/school.js`)
 
   return new Promise((resolve, reject) => {
       // We'll do most of our work here
@@ -28,32 +31,54 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
+          allContentfulSchool {
+            edges {
+              node {
+                id
+                title 
+                townOrCity
+                slug
+                fields {
+                  postSlug 
+                }            
+              }
+            }
+          }          
         }              
-        `
-        )
-      .then(result => {
-        if (result.errors) {
-          reject(result.errors)
-        }
+    `).then(result => {
+      if (result.errors) {
+        Promise.reject(result.errors);
+      }
 
-          // We'll do the actual page creation here
-          const pageTemplate = path.resolve(`./src/templates/page.js`)
-          _.each(result.data.allContentfulPage.edges, edge => {
-              // Here's the beef, seitan, or whatever rocks your boat:
-              createPage({
-                path: `/${slugify(edge.node.title, slugifyOptions)}/`,
-                component: slash(pageTemplate),
-                context: {
-                  id: edge.node.id
-                },
-              })            
-            })                
 
-          resolve() // Resolve the promise
-        })  
-    })
+      _.each(result.data.allContentfulPage.edges, edge => {
+        createPage({
+          path: `/${slugify(edge.node.title, slugifyOptions)}/`,
+          component: pageTemplate,
+          context: {id: edge.node.id},
+        });
+      });
 
-}
+      _.each(result.data.allContentfulSchool.edges, edge => {
+        createPage({
+          path: `/getting-to-school/routes/${slugify(edge.node.townOrCity, slugifyOptions)}/`,
+          component: townOrCityTemplate,
+          context: {id: edge.node.id},
+        });
+      });
+
+      _.each(result.data.allContentfulSchool.edges, edge => {
+        createPage({
+          path: `/getting-to-school/routes/${slugify(edge.node.townOrCity, slugifyOptions)}/${slugify(edge.node.title, slugifyOptions)}/`,
+          component: schoolTemplate,
+          context: {id: edge.node.id},
+        });
+      });
+
+    });
+    resolve()
+  });
+};
 
 const axios = require('axios');
 const crypto = require('crypto');
