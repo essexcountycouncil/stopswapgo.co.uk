@@ -16,6 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const pageTemplate = path.resolve(`./src/templates/page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
+  const schoolTemplate = path.resolve(`./src/templates/school.js`)
 
   return new Promise((resolve, reject) => {
       // We'll do most of our work here
@@ -38,8 +39,20 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
             }
-          }                   
-        }              
+          }
+          allContentfulSchool {
+            edges {
+              node {
+                id
+                title
+                townOrCity {
+                  title
+                  slug
+                }
+              }
+            }
+          }          
+        }                           
     `).then(result => {
       if (result.errors) {
         Promise.reject(result.errors);
@@ -63,6 +76,16 @@ exports.createPages = ({ graphql, actions }) => {
           },
         });
       });
+
+      _.each(result.data.allContentfulSchool.edges, edge => {
+        createPage({
+          path: `/getting-to-school/routes/${slugify(edge.node.townOrCity.slug, slugifyOptions)}/${slugify(edge.node.title, slugifyOptions)}/`,
+          component: schoolTemplate,
+          context: {
+            id: edge.node.id
+          },
+        });
+      });      
 
     });
     resolve()
