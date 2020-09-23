@@ -10,12 +10,13 @@ const propTypes = {
 
 class School extends React.Component {
   render() {
-    const page = this.props.data.contentfulSchool
+    const school = this.props.data.contentfulSchool
     return (
       <div>
         <Layout>
-          <h1>{page.title}</h1>
-          {documentToReactComponents(page.content.json)}
+          <h1>{school.title}</h1>
+          <img src={`${school.image.fluid.src}`} title={`${school.image.title}`} alt={`${school.image.description}`} />
+          {documentToReactComponents(school.content.json)}
         </Layout>
       </div>
     )
@@ -25,13 +26,20 @@ class School extends React.Component {
 export default School
 
 export const schoolQuery = graphql`
-    query schoolQuery( $id : String! ) {
-        contentfulSchool( id: { eq: $id } ) {
-            id
-            title
-            content {
-                json
-            }
+  query schoolQuery( $id : String! ) {
+    contentfulSchool( id: { eq: $id } ) {
+      id
+      title
+      content {
+        json
+      }
+      image {
+        title
+        description
+        fluid {
+          src
         }
+      }
     }
+  }
 `
