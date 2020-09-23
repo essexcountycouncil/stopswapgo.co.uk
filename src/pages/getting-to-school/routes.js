@@ -14,15 +14,11 @@ const Routes = () => {
           json
         }
       }
-      allContentfulSchool {
+      allContentfulTownOrCity {
         edges {
           node {
-            title 
-            townOrCity
-            slug
-            fields {
-              postSlug 
-            }            
+            title
+            slug                
           }
         }
       }
@@ -33,9 +29,9 @@ const Routes = () => {
       <h1>{data.contentfulRoutes.title}</h1>
       {documentToReactComponents(data.contentfulRoutes.content.json)}
       <ul>
-      {data.allContentfulSchool.edges.map(({ node }) => (
+      {data.allContentfulTownOrCity.edges.map(({ node }) => (
         <div>
-        <li><Link to={`${node.fields.postSlug}`}>{node.townOrCity}</Link></li>
+        <li><Link to={`${node.slug}`}>{node.title}</Link></li>
         </div>
       ))}
 

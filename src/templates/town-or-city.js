@@ -1,49 +1,54 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
 import Layout from "../layout/page"
-import * as urlSlug from 'url-slug'
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-const Routes = () => {
-  const data = useStaticQuery(graphql`
-    {
-      contentfulRoutes {
+
+const propTypes = {
+    data: PropTypes.object.isRequired,
+}
+
+class TownOrCity extends React.Component {
+  render() {
+    const school = this.props.data.allContentfulSchool.edges
+    const city = this.props.data.contentfulTownOrCity
+    return (
+      <div>
+        <Layout>
+          <h1>Schools in {city.title}</h1>
+          <ul>
+          {school.map(({ node }) => (
+            <div>
+            <li><Link to={`${node.slug}`}>{node.title}</Link></li>
+            </div>
+          ))}
+          </ul>          
+        </Layout>
+      </div>
+    )
+  }
+}
+
+export default TownOrCity
+
+export const townOrCityQuery = graphql`
+    query townOrCityQuery($slug: String!, $id: String!) {
+      contentfulTownOrCity(id: {eq: $id}) {
+        id
         title
-        content {
-          json
-        }
+        slug
       }
-      allContentfulSchool {
+      allContentfulSchool(filter: {townOrCity: {slug: {eq: $slug}}}) {
         edges {
           node {
-            title 
-            townOrCity
+            title
             slug
-            fields {
-              postSlug 
-            }            
+            townOrCity {              
+              title
+              slug
+            }
           }
         }
       }
-      contentfulSchool {
-        townOrCity
-      }     
-    }
-  `)
-  return (
-    <Layout>
-      <h1>Schools in {data.contentfulSchool.townOrCity}</h1>
-      <ul>
-      {data.allContentfulSchool.edges.map(({ node }) => (
-        <div>
-        <li><Link to={`${node.slug}`}>{node.title}</Link></li>
-        </div>
-      ))}
-
-      </ul>
-    </Layout>
-  )
-}
-
-export default Routes
+    }    
+`

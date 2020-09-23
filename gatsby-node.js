@@ -16,7 +16,6 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const pageTemplate = path.resolve(`./src/templates/page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
-  const schoolTemplate = path.resolve(`./src/templates/school.js`)
 
   return new Promise((resolve, reject) => {
       // We'll do most of our work here
@@ -31,25 +30,20 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-          allContentfulSchool {
+          allContentfulTownOrCity {
             edges {
               node {
                 id
-                title 
-                townOrCity
+                title
                 slug
-                fields {
-                  postSlug 
-                }            
               }
             }
-          }          
+          }                   
         }              
     `).then(result => {
       if (result.errors) {
         Promise.reject(result.errors);
       }
-
 
       _.each(result.data.allContentfulPage.edges, edge => {
         createPage({
@@ -59,19 +53,14 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
 
-      _.each(result.data.allContentfulSchool.edges, edge => {
+      _.each(result.data.allContentfulTownOrCity.edges, edge => {
         createPage({
-          path: `/getting-to-school/routes/${slugify(edge.node.townOrCity, slugifyOptions)}/`,
+          path: `/getting-to-school/routes/${slugify(edge.node.slug, slugifyOptions)}/`,
           component: townOrCityTemplate,
-          context: {id: edge.node.id},
-        });
-      });
-
-      _.each(result.data.allContentfulSchool.edges, edge => {
-        createPage({
-          path: `/getting-to-school/routes/${slugify(edge.node.townOrCity, slugifyOptions)}/${slugify(edge.node.title, slugifyOptions)}/`,
-          component: schoolTemplate,
-          context: {id: edge.node.id},
+          context: {
+            id: edge.node.id,
+            slug: edge.node.slug
+          },
         });
       });
 
