@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useForm } from "react-hook-form";
 import axios from "axios"
 import { Link } from 'gatsby'
-import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
+import Layout from "../../layout/sub-page"
 import SignupTraining from "../../components/signup-training/signup-training"
 
 const Training = () => {

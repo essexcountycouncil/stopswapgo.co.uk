@@ -1,8 +1,9 @@
 import React from 'react'
+import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
-import Layout from "../layout/page"
-
+import Layout from "../layout/sub-page"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const propTypes = {
     data: PropTypes.object.isRequired,
@@ -16,6 +17,7 @@ class TownOrCity extends React.Component {
       <div>
         <Layout>
           <h1>Schools in {city.title}</h1>
+          {documentToReactComponents(city.content.json)}
           <ul>
           {school.map(({ node }) => (
             <div>
@@ -37,6 +39,9 @@ export const townOrCityQuery = graphql`
         id
         title
         slug
+        content {
+          json
+        }
       }
       allContentfulSchool(filter: {townOrCity: {slug: {eq: $slug}}}) {
         edges {

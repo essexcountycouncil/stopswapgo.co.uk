@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
-import Layout from "../../layout/page"
+import Layout from "../../layout/sub-page"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Transport = () => {

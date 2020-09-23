@@ -15,6 +15,7 @@ const slugifyOptions = {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const gettingToSchoolTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
   const schoolTemplate = path.resolve(`./src/templates/school.js`)
 
@@ -23,14 +24,24 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
         {
-          allContentfulPage(limit: 1000) {
+          allContentfulPage {
             edges {
               node {
                 id
                 title
+                slug
               }
             }
           }
+          allContentfulGettingToSchool {
+            edges {
+              node {
+                id
+                title
+                slug
+              }
+            }
+          }          
           allContentfulTownOrCity {
             edges {
               node {
@@ -45,6 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
               node {
                 id
                 title
+                slug
                 townOrCity {
                   title
                   slug
@@ -60,15 +72,23 @@ exports.createPages = ({ graphql, actions }) => {
 
       _.each(result.data.allContentfulPage.edges, edge => {
         createPage({
-          path: `/${slugify(edge.node.title, slugifyOptions)}/`,
+          path: `/${edge.node.slug}/`,
           component: pageTemplate,
           context: {id: edge.node.id},
         });
       });
 
+      _.each(result.data.allContentfulGettingToSchool.edges, edge => {
+        createPage({
+          path: `/getting-to-school/${edge.node.slug}/`,
+          component: gettingToSchoolTemplate,
+          context: {id: edge.node.id},
+        });
+      });      
+
       _.each(result.data.allContentfulTownOrCity.edges, edge => {
         createPage({
-          path: `/getting-to-school/routes/${slugify(edge.node.slug, slugifyOptions)}/`,
+          path: `/getting-to-school/routes/${edge.node.slug}/`,
           component: townOrCityTemplate,
           context: {
             id: edge.node.id,
@@ -79,7 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       _.each(result.data.allContentfulSchool.edges, edge => {
         createPage({
-          path: `/getting-to-school/routes/${slugify(edge.node.townOrCity.slug, slugifyOptions)}/${slugify(edge.node.title, slugifyOptions)}/`,
+          path: `/getting-to-school/routes/${edge.node.townOrCity.slug}/${edge.node.slug}/`,
           component: schoolTemplate,
           context: {
             id: edge.node.id

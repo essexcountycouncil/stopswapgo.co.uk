@@ -1,7 +1,8 @@
 import React from 'react'
+import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
-import Layout from "../layout/page"
+import Layout from "../layout/sub-page"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const propTypes = {
@@ -14,6 +15,12 @@ class School extends React.Component {
     return (
       <div>
         <Layout>
+          <nav className="breadcrumbs" aria-label="breadcrumbs">
+            <ol>
+              <li><a href={`../${school.townOrCity.slug}`}>Schools in {school.townOrCity.title}</a></li>
+              <li>{school.title}</li>
+            </ol>
+          </nav>      
           <h1>{school.title}</h1>
           <img src={`${school.image.fluid.src}`} title={`${school.image.title}`} alt={`${school.image.description}`} />
           {documentToReactComponents(school.content.json)}
@@ -39,6 +46,10 @@ export const schoolQuery = graphql`
         fluid {
           src
         }
+      }
+      townOrCity {
+        title
+        slug
       }
     }
   }
