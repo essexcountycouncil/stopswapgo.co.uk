@@ -22,7 +22,7 @@ class School extends React.Component {
             </ol>
           </nav>      
           <h1>{school.title}</h1>
-          <img src={`${school.image.fluid.src}`} title={`${school.image.title}`} alt={`${school.image.description}`} />
+          <img src={`${school.image.file.url}`} title={`${school.image.title}`} alt={`${school.image.description}`} />
           {documentToReactComponents(school.content.json)}
         </Layout>
       </div>
@@ -43,8 +43,8 @@ export const schoolQuery = graphql`
       image {
         title
         description
-        fluid {
-          src
+        file {
+          url
         }
       }
       townOrCity {
