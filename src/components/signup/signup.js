@@ -1,15 +1,35 @@
 import React from "react"
-import LargeButton from "../large-button/large-button"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link } from 'gatsby'
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-export default ({ tagline1, tagline2, p1, p2, p3, p3link, url, label }) =>
-  <section className="signup-background" aria-label="Subscribe to email" id="challenge">
-    <div className="signup">
-      <div className="mantra">
-        <h2 className="strapline"><span>{tagline1}</span><i>{tagline2}</i></h2>
-        <p>{p1}</p>
-        <p>{p2}</p>
-        <p class="small"><a href={p3link}>{p3}</a></p>
+const SignUp = () => {
+  const data = useStaticQuery(graphql`
+    {
+      contentfulCallToAction {
+        title
+        titleItalic
+        content {
+          json
+        }
+        buttonLabel
+        buttonUrl
+      }
+    }  
+    `)
+  return (
+    <section className="signup-background" aria-label="Subscribe to email" id="challenge">
+      <div className="signup">
+        <div className="mantra">
+          <h2 className="strapline"><span>{data.contentfulCallToAction.title}</span><i>{data.contentfulCallToAction.italic}</i></h2>
+          {documentToReactComponents(data.contentfulCallToAction.content.json)}
+        </div>
+        <div className="button-container-middle">
+          <Link to={data.contentfulCallToAction.buttonUrl} className="button button-dark button-large extra-space">{data.contentfulCallToAction.buttonLabel}</Link>
+        </div>
       </div>
-      <LargeButton title={label} url={url} />
-    </div>
-  </section>
+    </section>
+  )
+}
+
+export default SignUp
