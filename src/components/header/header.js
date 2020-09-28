@@ -1,8 +1,20 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link } from 'gatsby'
 import logo from "./SSG_Logo_Colour_3chevrons_RGB_b.svg"
 
-
-function Header() {
+const MainNav = () => {
+  const data = useStaticQuery(graphql`
+  {
+    contentfulMainNav {
+      nav1Label
+      nav2Label
+      nav3Label
+      nav4Label
+      nav5Label                      
+    }
+  }
+  `)
   return (
     <header className="header-background">
     <a className="skip-main" href="#content">Skip to main content</a>
@@ -14,12 +26,12 @@ function Header() {
             </a>
           </div>
           <ul className="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about-us">About us</a></li>
-            <li><a href="/get-started">Get started</a></li>
-            <li><a href="/60-day-challenge">60 Day Challenge</a></li>
+            <li><a href="/">{data.contentfulMainNav.nav1Label}</a></li>
+            <li><a href="/about-us">{data.contentfulMainNav.nav2Label}</a></li>
+            <li><a href="/get-started">{data.contentfulMainNav.nav3Label}</a></li>
+            <li><a href="/60-day-challenge">{data.contentfulMainNav.nav4Label}</a></li>
             <li className="pipe">|</li>
-            <li><a href="/getting-to-school">Getting to school or college</a></li>
+            <li><a href="/getting-to-school">{data.contentfulMainNav.nav5Label}</a></li>
           </ul>
         </div>
       </div>
@@ -27,4 +39,4 @@ function Header() {
   )
 }
 
-export default Header
+export default MainNav
