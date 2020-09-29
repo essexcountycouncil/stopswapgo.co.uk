@@ -1,0 +1,43 @@
+.callout {
+  background: $highlight-box-light;
+  padding: $gutter;
+  margin-top: $baseline*0.5;
+  margin-bottom: $baseline;
+  box-sizing: border-box;
+  p, h2, h3 {
+    text-align: center;
+  }
+  h2, h3 {
+    margin-top: 0;
+  }
+  @include media(mobile) {
+    width: 100%;
+  }
+  @include media(tablet) {
+    width: 30%;
+  }
+  @include media(desktop) {
+    width: 30%;
+  }
+}
+
+.callout-side {
+  margin-left: $gutter;
+  float: right;
+}
+.callout-middle{
+  margin-bottom: $baseline;
+  padding: $baseline $gutter*0.5;
+  width: 100%;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  ol, ol p {
+    text-align: left;
+  }
+  ol p {
+    margin-bottom: $baseline;
+  }
+}
