@@ -30,7 +30,7 @@ const FooterNav = () => {
               <a href="https://www.essex.gov.uk/cookies">{data.contentfulFooterNav.nav2Label}</a></li><li>
               <a href="https://www.essex.gov.uk/terms-conditions">{data.contentfulFooterNav.nav3Label}</a></li><li>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">{data.contentfulFooterNav.nav4Label}</a></li><li>
-              <Link to="/terms-and-conditions">{data.contentfulFooterNav.nav4Label}</Link></li>
+              <Link to="/terms-and-conditions">{data.contentfulFooterNav.nav5Label}</Link></li>
           </ul>
           <ul className="social-icons">
             <li>

@@ -14,7 +14,7 @@ const Routes = () => {
           json
         }
       }
-      allContentfulTownOrCity {
+      allContentfulTownOrCity(sort: {fields: [title], order: ASC}) {
         edges {
           node {
             title

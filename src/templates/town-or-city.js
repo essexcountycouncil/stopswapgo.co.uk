@@ -43,7 +43,7 @@ export const townOrCityQuery = graphql`
           json
         }
       }
-      allContentfulSchool(filter: {townOrCity: {slug: {eq: $slug}}}) {
+      allContentfulSchool(sort: {fields: [title], order: ASC}, filter: {townOrCity: {slug: {eq: $slug}}}) {
         edges {
           node {
             title

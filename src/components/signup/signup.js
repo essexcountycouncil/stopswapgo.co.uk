@@ -21,7 +21,7 @@ const SignUp = () => {
     <section className="signup-background" aria-label="Subscribe to email" id="challenge">
       <div className="signup">
         <div className="mantra">
-          <h2 className="strapline"><span>{data.contentfulCallToAction.title}</span><i>{data.contentfulCallToAction.italic}</i></h2>
+          <h2 className="strapline"><span>{data.contentfulCallToAction.title}</span><i>{data.contentfulCallToAction.titleItalic}</i></h2>
           {documentToReactComponents(data.contentfulCallToAction.content.json)}
         </div>
         <div className="button-container-middle">
