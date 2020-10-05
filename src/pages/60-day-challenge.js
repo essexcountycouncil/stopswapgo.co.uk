@@ -3,7 +3,7 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
-import LayoutWithNewsletter from "../layout/60-day"
+import Layout from "../layout/60-day"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import SignupSixtyDay from "../components/signup-sixty-day/signup-sixty-day"
 
@@ -33,11 +33,11 @@ class Page extends React.Component {
     }    
     return (
       <div>
-        <LayoutWithNewsletter>
+        <Layout>
 					<h1>{page.title}</h1>
 					{documentToReactComponents(page.content.json, options)}
 					<SignupSixtyDay></SignupSixtyDay>
-        </LayoutWithNewsletter>
+        </Layout>
       </div>
     )
   }

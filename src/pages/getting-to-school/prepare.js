@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
-import Layout from "../../layout/sub-page"
+import Layout from "../../layout/sub-page-with-newsletter"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Prepare = () => {
@@ -20,7 +20,6 @@ const Prepare = () => {
   `)
   return (
     <Layout>
-      <h1>{data.contentfulPrepare.title}</h1>
       {documentToReactComponents(data.contentfulPrepare.content.json)}
       <div className="callout callout-middle">
 	      {documentToReactComponents(data.contentfulPrepare.callout.json)}

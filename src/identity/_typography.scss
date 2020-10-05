@@ -228,6 +228,9 @@ ul {
   margin-left: 20px;
   margin-top: $baseline;
   margin-bottom: $baseline;
+  p {
+    margin-bottom: 0;
+  }
   li {
     padding-left: 10px;
     margin-bottom: 0;

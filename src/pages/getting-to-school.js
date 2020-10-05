@@ -105,7 +105,7 @@ const IndexPage = () => {
 
 		<div className="previews previews-grey-border">
 			<div className="preview">
-				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulGettingToSchoolLanding.box1Title}</span><i>{data.contentfulGettingToSchoolLanding.box1TitleItalic}</i></h3>
+				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulGettingToSchoolLanding.box3Title}</span><i>{data.contentfulGettingToSchoolLanding.box3TitleItalic}</i></h3>
 				<img src={`${data.contentfulGettingToSchoolLanding.box3Image.file.url}`} title={`${data.contentfulGettingToSchoolLanding.box3Image.title}`} alt={`${data.contentfulGettingToSchoolLanding.box3Image.description}`} />
 				{documentToReactComponents(data.contentfulGettingToSchoolLanding.box3Content.json)}
 		    <div className="button-container-middle">
@@ -117,7 +117,7 @@ const IndexPage = () => {
 				<img src={`${data.contentfulGettingToSchoolLanding.box4Image.file.url}`} title={`${data.contentfulGettingToSchoolLanding.box4Image.title}`} alt={`${data.contentfulGettingToSchoolLanding.box4Image.description}`} />
 				{documentToReactComponents(data.contentfulGettingToSchoolLanding.box4Content.json)}
 				<div className="button-container-middle">
-		      <Link to={data.contentfulGettingToSchoolLanding.box2ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulGettingToSchoolLanding.box2ButtonLabel}</Link>
+		      <Link to={data.contentfulGettingToSchoolLanding.box4ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulGettingToSchoolLanding.box4ButtonLabel}</Link>
 		    </div>				
 			</div>			
 		</div>		

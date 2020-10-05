@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
-import Layout from "../../layout/sub-page"
+import Layout from "../../layout/sub-page-with-newsletter"
 import SignupTraining from "../../components/signup-training/signup-training"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 

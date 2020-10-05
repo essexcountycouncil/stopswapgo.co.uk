@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { useForm } from "react-hook-form";
 import axios from "axios"
 import { Link } from 'gatsby'
-import Layout from "../../layout/sub-page"
+import Layout from "../../layout/sub-page-with-newsletter"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import SignupTraining from "../../components/signup-training/signup-training"
 
