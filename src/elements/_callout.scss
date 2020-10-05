@@ -5,6 +5,7 @@
   margin-bottom: $baseline;
   box-sizing: border-box;
   p, h2, h3 {
+    margin-top: 0;
     text-align: center;
   }
   h2, h3 {
@@ -30,14 +31,13 @@
   padding: $baseline $gutter*0.5;
   width: 100%;
   text-align: center;
-  p {
-    margin: 0;
-    padding: 0;
-  }
   ol, ol p {
     text-align: left;
   }
   ol p {
+    margin-bottom: 0;
+  }
+  ol, li {
     margin-bottom: $baseline;
   }
 }

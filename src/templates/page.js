@@ -1,27 +1,34 @@
 import React from 'react'
-import { BLOCKS } from "@contentful/rich-text-types"
+import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
 import Layout from "../layout/page"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
+
 const propTypes = {
     data: PropTypes.object.isRequired,
 }
 
-const CalloutFull = ({ children }) => <div className="callout">{children}</div>
-const CalloutSide = ({ children }) => <div className="callout callout-side">{children}</div>
-
-
-
 class Page extends React.Component {
   render() {
     const page = this.props.data.contentfulPage
-    const callout = this.props.data.contentfulCallout
     const options = {
       renderNode: {
-         [BLOCKS.EMBEDDED_ENTRY]: (node, children) => <CalloutSide><p className="section-heading">{callout.title}</p>{documentToReactComponents(callout.content.json, options)}</CalloutSide>,
+        [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+          return <div className="callout callout-middle">
+            <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
+            <p>{node.data.target.fields.content['en-US']}</p>
+          </div>
+        },
+
+        [INLINES.EMBEDDED_ENTRY]: (node) => {
+          return <div className="callout callout-side">
+            <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
+            <p>{node.data.target.fields.content['en-US']}</p>
+          </div>
+        },
       },  
     }    
     return (
@@ -44,13 +51,7 @@ export const pageQuery = graphql`
       title
       content {
         json
-      }
+      }  
     }
-    contentfulCallout {
-      title
-      content {
-        json
-      }
-    }    
   }
 `

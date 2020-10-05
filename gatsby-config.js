@@ -73,18 +73,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/favicon2.svg`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: 'gatsby-plugin-slug-field',
-      options: {
-        filter: { internal: { type: 'ContentfulTownOrCity' } },
-        source: ['townOrCity'],
-        fieldName: 'postSlug',
-        urlSlugOptions: {
-          separator: '-'
-        }
-      },
-    } 
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -161,7 +161,7 @@ h4, .h4, .sub-section-heading {
   @include h4;
 }
 
-strong {
+strong, b {
   font-weight: $bold;
 }
 

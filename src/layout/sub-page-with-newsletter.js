@@ -3,10 +3,8 @@ import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
-
 // SignupNewsletter is the component that uses integration directly to GovDelivery 
 import SignupNewsletter from "../components/signup-newsletter/signup-newsletter"
-
 // Signup is a dull redirect
 import Signup from "../components/signup/signup"
 

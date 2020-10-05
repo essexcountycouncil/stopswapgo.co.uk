@@ -1,5 +1,6 @@
 import React from "react"
-import Header from "../components/header/header"
+import { useStaticQuery, graphql } from "gatsby"
+import Header from "../components/header/headerb"
 import Banner from "../components/banner/banner"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
@@ -12,18 +13,36 @@ import Signup from "../components/signup/signup"
 
 export default ({ children }) => {
 
+  const data = useStaticQuery(graphql`
+    {
+      contentfulSixtyDayChallenge {
+        title
+        titleLine2
+        titleLine3
+        banner {
+          file {
+            url
+          }
+        }
+      }
+    }  
+    `)  
   return (
     <>
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
-      <Banner 
-        heading1="60 Day"
-        heading2="Challenge"
-        heading3="Now Live!"
-        ariaLabel="A family of four laughing as they cycle through a forest"
-        title="Cyclists in the forest"
-        bannerbackground="banner-background challenge"
-        />
+      <section class="banner-background" role="img" aria-label="" title="" style={{ backgroundImage: `url(${data.contentfulSixtyDayChallenge.banner.file.url})` }} >
+        <div className="overlay"></div>
+        <div className="banner-container">
+          <div className="greeting">
+            <div className="arrow">
+              <h1 className="page-heading"><span className="one">{data.contentfulSixtyDayChallenge.title}</span> <span className="two">{data.contentfulSixtyDayChallenge.titleLine2}</span> <span className="three">{data.contentfulSixtyDayChallenge.titleLine3}</span></h1>
+            </div>
+          </div>
+        </div>  
+        <div className="ms-ie-notification"><p>This website is not optimised for Internet Explorer, please switch browser for a better experience</p></div>  
+      </section>
+
       <main id="content">
         <div className="container">
           <div className="main only">
