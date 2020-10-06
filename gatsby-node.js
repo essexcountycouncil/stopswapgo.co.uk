@@ -11,58 +11,106 @@ const slugifyOptions = {
   lower: true
 }
 
+// We'll use Gatsby's createPage API for generating the pages
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const gettingToSchoolTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
+  const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
+  const schoolTemplate = path.resolve(`./src/templates/school.js`)
+
+  return new Promise((resolve, reject) => {
+      // We'll do most of our work here
+      graphql(
+        `
+        {
+          allContentfulPage {
+            edges {
+              node {
+                id
+                title
+                slug                
+              }
+            }
+          }
+          allContentfulGettingToSchool {
+            edges {
+              node {
+                id
+                title
+                slug
+              }
+            }
+          }          
+          allContentfulTownOrCity {
+            edges {
+              node {
+                id
+                title
+                slug
+              }
+            }
+          }
+          allContentfulSchool {
+            edges {
+              node {
+                id
+                title
+                slug
+                townOrCity {
+                  title
+                  slug
+                }
+              }
+            }
+          }          
+        }                           
+    `).then(result => {
+      if (result.errors) {
+        Promise.reject(result.errors);
+      }
+
+      _.each(result.data.allContentfulPage.edges, edge => {
+        createPage({
+          path: `/${edge.node.slug}/`,
+          component: pageTemplate,
+          context: {id: edge.node.id},
+        });
+      });
+
+      _.each(result.data.allContentfulGettingToSchool.edges, edge => {
+        createPage({
+          path: `/getting-to-school/${edge.node.slug}/`,
+          component: gettingToSchoolTemplate,
+          context: {id: edge.node.id},
+        });
+      });      
+
+      _.each(result.data.allContentfulTownOrCity.edges, edge => {
+        createPage({
+          path: `/getting-to-school/routes/${edge.node.slug}/`,
+          component: townOrCityTemplate,
+          context: {
+            id: edge.node.id,
+            slug: edge.node.slug
+          },
+        });
+      });
+
+      _.each(result.data.allContentfulSchool.edges, edge => {
+        createPage({
+          path: `/getting-to-school/routes/${edge.node.townOrCity.slug}/${edge.node.slug}/`,
+          component: schoolTemplate,
+          context: {
+            id: edge.node.id
+          },
+        });
+      });      
+
+    });
+    resolve()
+  });
+};
+
 const axios = require('axios');
 const crypto = require('crypto');
-
-/**
-exports.sourceNodes = async ({ actions }) => {
-  const { createNode } = actions;
-
-  // fetch raw data from the randomuser api
-  const fetchRandomUser = () => axios.get(`https://randomuser.me/api/?results=500`);
-  // await for results
-  const res = await fetchRandomUser();
-
-  // map into these results and create nodes
-  res.data.results.map((user, i) => {
-    // Create your node object
-    const userNode = {
-      // Required fields
-      id: `${i}`,
-      parent: `__SOURCE__`,
-      internal: {
-        type: `RandomUser`, // name of the graphQL query --> allRandomUser {}
-        // contentDigest will be added just after
-        // but it is required
-      },
-      children: [],
-
-      // Other fields that you want to query with graphQl
-      gender: user.gender,
-      name: {
-        title: user.name.title,
-        first: user.name.first,
-        last: user.name.last,
-      },
-      picture: {
-        large: user.picture.large,
-        medium: user.picture.medium,
-        thumbnail: user.picture.thumbnail,
-      }
-      // etc...
-    }
-
-    // Get content digest of node. (Required field)
-    const contentDigest = crypto
-      .createHash(`md5`)
-      .update(JSON.stringify(userNode))
-      .digest(`hex`);
-    // add it to userNode
-    userNode.internal.contentDigest = contentDigest;
-
-    // Create node with the gatsby createNode() API
-    createNode(userNode);
-  });
-
-  return;
-} */

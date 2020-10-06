@@ -3,9 +3,9 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
-import Layout from "../layout/60-day"
+import Layout from "../layout/page"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import SignupSixtyDay from "../components/signup-sixty-day/signup-sixty-day"
+
 
 const propTypes = {
     data: PropTypes.object.isRequired,
@@ -13,7 +13,7 @@ const propTypes = {
 
 class Page extends React.Component {
   render() {
-    const page = this.props.data.contentfulSixtyDayChallenge
+    const page = this.props.data.contentfulPage
     const options = {
       renderNode: {
         [BLOCKS.EMBEDDED_ENTRY]: (node) => {
@@ -34,9 +34,8 @@ class Page extends React.Component {
     return (
       <div>
         <Layout>
-					<h1>{page.title}</h1>
-					{documentToReactComponents(page.content.json, options)}
-					<SignupSixtyDay></SignupSixtyDay>
+          <h1>{page.title}</h1>
+          {documentToReactComponents(page.content.json, options)}
         </Layout>
       </div>
     )
@@ -46,11 +45,13 @@ class Page extends React.Component {
 export default Page
 
 export const pageQuery = graphql`
-  {
-	  contentfulSixtyDayChallenge {
-	  	content {
-	  		json
-	  	}
-	  }   
+  query pageQuery( $id : String! ) {
+    contentfulPage( id: { eq: $id } ) {
+      id
+      title
+      content {
+        json
+      }  
+    }
   }
 `

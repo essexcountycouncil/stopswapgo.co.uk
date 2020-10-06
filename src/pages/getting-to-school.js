@@ -1,25 +1,141 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link } from 'gatsby'
 import Helmet from "react-helmet"
-import LayoutH2sWithNewsletter from "../layout/layout-h2s-with-newsletter"
-import PreviewSchool from "../components/preview/preview-school"
-import Social from "../components/social/social-g2s"
+import Layout from "../layout/getting-to-school"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-export default ({ data }) => {
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+	{
+	  contentfulGettingToSchoolLanding {
+	  	intro {
+	  		json
+	  	}
+	    box1Title
+	    box1TitleItalic
+	    box1Content {
+	      json
+	    }
+	    box1Image {
+	      file {
+	        url
+	      }
+	      title
+	      description
+	    }
+	    box1ButtonLabel
+	    box1ButtonUrl
+	    box2Title
+	    box2TitleItalic
+	    box2Content {
+	      json
+	    }
+	    box2Image {
+	      file {
+	        url
+	      }
+	      title
+	      description
+	    }
+	    box2ButtonLabel
+	    box2ButtonUrl
+	    box3Title
+	    box3TitleItalic
+	    box3Content {
+	      json
+	    }
+	    box3Image {
+	      file {
+	        url
+	      }
+	      title
+	      description
+	    }
+	    box3ButtonLabel
+	    box3ButtonUrl	
+	    box4Title
+	    box4TitleItalic
+	    box4Content {
+	      json
+	    }
+	    box4Image {
+	      file {
+	        url
+	      }
+	      title
+	      description
+	    }
+	    box4ButtonLabel
+	    box4ButtonUrl	        	    
+	    social {
+	      json
+	    }	    	        
+	  }
+  }  
+  `)	
   return (
-    <LayoutH2sWithNewsletter>
+    <Layout>
     <Helmet>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     </Helmet>
     <div className="mantra" id="get-ready">
-    	<h2 className="strapline">Stop.Swap.<i>GO!</i> to school or college in September</h2>
-    	<h3>Rethink how your child goes back to school or college</h3>
-      <p>Loads of people have swapped to cycling and walking around Essex to stay active during lockdown. We’re here to help you avoid traffic or long waits for the socially distanced bus when schools and colleges return. We’ll also help you get those steps in as well.</p>
-      <p>So we’ve put together plenty of advice to help you make the swap, as well as walking and cycling maps to your school including suggested drop off and pick-up points that aren’t going to drag you through the busy town or to the school gates. They’ll help you avoid the traffic, stay healthy and help the environment.</p>
-      <p>We have a ‘how to’ guide on swapping and we’ll be adding plenty more maps and information over time, so stay tuned. <i>GO!</i> sign up to our newsletter so you’re always up to date.</p>
-      <p>We want to get everyone in schools and colleges to have a go at walking, cycling, or scooting, so the information here is for everyone. But we'll cover off some specifics if you receive transport from Essex County Council too.</p>
+      {documentToReactComponents(data.contentfulGettingToSchoolLanding.intro.json)}
     </div>
-  	<PreviewSchool />
-    <Social />
-    </LayoutH2sWithNewsletter>
+
+		<div className="previews previews-grey-border">
+			<div className="preview">
+				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulGettingToSchoolLanding.box1Title}</span><i>{data.contentfulGettingToSchoolLanding.box1TitleItalic}</i></h3>
+				<img src={`${data.contentfulGettingToSchoolLanding.box1Image.file.url}`} title={`${data.contentfulGettingToSchoolLanding.box1Image.title}`} alt={`${data.contentfulGettingToSchoolLanding.box1Image.description}`} />
+				{documentToReactComponents(data.contentfulGettingToSchoolLanding.box1Content.json)}
+		    <div className="button-container-middle">
+		      <Link to={data.contentfulGettingToSchoolLanding.box1ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulGettingToSchoolLanding.box1ButtonLabel}</Link>
+		    </div>
+			</div>
+			<div className="preview">
+				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulGettingToSchoolLanding.box2Title}</span><i>{data.contentfulGettingToSchoolLanding.box2TitleItalic}</i></h3>
+				<img src={`${data.contentfulGettingToSchoolLanding.box2Image.file.url}`} title={`${data.contentfulGettingToSchoolLanding.box2Image.title}`} alt={`${data.contentfulGettingToSchoolLanding.box2Image.description}`} />
+				{documentToReactComponents(data.contentfulGettingToSchoolLanding.box2Content.json)}
+				<div className="button-container-middle">
+		      <Link to={data.contentfulGettingToSchoolLanding.box2ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulGettingToSchoolLanding.box2ButtonLabel}</Link>
+		    </div>				
+			</div>			
+		</div>
+
+
+		<div className="previews previews-grey-border">
+			<div className="preview">
+				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulGettingToSchoolLanding.box3Title}</span><i>{data.contentfulGettingToSchoolLanding.box3TitleItalic}</i></h3>
+				<img src={`${data.contentfulGettingToSchoolLanding.box3Image.file.url}`} title={`${data.contentfulGettingToSchoolLanding.box3Image.title}`} alt={`${data.contentfulGettingToSchoolLanding.box3Image.description}`} />
+				{documentToReactComponents(data.contentfulGettingToSchoolLanding.box3Content.json)}
+		    <div className="button-container-middle">
+		      <Link to={data.contentfulGettingToSchoolLanding.box3ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulGettingToSchoolLanding.box3ButtonLabel}</Link>
+		    </div>
+			</div>
+			<div className="preview">
+				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulGettingToSchoolLanding.box4Title}</span><i>{data.contentfulGettingToSchoolLanding.box4TitleItalic}</i></h3>
+				<img src={`${data.contentfulGettingToSchoolLanding.box4Image.file.url}`} title={`${data.contentfulGettingToSchoolLanding.box4Image.title}`} alt={`${data.contentfulGettingToSchoolLanding.box4Image.description}`} />
+				{documentToReactComponents(data.contentfulGettingToSchoolLanding.box4Content.json)}
+				<div className="button-container-middle">
+		      <Link to={data.contentfulGettingToSchoolLanding.box4ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulGettingToSchoolLanding.box4ButtonLabel}</Link>
+		    </div>				
+			</div>			
+		</div>		
+
+		<div className="social">
+			{documentToReactComponents(data.contentfulGettingToSchoolLanding.social.json)}
+			<ul className="social-icons">
+				<li>
+					<a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter" title="Twitter" aria-hidden="true"></span><span>Twitter</span></a></li><li>
+					<a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" title="Facebook" aria-hidden="true"></span><span>Facebook</span></a></li><li>
+					<a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram" title="Instagram" aria-hidden="true"></span><span>Instagram</span></a></li>
+			</ul>	
+			<a className="twitter-timeline"  data-width="500" data-height="400" href="https://twitter.com/stopswapgoessex?ref_src=twsrc%5Etfw">Tweets by stopswapgoessex</a>
+		</div>		
+
+    </Layout>
+      
   )
 }
+
+export default IndexPage

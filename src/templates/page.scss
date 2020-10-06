@@ -1,0 +1,44 @@
+#page {
+	ul li p {
+		margin-bottom: 0;
+		b {
+			font-weight: $bold;
+		}
+	}
+	blockquote {
+	  background-color: $grey-lighter;
+	  padding: $gutter*1.5;
+	  border-left: 10px solid #ccc;   
+	  quotes: "\201C""\201D""\2018""\2019";
+	  position: relative;
+	  @include media(mobile) {
+	    margin: $baseline 0 $baseline 0;
+	  }
+	  @include media(tablet) {
+	    margin: $baseline $gutter $baseline $gutter;
+	  }
+	  @include media(desktop) {
+	    margin: $baseline $gutter*4 $baseline $gutter*4;
+	  }   
+	  &:before {
+	    color: #ccc;
+	    content: open-quote;
+	    font-size: ms(16);
+	    line-height: $baseline;
+	    margin-right: 0.25em;
+	    vertical-align: -0.4em;
+	    position: relative;
+	    }
+	  p {
+	    font-size: ms(0);
+	    line-height: $baseline;
+	    margin-bottom: $baseline;
+  	  i {
+		    font-weight: $bold;
+		    span {
+		      font-weight: $regular;
+		    }
+		  }
+	  }
+	}
+}

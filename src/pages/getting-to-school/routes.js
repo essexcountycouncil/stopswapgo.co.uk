@@ -1,42 +1,72 @@
-import React from "react"
-import { Link } from 'gatsby'
-import Layout from "../../layout/layout-h2s-with-newsletter-no-banner"
+import React from 'react'
+import { BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { graphql } from "gatsby"
+import * as PropTypes from "prop-types"
+import Link from 'gatsby-link'
+import Layout from "../../layout/sub-page-with-newsletter"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-const Routes = () => (
-	<Layout>
-		<h1>Routes</h1>
-		<p>Here you’ll find our latest walking and cycling maps for the areas around your school or college. Just click your town and then your school or college name to find your map and work out the best route from your house, using the information and links provided.</p>
-		<p>Our maps offer:</p>
-		<ul>
-			<li>walking, cycling and scooting routes</li>
-			<li>drop-off and pick-up zone ideas</li>
-			<li>areas that are usually a traffic nightmare</li>
-			<li>park and ride stops (where available)</li>
-		</ul>
+const propTypes = {
+    data: PropTypes.object.isRequired,
+}
 
-		<p>We’ve tried and tested these routes but they’re just a starting point. You might know a better route so use our maps as a guide. Better yet if you know a secret route that we haven’t included, share it with our community on social media #StopSwapGO</p>
-		<p>Below each map is a little description of the routes suggested if you’re coming in from different areas.</p>
+class Routes extends React.Component {
+  render() {
+    const routes = this.props.data.contentfulRoutes
+    const townOrcity = this.props.data.allContentfulTownOrCity
+    const options = {
+      renderNode: {
+        [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+          return <div className="callout callout-middle">
+            <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
+            <p>{node.data.target.fields.content['en-US']}</p>
+          </div>
+        },
 
-		<div className="notice notice-middle">
-			<h2>We’re working on your map!</h2>
-			<p>Your route map isn’t ready yet, but your school is on the list. Check back here or follow us on <Link to="https://www.instagram.com/stopswapgo/">Instagram</Link>, <Link to="https://www.facebook.com/stopswapgo">Facebook</Link>, and <Link to="https://twitter.com/stopswapgoessex">Twitter</Link> as we’ll launch new routes in for schools and colleges over the coming weeks and months.</p>
-		</div>
+        [INLINES.EMBEDDED_ENTRY]: (node) => {
+          return <div className="callout callout-side">
+            <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
+            <p>{node.data.target.fields.content['en-US']}</p>
+          </div>
+        },
+      },  
+    }    
+    return (
+      <div>
+        <Layout>
+          <h1>{routes.title}</h1>
+          {documentToReactComponents(routes.content.json, options)}
+          <ul>
+          {townOrcity.edges.map(({ node }) => (
+            <div>
+            <li><Link to={`${node.slug}`}>{node.title}</Link></li>
+            </div>
+          ))}
 
-		<h2>Choose your town or city</h2>
-		<p>Select the area your school or college is in from the list to see available map options:</p>
-		<ul>
-			<li><Link to="/getting-to-school/routes/basildon">Basildon</Link></li>
-			<li><Link to="/getting-to-school/routes/braintree">Braintree</Link></li>
-			<li><Link to="/getting-to-school/routes/brentwood">Brentwood</Link></li>
-			<li><Link to="/getting-to-school/routes/chelmsford">Chelmsford</Link></li>
-			<li><Link to="/getting-to-school/routes/clacton-on-sea">Clacton-on-Sea</Link></li>
-			<li><Link to="/getting-to-school/routes/colchester">Colchester</Link></li>
-			<li><Link to="/getting-to-school/routes/frinton-on-sea">Frinton-on-Sea</Link></li>
-			<li><Link to="/getting-to-school/routes/harlow">Harlow</Link></li>
-			<li><Link to="/getting-to-school/routes/shenfield">Shenfield</Link></li>
-			<li><Link to="/getting-to-school/routes/thorpe-le-soken">Thorpe-le-Soken</Link></li>
-		</ul>
-	</Layout>
-)
+          </ul>
+        </Layout>
+      </div>
+    )
+  }
+}
 
 export default Routes
+
+export const routesQuery = graphql`
+  query routesQuery {
+    contentfulRoutes {
+      title
+      content {
+        json
+      }
+    }
+    allContentfulTownOrCity(sort: {fields: [title], order: ASC}) {
+      edges {
+        node {
+          title
+          slug                
+        }
+      }
+    }
+  }
+`

@@ -161,7 +161,7 @@ h4, .h4, .sub-section-heading {
   @include h4;
 }
 
-strong {
+strong, b {
   font-weight: $bold;
 }
 
@@ -228,6 +228,9 @@ ul {
   margin-left: 20px;
   margin-top: $baseline;
   margin-bottom: $baseline;
+  p {
+    margin-bottom: 0;
+  }
   li {
     padding-left: 10px;
     margin-bottom: 0;
@@ -253,48 +256,4 @@ ol {
 
 ul {
   list-style-type: disc;
-}
-
-.notice {
-  background: $highlight-box-light;
-  padding: $gutter;
-  margin-top: $baseline*0.5;
-  margin-bottom: $baseline;
-  box-sizing: border-box;
-  p, h2, h3 {
-    text-align: center;
-  }
-  h2, h3 {
-    margin-top: 0;
-  }
-  @include media(mobile) {
-    width: 100%;
-  }
-  @include media(tablet) {
-    width: 30%;
-  }
-  @include media(desktop) {
-    width: 30%;
-  }
-}
-
-.notice-side {
-  margin-left: $gutter;
-  float: right;
-}
-.notice-middle{
-  margin-bottom: $baseline;
-  padding: $baseline $gutter*0.5;
-  width: 100%;
-  text-align: center;
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  ol, ol p {
-    text-align: left;
-  }
-  ol p {
-    margin-bottom: $baseline;
-  }
 }
