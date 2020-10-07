@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { useForm } from "react-hook-form";
+
 let axios = require('axios');
 let jsonpAdapter = require('axios-jsonp');
 
@@ -31,12 +34,22 @@ export default function SignupNewsletter() {
     setSubmitted('')
   }
 
+  const data = useStaticQuery(graphql`
+    {
+      contentfulNewsletterSignUp {
+        title
+        content {
+          json
+        }
+      }
+    }  
+    `)
   return (
     <section className="signup-background" aria-label="Subscribe to newsletter via email" id="challenge" >
       <div className="signup">
         <div className="mantra">
-          <h2 className="strapline"><span>Keep on moving</span></h2>
-          <p>Get the latest walking and cycling news, tips, community updates and exclusive offers straight to your inbox. Just enter your email address and hit ‘Subscribe’ – we’ll do the rest.</p>
+          <h2 className="strapline"><span>{data.contentfulNewsletterSignUp.title}</span></h2>
+          {documentToReactComponents(data.contentfulNewsletterSignUp.content.json)}
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm">
 

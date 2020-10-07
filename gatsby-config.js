@@ -15,6 +15,16 @@ module.exports = {
     siteUrl: `https://stopswapgo.co.uk`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-build-date`,
+      options: {
+        formatAsDateString: true, // boolean, defaults to true - if false API will return unformatted string from new Date()
+        formatting: {
+          format: 'YYYY', // string, defaults to "MM/DD/YYYY" - pass in any acceptable date-and-time format
+          utc: false, // boolean, defaults to false - output time as UTC or not, following date-and-time API
+        },
+      },
+    },
     `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-env-variables`,
@@ -63,7 +73,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/favicon2.svg`, // This path is relative to the root of the site.
       },
-    },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

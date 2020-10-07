@@ -3,30 +3,30 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
-import Layout from "../layout/60-day"
+import Layout from "../layout/sub-page"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import SignupSixtyDay from "../components/signup-sixty-day/signup-sixty-day"
+
 
 const propTypes = {
     data: PropTypes.object.isRequired,
 }
 
-class Page extends React.Component {
+class GettingToSchool extends React.Component {
   render() {
-    const page = this.props.data.contentfulSixtyDayChallenge
+    const gettingToSchool = this.props.data.contentfulGettingToSchool
     const options = {
       renderNode: {
         [BLOCKS.EMBEDDED_ENTRY]: (node) => {
           return <div className="callout callout-middle">
             <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
-            <p>{node.data.target.fields.content['en-US']}</p>
+            {node.data.target.fields.content['en-US']}
           </div>
         },
 
         [INLINES.EMBEDDED_ENTRY]: (node) => {
           return <div className="callout callout-side">
             <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
-            <p>{node.data.target.fields.content['en-US']}</p>
+            {node.data.target.fields.content['en-US']}
           </div>
         },
       },  
@@ -34,23 +34,24 @@ class Page extends React.Component {
     return (
       <div>
         <Layout>
-					<h1>{page.title}</h1>
-					{documentToReactComponents(page.content.json, options)}
-					<SignupSixtyDay></SignupSixtyDay>
+          <h1>{gettingToSchool.title}</h1>
+          {documentToReactComponents(gettingToSchool.content.json, options)}
         </Layout>
       </div>
     )
   }
 }
 
-export default Page
+export default GettingToSchool
 
-export const pageQuery = graphql`
-  {
-	  contentfulSixtyDayChallenge {
-	  	content {
-	  		json
-	  	}
-	  }   
+export const gettingToSchoolQuery = graphql`
+  query gettingToSchoolQuery( $id : String! ) {
+    contentfulGettingToSchool( id: { eq: $id } ) {
+      id
+      title
+      content {
+        json
+      }     
+    }    
   }
 `
