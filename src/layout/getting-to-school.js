@@ -15,7 +15,7 @@ export default ({ children }) => {
 
   const data = useStaticQuery(graphql`
     {
-      contentfulGettingToSchoolLanding {
+      contentfulGettingToSchool {
         title
         titleLine2
         titleLine3
@@ -31,12 +31,12 @@ export default ({ children }) => {
     <>
       <SEO title="Stop.Swap.GO! - Essex County Council" />
       <Header />
-      <section class="banner-background" role="img" aria-label="" title="" style={{ backgroundImage: `url(${data.contentfulGettingToSchoolLanding.banner.file.url})` }} >
+      <section class="banner-background" role="img" aria-label="" title="" style={{ backgroundImage: `url(${data.contentfulGettingToSchool.banner.file.url})` }} >
         <div className="overlay"></div>
         <div className="banner-container">
           <div className="greeting">
             <div className="arrow">
-              <h1 className="page-heading"><span className="one">{data.contentfulGettingToSchoolLanding.title}</span> <span className="two">{data.contentfulGettingToSchoolLanding.titleLine2}</span> <span className="three">{data.contentfulGettingToSchoolLanding.titleLine3}</span></h1>
+              <h1 className="page-heading"><span className="one">{data.contentfulGettingToSchool.title}</span> <span className="two">{data.contentfulGettingToSchool.titleLine2}</span> <span className="three">{data.contentfulGettingToSchool.titleLine3}</span></h1>
             </div>
           </div>
         </div>  

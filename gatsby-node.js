@@ -15,7 +15,7 @@ const slugifyOptions = {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const pageTemplate = path.resolve(`./src/templates/page.js`)
-  const gettingToSchoolTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
+  const gettingToSchoolPageTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
   const sixtyDayChallengePageTemplate = path.resolve(`./src/templates/60-day-challenge-page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
   const schoolTemplate = path.resolve(`./src/templates/school.js`)
@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-          allContentfulGettingToSchool {
+          allContentfulGettingToSchoolPage {
             edges {
               node {
                 id
@@ -88,10 +88,10 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
 
-      _.each(result.data.allContentfulGettingToSchool.edges, edge => {
+      _.each(result.data.allContentfulGettingToSchoolPage.edges, edge => {
         createPage({
           path: `/getting-to-school/${edge.node.slug}/`,
-          component: gettingToSchoolTemplate,
+          component: gettingToSchoolPageTemplate,
           context: {id: edge.node.id},
         });
       }); 
