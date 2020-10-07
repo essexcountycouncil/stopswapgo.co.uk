@@ -233,7 +233,7 @@ ul {
   }
   li {
     padding-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: $baseline;
     line-height: $baseline;
   }
   &.no-bullets li {
