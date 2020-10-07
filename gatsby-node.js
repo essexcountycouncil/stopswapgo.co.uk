@@ -16,6 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const pageTemplate = path.resolve(`./src/templates/page.js`)
   const gettingToSchoolTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
+  const sixtyDayChallengePageTemplate = path.resolve(`./src/templates/60-day-challenge-page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
   const schoolTemplate = path.resolve(`./src/templates/school.js`)
 
@@ -41,7 +42,16 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
             }
-          }          
+          }
+          allContentfulSixtyDayChallengePage {
+            edges {
+              node {
+                id
+                title
+                slug
+              }
+            }
+          }                    
           allContentfulTownOrCity {
             edges {
               node {
@@ -84,7 +94,15 @@ exports.createPages = ({ graphql, actions }) => {
           component: gettingToSchoolTemplate,
           context: {id: edge.node.id},
         });
-      });      
+      }); 
+
+      _.each(result.data.allContentfulSixtyDayChallengePage.edges, edge => {
+        createPage({
+          path: `/60-day-challenge/${edge.node.slug}/`,
+          component: sixtyDayChallengePageTemplate,
+          context: {id: edge.node.id},
+        });
+      });            
 
       _.each(result.data.allContentfulTownOrCity.edges, edge => {
         createPage({
