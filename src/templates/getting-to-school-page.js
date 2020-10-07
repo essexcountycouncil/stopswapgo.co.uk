@@ -13,20 +13,20 @@ const propTypes = {
 
 class GettingToSchool extends React.Component {
   render() {
-    const gettingToSchool = this.props.data.contentfulGettingToSchool
+    const page = this.props.data.contentfulGettingToSchoolPage
     const options = {
       renderNode: {
         [BLOCKS.EMBEDDED_ENTRY]: (node) => {
           return <div className="callout callout-middle">
             <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
-            {node.data.target.fields.content['en-US']}
+            <p>{node.data.target.fields.content['en-US']}</p>
           </div>
         },
 
         [INLINES.EMBEDDED_ENTRY]: (node) => {
           return <div className="callout callout-side">
             <p className="section-heading">{node.data.target.fields.title['en-US']}</p>
-            {node.data.target.fields.content['en-US']}
+            <p>{node.data.target.fields.content['en-US']}</p>
           </div>
         },
       },  
@@ -34,8 +34,8 @@ class GettingToSchool extends React.Component {
     return (
       <div>
         <Layout>
-          <h1>{gettingToSchool.title}</h1>
-          {documentToReactComponents(gettingToSchool.content.json, options)}
+          <h1>{page.title}</h1>
+          {documentToReactComponents(page.content.json, options)}
         </Layout>
       </div>
     )
@@ -45,8 +45,8 @@ class GettingToSchool extends React.Component {
 export default GettingToSchool
 
 export const gettingToSchoolQuery = graphql`
-  query gettingToSchoolQuery( $id : String! ) {
-    contentfulGettingToSchool( id: { eq: $id } ) {
+  query gettingToSchoolPageQuery( $id : String! ) {
+    contentfulGettingToSchoolPage( id: { eq: $id } ) {
       id
       title
       content {
