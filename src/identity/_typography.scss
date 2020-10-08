@@ -229,12 +229,15 @@ ul {
   margin-top: $baseline;
   margin-bottom: $baseline;
   p {
-    margin-bottom: 0;
+    margin-bottom: $baseline;
   }
   li {
     padding-left: 10px;
     margin-bottom: 0;
     line-height: $baseline;
+    p {
+      margin-bottom: $baseline*0.5;
+    }
   }
   &.no-bullets li {
     list-style: none;
