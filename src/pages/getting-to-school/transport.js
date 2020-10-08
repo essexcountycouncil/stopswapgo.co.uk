@@ -2,7 +2,6 @@ import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
 import Layout from "../../layout/sub-page-with-newsletter"
-import SignupTraining from "../../components/signup-training/signup-training"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Transport = () => {
@@ -32,7 +31,6 @@ const Transport = () => {
         <source src={data.contentfulTransport.video.file.url} type="video/mp4" />
       </video>
       {documentToReactComponents(data.contentfulTransport.furtherContent.json)}
-      <SignupTraining></SignupTraining>
     </Layout>
   )
 }
