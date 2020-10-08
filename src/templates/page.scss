@@ -1,10 +1,4 @@
 #page {
-	ul li p {
-		margin-bottom: 0;
-		b {
-			font-weight: $bold;
-		}
-	}
 	blockquote {
 	  background-color: $grey-lighter;
 	  padding: $gutter*1.5;
@@ -28,17 +22,6 @@
 	    margin-right: 0.25em;
 	    vertical-align: -0.4em;
 	    position: relative;
-	    }
-	  p {
-	    font-size: ms(0);
-	    line-height: $baseline;
-	    margin-bottom: $baseline;
-  	  i {
-		    font-weight: $bold;
-		    span {
-		      font-weight: $regular;
-		    }
-		  }
-	  }
+    }
 	}
 }

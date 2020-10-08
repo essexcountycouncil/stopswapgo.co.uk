@@ -17,7 +17,7 @@ class School extends React.Component {
         <Layout>
           <nav className="breadcrumbs" aria-label="breadcrumbs">
             <ol>
-              <li><a href={`../${school.townOrCity.slug}`}>Schools in {school.townOrCity.title}</a></li>
+              <li><a href={`/getting-to-school/routes/${school.townOrCity.slug}`}>Schools in {school.townOrCity.title}</a></li>
               <li>{school.title}</li>
             </ol>
           </nav>      
