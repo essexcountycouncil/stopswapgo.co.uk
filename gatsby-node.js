@@ -119,8 +119,7 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: `/getting-to-school/routes/${edge.node.townOrCity.slug}/${edge.node.slug}/`,
           component: schoolTemplate,
-          context: {
-            id: edge.node.id,
+          context: {id: edge.node.id},
         });
       });      
 
