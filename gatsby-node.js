@@ -120,7 +120,7 @@ exports.createPages = ({ graphql, actions }) => {
           path: `/getting-to-school/routes/${edge.node.townOrCity.slug}/${edge.node.slug}/`,
           component: schoolTemplate,
           context: {
-            id: edge.node.id
+            id: edge.node.id,
         });
       });      
 
