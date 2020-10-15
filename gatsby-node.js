@@ -121,7 +121,6 @@ exports.createPages = ({ graphql, actions }) => {
           component: schoolTemplate,
           context: {
             id: edge.node.id
-          },
         });
       });      
 
