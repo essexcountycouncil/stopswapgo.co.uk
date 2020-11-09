@@ -91,7 +91,7 @@ form.newsletterForm {
     }
 
     a {
-      color: $brand;
+      color: $link;
     }
 
   }
@@ -100,7 +100,7 @@ form.newsletterForm {
     @include smaller;
     margin-top: $baseline;
     a {
-      color: $brand;
+      color: $link;
     }
   }
 

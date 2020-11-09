@@ -49,44 +49,50 @@ export default function SignupSixtyDay() {
         </div>
 
         <div className={"form-group group" + (errors.full_name?.message ? " error-block" : "")}>
-          <label className="section-heading">Your full name*</label>
-          {errors.full_name ? (<span className="error">{errors.full_name?.message}</span>) : (null)}
-          <input
-            name="full_name"
-            className={"large-input form-control" + (errors.full_name?.message ? " error" : "")}
-            type="text"
-            ref={register({
-              required: 'Enter your full name',
-            })}
-          />
+          <label className="section-heading" for="full-name">Your full name*
+            {errors.full_name ? (<span className="error">{errors.full_name?.message}</span>) : (null)}
+            <input
+              id="full-name"
+              name="full_name"
+              className={"large-input form-control" + (errors.full_name?.message ? " error" : "")}
+              type="text"
+              ref={register({
+                required: 'Enter your full name',
+              })}
+            />
+          </label>
         </div>
         <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
-          <label className="section-heading">Your email*</label>
-          {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
-          <input
-            name="email"
-            className={"large-input form-control" + (errors.email?.message ? " error" : "")}
-            type="text"
-            ref={register({
-              required: 'Your email address is required',
-              pattern: {
-                value: EMAIL_REGEX,
-                message: 'Enter an email address in the correct format, like name@example.com',
-              },
-            })}
-          />
+          <label className="section-heading" for="email">Your email*
+            {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
+            <input
+              id="email"
+              name="email"
+              className={"large-input form-control" + (errors.email?.message ? " error" : "")}
+              type="text"
+              ref={register({
+                required: 'Your email address is required',
+                pattern: {
+                  value: EMAIL_REGEX,
+                  message: 'Enter an email address in the correct format, like name@example.com',
+                },
+              })}
+            />
+          </label>            
         </div>
         <div className={"form-group group" + (errors.postcode?.message ? " error-block" : "")}>
-          <label className="section-heading">Your postcode*</label>
-          {errors.postcode ? (<span className="error">{errors.postcode?.message}</span>) : (null)}
-          <input
-            name="postcode"
-            className={"large-input" + (errors.postcode?.message ? " error" : "")}
-            type="text"
-            ref={register({
-              required: 'Enter a real postcode',
-            })}
-          />
+          <label className="section-heading" for="postcode">Your postcode*
+            {errors.postcode ? (<span className="error">{errors.postcode?.message}</span>) : (null)}
+            <input
+              id="postcode"
+              name="postcode"
+              className={"large-input" + (errors.postcode?.message ? " error" : "")}
+              type="text"
+              ref={register({
+                required: 'Enter a real postcode',
+              })}
+            />
+          </label>            
         </div>
         <div className={"form-group group" + (errors.over_eighteen?.message ? " error-block" : "")}>
           <fieldset>
