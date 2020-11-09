@@ -78,30 +78,20 @@ form.newsletterForm {
         max-width: 100%;
       }      
     }
-
     label {
       color: white;
       display: block;
       text-align: left;
       padding-top: 5px;
     }
-
     p {
       margin-top: 0px !important;
     }
-
-    a {
-      color: $link;
-    }
-
   }
 
   div.disclaimer > p {
     @include smaller;
     margin-top: $baseline;
-    a {
-      color: $link;
-    }
   }
 
 }
