@@ -114,31 +114,30 @@ export default function SignupSixtyDay() {
           </fieldset>
         </div>
         <div className={"form-group group" + (errors.council?.message ? " error-block" : "")}>
-          <fieldset>
-            <legend>What is the name of your local council?*</legend>
-            <span className="form-hint">If you don’t know, you can <a href="https://www.gov.uk/find-local-council">find your local council</a> on GOV.UK. Please note, only people in the eligible Essex areas listed are able to take part in the 60 DC.</span>
-            {errors.council ? (<span className="error">{errors.council?.message}</span>) : (null)}
-              <select 
-              name="council" 
-              className={"large-input" + (errors.council?.message ? " error" : "")}
-              ref={register({
-                required: 'Expand the list and select your local council',
-              })}>
-              <option value="" disabled selected>--Select your council--</option>
-              <option value="294330">Basildon</option>
-              <option value="294331">Braintree</option>
-              <option value="294332">Brentwood</option>
-              <option value="294333">Castle Point</option>
-              <option value="294334">Chelmsford</option>
-              <option value="294335">Colchester</option>
-              <option value="294336">Epping Forest</option>
-              <option value="294337">Harlow</option>
-              <option value="294338">Maldon</option>
-              <option value="294339">Rochford</option>
-              <option value="294340">Tendring</option>
-              <option value="294341">Uttlesford</option>
-            </select>
-          </fieldset>
+          <label className="section-heading" for="name-of-council">What is the name of your local council?*</label>
+          <span className="form-hint">If you don’t know, you can <a href="https://www.gov.uk/find-local-council">find your local council</a> on GOV.UK. Please note, only people in the eligible Essex areas listed are able to take part in the 60 DC.</span>
+          {errors.council ? (<span className="error">{errors.council?.message}</span>) : (null)}
+            <select 
+            id="name-of-council"
+            name="council" 
+            className={"large-input" + (errors.council?.message ? " error" : "")}
+            ref={register({
+              required: 'Expand the list and select your local council',
+            })}>
+            <option value="" disabled selected>--Select your council--</option>
+            <option value="294330">Basildon</option>
+            <option value="294331">Braintree</option>
+            <option value="294332">Brentwood</option>
+            <option value="294333">Castle Point</option>
+            <option value="294334">Chelmsford</option>
+            <option value="294335">Colchester</option>
+            <option value="294336">Epping Forest</option>
+            <option value="294337">Harlow</option>
+            <option value="294338">Maldon</option>
+            <option value="294339">Rochford</option>
+            <option value="294340">Tendring</option>
+            <option value="294341">Uttlesford</option>
+          </select>
         </div>
         <div className={"form-group group" + (errors.consent_to_share?.message ? " error-block" : "")}>
           <fieldset>

@@ -51,52 +51,60 @@ export default function SignupNewsletter() {
           <h2 className="strapline"><span>{data.contentfulNewsletterSignUp.title}</span></h2>
           {documentToReactComponents(data.contentfulNewsletterSignUp.content.json)}
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm">
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
+            {submitted ?
+              (<div className="group">
+                <div className="submitted">
+                  <p>You have successfully subscribed to our newsletter!</p>
+                  <button onClick={clearSubmission} className="button button-dark button-large extra-space">Add another email</button>
+                </div>
+              </div>) :
+              (<div className="group">
+                <div className="input-group-container-middle">
+                  <ul className="errors">
+                    {errors.email ? (<li className="error">{errors.email?.message}</li>) : (null)}
+                    {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
+                  </ul>
+                </div>               
+                <div className="signup-input">
+                  <label for="email">
+                    Enter your email address
+                    <input
+                      placeholder="Enter your email address"
+                      name="email"
+                      className={"" + (errors.email?.message ? " error" : "")}
+                      type="text"
+                      ref={register({
+                        required: 'Email address required',
+                        pattern: {
+                          value: EMAIL_REGEX,
+                          message: 'Enter an email address in the correct format, like name@example.com',
+                        },
+                      })}
+                    />
+                  </label>
+                </div>
+                <div className="signup-button">
+                  <button type="submit" className="button subscribe">SUBSCRIBE!</button>
+                </div>
 
-          {submitted ?
-            (<div>
-              <p className="submitted">You have successfully subscribed to our newsletter!</p>
-              <button onClick={clearSubmission} className="button button-dark button-large extra-space">Add another email</button>
-            </div>) :
-            (<div>
-              <div className="input-group-container-middle">
-                <ul className="errors">
-                  {errors.email ? (<li className="error">{errors.email?.message}</li>) : (null)}
-                  {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
-                </ul>
-              </div>
-              <div className="input-group-container-middle">
-                <input
-                  name="email"
-                  className={"large-input" + (errors.email?.message ? " error" : "")}
-                  type="text"
-                  ref={register({
-                    required: 'Email address required',
-                    pattern: {
-                      value: EMAIL_REGEX,
-                      message: 'Enter an email address in the correct format, like name@example.com',
-                    },
-                  })}
-                />
-                <button type="submit" className="button button-dark button-large">SUBSCRIBE!</button>
+                <div className={"checkbox" + (errors.agreement?.message ? " checkbox-error" : "")}>
+                  <input type="checkbox" id="agreement" name="agreement"
+                    checked={checked}
+                    onChange={() => setChecked(!checked)}
+                    ref={register({
+                      required: 'Select the checkbox to consent to our data privacy policy'
+                    })} />
 
-              </div>
+                  <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a></label>
+                </div>
 
-              <div className={"input-group-container-middle checkbox" + (errors.agreement?.message ? " checkbox-error" : "")}>
-                <input type="checkbox" id="agreement" name="agreement"
-                  checked={checked}
-                  onChange={() => setChecked(!checked)}
-                  ref={register({
-                    required: 'Select the checkbox to consent to our data privacy policy'
-                  })} />
+                <div className="disclaimer">
+                  <p>Essex County Council is the controller of the personal information you submit here. We'll use the information you provide to keep you updated with Stop.Swap.<i>GO!</i> If it looks like you might be committing fraud or crime, the law may require us to share your information with the police or fraud investigation organisations. For more details about how we use your personal information, please read our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a>.</p>
+                </div>                
 
-                <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a></label>
-              </div>
 
-              <div className="disclaimer">
-                <p>Essex County Council is the controller of the personal information you submit here. We'll use the information you provide to keep you updated with Stop.Swap.<i>GO!</i> If it looks like you might be committing fraud or crime, the law may require us to share your information with the police or fraud investigation organisations. For more details about how we use your personal information, please read our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a>.</p>
-              </div>
-            </div>)}
+              </div>)}
         </form>
       </div>
     </section>

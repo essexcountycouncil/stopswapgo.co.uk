@@ -47,6 +47,7 @@
           top: 0;
           left: 0;
           height: $form-height;
+          width: 100%;
         }
         input:-webkit-autofill {
           -webkit-box-shadow: 0 0 0px 1000px $white inset;
@@ -55,9 +56,6 @@
       .signup-button {
         @include grid-column(4 / 12);
         position: relative;
-        float: none !important;
-        margin-left: auto;
-        margin-right: auto;
         button.button.subscribe {
           @include more;
           border: $border-thick $brand solid;
@@ -112,27 +110,39 @@
     .form {
       .group {
         .signup-input {
+          @include media(desktop) {
+            padding-right: 2px;
+          }
+          @include media(tablet) {
+            padding-right: 2px;
+          }
           input {
-            border: $border-thick $brand4 solid;
+            border: none;
             &:focus {
               outline-offset: 0;
             }
           }
         }
         .signup-button {
+          @include media(desktop) {
+            padding-left: 2px;
+          }
+          @include media(tablet) {
+            padding-left: 2px;
+          }          
           button.button.subscribe {
-            background: $white;
-            color: $body-text-colour;
+            background: $brand;
+            color: $black;
             font-style: italic;
             font-weight: $bold;
-            border: $border-thick $white solid;
+            border: $border-thick $brand solid;
             @include media(mobile) {
               margin-bottom: 0;
             }
             &:hover {
-              color: $body-text-colour;
-              background-color: $brand;
-              border: $border-thick $brand solid;
+              color: $white;
+              background-color: $grey;
+              border: $border-thick $grey solid;
             }
           }
         }
