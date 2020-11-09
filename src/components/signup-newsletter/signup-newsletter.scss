@@ -8,6 +8,9 @@
   .errors {
     margin-left: 0;
     @include grid-column(12 / 12);
+    @include media(mobile) {
+      padding: 0;
+    }    
   }
   .error {
     background-color: $white;
@@ -26,6 +29,12 @@
     p {
       color: white;
     }
+  }
+}
+
+.signup-background .signup .form .group .signup-input input {
+  &.error {
+    border: $border-thick $error solid;
   }
 }
 
@@ -133,6 +142,9 @@ input[type="checkbox"].error {
   margin-top: $baseline*0.5;
   position: relative;
   display: block;
+  @include media(mobile) {
+    padding: 0;
+  }  
 }
 
 .disclaimer {
@@ -141,6 +153,9 @@ input[type="checkbox"].error {
   p {
     @include smaller;
   }
+  @include media(mobile) {
+    padding: 0;
+  }    
 }
 
 .checkbox input[type="checkbox"] {

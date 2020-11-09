@@ -26,10 +26,15 @@
       }
       .signup-input {
         position: relative;
-        @include grid-column(8 / 12);
         @include media(mobile) {
           margin-bottom: $baseline;
+        }        
+        @include media(tablet){
+          @include grid-column(8 / 12);
         }
+        @include media(desktop) {
+          @include grid-column(9 / 12);
+        }        
         label, input {
           @include box-sizing(border-box);
           padding: $baseline*0.5;
@@ -54,7 +59,12 @@
         }
       }
       .signup-button {
-        @include grid-column(4 / 12);
+        @include media(tablet){
+          @include grid-column(4 / 12);
+        } 
+        @include media(desktop) {
+          @include grid-column(3 / 12);
+        }        
         position: relative;
         button.button.subscribe {
           @include more;
