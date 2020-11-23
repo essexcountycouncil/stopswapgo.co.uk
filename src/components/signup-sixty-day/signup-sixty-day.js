@@ -96,8 +96,8 @@ export default function SignupSixtyDay() {
         </div>
         <div className={"form-group group" + (errors.over_eighteen?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>Are you 18 years of age or older?</legend>
-            <span className="form-hint"> Please note, only people aged 18 or over are able to take part in the 60 Day Challenge.</span>
+            <legend>Are you 13 years of age or older?</legend>
+            <span className="form-hint"> Please note, only people aged 13 or over are able to take part in the 60 Day Challenge.</span>
             {errors.over_eighteen ? (<span className="error">{errors.over_eighteen?.message}</span>) : (null)}
             <div class="multiple-choice">
               <input 
@@ -142,7 +142,7 @@ export default function SignupSixtyDay() {
         <div className={"form-group group" + (errors.consent_to_share?.message ? " error-block" : "")}>
           <fieldset>
             <legend>Can we share your content?*</legend>
-            <p>As part of your 60 Day Challenge you will be asked to share your daily trips with short notes or photos and videos. If you would be happy for us to then share your responses as part of our marketing to help us get more people walking and cycling, please specify here. We’ll contact you if you’ve won a prize or to share the latest news about Stop.Swap.<i>GO!</i></p>
+            <p>As part of your 60 Day Challenge you will be asked to share your daily trips with short notes or photos and videos. If you would be happy for us to then share your responses as part of our marketing (Essex County Council broadcast channels such as websites, social media and e-newsletters) to help us get more people walking and cycling, please specify here. We’ll contact you if you’ve won a prize or to share the latest news about Stop.Swap.<i>GO!</i></p>
             {errors.consent_to_share ? (<span className="error">{errors.consent_to_share?.message}</span>) : (null)}
             <div class="multiple-choice">
               <input
