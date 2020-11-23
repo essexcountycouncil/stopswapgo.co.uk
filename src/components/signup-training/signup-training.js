@@ -46,20 +46,20 @@ export default function SignupTraining() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form form-background newsletterForm">
       <div className="form-internal">
-        <h3 className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></h3>
+        <div className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></div>
 
         <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
-          <label className="section-heading">Your email*</label>
-          <span className="form-hint">(or your parent or guardian’s email if under 18)</span>
-          {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
-          <input
-            name="email"
-            className={"large-input form-control" + (errors.email?.message ? " error" : "")}
-            type="email"
-            ref={register({
-              required: 'Enter an email address in the correct format, like name@example.com'
-            })}
-          />
+          <label className="section-heading" for="your-email">Your email*
+            <span className="form-hint">(or your parent or guardian’s email if under 18)</span>
+            {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
+            <input
+              id="your-email"
+              className={"large-input form-control" + (errors.email?.message ? " error" : "")}
+              ref={register({
+                required: 'Enter an email address in the correct format, like name@example.com'
+              })}
+            />
+          </label>
         </div>
 
         <div className={"form-group group" + (errors.type_of_training?.message ? " error-block" : "")}>
@@ -221,8 +221,9 @@ export default function SignupTraining() {
 
         <div className="form-group group">
           <fieldset>
-            <legend>If walking training is needed, what year group is the participant in?</legend>
+            <label className="section-heading" for="participant-year">If walking training is needed, what year group is the participant in?</label>
             <select
+              id="participant-year"
               name="year_group"
               ref={register()}
             >

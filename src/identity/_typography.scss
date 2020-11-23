@@ -4,7 +4,9 @@ $modularscale: (
 );
 
 @mixin p {
+  font-family: $stack;
   font-size: ms(0);
+  font-weight: $regular;
   line-height: $baseline;
   margin-top: 0;
   margin-bottom: $baseline*0.5;

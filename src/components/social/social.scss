@@ -1,12 +1,12 @@
 .social {
+  @include grid-column(1);
   float: left;
   background-color: $grey-lighter;
-  padding: $gutter*1.5 $gutter*0.5;
+  padding: 0 $gutter*0.5 $gutter*1.5 $gutter*0.5;
   margin-bottom: $baseline;
   text-align: center;
   margin-bottom: $baseline * 2;
   position: relative;
-  @include grid-column(1);
   @include media(mobile) {
     padding-bottom: $baseline;
   }    

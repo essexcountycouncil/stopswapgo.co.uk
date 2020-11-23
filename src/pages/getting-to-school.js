@@ -130,7 +130,9 @@ const IndexPage = () => {
 					<a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" title="Facebook" aria-hidden="true"></span><span>Facebook</span></a></li><li>
 					<a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram" title="Instagram" aria-hidden="true"></span><span>Instagram</span></a></li>
 			</ul>	
-			<a className="twitter-timeline"  data-width="500" data-height="400" href="https://twitter.com/stopswapgoessex?ref_src=twsrc%5Etfw">Tweets by stopswapgoessex</a>
+			<div tabindex="-10">
+				<a className="twitter-timeline"  data-width="500" data-height="400" href="https://twitter.com/stopswapgoessex?ref_src=twsrc%5Etfw" data-tweet-limit="1">Tweets by stopswapgoessex</a>
+			</div>
 		</div>		
 
     </Layout>

@@ -17,6 +17,7 @@ select:focus::-ms-value {
 }
 
 .form-background {
+  float: left;
   background-color: $grey-lighter;
   padding: $gutter*1.5;
   margin-bottom: $baseline;
@@ -65,6 +66,7 @@ select:focus::-ms-value {
       margin-bottom: 0;
     }
     .form-hint {
+      @include p;
       display: block;
       margin-top: $baseline*0.25;
       margin-bottom: $baseline*0.25;

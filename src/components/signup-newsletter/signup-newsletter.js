@@ -87,16 +87,19 @@ export default function SignupNewsletter() {
                 <div className="signup-button">
                   <button type="submit" className="button subscribe">SUBSCRIBE!</button>
                 </div>
+                <div className="group">
+                  <div className="multiple-choice">
+                    <div className={"checkbox" + (errors.agreement?.message ? " checkbox-error" : "")}>
+                      <input type="checkbox" id="agreement" name="agreement"
+                        checked={checked}
+                        onChange={() => setChecked(!checked)}
+                        ref={register({
+                          required: 'Select the checkbox to consent to our data privacy policy'
+                        })} />
 
-                <div className={"checkbox" + (errors.agreement?.message ? " checkbox-error" : "")}>
-                  <input type="checkbox" id="agreement" name="agreement"
-                    checked={checked}
-                    onChange={() => setChecked(!checked)}
-                    ref={register({
-                      required: 'Select the checkbox to consent to our data privacy policy'
-                    })} />
-
-                  <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a></label>
+                      <label htmlFor="agreement">By checking this box, you consent to our <a href="https://subscriberhelp.granicus.com/s/article/Privacy" target="_blank" rel="noreferrer">data privacy policy</a></label>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="disclaimer">
