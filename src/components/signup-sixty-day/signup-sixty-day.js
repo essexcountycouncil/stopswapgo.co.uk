@@ -63,10 +63,10 @@ export default function SignupSixtyDay() {
           </label>
         </div>
         <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
-          <label className="section-heading" for="email">Your email*
+          <label className="section-heading" for="email-address">Your email*
             {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
             <input
-              id="email"
+              id="email-address"
               name="email"
               className={"large-input form-control" + (errors.email?.message ? " error" : "")}
               type="text"

@@ -49,11 +49,11 @@ export default function SignupTraining() {
         <div className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></div>
 
         <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
-          <label className="section-heading" for="your-email">Your email*
+          <label className="section-heading" for="email-address">Your email*
             <span className="form-hint">(or your parent or guardian’s email if under 18)</span>
             {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
             <input
-              id="your-email"
+              id="email-address"
               className={"large-input form-control" + (errors.email?.message ? " error" : "")}
               ref={register({
                 required: 'Enter an email address in the correct format, like name@example.com'
@@ -212,11 +212,13 @@ export default function SignupTraining() {
         <div className="form-group group">
           <legend>If walking training is needed, what Essex school or college does the participant attend?</legend>
           <input
+          id="what-school"
             type="text"
             name="school"
             className="form-control"
             ref={register()}            
           />
+          <label for="what-school">No previous training</label>
         </div>
 
         <div className="form-group group">
