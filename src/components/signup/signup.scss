@@ -97,7 +97,6 @@
       .strapline{
         margin-top: $baseline*1.5;
         margin-bottom: $baseline*1.5;
-
         @include media(mobile) {
           margin-top: $baseline*0.5;
           margin-bottom: $baseline;
@@ -119,17 +118,15 @@
     }
     .form {
       .group {
+        @include media(mobile) {
+          padding: 0;
+        }
         .multiple-choice {
           margin-top: $baseline*0.5;
         }
         .signup-input {
-          @include media(desktop) {
-            padding-right: 2px;
-            padding-left: 0;
-          }
-          @include media(tablet) {
-            padding-right: 2px;
-          }
+          padding-right: 2px;
+          padding-left: 0;
           input {
             border: none;
             &:focus {

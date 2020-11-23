@@ -17,7 +17,7 @@ select:focus::-ms-value {
 }
 
 .form-background {
-  float: left;
+  @include grid-column(12 / 12);
   background-color: $grey-lighter;
   padding: $gutter*1.5;
   margin-bottom: $baseline;
