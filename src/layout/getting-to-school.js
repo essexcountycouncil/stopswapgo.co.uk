@@ -30,23 +30,25 @@ export default ({ children }) => {
   return (
     <>
       <SEO title="Stop.Swap.GO! - Essex County Council" />
-      <Header />
-      <section class="banner-background" role="img" aria-label="" title="" style={{ backgroundImage: `url(${data.contentfulGettingToSchool.banner.file.url})` }} >
-        <div className="overlay"></div>
-        <div className="banner-container">
-          <div className="greeting">
-            <div className="arrow">
-              <h1 className="page-heading"><span className="one">{data.contentfulGettingToSchool.title}</span> <span className="two">{data.contentfulGettingToSchool.titleLine2}</span> <span className="three">{data.contentfulGettingToSchool.titleLine3}</span></h1>
+      <div role="banner">
+        <Header />
+        <section class="banner-background" role="img" aria-label="" title="" style={{ backgroundImage: `url(${data.contentfulGettingToSchool.banner.file.url})` }} >
+          <div className="overlay"></div>
+          <div className="banner-container">
+            <div className="greeting">
+              <div className="arrow">
+                <h1 className="page-heading"><span className="one">{data.contentfulGettingToSchool.title}</span> <span className="two">{data.contentfulGettingToSchool.titleLine2}</span> <span className="three">{data.contentfulGettingToSchool.titleLine3}</span></h1>
+              </div>
             </div>
-          </div>
-        </div>  
-        <div className="ms-ie-notification"><p>This website is not optimised for Internet Explorer, please switch browser for a better experience</p></div>  
-      </section>
+          </div>  
+          <div className="ms-ie-notification"><p>This website is not optimised for Internet Explorer, please switch browser for a better experience</p></div>  
+        </section>
+      </div>
 
       <main id="content">
         <div className="container">
           <div className="main only">
-            <section className="content" aria-label="Main content area">
+            <section className="content">
               <div>{children}</div>
             </section>           
           </div>

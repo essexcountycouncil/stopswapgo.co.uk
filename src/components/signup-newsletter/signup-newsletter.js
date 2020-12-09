@@ -61,10 +61,12 @@ export default function SignupNewsletter() {
               </div>) :
               (<div className="group">
                 <div className="input-group-container-middle">
-                  <ul className="errors">
-                    {errors.email ? (<li className="error">{errors.email?.message}</li>) : (null)}
-                    {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
-                  </ul>
+                {errors.email ? (
+                  <span className="error">{errors.email?.message}</span>
+                ) : (null)}
+                {errors.agreement ? (
+                  <span className="error">{errors.agreement?.message}</span>
+                ) : (null)}
                 </div>               
                 <div className="signup-input">
                   <label for="email">

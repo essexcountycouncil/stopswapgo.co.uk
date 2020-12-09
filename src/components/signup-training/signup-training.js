@@ -49,7 +49,7 @@ export default function SignupTraining() {
         <div className="sub-section-heading strapline strapline-highlighted"><span>Stop.Swap.</span><i>SIGNUP!</i></div>
 
         <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
-          <label className="section-heading" for="email-address">Your email*
+          <label className="section-heading" for="email-address">Your email
             <span className="form-hint">(or your parent or guardian’s email if under 18)</span>
             {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
             <input
@@ -64,7 +64,7 @@ export default function SignupTraining() {
 
         <div className={"form-group group" + (errors.type_of_training?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>What type of training does the participant need?*</legend>
+            <legend>What type of training does the participant need?</legend>
             {errors.type_of_training ? (<span className="error">{errors.type_of_training?.message}</span>) : (null)}
             <div className="multiple-choice">
               <input 
@@ -110,7 +110,7 @@ export default function SignupTraining() {
 
         <div className={"form-group group" + (errors.previous_training?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>Has the participant had any previous training with Safer Essex Roads Partnership?*</legend>
+            <legend>Has the participant had any previous training with Safer Essex Roads Partnership?</legend>
             {errors.previous_training ? (<span className="error">{errors.previous_training?.message}</span>) : (null)}
             <div className="multiple-choice">
               <input 
@@ -165,7 +165,7 @@ export default function SignupTraining() {
 
         <div className="form-group group">
           <fieldset>
-            <legend>If cycling training is needed, does the participant own a bike or bike helmet?</legend>
+            <legend>If cycling training is needed, does the participant own a bike or bike helmet?<span className="optional">(optional)</span></legend>
             <div className="multiple-choice">
               <input
                 id="bike-helmet"
@@ -210,7 +210,7 @@ export default function SignupTraining() {
         </div>
 
         <div className="form-group group">
-          <legend>If walking training is needed, what Essex school or college does the participant attend?</legend>
+          <legend>If walking training is needed, what Essex school or college does the participant attend?<span className="optional">(optional)</span></legend>
           <input
           id="what-school"
             type="text"
@@ -218,12 +218,11 @@ export default function SignupTraining() {
             className="form-control"
             ref={register()}            
           />
-          <label for="what-school">No previous training</label>
         </div>
 
         <div className="form-group group">
           <fieldset>
-            <label className="section-heading" for="participant-year">If walking training is needed, what year group is the participant in?</label>
+            <label className="section-heading" for="participant-year">If walking training is needed, what year group is the participant in?<span className="optional">(optional)</span></label>
             <select
               id="participant-year"
               name="year_group"

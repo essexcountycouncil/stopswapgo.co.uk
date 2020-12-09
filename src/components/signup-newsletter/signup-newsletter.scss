@@ -6,17 +6,24 @@
     margin-top: 0;
   }
   .errors {
+    float: left;
+    width: 100%;
     margin-left: 0;
-    @include grid-column(12 / 12);
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: $baseline*0.5;
     @include media(mobile) {
       padding: 0;
     }    
   }
-  .error {
-    background-color: $white;
-    padding: $gutter*0.25;
-    list-style: none;
-    color: $error;
+  .signup .form .group {
+    .error {
+      background-color: $white;
+      padding: $gutter*0.25;
+      margin-bottom: $baseline*0.5;
+      list-style: none;
+      color: $error;
+    }
   }
   .button-large {
     &:hover {
@@ -38,84 +45,86 @@
   }
 }
 
-// form.form {
-//   button.error, input.error,  {
-//     border: $border-thick $error solid !important;
-//   }
+form.form {
+  button.error, input.error,  {
+    border: $border-thick $error solid !important;
+  }
 
-//   .error-block {
-//     border-left: solid $border-thicker $error;
-//     padding-left: $gutter*0.5;
-//   }
+  .error-block {
+    border-left: solid $border-thicker $error;
+    padding-left: $gutter*0.5;
+  }
 
-//   .errors {
-//     list-style: none;
-//     margin-left: 0;
-//     padding-left: 0;
-//   }
+  .errors {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
 
-//   .error, .error-message {
-//     display: block;
-//     margin-top: $border-thick;
-//     color: $error !important;
-//     font-weight: bold;
-//     padding: 0;
-//     text-align: left;
-//     line-height: $baseline;
-//   }  
+  .error, .error-message {
+    @include p;
+    margin-bottom: 0;
+    display: block;
+    // margin-top: $border-thick;
+    color: $error !important;
+    font-weight: bold;
+    padding: 0;
+    text-align: left;
+    line-height: $baseline;
+  }  
 
-//   .submitted {
-//     margin-top: 2em !important;
-//     font-weight: bold;
-//     color: white !important;
-//   }
-//   .form-group-errors{
-//     border-left: 5px solid $error;
-//     padding-left: 15px;
-//   }
+  .submitted {
+    margin-top: 2em !important;
+    font-weight: bold;
+    color: white !important;
+  }
+  .form-group-errors{
+    border-left: 5px solid $error;
+    padding-left: 15px;
+  }
 
-//   .input-group-container-middle {
-//     position: relative;
-//     ul {
-//       list-style: none;
-//       margin-left: 0;
-//       padding: 0;      
-//     }
-//     .large-input{
-//       height: $button-height;
-//       border: $border-thick white solid;
-//       width: calc(100% - #{$button-width + $border-thicker});
-//       @include media(mobile) {
-//         width: 100%;
-//       }
-//     }
-//     button {
-//       position: absolute;
-//       right: 0;
-//       @include media(mobile) {
-//         margin-top: $baseline*0.5;
-//         position: relative;
-//         width: 100%;
-//         max-width: 100%;
-//       }      
-//     }
-//     label {
-//       color: white;
-//       display: block;
-//       text-align: left;
-//       padding-top: 5px;
-//     }
-//     p {
-//       margin-top: 0px !important;
-//     }
-//   }
+  .input-group-container-middle {
+    position: relative;
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding: 0;      
+    }
+    .large-input{
+      height: $button-height;
+      border: $border-thick white solid;
+      width: calc(100% - #{$button-width + $border-thicker});
+      @include media(mobile) {
+        width: 100%;
+      }
+    }
+    button {
+      position: absolute;
+      right: 0;
+      @include media(mobile) {
+        margin-top: $baseline*0.5;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+      }      
+    }
+    label {
+      color: white;
+      display: block;
+      text-align: left;
+      padding-top: 5px;
+    }
+    p {
+      margin-top: 0px !important;
+    }
+  }
 
-//   div.disclaimer > p {
-//     @include smaller;
-//     margin-top: $baseline;
-//   }
+  // div.disclaimer > p {
+  //   @include smaller;
+  //   margin-top: $baseline;
+  // }
 
-// }
+}
 
 
 /** Checkbox styling **/

@@ -123,6 +123,12 @@
         }
         .multiple-choice {
           margin-top: $baseline*0.5;
+          [type=checkbox] + label::before {
+            background: $white;
+          }
+          [type=checkbox] + label::after {
+            border-color: $black;
+          }
         }
         .signup-input {
           padding-right: 2px;

@@ -52,6 +52,11 @@ select:focus::-ms-value {
   .group, .all-sections {
     display: block;
     margin-bottom: $baseline*1.5;
+    span.optional {
+      @include p;
+      margin-bottom: 0;
+      padding-left: $gutter*0.25;
+    }
     label, input {
       text-transform: none;
       display: block;

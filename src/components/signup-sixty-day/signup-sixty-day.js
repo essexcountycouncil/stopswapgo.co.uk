@@ -42,14 +42,12 @@ export default function SignupSixtyDay() {
       <form onSubmit={handleSubmit(onSubmit)} className="newsletterForm form">
         <h3 className="sub-section-heading strapline strapline-highlighted"><span>STOP.SWAP.</span><i>SIGNUP!</i></h3>
         <div>
-          <ul className="errors">
-
-            {errors.agreement ? (<li className="error">{errors.agreement?.message}</li>) : (null)}
-          </ul>
+        {errors.agreement ? (
+          <span className="error">{errors.agreement?.message}</span>
+        ) : (null)}
         </div>
-
         <div className={"form-group group" + (errors.full_name?.message ? " error-block" : "")}>
-          <label className="section-heading" for="full-name">Your full name*
+          <label className="section-heading" for="full-name">Your full name
             {errors.full_name ? (<span className="error">{errors.full_name?.message}</span>) : (null)}
             <input
               id="full-name"
@@ -63,7 +61,7 @@ export default function SignupSixtyDay() {
           </label>
         </div>
         <div className={"form-group group" + (errors.email?.message ? " error-block" : "")}>
-          <label className="section-heading" for="email-address">Your email*
+          <label className="section-heading" for="email-address">Your email
             {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
             <input
               id="email-address"
@@ -81,7 +79,7 @@ export default function SignupSixtyDay() {
           </label>            
         </div>
         <div className={"form-group group" + (errors.postcode?.message ? " error-block" : "")}>
-          <label className="section-heading" for="postcode">Your postcode*
+          <label className="section-heading" for="postcode">Your postcode
             {errors.postcode ? (<span className="error">{errors.postcode?.message}</span>) : (null)}
             <input
               id="postcode"
@@ -96,7 +94,8 @@ export default function SignupSixtyDay() {
         </div>
         <div className={"form-group group" + (errors.over_eighteen?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>Are you 13 years of age or older?</legend>
+            <legend>Are you 13 years of age or older?<span className="optional">(optional)</span></legend>
+            <label></label>
             <span className="form-hint"> Please note, only people aged 13 or over are able to take part in the 60 Day Challenge.</span>
             {errors.over_eighteen ? (<span className="error">{errors.over_eighteen?.message}</span>) : (null)}
             <div class="multiple-choice">
@@ -114,7 +113,7 @@ export default function SignupSixtyDay() {
           </fieldset>
         </div>
         <div className={"form-group group" + (errors.council?.message ? " error-block" : "")}>
-          <label className="section-heading" for="name-of-council">What is the name of your local council?*</label>
+          <label className="section-heading" for="name-of-council">What is the name of your local council?</label>
           <span className="form-hint">If you don’t know, you can <a href="https://www.gov.uk/find-local-council">find your local council</a> on GOV.UK. Please note, only people in the eligible Essex areas listed are able to take part in the 60 DC.</span>
           {errors.council ? (<span className="error">{errors.council?.message}</span>) : (null)}
             <select 
@@ -141,7 +140,7 @@ export default function SignupSixtyDay() {
         </div>
         <div className={"form-group group" + (errors.consent_to_share?.message ? " error-block" : "")}>
           <fieldset>
-            <legend>Can we share your content?*</legend>
+            <legend>Can we share your content?</legend>
             <p>As part of your 60 Day Challenge you will be asked to share your daily trips with short notes or photos and videos. If you would be happy for us to then share your responses as part of our marketing (Essex County Council broadcast channels such as websites, social media and e-newsletters) to help us get more people walking and cycling, please specify here. We’ll contact you if you’ve won a prize or to share the latest news about Stop.Swap.<i>GO!</i></p>
             {errors.consent_to_share ? (<span className="error">{errors.consent_to_share?.message}</span>) : (null)}
             <div class="multiple-choice">

@@ -20,7 +20,7 @@ function SubNav() {
     <header className="header-background">
     <a className="skip-main" href="#content">Skip to main content</a>
       <div className="header">
-        <div className="nav">
+        <nav className="nav" role="navigation">
           <div className="logo-wrap">
             <a href="/" className="logo">
               <img src={logo} className="headerLogo" alt="logo" title="Stop Swap Go" />
@@ -33,7 +33,7 @@ function SubNav() {
             <li><a href="/getting-to-school/training">{data.contentfulSubNav.subNav4Label}</a></li>
             <li><a href="/getting-to-school/transport">{data.contentfulSubNav.subNav5Label}</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   )

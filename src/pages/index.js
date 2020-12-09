@@ -58,7 +58,7 @@ const IndexPage = () => {
 		<div className="previews previews-grey-border">
 			<div className="preview">
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulLanding.box1Title}</span><i>{data.contentfulLanding.box1TitleItalic}</i></h3>
-				<img src={`${data.contentfulLanding.box1Image.file.url}`} title={`${data.contentfulLanding.box1Image.title}`} alt={`${data.contentfulLanding.box1Image.description}`} />
+				<img src={`${data.contentfulLanding.box1Image.file.url}`} title={`${data.contentfulLanding.box1Image.title}`} alt="" />
 				{documentToReactComponents(data.contentfulLanding.box1Content.json)}
 		    <div className="button-container-middle">
 		      <Link to={data.contentfulLanding.box1ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulLanding.box1ButtonLabel}</Link>
@@ -66,7 +66,7 @@ const IndexPage = () => {
 			</div>
 			<div className="preview">
 				<h3 className="sub-section-heading strapline strapline-highlighted"><span>{data.contentfulLanding.box2Title}</span><i>{data.contentfulLanding.box2TitleItalic}</i></h3>
-				<img src={`${data.contentfulLanding.box2Image.file.url}`} title={`${data.contentfulLanding.box2Image.title}`} alt={`${data.contentfulLanding.box2Image.description}`} />
+				<img src={`${data.contentfulLanding.box2Image.file.url}`} title={`${data.contentfulLanding.box2Image.title}`} alt="" />
 				{documentToReactComponents(data.contentfulLanding.box2Content.json)}
 				<div className="button-container-middle">
 		      <Link to={data.contentfulLanding.box2ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulLanding.box2ButtonLabel}</Link>
