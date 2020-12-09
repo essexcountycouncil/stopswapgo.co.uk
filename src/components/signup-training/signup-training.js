@@ -54,6 +54,7 @@ export default function SignupTraining() {
             {errors.email ? (<span className="error">{errors.email?.message}</span>) : (null)}
             <input
               id="email-address"
+              name="email"
               className={"large-input form-control" + (errors.email?.message ? " error" : "")}
               ref={register({
                 required: 'Enter an email address in the correct format, like name@example.com'
