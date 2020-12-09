@@ -127,16 +127,13 @@ h2, .h2, .content-heading {
 
 .strapline {
   @include h2;
-  font-size: ms(8);
   font-weight: $bold;
   line-height: $baseline*2;
   span {
     color: $brand;
-  }
-  @include media(mobile) {
-    font-size: ms(5);
-    line-height: $baseline*1.5;
-  }
+    background-color: $grey-dark;
+    overflow-wrap: break-word;
+  } 
 }
 .strapline-highlighted {
   background-color: $grey-dark !important;

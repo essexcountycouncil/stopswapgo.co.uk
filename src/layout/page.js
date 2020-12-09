@@ -9,7 +9,7 @@ export default ({ children }) => {
 
   return (
     <>
-      <SEO title="Stop.Swap.GO! - Essex County Council" />
+      <SEO title="Stop.Swap.GO! - Essex County Council - " />
       <Header />
       <main id="content">
         <div className="container">

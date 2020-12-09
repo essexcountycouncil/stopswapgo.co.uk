@@ -159,8 +159,8 @@
             }
             &:hover {
               color: $white;
-              background-color: $grey;
-              border: $border-thick $grey solid;
+              background-color: $grey-darker;
+              border: $border-thick $grey-darker solid;
             }
           }
         }

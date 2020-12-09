@@ -171,6 +171,7 @@ export default function SignupSixtyDay() {
         </div>
         <div className={"form-group group" + (errors.consent_data_privacy?.message ? " error-block" : "")}>
           <fieldset>
+            <legend>Your data privacy consent</legend>
             {errors.consent_data_privacy ? (<span className="error">{errors.consent_data_privacy?.message}</span>) : (null)}
             <div class="multiple-choice">
               <input 
