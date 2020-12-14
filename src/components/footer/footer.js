@@ -12,6 +12,7 @@ const FooterNav = () => {
       nav3Label
       nav4Label
       nav5Label
+      nav6Label
       credit                   
     }
     currentBuildDate {
@@ -30,7 +31,8 @@ const FooterNav = () => {
               <a href="https://www.essex.gov.uk/cookies">{data.contentfulFooterNav.nav2Label}</a></li><li>
               <a href="https://www.essex.gov.uk/terms-conditions">{data.contentfulFooterNav.nav3Label}</a></li><li>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">{data.contentfulFooterNav.nav4Label}</a></li><li>
-              <Link to="/terms-and-conditions">{data.contentfulFooterNav.nav5Label}</Link></li>
+              <Link to="/terms-and-conditions">{data.contentfulFooterNav.nav5Label}</Link></li><li>
+              <Link to="/site-map">{data.contentfulFooterNav.nav6Label}</Link></li>
           </ul>
           <ul className="social-icons">
             <li>
