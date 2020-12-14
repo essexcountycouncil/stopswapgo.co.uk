@@ -95,7 +95,6 @@ export default function SignupSixtyDay() {
         <div className={"form-group group" + (errors.over_eighteen?.message ? " error-block" : "")}>
           <fieldset>
             <legend>Are you 13 years of age or older?</legend>
-            <label></label>
             <span className="form-hint"> Please note, only people aged 13 or over are able to take part in the 60 Day Challenge.</span>
             {errors.over_eighteen ? (<span className="error">{errors.over_eighteen?.message}</span>) : (null)}
             <div class="multiple-choice">
