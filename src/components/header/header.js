@@ -19,7 +19,7 @@ const MainNav = () => {
     <header className="header-background">
     <a className="skip-main" href="#content">Skip to main content</a>
       <div className="header">
-        <div className="nav">
+        <nav className="nav" role="navigation">
           <div className="logo-wrap">
             <a href="/" className="logo">
               <img src={logo} className="headerLogo" alt="Stop. Swap. GO! logo" title="Stop Swap Go" />
@@ -33,7 +33,7 @@ const MainNav = () => {
             <li className="pipe">|</li>
             <li><a href="/getting-to-school">{data.contentfulMainNav.nav5Label}</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   )

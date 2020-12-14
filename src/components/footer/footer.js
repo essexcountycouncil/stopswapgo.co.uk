@@ -12,6 +12,7 @@ const FooterNav = () => {
       nav3Label
       nav4Label
       nav5Label
+      nav6Label
       credit                   
     }
     currentBuildDate {
@@ -30,13 +31,14 @@ const FooterNav = () => {
               <a href="https://www.essex.gov.uk/cookies">{data.contentfulFooterNav.nav2Label}</a></li><li>
               <a href="https://www.essex.gov.uk/terms-conditions">{data.contentfulFooterNav.nav3Label}</a></li><li>
               <a href="https://www.essex.gov.uk/topic/privacy-and-data-protection">{data.contentfulFooterNav.nav4Label}</a></li><li>
-              <Link to="/terms-and-conditions">{data.contentfulFooterNav.nav5Label}</Link></li>
+              <Link to="/terms-and-conditions">{data.contentfulFooterNav.nav5Label}</Link></li><li>
+              <Link to="/site-map">{data.contentfulFooterNav.nav6Label}</Link></li>
           </ul>
           <ul className="social-icons">
             <li>
-              <a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter" title="Twitter" aria-hidden="true"></span><span>Twitter</span></a></li><li>
-            <a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" title="Facebook" aria-hidden="true"></span><span>Facebook</span></a></li><li>
-            <a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram" title="Instagram" aria-hidden="true"></span><span>Instagram</span></a></li>
+              <a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter" aria-hidden="true"></span><span>Twitter</span></a></li><li>
+            <a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" aria-hidden="true"></span><span>Facebook</span></a></li><li>
+            <a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram" aria-hidden="true"></span><span>Instagram</span></a></li>
           </ul>
         </div>
       </div>

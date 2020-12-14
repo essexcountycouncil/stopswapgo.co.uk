@@ -1,23 +1,51 @@
 // lots of !important were added here, this needs cleaning
 
 .signup-background {
-    .large-input.error {
-      display: inline;
-      margin-top: 0;
-    }
+  .large-input.error {
+    display: inline;
+    margin-top: 0;
+  }
+  .errors {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: $baseline*0.5;
+    @include media(mobile) {
+      padding: 0;
+    }    
+  }
+  .signup .form .group {
     .error {
       background-color: $white;
       padding: $gutter*0.25;
+      margin-bottom: $baseline*0.5;
+      list-style: none;
+      color: $error;
     }
-    .button-large {
-      &:hover {
-        background-color: $grey;
-        border-color: $grey;
-      }
+  }
+  .button-large {
+    &:hover {
+      background-color: $grey;
+      border-color: $grey;
     }
+  }
+  .submitted {
+    @include grid-column(12 / 12);
+    p {
+      color: white;
+    }
+  }
 }
 
-form.newsletterForm {
+.signup-background .signup .form .group .signup-input input {
+  &.error {
+    border: $border-thick $error solid;
+  }
+}
+
+form.form {
   button.error, input.error,  {
     border: $border-thick $error solid !important;
   }
@@ -34,8 +62,10 @@ form.newsletterForm {
   }
 
   .error, .error-message {
+    @include p;
+    margin-bottom: 0;
     display: block;
-    margin-top: $border-thick;
+    // margin-top: $border-thick;
     color: $error !important;
     font-weight: bold;
     padding: 0;
@@ -78,116 +108,129 @@ form.newsletterForm {
         max-width: 100%;
       }      
     }
-
     label {
       color: white;
       display: block;
       text-align: left;
       padding-top: 5px;
     }
-
     p {
       margin-top: 0px !important;
     }
-
-    a {
-      color: $brand;
-    }
-
   }
 
-  div.disclaimer > p {
-    @include smaller;
-    margin-top: $baseline;
-    a {
-      color: $brand;
-    }
-  }
+  // div.disclaimer > p {
+  //   @include smaller;
+  //   margin-top: $baseline;
+  // }
 
 }
 
 
 /** Checkbox styling **/
 
-input[type="checkbox"]{
-  float: left;
-  width: 2em;
-  height: 2em;
-  margin-right: 20px;
-  outline: $border-thick $white solid !important;
-}
-input[type="checkbox"].error {
-  outline: $border-thick $error solid !important;
-}
+// input[type="checkbox"]{
+//   float: left;
+//   width: 2em;
+//   height: 2em;
+//   margin-right: 20px;
+//   outline: $border-thick $white solid !important;
+// }
+// input[type="checkbox"].error {
+//   outline: $border-thick $error solid !important;
+// }
 
-.checkbox {
-  width: 100%;
+.signup .form .group {
   margin-top: $baseline*0.5;
-  position: relative;
-  display: block;
+  @include grid-column(12 / 12);
+  .checkbox label {
+    // line-height: $baseline*1.5;
+    color: $white;
+    background: $grey-dark;
+  }
 }
 
-.checkbox input[type="checkbox"] {
-  width: auto;
-  opacity: 0.00000001;
-  position: absolute;
-  left: 0;
-  margin-left: -20px;
+// .checkbox {
+//   @include grid-column(12 / 12);
+//   margin-top: $baseline*0.5;
+//   position: relative;
+//   display: block;
+//   @include media(mobile) {
+//     padding: 0;
+//   }  
+// }
+
+.disclaimer {
+  float: left;
+  margin-top: $baseline;
+  p {
+    @include smaller;
+  }
+  @include media(mobile) {
+    padding: 0;
+  }    
 }
+
+// .checkbox input[type="checkbox"] {
+//   width: auto;
+//   opacity: 0.00000001;
+//   position: absolute;
+//   left: 0;
+//   margin-left: -20px;
+// }
 
 .checkbox-error label:before {
   border: $border-normal solid $error !important;
-  background-color: $white;
 }
 
-.checkbox label {
-  position: relative;
-}
-.checkbox label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 3px;
-  border: 2px solid $brand;
-  background-color: $white;
-}
+// .checkbox label {
+//   position: relative;
+// }
+// .checkbox label:before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 3px;
+//   border: 2px solid $white;
+//   background-color: $white;
+// }
 
-.checkbox label:after {
-  content: '';
-  display: block;
-  width: 19px;
-  height: 8px;
-  border-bottom: $border-thicker solid $body-text-colour;
-  border-left: $border-thicker solid $body-text-colour;
-  -webkit-transform: rotate(-45deg) scale(0);
-  transform: rotate(-45deg) scale(0);
-  will-change: transform;
-  position: absolute;
-  top: 7px;
-  left: 6px; 
-}
+// .checkbox label:after {
+//   content: '';
+//   // display: block;
+//   width: 19px;
+//   height: 8px;
+//   border-bottom: $border-thicker solid $body-text-colour;
+//   border-left: $border-thicker solid $body-text-colour;
+//   -webkit-transform: rotate(-45deg) scale(0);
+//   transform: rotate(-45deg) scale(0);
+//   will-change: transform;
+//   position: absolute;
+//   top: 7px;
+//   left: 6px; 
+// }
 
-.checkbox input[type="checkbox"]:checked ~ label::before {
-  color: $brand;
-}
+// .checkbox input[type="checkbox"]:checked ~ label::before {
+//   color: $brand;
+// }
 
-.checkbox input[type="checkbox"]:checked ~ label::after {
-  -webkit-transform: rotate(-45deg) scale(1);
-  transform: rotate(-45deg) scale(1);
-}
+// .checkbox input[type="checkbox"]:checked ~ label::after {
+//   -webkit-transform: rotate(-45deg) scale(1);
+//   transform: rotate(-45deg) scale(1);
+// }
 
-.checkbox label {
-  min-height: 34px;
-  display: block;
-  padding-left: 40px;
-  margin-bottom: 0;
-  font-weight: normal;
-  cursor: pointer;
-  vertical-align: sub;
-}
+// .checkbox label {
+//   min-height: 34px;
+//   display: block;
+//   padding-left: 40px;
+//   margin-bottom: 0;
+//   font-weight: normal;
+//   cursor: pointer;
+//   vertical-align: sub;
+// }
 .checkbox label span {
   position: absolute;
   top: 50%;

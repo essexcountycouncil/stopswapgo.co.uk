@@ -46,6 +46,18 @@
         margin-top: 0 !important;
         margin-bottom: $baseline*0.25;
       }
+      span {
+        @include media(mobile) {
+          font-size: ms(5);
+          line-height: $baseline*1.5;
+        }
+        @include media(tablet) {
+          font-size: ms(4)
+        }  
+        @include media(desktop) {
+          font-size: ms(7);
+        } 
+      }
     }
     img {
       margin-top: 0;
