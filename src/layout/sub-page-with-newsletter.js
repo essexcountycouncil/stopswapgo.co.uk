@@ -17,7 +17,7 @@ export default ({ children }) => {
       <main id="content">
         <div className="container">
           <div className="main only">
-            <section className="content" aria-label="Main content area">
+            <section className="content">
               <div>{children}</div>
             </section>
           </div>

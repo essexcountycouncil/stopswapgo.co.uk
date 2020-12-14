@@ -34,9 +34,9 @@ const FooterNav = () => {
           </ul>
           <ul className="social-icons">
             <li>
-              <a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter" title="Twitter" aria-hidden="true"></span><span>Twitter</span></a></li><li>
-            <a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" title="Facebook" aria-hidden="true"></span><span>Facebook</span></a></li><li>
-            <a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram" title="Instagram" aria-hidden="true"></span><span>Instagram</span></a></li>
+              <a href="https://www.twitter.com/stopswapgoessex" className="twitter"><span className="fab fa-twitter" aria-hidden="true"></span><span>Twitter</span></a></li><li>
+            <a href="https://www.facebook.com/stopswapgo" className="facebook"><span className="fab fa-facebook-f" aria-hidden="true"></span><span>Facebook</span></a></li><li>
+            <a href="https://instagram.com/stopswapgo" className="instagram"><span className="fab fa-instagram" aria-hidden="true"></span><span>Instagram</span></a></li>
           </ul>
         </div>
       </div>
