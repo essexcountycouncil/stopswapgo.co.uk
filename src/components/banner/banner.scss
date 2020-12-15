@@ -76,7 +76,9 @@
         left: 150px;
         .one, .two, .three {
           display: block;
-        }
+          background: $white;
+          width: fit-content;
+        }        
         @include media(mobile){
           font-size: ms(8);
           line-height: $baseline*1.75;
@@ -85,7 +87,7 @@
           top: 35%;
           left: 425px;
         }
-        @include media(tablet){
+        @include media(tablet){        
           font-size: ms(10);
           line-height: $baseline*2;
           padding: 0 $gutter*0.5;
@@ -93,7 +95,7 @@
           top: 35%;
           left: 325px;
         }
-        @include media(desktop){
+        @include media(desktop){         
           font-size: ms(14);
           line-height: $baseline*3.5;
           padding: 0 10%;

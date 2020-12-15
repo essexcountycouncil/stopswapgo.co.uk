@@ -3,7 +3,7 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import * as PropTypes from "prop-types"
 import Link from 'gatsby-link'
-import Layout from "../layout/sub-page"
+import Layout from "../layout/sub-page-with-newsletter"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 
