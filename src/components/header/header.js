@@ -10,7 +10,7 @@ const MainNav = () => {
       nav1Label
       nav2Label
       nav3Label
-      nav4Label
+      # nav4Label
       nav5Label                      
     }
   }
@@ -29,7 +29,6 @@ const MainNav = () => {
             <li><a href="/">{data.contentfulMainNav.nav1Label}</a></li>
             <li><a href="/about-us">{data.contentfulMainNav.nav2Label}</a></li>
             <li><a href="/get-started">{data.contentfulMainNav.nav3Label}</a></li>
-            <li><a href="/60-day-challenge">{data.contentfulMainNav.nav4Label}</a></li>
             <li className="pipe">|</li>
             <li><a href="/getting-to-school">{data.contentfulMainNav.nav5Label}</a></li>
           </ul>
