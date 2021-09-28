@@ -12,7 +12,7 @@ class BusOperatorTemplate extends React.Component {
         <Layout bannerUrl={page.banner.file.url}>
           {documentToReactComponents(page.mainbody.json)}
 
-          <section className="bus-ticket-information">
+          <section className="bus-ticket-information" style={{marginBottom: '50px'}}>
             {documentToReactComponents(page.spotlightText.json)}
             {page.instructions.file.url && (
               <img src={page.instructions.file.url} alt={page.instructions.description} />
