@@ -5,8 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 class BusOperatorTemplate extends React.Component {
   render() {
-    const page = this.props.data.contentfulBusOperatorSpecificPage
-    console.log({page});
+    const page = this.props.data.contentfulBusOperatorSpecificPage;
 
     return (
       <div>
