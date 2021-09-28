@@ -7,12 +7,12 @@ import logo from "./SSG_Logo_Colour_3chevrons_RGB_b.svg"
 function SubNav() {
   const data = useStaticQuery(graphql`
   {
-    contentfulSubNav {
+    contentfulSubNav(subNav1Label: {eq: "Getting to school or college"}) {
       subNav1Label
       subNav2Label
       subNav3Label
       subNav4Label
-      subNav5Label                      
+      subNav5Label
     }
   }
   `)
