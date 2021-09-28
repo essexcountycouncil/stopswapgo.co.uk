@@ -87,7 +87,7 @@ const BusIndexPage = () => {
           <img src={`${data.contentfulSsgBusLandingPage.box1Image.file.url}`} title={`${data.contentfulSsgBusLandingPage.box1Image.title}`} alt="" />
           {documentToReactComponents(data.contentfulSsgBusLandingPage.box1Content.json)}
           <div className="button-container-middle">
-            <Link to={`/bus${data.contentfulSsgBusLandingPage.box1ButtonUrl}`} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box1ButtonTable}</Link>
+            <Link to={data.contentfulSsgBusLandingPage.box1ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box1ButtonTable}</Link>
           </div>
         </div>
         <div className="preview">
@@ -95,7 +95,7 @@ const BusIndexPage = () => {
           <img src={`${data.contentfulSsgBusLandingPage.box2Image.file.url}`} title={`${data.contentfulSsgBusLandingPage.box2Image.title}`} alt="" />
           {documentToReactComponents(data.contentfulSsgBusLandingPage.box2Content.json)}
           <div className="button-container-middle">
-            <Link to={`/bus${data.contentfulSsgBusLandingPage.box2ButtonUrl}`} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box2ButtonTable}</Link>
+            <Link to={data.contentfulSsgBusLandingPage.box2ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box2ButtonTable}</Link>
           </div>
         </div>
         <div className="preview">
@@ -103,7 +103,7 @@ const BusIndexPage = () => {
           <img src={`${data.contentfulSsgBusLandingPage.box3Image.file.url}`} title={`${data.contentfulSsgBusLandingPage.box3Image.title}`} alt="" />
           {documentToReactComponents(data.contentfulSsgBusLandingPage.box3Content.json)}
           <div className="button-container-middle">
-            <Link to={`/bus${data.contentfulSsgBusLandingPage.box3ButtonUrl}`} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box3ButtonTable}</Link>
+            <Link to={data.contentfulSsgBusLandingPage.box3ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box3ButtonTable}</Link>
           </div>
         </div>
         <div className="preview">
@@ -111,7 +111,7 @@ const BusIndexPage = () => {
           <img src={`${data.contentfulSsgBusLandingPage.box4Image.file.url}`} title={`${data.contentfulSsgBusLandingPage.box4Image.title}`} alt="" />
           {documentToReactComponents(data.contentfulSsgBusLandingPage.box4Content.json)}
           <div className="button-container-middle">
-            <Link to={`/bus${data.contentfulSsgBusLandingPage.box4ButtonUrl}`} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box4ButtonTable}</Link>
+            <Link to={data.contentfulSsgBusLandingPage.box4ButtonUrl} className="button button-dark button-large extra-space">{data.contentfulSsgBusLandingPage.box4ButtonTable}</Link>
           </div>
         </div>
       </div>
