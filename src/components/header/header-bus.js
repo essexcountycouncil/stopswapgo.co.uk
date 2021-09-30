@@ -3,16 +3,17 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Link } from 'gatsby'
 import logo from "./SSG_Logo_Colour_3chevrons_RGB_b.svg"
 
-
-function SubNav() {
+function BusNav() {
   const data = useStaticQuery(graphql`
   {
-    contentfulSubNav(subNav1Label: {eq: "Getting to school or college"}) {
+    contentfulSubNav(subNav1Label: {eq: "SSG! Bus"}) {
       subNav1Label
       subNav2Label
       subNav3Label
       subNav4Label
       subNav5Label
+      subNav6Label
+      subNav7Label
     }
   }
   `)
@@ -27,11 +28,13 @@ function SubNav() {
             </a>
           </div>
           <ul className="nav-links">
-            <li><a href="/getting-to-school">{data.contentfulSubNav.subNav1Label}</a></li>
-            <li><a href="/getting-to-school/prepare">{data.contentfulSubNav.subNav2Label}</a></li>
-            <li><a href="/getting-to-school/routes">{data.contentfulSubNav.subNav3Label}</a></li>
-            <li><a href="/getting-to-school/training">{data.contentfulSubNav.subNav4Label}</a></li>
-            <li><a href="/getting-to-school/transport">{data.contentfulSubNav.subNav5Label}</a></li>
+            <li><a href="/bus">{data.contentfulSubNav.subNav1Label}</a></li>
+            <li><a href="/bus/firstessex">{data.contentfulSubNav.subNav2Label}</a></li>
+            <li><a href="/bus/arriva">{data.contentfulSubNav.subNav3Label}</a></li>
+            <li><a href="/bus/hedingham">{data.contentfulSubNav.subNav4Label}</a></li>
+            <li><a href="/bus/stephensons">{data.contentfulSubNav.subNav5Label}</a></li>
+            <li><a href="/bus/faqs">{data.contentfulSubNav.subNav6Label}</a></li>
+            <li><a href="/bus/terms-and-conditions">{data.contentfulSubNav.subNav7Label}</a></li>
           </ul>
         </nav>
       </div>
@@ -39,4 +42,4 @@ function SubNav() {
   )
 }
 
-export default SubNav
+export default BusNav

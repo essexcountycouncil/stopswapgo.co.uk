@@ -69,7 +69,7 @@ export default function SignupNewsletter() {
                 ) : (null)}
                 </div>               
                 <div className="signup-input">
-                  <label for="email">
+                  <label htmlFor="email">
                     Enter your email address
                     <input
                       placeholder="Enter your email address"

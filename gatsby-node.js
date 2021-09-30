@@ -18,18 +18,18 @@ exports.createPages = ({ graphql, actions }) => {
   const gettingToSchoolPageTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
   const schoolTemplate = path.resolve(`./src/templates/school.js`)
+  const busOperatorPageTemplate = path.resolve(`./src/templates/bus-operator.js`)
 
   return new Promise((resolve, reject) => {
       // We'll do most of our work here
-      graphql(
-        `
+      graphql(`
         {
           allContentfulPage {
             edges {
               node {
                 id
                 title
-                slug                
+                slug
               }
             }
           }
@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
             }
-          }                 
+          }
           allContentfulTownOrCity {
             edges {
               node {
@@ -63,8 +63,30 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
-          }          
-        }                           
+          }
+          allContentfulSchool {
+            edges {
+              node {
+                id
+                title
+                slug
+                townOrCity {
+                  title
+                  slug
+                }
+              }
+            }
+          }
+          allContentfulBusOperatorSpecificPage {
+            edges {
+              node {
+                id
+                title
+                slug
+              }
+            }
+          }
+        }
     `).then(result => {
       if (result.errors) {
         Promise.reject(result.errors);
@@ -103,7 +125,15 @@ exports.createPages = ({ graphql, actions }) => {
           component: schoolTemplate,
           context: {id: edge.node.id},
         });
-      });      
+      });
+      
+      _.each(result.data.allContentfulBusOperatorSpecificPage.edges, edge => {
+        createPage({
+          path: `/bus/${edge.node.slug}/`,
+          component: busOperatorPageTemplate,
+          context: {id: edge.node.id},
+        });
+      });
 
     });
     resolve()
