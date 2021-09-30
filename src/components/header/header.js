@@ -10,7 +10,7 @@ const MainNav = () => {
       nav1Label
       nav2Label
       nav3Label
-      # nav4Label
+      nav4Label
       nav5Label                      
     }
   }
@@ -31,6 +31,8 @@ const MainNav = () => {
             <li><a href="/get-started">{data.contentfulMainNav.nav3Label}</a></li>
             <li className="pipe">|</li>
             <li><a href="/getting-to-school">{data.contentfulMainNav.nav5Label}</a></li>
+            <li className="pipe">|</li>
+            <li><a href="/bus">{data.contentfulMainNav.nav4Label}</a></li>
           </ul>
         </nav>
       </div>

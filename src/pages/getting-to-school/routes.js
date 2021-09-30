@@ -54,7 +54,7 @@ export default Routes
 
 export const routesQuery = graphql`
   query routesQuery {
-    contentfulRoutes {
+    contentfulRoutes(slug: { eq: "routes" }) {
       title
       content {
         json
