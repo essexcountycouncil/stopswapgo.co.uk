@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .footer-container {
   @media print {
     display: none;
@@ -22,7 +24,7 @@
     .nav {
       @extend %grid-row;
       .nav-links {
-        @include grid-column(8 / 12);
+        @include grid-column(math.div(8, 12));
         margin-top: 0;
         margin-bottom: 0;
         li {
@@ -43,7 +45,7 @@
         }
       }
       .social-icons {
-        @include grid-column(4 / 12);
+        @include grid-column(math.div(4, 12));
         text-align: right;
         margin-top: 0;
         margin-bottom: 0;
@@ -93,7 +95,7 @@
         }
       }
       .copyright, .design-link, .footer-logo {
-        @include grid-column(6 / 12);
+        @include grid-column(math.div(6, 12));
         display: block;
         color: $white;
         line-height: $baseline*1.25;

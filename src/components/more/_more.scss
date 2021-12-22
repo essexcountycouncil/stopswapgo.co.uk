@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .more-background {
   text-align: center;
   margin-top: 0;
@@ -6,7 +8,7 @@
 
 .button.more, a.button.more {
   @include more;
-  @include grid-column(4 / 12);
+  @include grid-column(math.div(4, 12));
   float: none !important;
   &:hover {
     color: $white;

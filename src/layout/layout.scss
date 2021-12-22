@@ -1,3 +1,5 @@
+@use "sass:math";
+
 %site-width-container {
   @include media(mobile) {
     padding-left: $outer-grid-margin;
@@ -76,8 +78,8 @@ main#content {
       .head {
         @include grid-column(1);
       }
-      .content, .intro, .function, {
-        @include grid-column(8 / 12);
+      .content, .intro, .function {
+        @include grid-column(math.div(8, 12));
         &.only {
           @include grid-column(1);
         }
@@ -89,7 +91,7 @@ main#content {
       }
       .side {
         // used for step-by-step within information pages
-        @include grid-column(4 / 12);
+        @include grid-column(math.div(4, 12));
       }
     }
   }
@@ -107,7 +109,7 @@ main#content {
     @include grid-column(1);
   }
   @include media(desktop) {
-    @include grid-column(3 / 12);
+    @include grid-column(math.div(3, 12));
   }
 }
 

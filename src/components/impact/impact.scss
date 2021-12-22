@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .impact {
   position: relative;
   margin-bottom: $baseline*1.5;
@@ -27,7 +29,7 @@
     background: $overlay-brand;
   }
   .overlay-box {
-    @include grid-column(1 / 2);
+    @include grid-column(math.div(1, 2));
     position: relative;
     background: $white;
     margin: $gutter;

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .form-block {
   float: left;
   clear: left;
@@ -17,7 +19,7 @@ select:focus::-ms-value {
 }
 
 .form-background {
-  @include grid-column(12 / 12);
+  @include grid-column(math.div(12, 12));
   background-color: $grey-lighter;
   padding: $gutter*1.5;
   margin-bottom: $baseline;
