@@ -1,6 +1,8 @@
+@use "sass:math";
+
 .nav {
   ul.nav-links {
-    @include grid-column(1 / 2);
+    @include grid-column(math.div(1, 2));
     padding-left: 0;
     margin-left: 0;
     li {

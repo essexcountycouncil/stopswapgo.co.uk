@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .previews {
   position: relative;
   @include media(mobile) {
@@ -25,7 +27,7 @@
   .preview {
     text-align: center;
     margin-bottom: 0;
-    @include grid-column(6 / 12);
+    @include grid-column(math.div(6, 12));
     &:nth-child(2n) {
       @include media(mobile) {
         border: none;

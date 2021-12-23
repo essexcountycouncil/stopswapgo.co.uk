@@ -1,7 +1,8 @@
 import React from "react"
 import { Router } from "@reach/router"
 import Header from "../components/header/headerb"
-import SignupNewsletter from "../components/signup-newsletter/signup-newsletter"
+// import SignupNewsletter from "../components/signup-newsletter/signup-newsletter"
+import Signup from "../components/signup/signup"
 import Footer from "../components/footer/footer"
 import SEO from "../components/seo"
 
@@ -20,7 +21,7 @@ export default ({ children }) => {
           </div>
         </div>
       </main>
-      <SignupNewsletter />
+      <Signup />
       <Footer />
     </>
   )

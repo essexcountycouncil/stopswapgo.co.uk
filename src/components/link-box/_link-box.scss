@@ -1,5 +1,6 @@
-// Link box (used on topic pages)
+@use "sass:math";
 
+// Link box (used on topic pages)
 ul.link-boxes {
   list-style: none;
 }
@@ -26,7 +27,7 @@ ul.link-boxes {
     margin-bottom: $baseline;
     @include media(desktop) {
       display: flex;
-      @include grid-column(4 / 12);
+      @include grid-column(math.div(4, 12));
     }
     .link-content {
       background: $grey-lighter;

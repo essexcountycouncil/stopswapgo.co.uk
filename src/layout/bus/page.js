@@ -3,7 +3,9 @@ import Header from "../../components/header/header-bus"
 import Footer from "../../components/footer/footer"
 import SEO from "../../components/seo"
 // SignupNewsletter is the component that uses integration directly to GovDelivery 
-import SignupNewsletter from "../../components/signup-newsletter/signup-newsletter"
+// import SignupNewsletter from "../../components/signup-newsletter/signup-newsletter"
+
+import Signup from "../../components/signup/signup"
 
 export default ({ bannerUrl, children }) => {
   return (
@@ -23,7 +25,7 @@ export default ({ bannerUrl, children }) => {
           </div>
         </div>
       </main>
-      <SignupNewsletter />
+      <Signup />
       <Footer />
     </>
   )
