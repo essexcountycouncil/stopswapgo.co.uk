@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .banner-background {
   background-image: url("./components/banner/two-cyclists-by-church.jpg");
   border-bottom: 10px solid $brand;
@@ -63,7 +65,7 @@
       }
       position: relative;
       h1 {
-        @include grid-column(1 / 2);
+        @include grid-column(math.div(1, 2));
         font-family: Mohave-Bold;
         font-size: ms(14);
         line-height: $baseline*4;
@@ -146,7 +148,7 @@
       }      
     }
     .form {
-      @include grid-column(1 / 2);
+      @include grid-column(math.div(1, 2));
       margin-bottom: 0;
       @include media(mobile) {
         width: 100%;
