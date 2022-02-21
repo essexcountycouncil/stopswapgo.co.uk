@@ -127,14 +127,13 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
       
-      _.each(result.data.allContentfulBusOperatorSpecificPage.edges, edge => {
-        createPage({
-          path: `/bus/${edge.node.slug}/`,
-          component: busOperatorPageTemplate,
-          context: {id: edge.node.id},
-        });
-      });
-
+      // _.each(result.data.allContentfulBusOperatorSpecificPage.edges, edge => {
+      //   createPage({
+      //     path: `/bus/${edge.node.slug}/`,
+      //     component: busOperatorPageTemplate,
+      //     context: {id: edge.node.id},
+      //   });
+      // });
     });
     resolve()
   });
