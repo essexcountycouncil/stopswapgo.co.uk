@@ -18,7 +18,16 @@ exports.createPages = ({ graphql, actions }) => {
   const gettingToSchoolPageTemplate = path.resolve(`./src/templates/getting-to-school-page.js`)
   const townOrCityTemplate = path.resolve(`./src/templates/town-or-city.js`)
   const schoolTemplate = path.resolve(`./src/templates/school.js`)
-  const busOperatorPageTemplate = path.resolve(`./src/templates/bus-operator.js`)
+  // const busOperatorPageTemplate = path.resolve(`./src/templates/bus-operator.js`)
+  // allContentfulBusOperatorSpecificPage {
+  //   edges {
+  //     node {
+  //       id
+  //       title
+  //       slug
+  //     }
+  //   }
+  // }
 
   return new Promise((resolve, reject) => {
       // We'll do most of our work here
@@ -74,15 +83,6 @@ exports.createPages = ({ graphql, actions }) => {
                   title
                   slug
                 }
-              }
-            }
-          }
-          allContentfulBusOperatorSpecificPage {
-            edges {
-              node {
-                id
-                title
-                slug
               }
             }
           }
