@@ -30,9 +30,7 @@ const MainNav = () => {
             <li><a href="/about-us">{data.contentfulMainNav.nav2Label}</a></li>
             <li><a href="/get-started">{data.contentfulMainNav.nav3Label}</a></li>
             <li className="pipe">|</li>
-            <li><a href="/getting-to-school">{data.contentfulMainNav.nav5Label}</a></li>
-            <li className="pipe">|</li>
-            <li><a href="/bus">{data.contentfulMainNav.nav4Label}</a></li>
+            <li><a href="/getting-to-school">{data.contentfulMainNav.nav4Label}</a></li>
           </ul>
         </nav>
       </div>
