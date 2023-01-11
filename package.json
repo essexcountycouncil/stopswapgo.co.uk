@@ -29,7 +29,7 @@
     "gatsby-source-contentful": "^2.3.26",
     "gatsby-source-facebook": "^2.0.1",
     "gatsby-source-filesystem": "^2.2.5",
-    "gatsby-transformer-remark": "^2.7.5",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.4.7",
     "jsonp": "^0.2.1",
     "node-sass": "7.0.0",
